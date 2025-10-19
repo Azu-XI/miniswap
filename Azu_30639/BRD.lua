@@ -284,6 +284,7 @@ profile.Sets.Midcast_HealingMagic_Priority = {
     },
     Waist = {
         { Name = "Pythia Sash", Level = 75 },         --                   ConserveMP+4
+        { Name = "Penitent's Rope", Level = 60 },     -- MND+5      Enm-3
     },
     Legs  = {
             -- Wish: Brd. Cannions +1 [(Aug) CurePot+5]
@@ -442,6 +443,7 @@ profile.Sets.Midcast_March_Priority = {
 profile.Sets.Precast_Default_Priority = {
         -- Wish: Lv.75 Reflexive Grip +0/1 [FC+1/3]
     Head  = {
+        { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
     Ear1  = {
@@ -449,7 +451,7 @@ profile.Sets.Precast_Default_Priority = {
     },
     Body  = {
             -- Wish: Dalmatica +0/1 [(Aug) FC+4] // Carreful with Occ. Quickens Spellcasting!!
-            -- Wish: Vermillion Cloak [(Aug) FC+3]
+        { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
     },
     Hands = {
             -- Wish: Brd. Cuffs +1 [(Aug) FC+3]

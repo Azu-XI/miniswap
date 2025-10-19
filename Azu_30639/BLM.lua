@@ -1,5 +1,14 @@
 local profile = gFunc.LoadFile('common/miniswap/miniswap.lua');
 
+profile.Sets.LockStyle = {
+    Main  = "Baqil Staff",
+    Head  = "Demon Helm",
+    Body  = "Vanya Robe",
+    Hands = "Sorcerer's Gloves",
+    Legs  = "Sorcerer's Tonban",
+    Feet  = "Sorcerer's Sabots",
+};
+
 profile.Sets.Idle_Priority = {
     Main  = {
         { Name = "Earth Staff", Level = 51 },         -- PDT-20
@@ -22,6 +31,7 @@ profile.Sets.Idle_Priority = {
         { Name = "Happy Egg", Level = 1 },
     },
     Head  = {
+        { Name = "Demon Helm", Level = 74 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Gambler's Chapeau", Level = 50 },   -- MP+20 INT+3
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 while below lv.50
@@ -29,6 +39,7 @@ profile.Sets.Idle_Priority = {
         "Dream Hat +1",
     },
     Ear1 = {
+        { Name = "Loquac. Earring", Level = 75 },
             -- Wish: Lv.29 Morion Earring +1 [INT+2]
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
@@ -44,22 +55,29 @@ profile.Sets.Idle_Priority = {
         { Name = "Justice Badge", Level = 7 },        --        MND+3
     },
     Body  = {
+        { Name = "Sorcerer's Coat", Level = 74 },       -- Refresh+1
         { Name = "Vermillion Cloak", Level = 59 },       -- Refresh+1
         { Name = "Garrison Tunica +1", Level = 20 },     -- Refresh+1 while below lv.50
         { Name = "Druid's Robe", Level = 8 },
         "Kingdom Aketon", 
     },
     Hands = {
+        { Name = "Sorcerer's Gloves", Level = 72 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- MP+5 INT+2
         { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
     },
     Ring1 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+        { Name = "Coral Ring", Level = 70 },          -- MDT-3
         { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
         "Windurstian Ring",
     },
     Ring2 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+        { Name = "Coral Ring", Level = 70 },          -- MDT-3
             -- Wish: Lv.30 Tamas Ring [INT+2~5]
+        { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
         "Provenance Ring",
     },
     Back  = {
@@ -76,6 +94,7 @@ profile.Sets.Idle_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
+        { Name = "Sorcerer's Tonban", Level = 73 },
         { Name = "White Slacks", Level = 50 },        -- Regen +1
         { Name = "Seer's Slacks", Level = 29 },
         { Name = "Garrison Hose +1", Level = 20 },
@@ -83,6 +102,7 @@ profile.Sets.Idle_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Sorcerer's Sabots", Level = 71 },   -- INT+2 ConserveMP+5
         { Name = "Custom M Boots", Level = 29 },      -- INT+3
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2 MND+2
         { Name = "Power Sandals", Level = 18 },       -- VIT+3
@@ -129,6 +149,7 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Justice Badge", Level = 7 },        --                MND+3
     },
     Body  = {
+        { Name = "Vanya Robe", Level = 75 },          -- INT+5  MAB+5 MagicBurst5
         { Name = "Seer's Tunic", Level = 29 },        -- INT+1
     },
     Hands = {
@@ -157,14 +178,20 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
+        { Name = "Sorcerer's Tonban", Level = 73 },   -- INT+3
         { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
     },
     Feet  = {
+        { Name = "Sorcerer's Sabots", Level = 71 },   -- INT+2  ConserveMP+5
         { Name = "Custom M Boots", Level = 29 },      -- INT+3
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
         { Name = "Power Sandals", Level = 18 },       -- VIT+3
     },
 };
+
+-- TODO: Drain/Aspir Set with:
+-- Sorcerer's Gloves
+-- ???
 
 local midcastEnfeeblingMND = {
     Ring1 = {
@@ -210,7 +237,10 @@ profile.Sets.Midcast_HealingMagic_Priority = {
 -- Goal: Max FastCast 80%
 profile.Sets.Precast_Default_Priority = {
     Head  = {
-        { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
+        { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
+    },
+    Ear1  = {
+        { Name = "Loquac. Earring", Level = 75 },     -- FC+2
     },
     Body  = {
         { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
