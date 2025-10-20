@@ -1,10 +1,15 @@
 local profile = gFunc.LoadFile('common/miniswap/miniswap.lua');
 
 profile.Sets.Engaged_Priority = {
-    -- Main  = {
-    -- },
-    -- Sub   = {
-    -- },
+    Main  = {
+        { Name = "Fealty", Level = 20 },
+        { Name = "Sapara", Level = 7 },
+    },
+    Sub   = {
+        { Name = "Nadrs", Level = 24 },
+        { Name = "Sapara", Level = 20 },
+        { Name = "Kupo Shield", Level = 1 },
+    },
     Ammo = {
         { Name = "Bibiki seashell", Level = 60 },     -- VIT+4
         { Name = "Happy Egg", Level = 1 },

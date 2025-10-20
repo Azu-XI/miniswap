@@ -46,7 +46,7 @@ profile.Sets.Idle_Priority = {
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
     Ear2 = {
-            -- Wish: Lv.47 Moldavite Earring [MATK+5]
+        { Name = "Moldavite Earring", Level = 47 },   --       MAB+5
             -- Wish: Lv.29 Morion Earring +1 [INT+2]
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
@@ -132,7 +132,7 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
     Ear2 = {
-            -- Wish: Lv.47 Moldavite Earring [MATK+5]
+        { Name = "Moldavite Earring", Level = 47 },   --       MAB+5
             -- Wish: Lv.29 Morion Earring +1 [INT+2]
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
