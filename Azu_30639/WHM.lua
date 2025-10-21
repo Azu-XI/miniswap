@@ -1,29 +1,14 @@
 local profile = gFunc.LoadFile('common/miniswap/miniswap.lua');
 
-profile.Sets.Engaged_Priority = {
-    Neck  = {
-        { Name = "Pile Chain", Level = 3 },
-    },
-    Head  = {
-        { Name = "Cmp. Eye Circlet", Level = 9 },
-    },
-    Hands = {
-        { Name = "Battle Gloves", Level = 14 },
-    },
-    Waist = {
-        { Name = "Heko Obi", Level = 8 },             -- AGI+3 ACC+3
-    },
-};
-
 profile.Sets.Idle_Priority = {
     Main  = {
-            -- Wish: Eremit's Wand +1 [INT+6 MND+6]
-        { Name = "Eremite's Wand", Level = 28 },      -- INT+5  MND+5
-        { Name = "Hermit's Wand", Level = 13 },       -- INT+2  MND+2
+        { Name = "Earth Staff", Level = 51 },         -- PDT-20
         { Name = "Pilgrim's Wand", Level = 10 },
         { Name = "Maple Wand +1", Level = 1 },
     },
     Sub   = {
+            -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
+        { Name = "Neph. Grip", Level = 51 },          -- INT+1
         { Name = "Pelte", Level = 8 },
         { Name = "Kupo Shield", Level = 1 },
     },
@@ -92,9 +77,12 @@ profile.Sets.Idle_Priority = {
 
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
-            -- Wish: Eremit's Wand +1 [INT+6 MND+6 SIRD-25]
-        { Name = "Eremite's Wand", Level = 28 },      -- INT+5  MND+5  SIRD-25
-        { Name = "Hermit's Wand", Level = 13 },       -- INT+2  MND+2  SIRD-25
+        { Name = "Iridal Staff", Level = 51 },
+        { Name = "Maple Wand +1", Level = 1 },        -- MND+2
+    },
+    Sub   = {
+        { Name = "Neph. Grip", Level = 51 },          -- INT+1
+        { Name = "Pelte", Level = 8 },                -- MND+1
     },
     Neck  = {
         { Name = "Justice Badge", Level = 7 },

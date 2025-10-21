@@ -1,31 +1,14 @@
 local profile = gFunc.LoadFile('common/miniswap/miniswap.lua');
 
-profile.Sets.Engaged_Priority = {
-    Main  = {
-        { Name = "Radiance", Level = 20 },
-        { Name = "Ash Pole", Level = 5 },
-        "Ash Staff",
-    },
-    Sub  = {
-        { Name = "remove", Level = 5 },
-    },
-    Neck  = {
-        { Name = "Pile Chain", Level = 3 },
-    },
-    Hands = {
-        { Name = "Battle Gloves", Level = 14 },
-    },
-};
-
 profile.Sets.Idle_Priority = {
     Main  = {
         { Name = "Radiance", Level = 20 },
-        { Name = "Hermit's Wand", Level = 13 },
-        { Name = "Pilgrim's Wand", Level = 10 },
+        { Name = "Ash Pole +1", Level = 5 },
+        { Name = "Maple Wand +1", Level = 1 },
     },
     Sub   = {
-        { Name = "Neph. Grip", Level = 20 },
-        { Name = "Pelte", Level = 8 },
+        { Name = "Neph. Grip", Level = 5 },
+        { Name = "Kupo Shield", Level = 1 },
     },
     Ammo = {
         { Name = "Talon Tathlum", Level = 50 },

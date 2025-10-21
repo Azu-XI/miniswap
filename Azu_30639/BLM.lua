@@ -12,17 +12,12 @@ profile.Sets.LockStyle = {
 profile.Sets.Idle_Priority = {
     Main  = {
         { Name = "Earth Staff", Level = 51 },         -- PDT-20
-            -- Wish: Eremit's Wand +1 [INT+6 MND+6]
-        { Name = "Eremite's Wand", Level = 28 },      -- INT+5  MND+5
-        { Name = "Yew Wand +1", Level = 18 },          -- INT+4  MND+4
-        { Name = "Hermit's Wand", Level = 13 },       -- INT+2  MND+2
-        { Name = "Pilgrim's Wand", Level = 10 },
+        { Name = "Ash Pole +1", Level = 5 },          -- INT+3
         { Name = "Maple Wand +1", Level = 1 },
     },
     Sub   = {
-            -- Wish: Lv75  Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
-        { Name = "Neph. Grip", Level = 51 },          -- INT+1
-        { Name = "Pelte", Level = 8 },                -- INT+1
+            -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
+        { Name = "Neph. Grip", Level = 5 },          -- INT+1
         { Name = "Kupo Shield", Level = 1 },
     },
     Ammo = {
@@ -115,14 +110,12 @@ profile.Sets.Idle_Priority = {
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
         { Name = "Iridal Staff", Level = 51 },
-            -- Wish: Eremit's Wand +1 [INT+6  MND+6  SIRD-25]
-        { Name = "Eremite's Wand", Level = 28 },      -- INT+5  MND+5  SIRD-25
-        { Name = "Yew Wand +1", Level = 18 },          -- INT+4  MND+4
-        { Name = "Hermit's Wand", Level = 13 },       -- INT+2  MND+2  SIRD-25
+        { Name = "Ash Pole +1", Level = 5 },          -- INT+3
+        { Name = "Maple Wand +1", Level = 1 },
     },
     Sub   = {
-        { Name = "Neph. Grip", Level = 51 },          -- INT+1
-        { Name = "Pelte", Level = 8 },                -- INT+1
+        { Name = "Neph. Grip", Level = 5 },          -- INT+1
+        { Name = "Kupo Shield", Level = 1 },
     },
     Ammo = {
             -- Wish: Lv.66 Phantom Tathlum [INT+2]

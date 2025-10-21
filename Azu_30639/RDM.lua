@@ -168,12 +168,11 @@ profile.Sets.Idle_Priority = {
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
         { Name = "Iridal Staff", Level = 51 },
-            -- Wish: Eremit's Wand +1 [INT+6 MND+6 SIRD-25]
-        { Name = "Eremite's Wand", Level = 28 },      -- INT+5  MND+5  SIRD-25
-        { Name = "Hermit's Wand", Level = 13 },       -- INT+2  MND+2  SIRD-25
+        { Name = "Maple Wand +1", Level = 1 },
     },
     Sub   = {
-        { Name = "remove", Level = 51 },              -- No shield because of staff. TODO: Find a grip
+        { Name = "Neph. Grip", Level = 51 },          -- INT+1
+        { Name = "Kupo Shield", Level = 1 },
     },
     Ammo = {
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
