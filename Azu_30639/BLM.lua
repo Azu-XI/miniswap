@@ -160,6 +160,7 @@ profile.Sets.Midcast_Default_Priority = {
         "Windurstian Ring",                           -- INT+1
     },
     Ring2 = {
+        { Name = "Hibernal Ring", Level = 75 },       -- INT+5
             -- Wish: Lv.30 Tamas Ring [INT+2~5]
             -- Wish: +1
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
@@ -244,6 +245,9 @@ profile.Sets.Precast_Default_Priority = {
     },
     Body  = {
         { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
+    },
+    Ring1 = {
+        { Name = "Hibernal Ring", Level = 75 },       -- FC+2
     },
 };
 

@@ -1,5 +1,13 @@
 local profile = gFunc.LoadFile('common/miniswap/miniswap.lua');
 
+profile.Sets.LockStyle = {
+    Head  = "remove",
+    Body  = "Rambler's Cloak",
+    Hands = "Guerilla Gloves",
+    Legs  = "Lth. Trousers +1",
+    Feet  = "Leaping Boots",
+};
+
 profile.Sets.Engaged_Priority = {
     Main  = {
         { Name = "Fealty", Level = 20 },
@@ -22,7 +30,6 @@ profile.Sets.Engaged_Priority = {
     },
     Ear1 = {
         { Name = "Insomnia Earring", Level = 50 },
-        { Name = "Cassie Earring", Level = 1 },
     },
     Ear2 = {
         { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4
