@@ -7,7 +7,8 @@ profile.Sets.Idle_Priority = {
         { Name = "Maple Wand +1", Level = 1 },
     },
     Sub   = {
-        { Name = "Neph. Grip", Level = 5 },
+        { Name = "Neph. Grip", Level = 8 },
+        { Name = "remove", Level = 5 },               -- No shield with staff
         { Name = "Kupo Shield", Level = 1 },
     },
     Ammo = {
