@@ -74,6 +74,7 @@ profile.Sets.Engaged_Priority = {
     Back  = {
             -- Wish: Lv. 61 Amemet Mantle +1 [STR+2 ATK+15]
         { Name = "Exile's Cloak", Level = 50 },       -- STR+4 ATK+3
+        { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },
     },

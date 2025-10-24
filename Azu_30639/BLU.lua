@@ -30,10 +30,12 @@ profile.Sets.Engaged_Priority = {
     },
     Ear1 = {
         { Name = "Insomnia Earring", Level = 50 },
+        "remove",
     },
     Ear2 = {
         { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4
         { Name = "Dodge Earring", Level = 29 },       -- EVA+3
+        "remove",
     },
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },
@@ -67,7 +69,8 @@ profile.Sets.Engaged_Priority = {
     },
     Back  = {
         { Name = "Earth Mantle", Level = 40 },
-        { Name = "Traveler's Mantle", Level = 12 },
+        { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
+        { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {

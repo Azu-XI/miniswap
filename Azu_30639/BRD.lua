@@ -76,7 +76,8 @@ profile.Sets.Engaged_Priority = {
         { Name = "Bard's Cape", Level = 70 },         -- ACC+7 EVA+7
         { Name = "Exile's Cloak", Level = 50 },
         { Name = "Tundra Mantle", Level = 39 },
-        { Name = "Traveler's Mantle", Level = 12 },
+        { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
+        { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
@@ -168,6 +169,7 @@ profile.Sets.Idle_Priority = {
             -- Wish: Lv.68 Umbra Cape [PDT-6]
         { Name = "Jester's Cape +1", Level = 54 },       -- CHR+7
         { Name = "Tundra Mantle", Level = 39 },       -- CHR+2 MND+2
+        { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },
     },

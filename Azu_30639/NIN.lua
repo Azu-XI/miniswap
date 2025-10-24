@@ -64,7 +64,8 @@ profile.Sets.Engaged_Priority = {
     Back  = {
         { Name = "Exile's Cloak", Level = 50 },
         -- { Name = "Ram Mantle", Level = 40 }, --  In storage for space
-        { Name = "Traveler's Mantle", Level = 12 },
+        { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
+        { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {

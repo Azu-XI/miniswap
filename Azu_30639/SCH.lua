@@ -28,11 +28,13 @@ profile.Sets.Idle_Priority = {
         { Name = "Loquac. Earring", Level = 75 },
             -- Wish: Lv.29 Morion Earring +1 [INT+2]
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
+        "remove",
     },
     Ear2 = {
         { Name = "Moldavite Earring", Level = 47 },   --       MAB+5
             -- Wish: Lv.29 Morion Earring +1 [INT+2]
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
+        "remove",
     },
     Neck  = {
             -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
