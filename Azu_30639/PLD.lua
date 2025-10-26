@@ -1,4 +1,4 @@
-local profile = gFunc.LoadFile('common/miniswap/miniswap.lua');
+local profile = gFunc.LoadFile('common/miniswap.lua');
 
 profile.Sets.Engaged_Priority = {
     -- Main  = {

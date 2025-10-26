@@ -5,13 +5,6 @@
 
 local fonts = require('fonts');
 
--- local gGUI = require('common/miniswap/gui')
--- local imgui = require('imgui')
--- local ffi = require("ffi")
--- local d3d = require('d3d8')
--- local C = ffi.C
--- local d3d8dev = d3d.get_device()
-
 local Settings = {
     CurrentLevel = 0,
     Debug = false,
@@ -241,7 +234,7 @@ do -- GEAR LIFECYCLE REGION
     profile.HandleWeaponskill = profile.DoHandleWeaponskill;
 end
 
-do -- GUI REGION
+do -- OLD GUI REGION
     profile._VarHelper = {}
 
     profile._VarHelper.State = {
@@ -976,8 +969,6 @@ do -- PROFILE LIFECYCLE REGION
         profile._VarHelper.CreateToggle("LockTP", false);
         profile._VarHelper.CreateToggle("LockLV", false);
 
-        -- gGUI:Initialize();
-
         if (profile.Sets.Weapons) then
             local weaponModes = {"Auto"};
             for name, _ in pairs(profile.Sets.Weapons) do
@@ -1007,7 +998,6 @@ do -- PROFILE LIFECYCLE REGION
 
     profile.DoOnUnload = function()
         profile._VarHelper.Destroy();
-        -- gGUI:Destroy();
 
         profile._ExecuteCommand("/alias delete /locklv");
         profile._ExecuteCommand("/alias delete /locktp");
