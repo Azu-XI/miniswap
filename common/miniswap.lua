@@ -4,10 +4,12 @@
 -- * https://github.com/avogadro-war/ashita_profiles
 
 local fonts = require('fonts');
+local imgui = require('imgui');
 
 local Settings = {
     CurrentLevel = 0,
     Debug = false,
+    LevelSynced = false,
     LockedLevel = nil,
     UseStylist = true,  -- TODO: Make it toggleable in users files
     WeaponModeOptions = nil,
@@ -232,6 +234,85 @@ do -- GEAR LIFECYCLE REGION
         profile._TryEquipSet("WS_" .. action_name);
     end
     profile.HandleWeaponskill = profile.DoHandleWeaponskill;
+end
+
+do -- GUI REGION
+    gui = {
+        styles = {
+            combo = {
+                flags = bit.bor(
+                    -- ImGuiComboFlags_NoArrowButton,
+                    ImGuiComboFlags_NoPreview,
+                    bit.lshift(1, 7)  -- ImGuiComboFlags_WidthFitPreview which is undefined? Not working anyway...
+                ),
+            },
+            window = {
+                flags = {
+                    base = bit.bor(
+                        ImGuiWindowFlags_NoDecoration,
+                        ImGuiWindowFlags_AlwaysAutoResize,
+                        ImGuiWindowFlags_NoFocusOnAppearing,
+                        ImGuiWindowFlags_NoNav,
+                        ImGuiWindowFlags_NoBringToFrontOnFocus
+                    ),
+                    current = 0,
+                    active = 0,
+                    inactive = ImGuiWindowFlags_NoBackground,
+                }
+            }
+        },
+    };
+
+    function gui.Initialize()
+        gui.styles.window.flags.current = gui.styles.window.flags.base;
+        ashita.events.register('d3d_present', 'miniswap_gui', gui.Draw);
+    end
+
+    function gui.Destroy()
+        ashita.events.unregister('d3d_present', 'miniswap_gui');
+    end
+
+    function gui.Draw()
+        imgui.SetNextWindowSize({ -1, -1, }, ImGuiCond_Always)
+
+        if (imgui.Begin('MiniSwap', true, gui.styles.window.flags.current)) then
+            local hoverStyles = imgui.IsWindowHovered() and gui.styles.window.flags.active or gui.styles.window.flags.inactive;
+            gui.styles.window.flags.current = bit.bor(gui.styles.window.flags.base, hoverStyles);
+
+            local weaponModeOptions = {"Auto", "Sandung / Atoyac", "Sandung / Thief's Knife"};
+            local selectedWeaponMode = "Sandung / Atoyac";
+
+            imgui.Text("W. " .. selectedWeaponMode);
+            imgui.SameLine();
+
+            if (imgui.BeginCombo("##MiniSwapWeaponModeSelect", selectedWeaponMode, gui.styles.combo.flags)) then
+                for i = 1,#weaponModeOptions,1 do
+                    local is_selected = i == 0;
+
+                    if (imgui.Selectable(weaponModeOptions[i], is_selected)) then
+                        -- ui.theme_index[1] = i;
+                        -- settings.icons.theme = theme_paths[i];
+                        -- resources.clear_cache();
+                    end
+
+                    if (is_selected) then
+                        imgui.SetItemDefaultFocus();
+                    end
+                end
+                imgui.EndCombo();
+            end
+
+            local levelText = ""
+            if (Settings.LockedLevel ~= nil) then
+                levelText = tostring(Settings.LockedLevel) .. " (locked)"
+            elseif (Settings.LevelSynced) then
+                levelText = tostring(Settings.CurrentLevel) .. " (synced)"
+            else
+                levelText = tostring(Settings.CurrentLevel) .. " (unlocked)"
+            end
+            imgui.Text("Lv. " .. levelText);
+        end
+    end
 end
 
 do -- OLD GUI REGION
@@ -969,6 +1050,8 @@ do -- PROFILE LIFECYCLE REGION
         profile._VarHelper.CreateToggle("LockTP", false);
         profile._VarHelper.CreateToggle("LockLV", false);
 
+        gui.Initialize();
+
         if (profile.Sets.Weapons) then
             local weaponModes = {"Auto"};
             for name, _ in pairs(profile.Sets.Weapons) do
@@ -998,6 +1081,7 @@ do -- PROFILE LIFECYCLE REGION
 
     profile.DoOnUnload = function()
         profile._VarHelper.Destroy();
+        gui.Destroy();
 
         profile._ExecuteCommand("/alias delete /locklv");
         profile._ExecuteCommand("/alias delete /locktp");
@@ -1031,6 +1115,7 @@ do -- UTILS REGION
             gFunc.EvaluateLevels(profile.Sets, level);
             Settings.CurrentLevel = level;
         end
+        Settings.LevelSynced = player.MainJobLevel ~= player.MainJobSync
     end
 
     profile._ShowDebug = function(message)
