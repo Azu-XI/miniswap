@@ -102,6 +102,20 @@ profile.Sets.Precast_Default_Priority = {
     },
 };
 
+-- Goal: Max FastCast 80% ; Cure Spellcasting
+profile.Sets.Precast_HealingMagic_Priority = {
+    Head  = {
+        { Name = "Erudite Cap", Level = 70 },         -- CureSpellcasting-5
+    },
+    Back  = {
+            -- Wish: Hierarch's Mantle [CureSpellcasting-7]
+        { Name = "Mist Silk Cape", Level = 10 },      -- CureSpellcasting-1
+    },
+    Feet  = {
+            -- Wish: Zenith Pumps+0/1 [(Aug) CureSpellcasting-5/6]
+    };
+}
+
 profile.Sets.Resting_Priority = {
     Main  = {
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3

@@ -472,7 +472,7 @@ profile.Sets.Precast_Default_Priority = {
 -- Goal: Max FastCast 80% ; Cure Spellcasting
 profile.Sets.Precast_HealingMagic_Priority = {
     Head  = {
-            -- Wish:  Erudite Cap [CureSpellcasting-5]
+        { Name = "Erudite Cap", Level = 70 },         -- CureSpellcasting-5
     },
     Back  = {
             -- Wish: Hierarch's Mantle [CureSpellcasting-7]
