@@ -405,10 +405,12 @@ profile.Sets.Midcast_Singing_Priority = {
         { Name = "Silver Obi", Level = 20 },          --                                 SIRD+8
     },
     Legs  = {
+            -- Wish: Marduk's Shalway [CHR+10 WindSkill+5 (Aug) MACC+3~4]
             -- Wish: Zenith Slacks +0/1 [(Aug) SongRecast-5/6] // Only if potency it not an issue
             -- Wish: Choral Cannions +1 [WindSkill+8 (Aug) SongRecast-3]
             -- Wish: Brd. Cannions +1 [CHR+8 (Aug) MACC+6]
             -- Wish: Sha'ir Seraweels +0/1 [CHR+8/9]
+        { Name = "Errant Slops", Level = 72 },        -- CHR+7
         { Name = "Choral Cannions", Level = 56 },     --                    WindSkill+3
         { Name = "Custom Slacks", Level = 31 },       -- CHR+1
     },

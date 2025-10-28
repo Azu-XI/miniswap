@@ -174,7 +174,7 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
-        { Name = "Sorcerer's Tonban", Level = 73 },   -- INT+3
+        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
         { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
     },
     Feet  = {
