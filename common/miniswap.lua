@@ -11,6 +11,7 @@ local Settings = {
     Debug = false,
     LevelSynced = false,
     LockedLevel = nil,
+    LockedTP = false,
     UseStylist = true,  -- TODO: Make it toggleable in users files
     WeaponModeOptions = nil,
 };
@@ -31,7 +32,7 @@ do -- COMMANDS REGION
         elseif (command:any('locktp')) then
             profile._HandleCommandLockTP(args[2]);
         elseif (command:any('weapon')) then
-            profile._VarHelper.AdvanceCycle("WeaponModes");
+            -- TODO
         end
     end
     profile.HandleCommand = profile.DoHandleCommand;
@@ -46,7 +47,7 @@ do -- COMMANDS REGION
     end
 
     profile._HandleCommandLockTP = function(target_value)
-        local current_value = profile._VarHelper.GetToggle('LockTP')
+        local current_value = Settings.LockedTP;
 
         local DoLockTP = function()
             local player = gData.GetPlayer();
@@ -57,6 +58,8 @@ do -- COMMANDS REGION
                 AshitaCore:GetChatManager():QueueCommand(-1, '/lac disable Range')
             end
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac disable Ammo')
+
+            Settings.LockedTP = true;
         end
 
         local DoUnlockTP = function()
@@ -64,18 +67,17 @@ do -- COMMANDS REGION
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac enable Sub')
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac enable Range')
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac enable Ammo')
+
+            Settings.LockedTP = false;
         end
 
         if (target_value == "on" and not current_value) then
-            profile._VarHelper.AdvanceToggle('LockTP')
             DoLockTP()
 
         elseif (target_value == "off" and current_value) then
-            profile._VarHelper.AdvanceToggle('LockTP')
             DoUnlockTP()
 
         elseif (target_value == nil) then
-            profile._VarHelper.AdvanceToggle('LockTP')
             if (current_value) then DoUnlockTP() else DoLockTP() end
 
         end
@@ -84,10 +86,8 @@ do -- COMMANDS REGION
     profile._HandleCommandLockLV = function(target_value)
         if (target_value == 'none' or target_value == nil) then
             Settings.LockedLevel = nil;
-            if (profile._VarHelper.GetToggle('LockLV')) then profile._VarHelper.AdvanceToggle('LockLV') end
         else
             Settings.LockedLevel = tonumber(target_value);
-            if (not profile._VarHelper.GetToggle('LockLV')) then profile._VarHelper.AdvanceToggle('LockLV') end
         end
     end
 end
@@ -241,8 +241,8 @@ do -- GUI REGION
         styles = {
             combo = {
                 flags = bit.bor(
-                    -- ImGuiComboFlags_NoArrowButton,
-                    ImGuiComboFlags_NoPreview,
+                    ImGuiComboFlags_NoArrowButton,
+                    -- ImGuiComboFlags_NoPreview,
                     bit.lshift(1, 7)  -- ImGuiComboFlags_WidthFitPreview which is undefined? Not working anyway...
                 ),
             },
@@ -275,32 +275,35 @@ do -- GUI REGION
     function gui.Draw()
         imgui.SetNextWindowSize({ -1, -1, }, ImGuiCond_Always)
 
+        -- imgui.PushStyleColor(ImGuiCol_FrameBg, { 0.0, 0.0, 0.0, 0.0 });  -- TODO: Re-add after fixing alignment (also re-add the corresponding pop)
+        -- imgui.PushStyleVar(ImGuiStyleVar_FrameBorderSize, 0.0);
+
         if (imgui.Begin('MiniSwap', true, gui.styles.window.flags.current)) then
             local hoverStyles = imgui.IsWindowHovered() and gui.styles.window.flags.active or gui.styles.window.flags.inactive;
             gui.styles.window.flags.current = bit.bor(gui.styles.window.flags.base, hoverStyles);
 
-            local weaponModeOptions = {"Auto", "Sandung / Atoyac", "Sandung / Thief's Knife"};
-            local selectedWeaponMode = "Sandung / Atoyac";
+            -- local weaponModeOptions = {"Auto", "Sandung / Atoyac", "Sandung / Thief's Knife"};
+            -- local selectedWeaponMode = "Sandung / Atoyac";
 
-            imgui.Text("W. " .. selectedWeaponMode);
-            imgui.SameLine();
+            -- imgui.Text("W.");
+            -- imgui.SameLine();
 
-            if (imgui.BeginCombo("##MiniSwapWeaponModeSelect", selectedWeaponMode, gui.styles.combo.flags)) then
-                for i = 1,#weaponModeOptions,1 do
-                    local is_selected = i == 0;
+            -- if (imgui.BeginCombo("##MiniSwapWeaponModeSelect", selectedWeaponMode, gui.styles.combo.flags)) then
+            --     for i = 1,#weaponModeOptions,1 do
+            --         local is_selected = i == 0;
 
-                    if (imgui.Selectable(weaponModeOptions[i], is_selected)) then
-                        -- ui.theme_index[1] = i;
-                        -- settings.icons.theme = theme_paths[i];
-                        -- resources.clear_cache();
-                    end
+            --         if (imgui.Selectable(weaponModeOptions[i], is_selected)) then
+            --             -- ui.theme_index[1] = i;
+            --             -- settings.icons.theme = theme_paths[i];
+            --             -- resources.clear_cache();
+            --         end
 
-                    if (is_selected) then
-                        imgui.SetItemDefaultFocus();
-                    end
-                end
-                imgui.EndCombo();
-            end
+            --         if (is_selected) then
+            --             imgui.SetItemDefaultFocus();
+            --         end
+            --     end
+            --     imgui.EndCombo();
+            -- end
 
             local levelText = ""
             if (Settings.LockedLevel ~= nil) then
@@ -311,118 +314,13 @@ do -- GUI REGION
                 levelText = tostring(Settings.CurrentLevel) .. " (unlocked)"
             end
             imgui.Text("Lv. " .. levelText);
+
+            local TPText = Settings.LockedTP and "On" or "Off"
+            imgui.Text("TP. " .. TPText)
         end
-    end
-end
 
-do -- OLD GUI REGION
-    profile._VarHelper = {}
-
-    profile._VarHelper.State = {
-        ["Cycles"] = {},
-        ["Toggles"] = {},
-    }
-
-    profile._VarHelper.FontSettings = T{
-        background = T{
-            border_color    = 0xFF000000,
-            border_flags    = 15, -- FontBorderFlags.Solid,
-            border_sizes    = '1,1,1,1',
-            border_visible  = true,
-            color           = 0xAA333344,
-            visible         = true,
-        },
-        bold = false,
-        color = 0xFFFFFFFF,
-        font_family = 'Tahoma',
-        font_height = 12,
-        padding = 5,
-        position_x = 1799,
-        position_y = 1240,
-        visible = true,
-    };
-
-    profile._VarHelper.Initialize = function()
-        profile._VarHelper.FontObject = fonts.new(profile._VarHelper.FontSettings);
-
-        ashita.events.register('d3d_present', 'miniswap_present_cb', function ()
-            local outText = '';
-            for key, value in pairs(profile._VarHelper.State.Toggles) do
-                outText = outText .. '\n' .. key .. ': ';
-                if (value == true) then
-                    outText = outText .. '|cFF00FF00|Enabled|r';
-                else
-                    outText = outText .. '|cFFFF0000|Disabled|r';
-                end
-            end
-            for key, value in pairs(profile._VarHelper.State.Cycles) do
-                outText = outText .. '\n' .. key .. ': ' .. '|cFF00FF00|' .. value.Array[value.Index] .. '|r';
-            end
-            profile._VarHelper.FontObject.text = outText:match'^%s*(.*)';
-        end);
-    end
-
-    profile._VarHelper.Destroy = function()
-        if (profile._VarHelper.FontObject ~= nil) then
-            profile._VarHelper.FontObject:destroy();
-        end
-        ashita.events.unregister('d3d_present', 'miniswap_present_cb');
-    end
-
-    --name must be a valid lua variable name in string format.
-    --default must be a boolean
-    profile._VarHelper.CreateToggle = function(name, default)
-        profile._VarHelper.State.Toggles[name] = default;
-    end
-
-    profile._VarHelper.AdvanceToggle = function(name)
-        if (type(profile._VarHelper.State.Toggles[name]) ~= 'boolean') then
-            return;
-        elseif profile._VarHelper.State.Toggles[name] then
-            profile._VarHelper.State.Toggles[name] = false;
-        else
-            profile._VarHelper.State.Toggles[name] = true;
-        end
-    end
-
-    profile._VarHelper.GetToggle = function(name)
-        if (profile._VarHelper.State.Toggles[name] ~= nil) then
-            return profile._VarHelper.State.Toggles[name];
-        else
-            return false;
-        end
-    end
-
-    --name must be a valid lua variable name in string format.
-    --values must be an array style table containing only strings mapped to sequential indices.
-    --first value in table will be default.
-    profile._VarHelper.CreateCycle = function(name, values)
-        local newCycle = {
-            Index = 1,
-            Array = values
-        };
-        profile._VarHelper.State.Cycles[name] = newCycle;
-    end
-
-    profile._VarHelper.AdvanceCycle = function(name)
-        local ctable = profile._VarHelper.State.Cycles[name];
-        if (type(ctable) ~= 'table') then
-            return;
-        end
-        
-        ctable.Index = ctable.Index + 1;
-        if (ctable.Index > #ctable.Array) then
-            ctable.Index = 1;
-        end
-    end
-
-    profile._VarHelper.GetCycle = function(name)
-        local ctable = profile._VarHelper.State.Cycles[name];
-        if (type(ctable) == 'table') then
-            return ctable.Array[ctable.Index];
-        else
-            return 'Unknown';
-        end
+        -- imgui.PopStyleVar();
+        -- imgui.PopStyleColor();
     end
 end
 
@@ -1046,10 +944,6 @@ do -- PROFILE LIFECYCLE REGION
 
         gSettings.AllowAddSet = true;
 
-        profile._VarHelper.Initialize();
-        profile._VarHelper.CreateToggle("LockTP", false);
-        profile._VarHelper.CreateToggle("LockLV", false);
-
         gui.Initialize();
 
         if (profile.Sets.Weapons) then
@@ -1057,7 +951,6 @@ do -- PROFILE LIFECYCLE REGION
             for name, _ in pairs(profile.Sets.Weapons) do
                 table.insert(weaponModes, name);
             end
-            profile._VarHelper.CreateCycle("WeaponModes", weaponModes);
             Settings.WeaponModeOptions = weaponModes;
         end
 
@@ -1080,7 +973,6 @@ do -- PROFILE LIFECYCLE REGION
     end
 
     profile.DoOnUnload = function()
-        profile._VarHelper.Destroy();
         gui.Destroy();
 
         profile._ExecuteCommand("/alias delete /locklv");
@@ -1110,7 +1002,7 @@ do -- UTILS REGION
     end
 
     profile._EvaluateGear = function(player)
-        local level = profile._VarHelper.GetToggle('LockLV') and Settings.LockedLevel or player.MainJobSync;
+        local level = Settings.LockedLevel or player.MainJobSync;
         if (level ~= Settings.CurrentLevel) then
             gFunc.EvaluateLevels(profile.Sets, level);
             Settings.CurrentLevel = level;
