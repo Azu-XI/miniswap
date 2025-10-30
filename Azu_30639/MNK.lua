@@ -24,7 +24,7 @@ profile.Sets.Engaged_Priority = {
             -- Wish: Lv.41 Voyager Sallet [STR+3 DEX+4 (Aug) VIT+4 ATK+2]
         { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3 AGI+3 EVA+10
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
-        "Dream Hat +1",
+        "Coven Hat",
     },
     Ear1 = {
         { Name = "Brutal Earring", Level = 75 },      --                   DA+5 STP+1

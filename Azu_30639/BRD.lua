@@ -31,7 +31,7 @@ profile.Sets.Engaged_Priority = {
         { Name = "Raptor Helm", Level = 48 },
         { Name = "Emperor Hairpin", Level = 24 },
         { Name = "Cmp. Eye Circlet", Level = 9 },
-        "Dream Hat +1",
+        "Coven Hat",
     },
     Ear1 = {
         { Name = "Luminous Earring", Level = 75 },
@@ -122,7 +122,7 @@ profile.Sets.Idle_Priority = {
         { Name = "Emperor Hairpin", Level = 24 },     -- EVA+10 -- No Sallet, EVA > Regen for pulls
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 while below lv.50
         { Name = "Cmp. Eye Circlet", Level = 9 },
-        "Dream Hat +1",
+        "Coven Hat",
     },
     Ear1 = {
         { Name = "Beastly Earring", Level = 72 },     -- EVA+5

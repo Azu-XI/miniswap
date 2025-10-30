@@ -30,7 +30,7 @@ profile.Sets.Idle_Priority = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },
         { Name = "Traveler's Hat", Level = 6 },
-        "Dream Hat +1",
+        "Coven Hat",
     },
     Neck  = {
         { Name = "Radiant Lantern", Level = 60 },

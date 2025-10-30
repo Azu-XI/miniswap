@@ -31,7 +31,7 @@ profile.Sets.Engaged_Priority = {
     Head  = {
         { Name = "Emperor Hairpin", Level = 24 },
         { Name = "Brass Cap", Level = 11 },
-        "Dream Hat +1",
+        "Coven Hat",
     },
     Ear1 = {
         { Name = "Insomnia Earring", Level = 50 },

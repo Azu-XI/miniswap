@@ -18,7 +18,7 @@ profile.Sets.Engaged_Priority = {
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetAcc+2 PetRAcc+2
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         { Name = "Traveler's Hat", Level = 5 },
-        "Dream Hat +1",
+        "Coven Hat",
     },
     Ear1 = {
             -- Wish Lv.75 Brutal Earring [DA+5 STP+1]

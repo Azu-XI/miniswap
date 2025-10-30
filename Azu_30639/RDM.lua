@@ -117,7 +117,7 @@ profile.Sets.Idle_Priority = {
         { Name = "Gambler's Chapeau", Level = 50 },   -- MP+20 INT+3
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 while below lv.50
         { Name = "Traveler's Hat", Level = 6 },
-        "Dream Hat +1",
+        "Coven Hat",
     },
     Neck  = {
         { Name = "Radiant Lantern", Level = 60 },

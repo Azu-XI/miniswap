@@ -104,7 +104,7 @@ profile.Sets.Engaged_Priority = {
         { Name = "Valkyrie's Mask", Level = 43 },
         { Name = "Emperor Hairpin", Level = 24 },
         { Name = "Entrancing Ribbon", Level = 11 },
-        "Dream Hat +1",
+        "Coven Hat",
     },
     Ear1 = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
