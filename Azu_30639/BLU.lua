@@ -16,7 +16,7 @@ profile.Sets.Engaged_Priority = {
     Sub   = {
         { Name = "Nadrs", Level = 24 },
         { Name = "Sapara", Level = 20 },
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Ammo = {
         { Name = "Bibiki seashell", Level = 60 },     -- VIT+4

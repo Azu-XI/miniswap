@@ -16,24 +16,25 @@ profile.Sets.Engaged_Priority = {
         { Name = "Gully", Level = 72 },
         { Name = "Misericorde", Level = 71 },
         { Name = "Thief's Knife", Level = 70 },
+            -- Wish: Lv.50 Bushwhacker +1 {Yagudo Incursions}
         { Name = "Corsair's Knife", Level = 50 },
         { Name = "Hornetneedle", Level = 48 },
         { Name = "Bone Knife +1", Level = 46 },
         { Name = "Marauder's Knife", Level = 40 },
         { Name = "Mrc.Cpt. Kukri", Level = 30 },
+            -- Wish: Lv.20->50 Bushwhacker {Yagudo Incursions}
         { Name = "Mercenary's Knife", Level = 20 },
-        { Name = "Strike Baghnakhs", Level = 14 },
-        { Name = "Brass Knuckles", Level = 9 },
-        "Cesti",
+        { Name = "Beestringer", Level = 7 },
+        "Bronze Knife",
     },
     Sub  = {
+            -- Wish: Lv.75 Taming Sari {Great DI NM Gensai}
         { Name = "Atoyac", Level = 75 },
         { Name = "Misericorde", Level = 72 },
+            -- Wish: Lv.50->75 Mercurial Kris {Jailer of Prudence}
         { Name = "Hornetneedle", Level = 50 },
-        { Name = "Bone Knife +1", Level = 48 },
-        { Name = "Marauder's Knife", Level = 46 },
-        { Name = "Mrc.Cpt. Kukri", Level = 30 },
-        { Name = "Mercenary's Knife", Level = 20 },
+        { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
+        "Kupo Shield",
     },
     Range = {
         { Name = "Atetepeyorg", Level = 75 },

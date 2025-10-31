@@ -3,14 +3,13 @@ local profile = gFunc.LoadFile('common/miniswap.lua');
 profile.Sets.Engaged_Priority = {
     Main  = {
         -- { Name = "Archer's Knife", Level = 28 },      -- RACC+10
-        { Name = "Mercenary's Knife", Level = 20 },
-        { Name = "Knife", Level = 7 },
+        { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
+        { Name = "Knife", Level = 13 },
+        -- Wish: Lv.7 Jack's Knife {Ordelle Incursion}
         "Bronze Knife",
     },
     Sub   = {
-        -- { Name = "Archer's Knife", Level = 28 },      -- RACC+10
-        { Name = "Mercenary's Knife", Level = 20 },
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Range = {
         { Name = "Military Gun", Level = 30 },

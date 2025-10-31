@@ -17,12 +17,12 @@ profile.Sets.Engaged_Priority = {
         { Name = "Mrc.Cpt. Kukri", Level = 30 },
         { Name = "Mercenary's Knife", Level = 20 },
         { Name = "Beestinger", Level = 7 },
-        { Name = "Bronze Dagger", Level = 1 },
+        "Bronze Knife",
     },
     Sub   = {
         { Name = "Genbu's Shield", Level = 74 },
         { Name = "Elegant Shield", Level = 40 },
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Head  = {
         { Name = "Pursuer's Beret", Level = 75 },
@@ -110,7 +110,7 @@ profile.Sets.Idle_Priority = {
     Sub   = {
             -- Wish: Lv75  Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
         { Name = "Neph. Grip", Level = 17 },
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Range = {
         { Name = "Terpander", Level = 75 },
@@ -206,7 +206,7 @@ profile.Sets.Town_Priority = {
     Sub   = {
         { Name = "Genbu's Shield", Level = 74 },
         { Name = "Elegant Shield", Level = 40 },
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Range = {
         { Name = "Terpander", Level = 75 },

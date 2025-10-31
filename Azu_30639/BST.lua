@@ -10,7 +10,7 @@ profile.Sets.Engaged_Priority = {
     Sub   = {
         { Name = "Mythril Pick", Level = 28 },
         { Name = "Shell Shield", Level = 7 },
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Range = {
     },

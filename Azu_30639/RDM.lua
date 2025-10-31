@@ -173,7 +173,7 @@ profile.Sets.Midcast_Default_Priority = {
     },
     Sub   = {
         { Name = "Neph. Grip", Level = 51 },          -- INT+1
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Ammo = {
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1

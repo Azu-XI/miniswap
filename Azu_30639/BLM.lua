@@ -19,7 +19,7 @@ profile.Sets.Idle_Priority = {
             -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
         { Name = "Neph. Grip", Level = 8 },           -- INT+1
         { Name = "remove", Level = 5 },               -- No shield with staff
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Ammo = {
             -- Wish: Lv.66 Phantom Tathlum [INT+2]
@@ -117,7 +117,7 @@ profile.Sets.Midcast_Default_Priority = {
     Sub   = {
         { Name = "Neph. Grip", Level = 8 },           -- INT+1
         { Name = "remove", Level = 5 },               -- No shield with staff
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Ammo = {
             -- Wish: Lv.66 Phantom Tathlum [INT+2]

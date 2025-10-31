@@ -2,13 +2,25 @@ local profile = gFunc.LoadFile('common/miniswap.lua');
 
 profile.Sets.Engaged_Priority = {
     Main  = {
+            -- Wish: Lv.75 Polyhymnia {Oboro}
+        { Name = "Gully", Level = 72 },
+            -- Wish: Lv.50->75 Bushwhacker +1 {Yagudo Incursions}
+        { Name = "Bone Knife +1", Level = 46 },
+        { Name = "Mrc.Cpt. Kukri", Level = 30 },
+            -- Wish: Lv.20->50 Bushwhacker {Yagudo Incursions}
         { Name = "Mercenary's Knife", Level = 20 },
-        { Name = "Strike Baghnakhs", Level = 14 },
-        { Name = "Brass Knuckles", Level = 9 },
-        "Cesti",
+        { Name = "Knife", Level = 13 },
+            -- Wish: Lv.7 Jack's Knife {Ordelle Incursion}
+        "Bronze Knife",
     },
     Sub  = {
-        { Name = "Mercenary's Knife", Level = 20 },
+            -- Wish: Lv.75 Taming Sari {Great DI NM Gensai}
+            -- Wish: Lv.75 Bushwhacker +1 {Yagudo Incursions}
+        { Name = "Atoyac", Level = 75 },
+            -- Wish: Lv.50->75 Mercurial Kris {Jailer of Prudence}
+            -- Wish: Lv.50 another Bone Knife +1?
+        { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
+        "Kupo Shield",
     },
     Range = {
         { Name = "Rogetsurin", Level = 15 },

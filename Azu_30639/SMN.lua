@@ -9,7 +9,7 @@ profile.Sets.Idle_Priority = {
     Sub   = {
         { Name = "Neph. Grip", Level = 8 },
         { Name = "remove", Level = 5 },               -- No shield with staff
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Ammo = {
         { Name = "Talon Tathlum", Level = 50 },

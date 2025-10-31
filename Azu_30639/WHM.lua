@@ -10,7 +10,7 @@ profile.Sets.Idle_Priority = {
             -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
         { Name = "Neph. Grip", Level = 51 },          -- INT+1
         { Name = "Pelte", Level = 8 },
-        { Name = "Kupo Shield", Level = 1 },
+        "Kupo Shield",
     },
     Ammo = {
         { Name = "Talon Tathlum", Level = 50 },
