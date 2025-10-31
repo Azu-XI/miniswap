@@ -1,5 +1,14 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
+profile.Sets.LockStyle = {
+    Main  = "Baqil Staff",
+    Head  = "Summoner's Horn",
+    Body  = "Chironic Doublet",
+    Hands = "Smn. Bracers +1",
+    Legs  = "Chironic Hose",
+    Feet  = "Summoner's Pgch.",
+};
+
 profile.Sets.Idle_Priority = {
     Main  = {
         { Name = "Radiance", Level = 20 },
@@ -12,11 +21,13 @@ profile.Sets.Idle_Priority = {
         "Kupo Shield",
     },
     Ammo = {
+        { Name = "Soothing Sachet", Level = 70 },
         { Name = "Talon Tathlum", Level = 50 },
         { Name = "Morion Tathlum", Level = 25 },
         { Name = "Happy Egg", Level = 1 },
     },
     Ear1 = {
+        { Name = "Loquac. Earring", Level = 75 },
         { Name = "Outlaw's Earring", Level = 50 },
         { Name = "remove", Level = 1 },
     },
@@ -27,6 +38,7 @@ profile.Sets.Idle_Priority = {
     },
     Head  = {
             -- Wish: Lv.74 Evoker's Horn +1 [(Aug) Refresh+1]
+        { Name = "Summoner's Horn", Level = 75 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },
         { Name = "Traveler's Hat", Level = 6 },
@@ -37,36 +49,44 @@ profile.Sets.Idle_Priority = {
         { Name = "Justice Badge", Level = 7 },
     },
     Body  = {
-            -- Wish: Lv.75 Chironic Doublet [Refresh+1 DT-5 PetDT-5]
+        { Name = "Chironic Doublet", Level = 75 },    -- Refresh+1  DT-5  PetDT-5
             -- Wish: Lv.71 YinYang Robe [Refresh+1 (Aug) MDT-3] 
-        { Name = "Vermillion Cloak", Level = 59 },       -- Refresh+1
-        { Name = "Garrison Tunica +1", Level = 20 },     -- Refresh+1 while below lv.50
+        { Name = "Vermillion Cloak", Level = 59 },    -- Refresh+1
+        { Name = "Garrison Tunica +1", Level = 20 },  -- Refresh+1 while below lv.50
         { Name = "Druid's Robe", Level = 8 },
         "Kingdom Aketon", 
     },
     Hands = {
-        { Name = "Carbuncle Mitts", Level = 20 },        -- MP+19 Enm-1
-        { Name = "Zealot's Mitts", Level = 11 },         -- MP+5 MND+3
+        { Name = "Smn. Bracers +1", Level = 75 },
+        { Name = "Carbuncle Mitts", Level = 20 },     -- MP+19 Enm-1
+        { Name = "Zealot's Mitts", Level = 11 },       -- MP+5 MND+3
         { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
     },
     Ring1 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+        { Name = "Coral Ring", Level = 70 },          -- MDT-3
         { Name = "Astral Ring", Level = 10 },
         "Windurstian Ring",
     },
     Ring2 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+        { Name = "Coral Ring", Level = 70 },          -- MDT-3
         { Name = "Astral Ring", Level = 10 },
         "Provenance Ring",
     },
     Back  = {
+        { Name = "Dew Silk Cape +1", Level = 75 },
         { Name = "Tundra Mantle", Level = 39 },
         { Name = "Mist Silk Cape", Level = 10 },
     },
     Waist = {
+        { Name = "Pythia Sash", Level = 75 },
         { Name = "Silver Obi", Level = 20 },
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
+        { Name = "Chironic Hose", Level = 75 }, 
         { Name = "White Slacks", Level = 50 },            -- Haste+3 Regen +1
         { Name = "Custom Slacks", Level = 31 },           -- MP+32
         { Name = "Garrison Hose +1", Level = 20 },        -- Haste+2
@@ -74,6 +94,7 @@ profile.Sets.Idle_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Summoner's Pgch.", Level = 73 },
         { Name = "Custom M Boots", Level = 29 },          -- MP+12       Eva+5
         { Name = "Garrison Boots +1", Level = 20 },       -- 
         { Name = "Power Sandals", Level = 18 },           -- VIT+3
@@ -90,7 +111,7 @@ profile.Sets.Idle_Pet_Default_Priority = {
         { Name = "Radiance", Level = 20 },            --                       PetATK+10  Refresh+1
     },
     Ammo  = {
-        -- { Name = "Soothing Sachet", Level = 70 },     -- PetACC+5 PetAtk+5 PetDT-3 -- TODO: Augments
+        { Name = "Soothing Sachet", Level = 70 },     -- PetACC+5 PetAtk+5 PetDT-3
     },
     Ear1 = {
         -- { Name = "Wilderness Earring", Level = 45 },  -- PetACC+1  -- STORED
@@ -103,7 +124,7 @@ profile.Sets.Idle_Pet_Default_Priority = {
     },
     Body  = {
             -- TODO: Summoner's Doublet +0/1 depending on Day
-            -- Wish: Lv.75 Chironic Doublet [PetDT-5 Refresh+1 DT-5]
+        { Name = "Chironic Doublet", Level = 75 },    -- PetDT-5  Refresh+1  DT-5  
             -- Wish: Lv.50 Penance Robe [PerpCost-2]
             -- Wish: Lv.50 Austere Robe [PerpCost-1]
     },
@@ -151,8 +172,7 @@ local bloodPact = {
         { Name = "Soothing Sachet", Level = 70 },     --       BPII-2
     },
     Head  = {
-        -- Wish: Lv.75 Sumonner's Horn [BP-3]
-        { Name = "Summoner's Horn", Level = 74 },     -- BP-3
+        { Name = "Summoner's Horn", Level = 75 },     -- BP-3
         -- Wish: Lv.50 Penance Hat [BP-3]
         -- Wish: Lv.50 Austere Hat [BP-2]
     },
@@ -176,7 +196,7 @@ local bloodPact = {
         -- Wish: Lv.70 Summoner's Cape [(Aug) BP-2]
     },
     Legs  = {
-        -- Wish: Chironic Hose [BP-2 BloodBoonIII]
+        { Name = "Chironic Hose", Level = 75 },       -- BP-2 BloodBoon3
         -- Wish: Smn. Spats +1 [(Aug) BloodBoon+8]
         { Name = "Summoner's Spats", Level = 71 },    -- BP-2
     },
@@ -249,7 +269,7 @@ profile.Sets.Midcast_HealingMagic_Priority = {
         { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
     },
     Back  = {
-        { Name = "Dew Silk Cape +11", Level = 75 },   -- CurePot+3  Enm-3
+        { Name = "Dew Silk Cape +1", Level = 75 },   -- CurePot+3  Enm-3
         { Name = "Mist Silk Cape", Level = 10 },      -- CurePot+1
     },
     Waist = {
