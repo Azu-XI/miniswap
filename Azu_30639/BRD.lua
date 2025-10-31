@@ -181,7 +181,7 @@ profile.Sets.Idle_Priority = {
     Legs  = {
             -- Wish: Brd. Cannions +1 [(Aug) DT-4]
             -- Wish: Sha'ir Seraweels +1 [(Aug) PDT-4]
-        { Name = "Pursuer's Pants", Level = 75 },
+        { Name = "Marduk's Shalwar", Level = 75 },
         { Name = "White Slacks", Level = 50 },        --              Regen +1
         { Name = "Custom Slacks", Level = 31 },       -- MND+3 CHR+1
         { Name = "Garrison Hose +1", Level = 20 },
@@ -190,7 +190,7 @@ profile.Sets.Idle_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Pursuer's Gaiters", Level = 75 },
+        { Name = "Suzaku's Sune-Ate", Level = 75 },   -- MND+15 Fire+50
         { Name = "Raptor Ledelsens", Level = 48 },    -- Haste+2
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
