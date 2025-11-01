@@ -56,7 +56,7 @@ profile.Sets.Engaged_Priority = {
         { Name = "Dodge Earring", Level = 29 },
     },
     Head  = {
-        { Name = "Rog. Bonnet +1", Level = 74 },   -- Haste+5  CritRate+3  EVA+10
+        { Name = "Rog. Bonnet +1", Level = 74 },      -- Haste+5  CritRate+3  EVA+10
         { Name = "Wivre Mask", Level = 65 },          -- ACC+5 DEX+3
         { Name = "Storm Zucchetto", Level = 50 },     -- ACC+4
         { Name = "Emperor Hairpin", Level = 24 },
@@ -65,7 +65,7 @@ profile.Sets.Engaged_Priority = {
         "Bronze Cap",
     },
     Neck  = {
-        { Name = "Peacock Charm", Level = 33 },
+        { Name = "Peacock Charm", Level = 33 },       -- ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
         { Name = "Rabbit Charm", Level = 7 },
         { Name = "Pile Chain", Level = 3 },
@@ -85,17 +85,18 @@ profile.Sets.Engaged_Priority = {
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         { Name = "Brass Mittens", Level = 11 },
-        "Hume M Gloves",
+        "Dream Mittens +1",
     },
     Ring1 = {
             -- Wish: Zilant Ring [DEX+6 ACC+3] {Dyna Bubu Boss}
+            -- Use: Toreador's Ring Lv.57 [ACC+7] instead of Kusha when using Rajas
         { Name = "Kusha's Ring", Level = 55 },
         { Name = "Archer's Ring", Level = 30 },
         "San d'Orian Ring",
     },
     Ring2 = {
-            -- Wish: Rajas Ring [STR+2~5 DEX+2~5 STP+5 SB+5]
         { Name = "Lava's Ring", Level = 55 },
+            -- Wish: Lv.30~75 Rajas Ring [STR+2~5 DEX+2~5 STP+5 SB+5]
         "Provenance Ring",
     },
     Back  = {
@@ -109,22 +110,20 @@ profile.Sets.Engaged_Priority = {
         { Name = "Griot Belt", Level = 28 },
         { Name = "Lizard Belt", Level = 17 },
         { Name = "Friar's Rope", Level = 14 },
-        { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7 H+2 (Wish Aug: STP+3)
         { Name = "Raptor Trousers", Level = 50 },
-        { Name = "Garrison Hose +1", Level = 20 },        -- STR+2 Haste+2
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
         { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
-        "Bronze Subligar",
-        -- "Hume Slacks",
+        "Dream Trousers +1",
     },
     Feet  = {
         { Name = "Adhemar Gamashes", Level = 75 },
         { Name = "Raptor Ledelsens", Level = 48 },
         { Name = "Leaping Boots", Level = 7 },
-        "Hume M Boots",
+        "Dream Boots +1",
     },
 };
 
@@ -141,13 +140,13 @@ profile.Sets.Weapons = {
 
 profile.Sets.Idle_Priority = profile.DeepCopy(profile.Sets.Engaged_Priority)
 profile.Sets.Idle_Priority.Head = {
-    { Name = "Rog. Bonnet +1", Level = 74 },       -- EVA+10
+    { Name = "Rog. Bonnet +1", Level = 74 },          -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 while below lv.50
     { Name = "Cmp. Eye Circlet", Level = 9 },         -- EVA+3
 };
 profile.Sets.Idle_Priority.Ring1 = {
-        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
     { Name = "Kusha's Ring", Level = 55 },
     { Name = "Archer's Ring", Level = 30 },
@@ -211,6 +210,7 @@ profile.Sets.JA_CuringWaltz_Priority = {
         { Name = "Traveler's Mantle", Level = 28 },   -- Make sure Exile's Cloack with CHR-3 isn't equiped
     },
     Waist = {
+        { Name = "Corsette +1", Level = 40 },         -- CHR+6
         { Name = "Griot Belt", Level = 28 },          -- CHR+1
     },
     Legs  = {

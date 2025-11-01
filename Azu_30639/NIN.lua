@@ -73,7 +73,6 @@ profile.Sets.Engaged_Priority = {
         { Name = "Griot Belt", Level = 28 },
         { Name = "Lizard Belt", Level = 17 },
         { Name = "Friar's Rope", Level = 14 },
-        { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
         { Name = "Shinobi Hakama", Level = 49 },

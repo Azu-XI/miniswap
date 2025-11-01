@@ -42,10 +42,6 @@ shared_sets.Provenance = {
     Ring1 = "Provenance Ring",
 }
 
-shared_sets.Town_Priority = {
-    Body = "Kingdom Aketon",
-}
-
 shared_sets.Town_SandOria = {
     Body = "Kingdom Aketon",
 }
