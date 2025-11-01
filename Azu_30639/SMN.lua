@@ -372,10 +372,12 @@ profile.Sets.Precast_HealingMagic_Priority = {
 
 profile.Sets.Resting_Priority = {
     Main  = {
+        { Name = "Iridal Staff", Level = 51 },        -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
     },
     Sub   = {
         { Name = "Pelte", Level = 8 },                -- MMP+2
+        { Name = "remove", Level = 51 },              -- No shield because of staff
     },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2

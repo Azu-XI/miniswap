@@ -1,5 +1,13 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
+profile.Sets.LockStyle = {
+    Head  = "remove",
+    Body  = "Custom Gilet +1",
+    Hands = "remove",
+    Legs  = "remove",
+    Feet  = "remove",
+};
+
 profile.Sets.Engaged_Priority = {
     Main  = {
             -- Wish: Lv.75 Polyhymnia {Oboro}
