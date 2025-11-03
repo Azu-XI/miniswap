@@ -85,6 +85,7 @@ profile.Sets.JA_HighJump_Priority = {
 
 profile.Sets.Engaged_Priority = {
     Main  = {
+        -- { Name = "Kuakuakait", Level = 75 },             -- IN STORAGE
         -- { Name = "Gnd.Kgt. Lance", Level = 60 },         -- IN STORAGE
         -- { Name = "Mythril Lance +1", Level = 48 },       -- IN STORAGE
         -- { Name = "Peregrine", Level = 40 },              -- IN STORAGE
