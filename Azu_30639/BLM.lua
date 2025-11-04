@@ -110,11 +110,16 @@ profile.Sets.Idle_Priority = {
 -- Goal: Max SIRD 102%; Max FastCast 80% ; Max Haste 25%
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
+            -- Wish: Lv.75 Kaladanda {Oboro}
+            -- Wish: Lv.51 Chatoyant Staff
         { Name = "Iridal Staff", Level = 51 },
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
         { Name = "Maple Wand +1", Level = 1 },
     },
     Sub   = {
+            -- Wish: Lv.75 Reflexive Grip +1 [MACC+4]
+            -- Wish: Lv.70 Omni Grip [MACC+3]
+            -- Wish: Lv.70 Elemental Grips [EleMACC+2]
         { Name = "Neph. Grip", Level = 8 },           -- INT+1
         { Name = "remove", Level = 5 },               -- No shield with staff
         "Kupo Shield",
@@ -124,11 +129,13 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
     },
     Head  = {
+            -- Wish: Lv.75 Src. Petasos +1 [ElemSkill+10 (Aug) INT+8 MAB+6 Enm-5]
         { Name = "Demon Helm", Level = 73 },          -- INT+5  ElemSkill +5
             -- Wish: Lv.60 Wizard's Petasos [INT+4]
         { Name = "Gambler's Chapeau", Level = 20 },   -- INT+3
     },
     Ear1 = {
+            -- Wish: Lv.75 Novio Earring {Aura of Adulation@Jailer of Love}
             -- Wish: Lv.29 Morion Earring +1 [INT+2]
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
@@ -138,19 +145,27 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
     Neck  = {
+            -- Wish: Lv.75 Moepapa Pendant [INT+8 MCrit+5 Enm-5] {Arch Christelle@DynaValk}
+            -- Wish: Lv.75 Lmg. Medallion +1 [INT+5 ElemSkill+5] {DI 25k points}
             -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
         { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
             -- Wish: Lv.20 Black Silk Neckerchief [INT+1]
         { Name = "Justice Badge", Level = 7 },        --                MND+3
     },
     Body  = {
-        { Name = "Vanya Robe", Level = 75 },          -- INT+5  MAB+5 MagicBurst5
+            -- Wish: Morrigan's Robe [INT+8 MAB+5 MACC+5]
+        { Name = "Vanya Robe", Level = 75 },          -- INT+5  MAB+5  MagicBurst+5
         { Name = "Seer's Tunic", Level = 29 },        -- INT+1
     },
     Hands = {
+            -- Wish: Lv.73 Genie Manillas [MAB+3 ElemSkill+6 (Aug) INT+8 MCrit+8 ConserveMP+6 OccultAcumen+30]
+            -- Wish: Lv.75 Src. Gloves +1 [(Aug) INT+8 MAB+6]
+            -- Wish: Lv.74 Wizard's Gloves +1 [INT+3 ElemSkill+15 (Aug) MAB+5 ConserveMP+5]
+            -- Wish: Lv.75 Morrigan's Cuffs [MAB+5 MACC+5 INT+3]
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
     },
     Ring1 = {
+            -- WishL Lv.50 Sorcerer's Ring [MAB+10 when HP<=75%]
         { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
         "Windurstian Ring",                           -- INT+1
     },
@@ -161,11 +176,13 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
     },
     Back  = {
+            -- Wish: Merciful Cape? [EleSkill+5]
         { Name = "Black Cape +1", Level = 32 },       -- INT+1
         { Name = "Cotton Cape", Level = 18 },         -- INT+1
         { Name = "Mist Silk Cape", Level = 10 },
     },
     Waist = {
+            -- Wish: Lv.70 Sorcerer's Belt [INT+6 (Aug) ElemSkill+6 MAB+3]
         { Name = "Penitent's Rope", Level = 60 },     -- INT+5                 Enm-3
             -- Wish: Lv.50 Ocean Stone [INT+3]
             -- Wish: Lv.41 Reverend Sash [INT+2]
@@ -174,10 +191,12 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
+            -- Wish: Lv.75 Src. Tonban +1 [INT+3 (Aug) ElemSkill+8 MCrit+8 MCritDmg+8]
         { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
         { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
     },
     Feet  = {
+            -- Wish: Lv.75 Src. Sabots +1 [INT+3 (Aug) MAB+3 MBurst+3 MCrit+8]
         { Name = "Sorcerer's Sabots", Level = 71 },   -- INT+2  ConserveMP+5
         { Name = "Custom M Boots", Level = 29 },      -- INT+3
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
@@ -185,9 +204,24 @@ profile.Sets.Midcast_Default_Priority = {
     },
 };
 
--- TODO: Drain/Aspir Set with:
--- Sorcerer's Gloves
--- ???
+-- Goal: Drain/Aspir Potency ; Dark magic skill
+profile.Sets.Midcast_Drain_Priority = {
+    Ear1  = {
+        { Name = "Hirudinea Earring", Level = 75 },   -- DrainAspirPot+3
+    },
+    Hands = {
+            -- Wish: Lv.75 Src. Gloves +1 [DarkSkill+12 (Aug) DrainAspirPot+6]
+        { Name = "Sorcerer's Gloves", Level = 72 },   -- DarkSkill+10
+    },
+    Legs  = {
+            -- Wish: Lv.74 Wizard's Tonban +1 [DarkSkill+15 (Aug) DrainAspirPot+5]
+            -- Wish: Lv.56 Wizard's Tonban [DarkSkill+15]
+    },
+    Feet  = {
+            -- Wish: Lv.73 Genie Huaraches [DarkSkill+5 (Aug) DarkSkill+10 DrainAspirPot+6]
+    },
+};
+profile.Sets.Midcast_Aspir_Priority = profile.Sets.Midcast_Drain_Priority;
 
 local midcastEnfeeblingMND = {
     Ring1 = {
@@ -228,7 +262,7 @@ profile.Sets.Midcast_HealingMagic_Priority = {
             -- Wish: Zenith Pumps+0/1 [(Aug) CurePot+5/6]
             -- Wish: Medium's Sabots [CurePot+4] {DomainInvasion}
     };
-}
+};
 
 -- Goal: Max FastCast 80%
 profile.Sets.Precast_Default_Priority = {
