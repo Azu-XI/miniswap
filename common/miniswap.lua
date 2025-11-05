@@ -6,7 +6,7 @@
 local fonts = require('fonts');
 local imgui = require('imgui');
 
-local Settings = {
+local settings = {
     CurrentLevel = 0,
     Debug = false,
     LevelSynced = false,
@@ -37,17 +37,17 @@ do -- COMMANDS REGION
     end
     profile.HandleCommand = profile.DoHandleCommand;
 
-    profile._HandleCommandDebug = function(target_value)
-        if target_value == nil then
-            Settings.Debug = not Settings.Debug;
+    profile._HandleCommandDebug = function(targetValue)
+        if targetValue == nil then
+            settings.Debug = not settings.Debug;
         else
-            Settings.Debug = string.lower(target_value):any('on', 'enable');
+            settings.Debug = string.lower(targetValue):any('on', 'enable');
         end
-        gFunc.Message("Debug: " .. (Settings.Debug and "ON" or "OFF"));
+        gFunc.Message("Debug: " .. (settings.Debug and "ON" or "OFF"));
     end
 
-    profile._HandleCommandLockTP = function(target_value)
-        local current_value = Settings.LockedTP;
+    profile._HandleCommandLockTP = function(targetValue)
+        local currentValue = settings.LockedTP;
 
         local DoLockTP = function()
             local player = gData.GetPlayer();
@@ -59,7 +59,7 @@ do -- COMMANDS REGION
             end
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac disable Ammo')
 
-            Settings.LockedTP = true;
+            settings.LockedTP = true;
         end
 
         local DoUnlockTP = function()
@@ -68,26 +68,26 @@ do -- COMMANDS REGION
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac enable Range')
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac enable Ammo')
 
-            Settings.LockedTP = false;
+            settings.LockedTP = false;
         end
 
-        if (target_value == "on" and not current_value) then
+        if (targetValue == "on" and not currentValue) then
             DoLockTP()
 
-        elseif (target_value == "off" and current_value) then
+        elseif (targetValue == "off" and currentValue) then
             DoUnlockTP()
 
-        elseif (target_value == nil) then
-            if (current_value) then DoUnlockTP() else DoLockTP() end
+        elseif (targetValue == nil) then
+            if (currentValue) then DoUnlockTP() else DoLockTP() end
 
         end
     end
 
-    profile._HandleCommandLockLV = function(target_value)
-        if (target_value == 'none' or target_value == nil) then
-            Settings.LockedLevel = nil;
+    profile._HandleCommandLockLV = function(targetValue)
+        if (targetValue == 'none' or targetValue == nil) then
+            settings.LockedLevel = nil;
         else
-            Settings.LockedLevel = tonumber(target_value);
+            settings.LockedLevel = tonumber(targetValue);
         end
     end
 end
@@ -134,8 +134,8 @@ do -- GEAR LIFECYCLE REGION
 
            local groups = profile._TownGroupsMapping[environment.Area]
            if (groups ~= nil) then
-                for _idx, group_name in pairs(groups) do
-                    profile._TryEquipSet("Town_" .. group_name);
+                for _idx, groupName in pairs(groups) do
+                    profile._TryEquipSet("Town_" .. groupName);
                 end
             end
         end
@@ -147,21 +147,21 @@ do -- GEAR LIFECYCLE REGION
         
         -- TYPE, one of:
         --   Rune Enchantment, Ready, Blood Pact: Rage, Blood Pact: Ward, Corsair Roll, Quick Draw, Unknown
-        local action_type = profile._Slugify(action.Type);
-        if (action_type ~= "Unknown") then
-            profile._TryEquipSet("JA_" .. action_type);
+        local actionType = profile._Slugify(action.Type);
+        if (actionType ~= "Unknown") then
+            profile._TryEquipSet("JA_" .. actionType);
         end
 
         -- NAME
-        local action_name = profile._Slugify(action.Name);
-        profile._TryEquipSet("JA_" .. action_name);
+        local actionName = profile._Slugify(action.Name);
+        profile._TryEquipSet("JA_" .. actionName);
     end
     profile.HandleAbility = profile.DoHandleAbility;
 
     profile.DoHandleItem = function()
         local action = gData.GetAction();
-        local action_name = profile._Slugify(action.Name);
-        profile._TryEquipSet("Item_" .. action_name);
+        local actionName = profile._Slugify(action.Name);
+        profile._TryEquipSet("Item_" .. actionName);
     end
     profile.HandleItem = profile.DoHandleItem;
 
@@ -169,24 +169,24 @@ do -- GEAR LIFECYCLE REGION
         profile._TryEquipSet("Precast_Default");
 
         local action = gData.GetAction();
-        local action_name = profile._Slugify(action.Name);
-        local action_skill = profile._Slugify(action.Skill);
+        local actionName = profile._Slugify(action.Name);
+        local actionSkill = profile._Slugify(action.Skill);
 
         -- SKILL, one of:
         --   Divine Magic, Healing Magic, Enhancing Magic, Enfeebling Magic, Elemental Magic,
         --   Dark Magic, Summoning, Ninjutsu, Singing, Blue Magic, Geomancy, Unknown
-        profile._TryEquipSet("Precast_" .. action_skill);
+        profile._TryEquipSet("Precast_" .. actionSkill);
 
         -- GROUPS
-        local groups = profile._ActionGroupsMapping[action_name];
+        local groups = profile._ActionGroupsMapping[actionName];
         if (groups ~= nil) then
-            for _idx, group_name in pairs(groups) do
-                profile._TryEquipSet("Precast_" .. group_name);
+            for _idx, groupName in pairs(groups) do
+                profile._TryEquipSet("Precast_" .. groupName);
             end
         end
 
         -- NAME
-        profile._TryEquipSet("Precast_" .. action_name);
+        profile._TryEquipSet("Precast_" .. actionName);
     end
     profile.HandlePrecast = profile.DoHandlePrecast;
 
@@ -195,24 +195,24 @@ do -- GEAR LIFECYCLE REGION
         profile._TryEquipSet("Midcast_Default");
 
         local action = gData.GetAction();
-        local action_name = profile._Slugify(action.Name);
-        local action_skill = profile._Slugify(action.Skill);
+        local actionName = profile._Slugify(action.Name);
+        local actionSkill = profile._Slugify(action.Skill);
 
         -- SKILL, one of:
         --   Divine Magic, Healing Magic, Enhancing Magic, Enfeebling Magic, Elemental Magic,
         --   Dark Magic, Summoning, Ninjutsu, Singing, Blue Magic, Geomancy, Unknown
-        profile._TryEquipSet("Midcast_" .. action_skill);
+        profile._TryEquipSet("Midcast_" .. actionSkill);
 
         -- GROUPS
-        local groups = profile._ActionGroupsMapping[action_name];
+        local groups = profile._ActionGroupsMapping[actionName];
         if (groups ~= nil) then
-            for _idx, group_name in pairs(groups) do
-                profile._TryEquipSet("Midcast_" .. group_name);
+            for _idx, groupName in pairs(groups) do
+                profile._TryEquipSet("Midcast_" .. groupName);
             end
         end
 
         -- NAME
-        profile._TryEquipSet("Midcast_" .. action_name);
+        profile._TryEquipSet("Midcast_" .. actionName);
     end
     profile.HandleMidcast = profile.DoHandleMidcast;
 
@@ -230,8 +230,8 @@ do -- GEAR LIFECYCLE REGION
         profile._TryEquipSet("WS_Default");
 
         local action = gData.GetAction();
-        local action_name = profile._Slugify(action.Name)
-        profile._TryEquipSet("WS_" .. action_name);
+        local actionName = profile._Slugify(action.Name)
+        profile._TryEquipSet("WS_" .. actionName);
     end
     profile.HandleWeaponskill = profile.DoHandleWeaponskill;
 end
@@ -306,16 +306,16 @@ do -- GUI REGION
             -- end
 
             local levelText = ""
-            if (Settings.LockedLevel ~= nil) then
-                levelText = tostring(Settings.LockedLevel) .. " (locked)"
-            elseif (Settings.LevelSynced) then
-                levelText = tostring(Settings.CurrentLevel) .. " (synced)"
+            if (settings.LockedLevel ~= nil) then
+                levelText = tostring(settings.LockedLevel) .. " (locked)"
+            elseif (settings.LevelSynced) then
+                levelText = tostring(settings.CurrentLevel) .. " (synced)"
             else
-                levelText = tostring(Settings.CurrentLevel) .. " (unlocked)"
+                levelText = tostring(settings.CurrentLevel) .. " (unlocked)"
             end
             imgui.Text("Lv. " .. levelText);
 
-            local TPText = Settings.LockedTP and "On" or "Off"
+            local TPText = settings.LockedTP and "On" or "Off"
             imgui.Text("TP. " .. TPText)
         end
 
@@ -882,9 +882,9 @@ do -- MAPPINGS REGION
 
     -- Normalized action name to the mapping
     profile._ProcessActionGroupsMapping = function()
-        for action_name, group_names in pairs(profile._ActionGroupsMapping) do
-            action_name = profile._Slugify(action_name);
-            profile._ActionGroupsMapping[action_name] = group_names;
+        for actionName, groupNames in pairs(profile._ActionGroupsMapping) do
+            actionName = profile._Slugify(actionName);
+            profile._ActionGroupsMapping[actionName] = groupNames;
         end
     end
 
@@ -951,7 +951,7 @@ do -- PROFILE LIFECYCLE REGION
             for name, _ in pairs(profile.Sets.Weapons) do
                 table.insert(weaponModes, name);
             end
-            Settings.WeaponModeOptions = weaponModes;
+            settings.WeaponModeOptions = weaponModes;
         end
 
         profile._ExecuteCommand("/alias /locklv /lac fwd locklv");
@@ -967,7 +967,7 @@ do -- PROFILE LIFECYCLE REGION
         end
 
         gFunc.LockStyle(profile.Sets.LockStyle);
-        if (Settings.UseStylist) then
+        if (settings.UseStylist) then
             profile._DelayCommand("/sl blink", 1)
         end
     end
@@ -1002,34 +1002,34 @@ do -- UTILS REGION
     end
 
     profile._EvaluateGear = function(player)
-        local level = Settings.LockedLevel or player.MainJobSync;
-        if (level ~= Settings.CurrentLevel) then
+        local level = settings.LockedLevel or player.MainJobSync;
+        if (level ~= settings.CurrentLevel) then
             gFunc.EvaluateLevels(profile.Sets, level);
-            Settings.CurrentLevel = level;
+            settings.CurrentLevel = level;
         end
-        Settings.LevelSynced = player.MainJobLevel ~= player.MainJobSync
+        settings.LevelSynced = player.MainJobLevel ~= player.MainJobSync
     end
 
     profile._ShowDebug = function(message)
-        if (Settings.Debug) then
+        if (settings.Debug) then
             gFunc.Message(message);
         end
     end
 
-    profile._Slugify = function(raw_name)
-        local output = string.gsub(raw_name, "%s+", "")
+    profile._Slugify = function(rawName)
+        local output = string.gsub(rawName, "%s+", "")
         output = string.gsub(output, "'", "")
         output = string.gsub(output, ":", "")
         return output
     end
 
-    profile._TryEquipSet = function(set_name)
-        local set = profile.Sets[set_name]
+    profile._TryEquipSet = function(setName)
+        local set = profile.Sets[setName]
         if (set ~= nil) then
-            profile._ShowDebug("Try Equip Set: " .. set_name .. " (OK)")
-            gFunc.EquipSet(set_name);
+            profile._ShowDebug("Try Equip Set: " .. setName .. " (OK)")
+            gFunc.EquipSet(setName);
         else
-            profile._ShowDebug("Try Equip Set: " .. set_name .. " (MISSING)")
+            profile._ShowDebug("Try Equip Set: " .. setName .. " (MISSING)")
         end
     end
 end

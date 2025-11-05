@@ -404,7 +404,7 @@ profile.Sets.Resting_Priority = {
     }
 };
 
-local pet_to_element = {
+local petToElement = {
     ["Air Spirit"] = "Wind",
     Alexander = "Light",
     Atomos = "Light",
@@ -441,17 +441,17 @@ profile.HandleDefault = function()
     local player = gData.GetPlayer();
     if (not player.Status:any('Engaged', 'Idle')) then return end
 
-    local pet_name = profile._Slugify(pet.Name);
-    local pet_element = pet_to_element[pet_name];
-    if (pet_element == nil) then return end
+    local petName = profile._Slugify(pet.Name);
+    local petElement = petToElement[petName];
+    if (petElement == nil) then return end
 
     local environment = gData.GetEnvironment();
 
-    if (environment.DayElement == pet_element) then
+    if (environment.DayElement == petElement) then
         profile._TryEquipSet(player.Status .. "_Pet_Day");
     end
 
-    if (environment.WeatherElement == pet_element) then
+    if (environment.WeatherElement == petElement) then
         profile._TryEquipSet(player.Status .. "_Pet_Weather");
     end
 end
