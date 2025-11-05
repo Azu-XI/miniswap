@@ -12,7 +12,6 @@ local settings = {
     LevelSynced = false,
     LockedLevel = nil,
     LockedTP = false,
-    UseStylist = true,  -- TODO: Make it toggleable in users files
     WeaponModeOptions = nil,
 };
 
@@ -975,9 +974,6 @@ do -- PROFILE LIFECYCLE REGION
         end
 
         gFunc.LockStyle(profile.Sets.LockStyle);
-        if (settings.UseStylist) then
-            profile._DelayCommand("/sl blink", 1)
-        end
     end
 
     profile.DoOnUnload = function()
