@@ -1,10 +1,16 @@
-local shared_sets = {}
+local profile = { Aliases = {}, Bindings = {}, Sets = {} };
 
-shared_sets.Chocobo = {
+profile.Aliases["/off"] = "/lac disable";
+profile.Aliases["/on"] = "/lac enable";
+profile.Aliases["/llv"] = "/lac fwd locklv";
+profile.Aliases["/lst"] = "/lac lockstyle Lockstyle";
+profile.Aliases["/ltp"] = "/lac fwd locktp";
+
+profile.Sets.Chocobo = {
     Neck = "Chocobo Whistle",
 }
 
-shared_sets.Crafting = {
+profile.Sets.Crafting = {
     Sub   = "Kupo Shield",
     Head  = "Midras's Helm +1",
     Body = "Carpenter's Apron",
@@ -13,11 +19,11 @@ shared_sets.Crafting = {
     Ring2 = "Artificer's Ring",
 };
 
-shared_sets.EXP = {
+profile.Sets.EXP = {
     Ring1 = "Chariot Band",
-}
+};
 
-shared_sets.Fishing = {
+profile.Sets.Fishing = {
     Range = "Halcyon Rod",
     Neck  = "Fisher's Torque",
     Body  = "Fsh. Tunica",
@@ -27,7 +33,7 @@ shared_sets.Fishing = {
     Feet  = "Fisherman's Boots",
 };
 
-shared_sets.HELM = {
+profile.Sets.HELM = {
     Head  = "Lumberjack's Beret",  -- Surveyor +1 will work for all HELM
     Neck  = "Field Torque",
     Body  = "Plain Tunica",
@@ -38,16 +44,16 @@ shared_sets.HELM = {
     Feet  = "Plain Boots +1",
 };
 
-shared_sets.Provenance = {
+profile.Sets.Provenance = {
     Ring1 = "Provenance Ring",
-}
+};
 
-shared_sets.Town_SandOria = {
+profile.Sets.Town_SandOria = {
     Body = "Kingdom Aketon",
-}
+};
 
-shared_sets.Warp = {
+profile.Sets.Warp = {
     Ring1 = "Warp Ring",
-}
+};
 
-return shared_sets;
+return profile;
