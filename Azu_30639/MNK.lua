@@ -1,5 +1,14 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
+profile.Sets.LockStyle = {
+    Main  = "Maochinoli",
+    Head  = "Naga Somen",
+    Body  = "Naga Samue",
+    Hands = "Melee Gloves",
+    Legs  = "Naga Hakama",
+    Feet  = "Naga Kyahan",
+};
+
 profile.Sets.Engaged_Priority = {
     Main  = {
         { Name = "Maochinoli", Level = 75 },
