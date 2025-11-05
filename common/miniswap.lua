@@ -16,10 +16,13 @@ local settings = {
     WeaponModeOptions = nil,
 };
 
-local profile = {};
-
-profile.Packer = {};
-profile.Sets = gFunc.LoadFile('shared_sets.lua') or {};
+local shared = gFunc.LoadFile('shared.lua') or {};
+local profile = {
+    Aliases = shared.Aliases or {},
+    Bindings = shared.Bindings or {},
+    Packer = {},
+    Sets = shared.Sets or {},
+};
 
 do -- COMMANDS REGION
     profile.DoHandleCommand = function(args)
@@ -954,8 +957,13 @@ do -- PROFILE LIFECYCLE REGION
             settings.WeaponModeOptions = weaponModes;
         end
 
-        profile._ExecuteCommand("/alias /locklv /lac fwd locklv");
-        profile._ExecuteCommand("/alias /locktp /lac fwd locktp");
+        for name, cmd in pairs(profile.Aliases) do
+            profile._ExecuteCommand("/alias " .. name .. " " .. cmd);
+        end
+
+        for keys, cmd in pairs(profile.Bindings) do
+            profile._ExecuteCommand("/bind " .. keys .. " " .. cmd);
+        end
 
         profile._OnLoad_LockStyle:once(5);
     end
@@ -975,8 +983,13 @@ do -- PROFILE LIFECYCLE REGION
     profile.DoOnUnload = function()
         gui.Destroy();
 
-        profile._ExecuteCommand("/alias delete /locklv");
-        profile._ExecuteCommand("/alias delete /locktp");
+        for name, _cmd in pairs(profile.Aliases) do
+            profile._ExecuteCommand("/alias delete " .. name);
+        end
+
+        for keys, _cmd in pairs(profile.Bindings) do
+            profile._ExecuteCommand("/unbind " .. keys);
+        end
     end
     profile.OnUnload = profile.DoOnUnload;
 end
