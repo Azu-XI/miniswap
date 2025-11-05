@@ -104,7 +104,7 @@ profile.Sets.Idle_Priority = {
 };
 
 -- Goal: Perpetuation Cost ; Avatar ATK / ACC / PDT / ...
-profile.Sets.Idle_Pet_Default_Priority = {
+local petDefaultPriority = {
     Main  = {
             -- Wish: Lv. 51 Chatoyant Staff [PerpCost-3]
         { Name = "Iridal Staff", Level = 51 },        -- PerpCost-2
@@ -118,12 +118,10 @@ profile.Sets.Idle_Pet_Default_Priority = {
     },
     Head  = {
             -- Wish: Lv.74 Evoker's Horn +1 [(Aug) PetPDT-4 Refresh+1]
-            -- TODO: Sumonner's Horn +0/1 depending on Weather
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2
     },
     Body  = {
-            -- TODO: Summoner's Doublet +0/1 depending on Day
         { Name = "Chironic Doublet", Level = 75 },    -- PetDT-5  Refresh+1  DT-5  
             -- Wish: Lv.50 Penance Robe [PerpCost-2]
             -- Wish: Lv.50 Austere Robe [PerpCost-1]
@@ -148,23 +146,42 @@ profile.Sets.Idle_Pet_Default_Priority = {
             -- Wish: Lv.75 Marduk's Crackows [(Aug) PetDT-4]
     },
 };
-profile.Sets.Engaged_Pet_Default_Priority = profile.Sets.Idle_Pet_Default_Priority;
+profile.Sets.Idle_Pet_Default_Priority = petDefaultPriority;
+profile.Sets.Engaged_Pet_Default_Priority = petDefaultPriority;
 
 -- Goal: Carbuncle Perpetuation Cost ; Carbuncle ATK / ACC / PDT / ...
-profile.Sets.Idle_Pet_Carbuncle_Priority = {
+local petCarbunclePriority  = {
     Hands = {
         { Name = "Carbuncle Mitts", Level = 20 },     -- CarbyPerpCost-50% PetDEF+10
     },
 };
-profile.Sets.Engaged_Pet_Garuda_Priority = profile.Sets.Idle_Pet_Garuda_Priority;
+profile.Sets.Idle_Pet_Carbuncle_Priority = petCarbunclePriority;
+profile.Sets.Engaged_Pet_Garuda_Priority = petCarbunclePriority;
 
 -- Goal: Garuda Perpetuation Cost ; Garuda ATK / ACC / PDT / ...
-profile.Sets.Idle_Pet_Garuda_Priority = {
+local petGarudaPriority = {
     Head  = {
         -- Wish: Lv.73 Karura Hachigane [GarudaPerfCost-2 GarudaATK+10 GarudaDEF+10]
     },
 };
-profile.Sets.Engaged_Pet_Garuda_Priority = profile.Sets.Idle_Pet_Garuda_Priority;
+profile.Sets.Idle_Pet_Garuda_Priority = petGarudaPriority;
+profile.Sets.Engaged_Pet_Garuda_Priority = petGarudaPriority;
+
+local petMatchesDayPriority = {
+    Body  = {
+        { Name = "Summoner's Dblt.", Level = 74 },    -- PerpCost-3
+    },
+};
+profile.Sets.Idle_Pet_Day_Priority = petMatchesDayPriority;
+profile.Sets.Engaged_Pet_Day_Priority = petMatchesDayPriority;
+
+local petMatchesWeatherPriority = {
+    Head  = {
+        { Name = "Summoner's Horn", Level = 75 },     -- PerpCost-3
+    },
+};
+profile.Sets.Idle_Pet_Weather_Priority = petMatchesWeatherPriority;
+profile.Sets.Engaged_Pet_Weather_Priority = petMatchesWeatherPriority;
 
 -- Goal: Blood Pact Ability Delay (Max 15 per tier) ; Blood Boon
 local bloodPact = {
@@ -386,5 +403,57 @@ profile.Sets.Resting_Priority = {
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };
+
+local pet_to_element = {
+    ["Air Spirit"] = "Wind",
+    Alexander = "Light",
+    Atomos = "Light",
+    ["Cait Sith"] = "Light",
+    Carbuncle = "Light",
+    ["Dark Spirit"] = "Dark",
+    Diabolos = "Dark",
+    ["Earth Spirit"] = "Earth",
+    Fenrir = "Dark",
+    ["Fire Spirit"] = "Fire",
+    Garuda = "Wind",
+    Ifrit = "Fire",
+    ["Ice Spirit"] = "Ice",
+    Leviathan = "Water",
+    ["Light Spirit"] = "Light",
+    Odin = "Dark",
+    Ramuh = "Thunder",
+    Shiva = "Ice",
+    Siren = "Wind",
+    Titan = "Earth",
+    ["Thunder Spirit"] = "Thunder",
+    ["Water Spirit"] = "Water",
+}
+
+
+profile.HandleDefault = function()
+    -- Default behavior
+    profile.DoHandleDefault();
+
+    -- Match pet with day/weather
+    local pet = gData.GetPet();
+    if (pet == nil) then return end
+
+    local player = gData.GetPlayer();
+    if (not player.Status:any('Engaged', 'Idle')) then return end
+
+    local pet_name = profile._Slugify(pet.Name);
+    local pet_element = pet_to_element[pet_name];
+    if (pet_element == nil) then return end
+
+    local environment = gData.GetEnvironment();
+
+    if (environment.DayElement == pet_element) then
+        profile._TryEquipSet(player.Status .. "_Pet_Day");
+    end
+
+    if (environment.WeatherElement == pet_element) then
+        profile._TryEquipSet(player.Status .. "_Pet_Weather");
+    end
+end
 
 return profile;
