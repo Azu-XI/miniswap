@@ -138,7 +138,7 @@ profile.Sets.Weapons = {
     }
 };
 
-profile.Sets.Idle_Priority = profile.DeepCopy(profile.Sets.Engaged_Priority)
+profile.Sets.Idle_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Priority)
 profile.Sets.Idle_Priority.Head = {
     { Name = "Rog. Bonnet +1", Level = 74 },          -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10

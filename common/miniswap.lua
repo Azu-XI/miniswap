@@ -6,7 +6,7 @@
 local fonts = require('fonts');
 local imgui = require('imgui');
 
-local settings = {
+local state = {
     CurrentLevel = 0,
     Debug = false,
     LevelSynced = false,
@@ -19,37 +19,38 @@ local shared = gFunc.LoadFile('shared.lua') or {};
 local profile = {
     Aliases = shared.Aliases or {},
     Bindings = shared.Bindings or {},
+    MiniSwap = {},
     Packer = {},
     Sets = shared.Sets or {},
 };
 
 do -- COMMANDS REGION
-    profile.DoHandleCommand = function(args)
+    profile.MiniSwap.HandleCommand = function(args)
         local command = string.lower(args[1])
 
         if (command:any('debug')) then
-            profile._HandleCommandDebug(args[2])
+            profile.MiniSwap.HandleCommandDebug(args[2])
         elseif (command:any('locklv')) then
-            profile._HandleCommandLockLV(args[2]);
+            profile.MiniSwap.HandleCommandLockLV(args[2]);
         elseif (command:any('locktp')) then
-            profile._HandleCommandLockTP(args[2]);
+            profile.MiniSwap.HandleCommandLockTP(args[2]);
         elseif (command:any('weapon')) then
             -- TODO
         end
     end
-    profile.HandleCommand = profile.DoHandleCommand;
+    profile.HandleCommand = profile.MiniSwap.HandleCommand;
 
-    profile._HandleCommandDebug = function(targetValue)
+    profile.MiniSwap.HandleCommandDebug = function(targetValue)
         if targetValue == nil then
-            settings.Debug = not settings.Debug;
+            state.Debug = not state.Debug;
         else
-            settings.Debug = string.lower(targetValue):any('on', 'enable');
+            state.Debug = string.lower(targetValue):any('on', 'enable');
         end
-        gFunc.Message("Debug: " .. (settings.Debug and "ON" or "OFF"));
+        gFunc.Message("Debug: " .. (state.Debug and "ON" or "OFF"));
     end
 
-    profile._HandleCommandLockTP = function(targetValue)
-        local currentValue = settings.LockedTP;
+    profile.MiniSwap.HandleCommandLockTP = function(targetValue)
+        local currentValue = state.LockedTP;
 
         local DoLockTP = function()
             local player = gData.GetPlayer();
@@ -61,7 +62,7 @@ do -- COMMANDS REGION
             end
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac disable Ammo')
 
-            settings.LockedTP = true;
+            state.LockedTP = true;
         end
 
         local DoUnlockTP = function()
@@ -70,7 +71,7 @@ do -- COMMANDS REGION
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac enable Range')
             AshitaCore:GetChatManager():QueueCommand(-1, '/lac enable Ammo')
 
-            settings.LockedTP = false;
+            state.LockedTP = false;
         end
 
         if (targetValue == "on" and not currentValue) then
@@ -85,21 +86,21 @@ do -- COMMANDS REGION
         end
     end
 
-    profile._HandleCommandLockLV = function(targetValue)
+    profile.MiniSwap.HandleCommandLockLV = function(targetValue)
         if (targetValue == 'none' or targetValue == nil) then
-            settings.LockedLevel = nil;
+            state.LockedLevel = nil;
         else
-            settings.LockedLevel = tonumber(targetValue);
+            state.LockedLevel = tonumber(targetValue);
         end
     end
 end
 
 do -- GEAR LIFECYCLE REGION
-    profile.DoHandleDefault = function()
+    profile.MiniSwap.HandleDefault = function()
         local environment = gData.GetEnvironment()
         local player = gData.GetPlayer();
 
-        profile._EvaluateGear(player);
+        profile.MiniSwap.EvaluateGear(player);
 
         -- Stance: Engaged
         if (player.Status == 'Engaged') then
@@ -107,10 +108,10 @@ do -- GEAR LIFECYCLE REGION
 
             local pet = gData.GetPet();
             if (pet ~= nil) then
-                profile._TryEquipSet("Engaged_Pet_Default");
+                profile.MiniSwap.TryEquipSet("Engaged_Pet_Default");
 
-                local pet_name = profile._Slugify(pet.Name);
-                profile._TryEquipSet("Engaged_Pet_" .. pet_name);
+                local pet_name = profile.MiniSwap.Slugify(pet.Name);
+                profile.MiniSwap.TryEquipSet("Engaged_Pet_" .. pet_name);
             end
 
         -- Stance: Resting
@@ -123,119 +124,119 @@ do -- GEAR LIFECYCLE REGION
 
             local pet = gData.GetPet();
             if (pet ~= nil) then
-                profile._TryEquipSet("Idle_Pet_Default");
+                profile.MiniSwap.TryEquipSet("Idle_Pet_Default");
 
-                local pet_name = profile._Slugify(pet.Name);
-                profile._TryEquipSet("Idle_Pet_" .. pet_name);
+                local pet_name = profile.MiniSwap.Slugify(pet.Name);
+                profile.MiniSwap.TryEquipSet("Idle_Pet_" .. pet_name);
             end
         end
 
         -- Town Sets
-        if (environment.Area ~= nil and profile._TownGroupsMapping[environment.Area] ~= nil) then
-           profile._TryEquipSet("Town");
+        if (environment.Area ~= nil and profile.MiniSwap.TownGroupsMapping[environment.Area] ~= nil) then
+           profile.MiniSwap.TryEquipSet("Town");
 
-           local groups = profile._TownGroupsMapping[environment.Area]
+           local groups = profile.MiniSwap.TownGroupsMapping[environment.Area]
            if (groups ~= nil) then
                 for _idx, groupName in pairs(groups) do
-                    profile._TryEquipSet("Town_" .. groupName);
+                    profile.MiniSwap.TryEquipSet("Town_" .. groupName);
                 end
             end
         end
     end
-    profile.HandleDefault = profile.DoHandleDefault;
+    profile.HandleDefault = profile.MiniSwap.HandleDefault;
 
-    profile.DoHandleAbility = function()
+    profile.MiniSwap.HandleAbility = function()
         local action = gData.GetAction();
         
         -- TYPE, one of:
         --   Rune Enchantment, Ready, Blood Pact: Rage, Blood Pact: Ward, Corsair Roll, Quick Draw, Unknown
-        local actionType = profile._Slugify(action.Type);
+        local actionType = profile.MiniSwap.Slugify(action.Type);
         if (actionType ~= "Unknown") then
-            profile._TryEquipSet("JA_" .. actionType);
+            profile.MiniSwap.TryEquipSet("JA_" .. actionType);
         end
 
         -- NAME
-        local actionName = profile._Slugify(action.Name);
-        profile._TryEquipSet("JA_" .. actionName);
+        local actionName = profile.MiniSwap.Slugify(action.Name);
+        profile.MiniSwap.TryEquipSet("JA_" .. actionName);
     end
-    profile.HandleAbility = profile.DoHandleAbility;
+    profile.HandleAbility = profile.MiniSwap.HandleAbility;
 
-    profile.DoHandleItem = function()
+    profile.MiniSwap.HandleItem = function()
         local action = gData.GetAction();
-        local actionName = profile._Slugify(action.Name);
-        profile._TryEquipSet("Item_" .. actionName);
+        local actionName = profile.MiniSwap.Slugify(action.Name);
+        profile.MiniSwap.TryEquipSet("Item_" .. actionName);
     end
-    profile.HandleItem = profile.DoHandleItem;
+    profile.HandleItem = profile.MiniSwap.HandleItem;
 
-    profile.DoHandlePrecast = function()
-        profile._TryEquipSet("Precast_Default");
+    profile.MiniSwap.HandlePrecast = function()
+        profile.MiniSwap.TryEquipSet("Precast_Default");
 
         local action = gData.GetAction();
-        local actionName = profile._Slugify(action.Name);
-        local actionSkill = profile._Slugify(action.Skill);
+        local actionName = profile.MiniSwap.Slugify(action.Name);
+        local actionSkill = profile.MiniSwap.Slugify(action.Skill);
 
         -- SKILL, one of:
         --   Divine Magic, Healing Magic, Enhancing Magic, Enfeebling Magic, Elemental Magic,
         --   Dark Magic, Summoning, Ninjutsu, Singing, Blue Magic, Geomancy, Unknown
-        profile._TryEquipSet("Precast_" .. actionSkill);
+        profile.MiniSwap.TryEquipSet("Precast_" .. actionSkill);
 
         -- GROUPS
-        local groups = profile._ActionGroupsMapping[actionName];
+        local groups = profile.MiniSwap.ActionGroupsMapping[actionName];
         if (groups ~= nil) then
             for _idx, groupName in pairs(groups) do
-                profile._TryEquipSet("Precast_" .. groupName);
+                profile.MiniSwap.TryEquipSet("Precast_" .. groupName);
             end
         end
 
         -- NAME
-        profile._TryEquipSet("Precast_" .. actionName);
+        profile.MiniSwap.TryEquipSet("Precast_" .. actionName);
     end
-    profile.HandlePrecast = profile.DoHandlePrecast;
+    profile.HandlePrecast = profile.MiniSwap.HandlePrecast;
 
-    profile.DoHandleMidcast = function()
+    profile.MiniSwap.HandleMidcast = function()
         -- DEFAULT
-        profile._TryEquipSet("Midcast_Default");
+        profile.MiniSwap.TryEquipSet("Midcast_Default");
 
         local action = gData.GetAction();
-        local actionName = profile._Slugify(action.Name);
-        local actionSkill = profile._Slugify(action.Skill);
+        local actionName = profile.MiniSwap.Slugify(action.Name);
+        local actionSkill = profile.MiniSwap.Slugify(action.Skill);
 
         -- SKILL, one of:
         --   Divine Magic, Healing Magic, Enhancing Magic, Enfeebling Magic, Elemental Magic,
         --   Dark Magic, Summoning, Ninjutsu, Singing, Blue Magic, Geomancy, Unknown
-        profile._TryEquipSet("Midcast_" .. actionSkill);
+        profile.MiniSwap.TryEquipSet("Midcast_" .. actionSkill);
 
         -- GROUPS
-        local groups = profile._ActionGroupsMapping[actionName];
+        local groups = profile.MiniSwap.ActionGroupsMapping[actionName];
         if (groups ~= nil) then
             for _idx, groupName in pairs(groups) do
-                profile._TryEquipSet("Midcast_" .. groupName);
+                profile.MiniSwap.TryEquipSet("Midcast_" .. groupName);
             end
         end
 
         -- NAME
-        profile._TryEquipSet("Midcast_" .. actionName);
+        profile.MiniSwap.TryEquipSet("Midcast_" .. actionName);
     end
-    profile.HandleMidcast = profile.DoHandleMidcast;
+    profile.HandleMidcast = profile.MiniSwap.HandleMidcast;
 
-    profile.DoHandlePreshot = function()
-        profile._TryEquipSet("Preshot_Default");
+    profile.MiniSwap.HandlePreshot = function()
+        profile.MiniSwap.TryEquipSet("Preshot_Default");
     end
-    profile.HandlePreshot = profile.DoHandlePreshot;
+    profile.HandlePreshot = profile.MiniSwap.HandlePreshot;
 
-    profile.DoHandleMidshot = function()
-        profile._TryEquipSet("Midshot_Default");
+    profile.MiniSwap.HandleMidshot = function()
+        profile.MiniSwap.TryEquipSet("Midshot_Default");
     end
-    profile.HandleMidshot = profile.DoHandleMidshot;
+    profile.HandleMidshot = profile.MiniSwap.HandleMidshot;
 
-    profile.DoHandleWeaponskill = function()
-        profile._TryEquipSet("WS_Default");
+    profile.MiniSwap.HandleWeaponskill = function()
+        profile.MiniSwap.TryEquipSet("WS_Default");
 
         local action = gData.GetAction();
-        local actionName = profile._Slugify(action.Name)
-        profile._TryEquipSet("WS_" .. actionName);
+        local actionName = profile.MiniSwap.Slugify(action.Name)
+        profile.MiniSwap.TryEquipSet("WS_" .. actionName);
     end
-    profile.HandleWeaponskill = profile.DoHandleWeaponskill;
+    profile.HandleWeaponskill = profile.MiniSwap.HandleWeaponskill;
 end
 
 do -- GUI REGION
@@ -296,7 +297,7 @@ do -- GUI REGION
 
             --         if (imgui.Selectable(weaponModeOptions[i], is_selected)) then
             --             -- ui.theme_index[1] = i;
-            --             -- settings.icons.theme = theme_paths[i];
+            --             -- state.icons.theme = theme_paths[i];
             --             -- resources.clear_cache();
             --         end
 
@@ -308,16 +309,16 @@ do -- GUI REGION
             -- end
 
             local levelText = ""
-            if (settings.LockedLevel ~= nil) then
-                levelText = tostring(settings.LockedLevel) .. " (locked)"
-            elseif (settings.LevelSynced) then
-                levelText = tostring(settings.CurrentLevel) .. " (synced)"
+            if (state.LockedLevel ~= nil) then
+                levelText = tostring(state.LockedLevel) .. " (locked)"
+            elseif (state.LevelSynced) then
+                levelText = tostring(state.CurrentLevel) .. " (synced)"
             else
-                levelText = tostring(settings.CurrentLevel) .. " (unlocked)"
+                levelText = tostring(state.CurrentLevel) .. " (unlocked)"
             end
             imgui.Text("Lv. " .. levelText);
 
-            local TPText = settings.LockedTP and "On" or "Off"
+            local TPText = state.LockedTP and "On" or "Off"
             imgui.Text("TP. " .. TPText)
         end
 
@@ -327,7 +328,7 @@ do -- GUI REGION
 end
 
 do -- MAPPINGS REGION
-    profile._ActionGroupsMapping = {
+    profile.MiniSwap.ActionGroupsMapping = {
         ["1000 Needles"] = {"BluMagicalAcc", "BluMagical"},
         ["Absolute Terror"] = {"BluMagicalAcc", "BluMagical"},
         ["Absorb-Acc"] = {"Absorb"},
@@ -883,14 +884,14 @@ do -- MAPPINGS REGION
     }
 
     -- Normalized action name to the mapping
-    profile._ProcessActionGroupsMapping = function()
-        for actionName, groupNames in pairs(profile._ActionGroupsMapping) do
-            actionName = profile._Slugify(actionName);
-            profile._ActionGroupsMapping[actionName] = groupNames;
+    profile.MiniSwap.ProcessActionGroupsMapping = function()
+        for actionName, groupNames in pairs(profile.MiniSwap.ActionGroupsMapping) do
+            actionName = profile.MiniSwap.Slugify(actionName);
+            profile.MiniSwap.ActionGroupsMapping[actionName] = groupNames;
         end
     end
 
-    profile._TownGroupsMapping = T{
+    profile.MiniSwap.TownGroupsMapping = T{
         ["Tavnazian Safehold"] = {},
 
         ["Al Zahbi"] = {},
@@ -941,8 +942,8 @@ do -- MAPPINGS REGION
 end
 
 do -- PROFILE LIFECYCLE REGION
-    profile.DoOnLoad = function()
-        profile._ProcessActionGroupsMapping();
+    profile.MiniSwap.OnLoad = function()
+        profile.MiniSwap.ProcessActionGroupsMapping();
 
         gSettings.AllowAddSet = true;
 
@@ -953,22 +954,22 @@ do -- PROFILE LIFECYCLE REGION
             for name, _ in pairs(profile.Sets.Weapons) do
                 table.insert(weaponModes, name);
             end
-            settings.WeaponModeOptions = weaponModes;
+            state.WeaponModeOptions = weaponModes;
         end
 
         for name, cmd in pairs(profile.Aliases) do
-            profile._ExecuteCommand("/alias " .. name .. " " .. cmd);
+            profile.MiniSwap.ExecuteCommand("/alias " .. name .. " " .. cmd);
         end
 
         for keys, cmd in pairs(profile.Bindings) do
-            profile._ExecuteCommand("/bind " .. keys .. " " .. cmd);
+            profile.MiniSwap.ExecuteCommand("/bind " .. keys .. " " .. cmd);
         end
 
-        profile._OnLoad_LockStyle:once(5);
+        profile.MiniSwap.OnLoad_LockStyle:once(5);
     end
-    profile.OnLoad = profile.DoOnLoad;
+    profile.OnLoad = profile.MiniSwap.OnLoad;
 
-    profile._OnLoad_LockStyle = function ()
+    profile.MiniSwap.OnLoad_LockStyle = function ()
         if (profile.Sets.LockStyle == nil) then
             return
         end
@@ -976,69 +977,69 @@ do -- PROFILE LIFECYCLE REGION
         gFunc.LockStyle(profile.Sets.LockStyle);
     end
 
-    profile.DoOnUnload = function()
+    profile.MiniSwap.OnUnload = function()
         gui.Destroy();
 
         for name, _cmd in pairs(profile.Aliases) do
-            profile._ExecuteCommand("/alias delete " .. name);
+            profile.MiniSwap.ExecuteCommand("/alias delete " .. name);
         end
 
         for keys, _cmd in pairs(profile.Bindings) do
-            profile._ExecuteCommand("/unbind " .. keys);
+            profile.MiniSwap.ExecuteCommand("/unbind " .. keys);
         end
     end
-    profile.OnUnload = profile.DoOnUnload;
+    profile.OnUnload = profile.MiniSwap.OnUnload;
 end
 
 do -- UTILS REGION
-    profile.DeepCopy = function(original)
+    profile.MiniSwap.DeepCopy = function(original)
         local copy = {}
         for k, v in pairs(original) do
             if type(v) == "table" then
-                v = profile.DeepCopy(v)
+                v = profile.MiniSwap.DeepCopy(v)
             end
             copy[k] = v
         end
         return copy
     end
 
-    profile._DelayCommand = function (command, delay)
-        profile._ExecuteCommand:bind1(command):once(delay)
+    profile.MiniSwap.DelayCommand = function (command, delay)
+        profile.MiniSwap.ExecuteCommand:bind1(command):once(delay)
     end
 
-    profile._ExecuteCommand = function (command)
+    profile.MiniSwap.ExecuteCommand = function (command)
         AshitaCore:GetChatManager():QueueCommand(-1, command)
     end
 
-    profile._EvaluateGear = function(player)
-        local level = settings.LockedLevel or player.MainJobSync;
-        if (level ~= settings.CurrentLevel) then
+    profile.MiniSwap.EvaluateGear = function(player)
+        local level = state.LockedLevel or player.MainJobSync;
+        if (level ~= state.CurrentLevel) then
             gFunc.EvaluateLevels(profile.Sets, level);
-            settings.CurrentLevel = level;
+            state.CurrentLevel = level;
         end
-        settings.LevelSynced = player.MainJobLevel ~= player.MainJobSync
+        state.LevelSynced = player.MainJobLevel ~= player.MainJobSync
     end
 
-    profile._ShowDebug = function(message)
-        if (settings.Debug) then
+    profile.MiniSwap.ShowDebug = function(message)
+        if (state.Debug) then
             gFunc.Message(message);
         end
     end
 
-    profile._Slugify = function(rawName)
+    profile.MiniSwap.Slugify = function(rawName)
         local output = string.gsub(rawName, "%s+", "")
         output = string.gsub(output, "'", "")
         output = string.gsub(output, ":", "")
         return output
     end
 
-    profile._TryEquipSet = function(setName)
+    profile.MiniSwap.TryEquipSet = function(setName)
         local set = profile.Sets[setName]
         if (set ~= nil) then
-            profile._ShowDebug("Try Equip Set: " .. setName .. " (OK)")
+            profile.MiniSwap.ShowDebug("Try Equip Set: " .. setName .. " (OK)")
             gFunc.EquipSet(setName);
         else
-            profile._ShowDebug("Try Equip Set: " .. setName .. " (MISSING)")
+            profile.MiniSwap.ShowDebug("Try Equip Set: " .. setName .. " (MISSING)")
         end
     end
 end

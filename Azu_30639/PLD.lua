@@ -86,7 +86,7 @@ profile.Sets.Engaged_Priority = {
     },
 };
 
-profile.Sets.Idle_Priority = profile.DeepCopy(profile.Sets.Engaged_Priority)
+profile.Sets.Idle_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Priority)
 profile.Sets.Idle_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },
     { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 while below lv.50
