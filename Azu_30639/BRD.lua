@@ -120,7 +120,7 @@ profile.Sets.Idle_Priority = {
         { Name = "Chl. Roundlet +1", Level = 74 },    -- Regen+3 Refresh+1
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Emperor Hairpin", Level = 24 },     -- EVA+10 -- No Sallet, EVA > Regen for pulls
-        { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 while below lv.50
+        { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
         { Name = "Cmp. Eye Circlet", Level = 9 },
         "Coven Hat",
     },

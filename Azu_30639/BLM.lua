@@ -30,7 +30,7 @@ profile.Sets.Idle_Priority = {
         { Name = "Demon Helm", Level = 74 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Gambler's Chapeau", Level = 50 },   -- MP+20 INT+3
-        { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 while below lv.50
+        { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
         { Name = "Traveler's Hat", Level = 6 },
         "Coven Hat",
     },

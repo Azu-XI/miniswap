@@ -116,7 +116,7 @@ profile.Sets.Idle_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Prio
 profile.Sets.Idle_Priority.Head = {
     { Name = "Naga Somen", Level = 75 },
     { Name = "Shinobi Hachigane", Level = 50 },
-    { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 while below lv.50
+    { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
 };
 
 -- Goal: HHP
