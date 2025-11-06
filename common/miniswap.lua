@@ -1,7 +1,5 @@
--- Examples:
--- * https://github.com/Jyouya/Ashita-Stuff/tree/master/config/addons/luashitacast
--- ** UI example on Ashita discord with filters: `from: will.8627 has: image`
--- * https://github.com/avogadro-war/ashita_profiles
+-- MiniSwap, a LuAshitacast engine for those allergic to Lua, by Azu-XI.
+-- Source: https://github.com/Azu-XI/miniswap
 
 local fonts = require('fonts');
 local imgui = require('imgui');
