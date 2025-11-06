@@ -34,6 +34,14 @@ Thanks to Thorny for the amazing [LuAshitacast][], and [Jyouya][] and [avogadro-
 
 ...
 
+## LockStyle
+
+...
+
 ## Level Sync
+
+...
+
+## Further Customization
 
 ...

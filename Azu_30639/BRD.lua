@@ -113,8 +113,9 @@ profile.Sets.Idle_Priority = {
         "Kupo Shield",
     },
     Range = {
-        { Name = "Terpander", Level = 75 },
-        { Name = "Rouser", Level = 20 },
+        -- { Name = "Terpander", Level = 75 },
+        { Name = "Rouser +1", Level = 50 },
+        -- { Name = "Rouser", Level = 20 },
     },
     Head  = {
         { Name = "Chl. Roundlet +1", Level = 74 },    -- Regen+3 Refresh+1
@@ -198,19 +199,10 @@ profile.Sets.Idle_Priority = {
 };
 
 profile.Sets.Town_Priority = {
-    Main  = {
-        { Name = "Joyeuse", Level = 70 },
-        { Name = "Hornetneedle", Level = 48 },
-        { Name = "Beestinger", Level = 7 },
-    },
-    Sub   = {
-        { Name = "Genbu's Shield", Level = 74 },
-        { Name = "Elegant Shield", Level = 40 },
-        "Kupo Shield",
-    },
     Range = {
         { Name = "Terpander", Level = 75 },
-        { Name = "Rouser", Level = 20 },
+        { Name = "Rouser +1", Level = 50 },
+        -- { Name = "Rouser", Level = 20 },
     },
 }
 
