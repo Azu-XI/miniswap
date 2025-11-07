@@ -99,6 +99,8 @@ profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Enga
 profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
+    { Name = "Brass Cap", Level = 11 },
+    "Coven Hat",
 };
 profile.Sets.Idle_Default_Priority.Neck = {
     { Name = "Pegasus Collar", Level = 20 },          -- MvtSpeed+12%

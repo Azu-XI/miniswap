@@ -90,6 +90,7 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Cmp. Eye Circlet", Level = 9 },
+    "Coven Hat",
 };
 profile.Sets.Idle_Default_Priority.Feet = {
     { Name = "Strider Boots", Level = 20 },

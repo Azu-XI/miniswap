@@ -82,6 +82,9 @@ profile.Sets.Engaged_Default_Priority = {
 profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
 profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
+    { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
+    { Name = "Traveler's Hat", Level = 5 },
+    "Coven Hat",
 };
 
 -- Goal: HHP

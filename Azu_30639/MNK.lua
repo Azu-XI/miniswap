@@ -117,6 +117,8 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Naga Somen", Level = 75 },
     { Name = "Shinobi Hachigane", Level = 50 },
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
+    { Name = "Brass Cap", Level = 11 },
+    "Coven Hat",
 };
 
 -- Goal: HHP

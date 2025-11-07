@@ -119,6 +119,7 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Cmp. Eye Circlet", Level = 9 },         -- EVA+3
+    "Coven Hat",
 };
 profile.Sets.Idle_Default_Priority.Ring1 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
