@@ -1025,10 +1025,7 @@ do -- UTILS REGION
     end
 
     profile.MiniSwap.Slugify = function(rawName)
-        local output = string.gsub(rawName, "%s+", "")
-        output = string.gsub(output, "'", "")
-        output = string.gsub(output, ":", "")
-        return output
+        return string.gsub(rawName, "[^%w]+", "")
     end
 
     profile.MiniSwap.TryEquipSet = function(setName)
