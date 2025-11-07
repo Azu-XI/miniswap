@@ -84,6 +84,10 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Brass Cap", Level = 11 },
     "Coven Hat",
 };
+profile.Sets.Idle_Default_Priority.Neck = {
+    { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
+    table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+};
 
 profile.Sets.JA_Charm_Priority = {
     Head  = {

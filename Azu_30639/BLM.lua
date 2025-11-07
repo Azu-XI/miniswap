@@ -45,6 +45,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
     Neck  = {
+        { Name = "Oneiros Torque", Level = 75 },      -- EVA+5 PDT-2
             -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
         { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
             -- Wish: Lv.20 Black Silk Neckerchief [INT+1]

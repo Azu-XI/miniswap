@@ -146,6 +146,10 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Cmp. Eye Circlet", Level = 9 },         -- EVA+3
     "Coven Hat",
 };
+profile.Sets.Idle_Default_Priority.Neck = {
+    { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
+    table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+};
 profile.Sets.Idle_Default_Priority.Ring1 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
     { Name = "Coral Ring", Level = 70 },              -- MDT-3

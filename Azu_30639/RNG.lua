@@ -92,6 +92,10 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Cmp. Eye Circlet", Level = 9 },
     "Coven Hat",
 };
+profile.Sets.Idle_Default_Priority.Neck = {
+    { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
+    table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+};
 profile.Sets.Idle_Default_Priority.Feet = {
     { Name = "Strider Boots", Level = 20 },
     { Name = "Leaping Boots", Level = 7 },

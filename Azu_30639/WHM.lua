@@ -41,6 +41,7 @@ profile.Sets.Idle_Default_Priority = {
         "Coven Hat",
     },
     Neck  = {
+        { Name = "Oneiros Torque", Level = 75 },      -- EVA+5 PDT-2
         { Name = "Radiant Lantern", Level = 60 },
         { Name = "Justice Badge", Level = 7 },
     },
