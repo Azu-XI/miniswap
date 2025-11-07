@@ -1,6 +1,6 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
-profile.Sets.Engaged_Priority = {
+profile.Sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Xiutleato", Level = 75 },
         { Name = "Verdun", Level = 73 },
@@ -82,7 +82,7 @@ profile.Sets.Engaged_Priority = {
     },
 };
 
-profile.Sets.Idle_Priority = {
+profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Earth Staff", Level = 51 },         -- PDT-20
         { Name = "Centurion's Sword", Level = 30 },
@@ -294,7 +294,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
     };
 }
 
-profile.Sets.Resting_Priority = {
+profile.Sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Iridal Staff", Level = 51 },        -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- HMP+3

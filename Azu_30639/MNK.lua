@@ -9,7 +9,7 @@ profile.Sets.LockStyle = {
     Feet  = "Naga Kyahan",
 };
 
-profile.Sets.Engaged_Priority = {
+profile.Sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Maochinoli", Level = 75 },
             -- With: Blurred Claws? (https://www.bg-wiki.com/ffxi/CatsEyeXI_Systems/Synthesis)
@@ -112,15 +112,15 @@ profile.Sets.Engaged_Priority = {
     },
 };
 
-profile.Sets.Idle_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Priority)
-profile.Sets.Idle_Priority.Head = {
+profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
+profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Naga Somen", Level = 75 },
     { Name = "Shinobi Hachigane", Level = 50 },
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
 };
 
 -- Goal: HHP
-profile.Sets.Resting_Priority = {
+profile.Sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },

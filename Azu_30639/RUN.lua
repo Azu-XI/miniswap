@@ -1,6 +1,6 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
-profile.Sets.Engaged_Priority = {
+profile.Sets.Engaged_Default_Priority = {
     -- Main  = {
     -- },
     -- Sub   = {
@@ -81,13 +81,13 @@ profile.Sets.Engaged_Priority = {
     },
 };
 
-profile.Sets.Idle_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Priority)
-profile.Sets.Idle_Priority.Head = {
+profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
+profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
 };
 
-profile.Sets.Resting_Priority = {
+profile.Sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },

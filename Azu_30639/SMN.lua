@@ -9,7 +9,7 @@ profile.Sets.LockStyle = {
     Feet  = "Summoner's Pgch.",
 };
 
-profile.Sets.Idle_Priority = {
+profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Radiance", Level = 20 },
         { Name = "Ash Pole +1", Level = 5 },
@@ -387,7 +387,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
     };
 }
 
-profile.Sets.Resting_Priority = {
+profile.Sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Iridal Staff", Level = 51 },        -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3

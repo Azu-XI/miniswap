@@ -1,6 +1,6 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
-profile.Sets.Engaged_Priority = {
+profile.Sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Mythril Pick", Level = 28 },
         { Name = "Light Axe", Level = 11 },
@@ -77,8 +77,8 @@ profile.Sets.Engaged_Priority = {
     },
 };
 
-profile.Sets.Idle_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Priority)
-profile.Sets.Idle_Priority.Head = {
+profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
+profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
 };

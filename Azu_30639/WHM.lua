@@ -9,7 +9,7 @@ profile.Sets.LockStyle = {
     Feet  = "Garrison Boots +1",
 };
 
-profile.Sets.Idle_Priority = {
+profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Earth Staff", Level = 51 },         -- PDT-20
         { Name = "Pilgrim's Wand", Level = 10 },
@@ -125,7 +125,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
     };
 }
 
-profile.Sets.Resting_Priority = {
+profile.Sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
     },

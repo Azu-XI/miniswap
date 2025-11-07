@@ -102,7 +102,7 @@ do -- GEAR LIFECYCLE REGION
 
         -- Stance: Engaged
         if (player.Status == 'Engaged') then
-            gFunc.EquipSet(profile.Sets.Engaged);
+            gFunc.EquipSet(profile.Sets.Engaged_Default);
 
             local pet = gData.GetPet();
             if (pet ~= nil) then
@@ -114,11 +114,11 @@ do -- GEAR LIFECYCLE REGION
 
         -- Stance: Resting
         elseif (player.Status == 'Resting') then
-            gFunc.EquipSet(profile.Sets.Resting);
+            gFunc.EquipSet(profile.Sets.Resting_Default);
 
         -- Stance: Idle
         elseif (player.Status == 'Idle') then
-            gFunc.EquipSet(profile.Sets.Idle);
+            gFunc.EquipSet(profile.Sets.Idle_Default);
 
             local pet = gData.GetPet();
             if (pet ~= nil) then
@@ -131,7 +131,7 @@ do -- GEAR LIFECYCLE REGION
 
         -- Town Sets
         if (environment.Area ~= nil and profile.MiniSwap.TownGroupsMapping[environment.Area] ~= nil) then
-           profile.MiniSwap.TryEquipSet("Town");
+           profile.MiniSwap.TryEquipSet("Town_Default");
 
            local groups = profile.MiniSwap.TownGroupsMapping[environment.Area]
            if (groups ~= nil) then
@@ -1031,10 +1031,10 @@ do -- UTILS REGION
     profile.MiniSwap.TryEquipSet = function(setName)
         local set = profile.Sets[setName]
         if (set ~= nil) then
-            profile.MiniSwap.ShowDebug("Try Equip Set: " .. setName .. " (OK)")
+            profile.MiniSwap.ShowDebug("Equipping Set: " .. setName)
             gFunc.EquipSet(setName);
         else
-            profile.MiniSwap.ShowDebug("Try Equip Set: " .. setName .. " (MISSING)")
+            profile.MiniSwap.ShowDebug("MISSING Set: " .. setName)
         end
     end
 end

@@ -1,6 +1,6 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
-profile.Sets.Idle_Priority = {
+profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Earth Staff", Level = 51 },         -- PDT-20
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
@@ -189,7 +189,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
     };
 }
 
-profile.Sets.Resting_Priority = {
+profile.Sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
     },

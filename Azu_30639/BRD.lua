@@ -9,7 +9,7 @@ profile.Sets.LockStyle = {
     Feet  = "Bard's Slippers",
 };
 
-profile.Sets.Engaged_Priority = {
+profile.Sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Atoyac", Level = 75 },
         { Name = "Gully", Level = 72 },
@@ -101,7 +101,7 @@ profile.Sets.Engaged_Priority = {
     },
 };
 
-profile.Sets.Idle_Priority = {
+profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Earth Staff", Level = 51 },         -- PDT-20
         { Name = "Monster Signa", Level = 17 },
@@ -197,14 +197,6 @@ profile.Sets.Idle_Priority = {
         "Dream Boots +1",
     },
 };
-
-profile.Sets.Town_Priority = {
-    Range = {
-        { Name = "Terpander", Level = 75 },
-        { Name = "Rouser +1", Level = 50 },
-        -- { Name = "Rouser", Level = 20 },
-    },
-}
 
 -- Goal: Max SIRD 102%; Max FastCast 80% ; Max Haste 25%
 profile.Sets.Midcast_Default_Priority = {
@@ -492,7 +484,7 @@ profile.Sets.Precast_Singing_Priority = {
     },
 };
 
-profile.Sets.Resting_Priority = {
+profile.Sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Iridal Staff", Level = 51 },        -- HMP+10
     },

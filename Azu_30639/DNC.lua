@@ -8,7 +8,7 @@ profile.Sets.LockStyle = {
     Feet  = "remove",
 };
 
-profile.Sets.Engaged_Priority = {
+profile.Sets.Engaged_Default_Priority = {
     Main  = {
             -- Wish: Lv.75 Polyhymnia {Oboro}
         { Name = "Gully", Level = 72 },
@@ -114,27 +114,27 @@ profile.Sets.Engaged_Priority = {
     },
 };
 
-profile.Sets.Idle_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Priority)
-profile.Sets.Idle_Priority.Head = {
+profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
+profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Cmp. Eye Circlet", Level = 9 },         -- EVA+3
 };
-profile.Sets.Idle_Priority.Ring1 = {
+profile.Sets.Idle_Default_Priority.Ring1 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
     { Name = "Kusha's Ring", Level = 55 },
     { Name = "Archer's Ring", Level = 30 },
     "San d'Orian Ring",
 };
-profile.Sets.Idle_Priority.Ring2 = {
+profile.Sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
     { Name = "Lava's Ring", Level = 55 },
     "Provenance Ring",
 };
 
-profile.Sets.Resting_Priority = {
+profile.Sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
