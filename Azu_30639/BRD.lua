@@ -113,7 +113,7 @@ profile.Sets.Idle_Priority = {
         "Kupo Shield",
     },
     Range = {
-        -- { Name = "Terpander", Level = 75 },
+        { Name = "Terpander", Level = 75 },
         { Name = "Rouser +1", Level = 50 },
         -- { Name = "Rouser", Level = 20 },
     },
