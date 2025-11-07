@@ -45,7 +45,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
     Neck  = {
-        { Name = "Oneiros Torque", Level = 75 },      -- EVA+5 PDT-2
+        { Name = "Lmg. Medallion +1", Level = 75 },
             -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
         { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
             -- Wish: Lv.20 Black Silk Neckerchief [INT+1]
@@ -83,6 +83,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Mist Silk Cape", Level = 10 },
     },
     Waist = {
+        { Name = "Salire Belt", Level = 75 },
         { Name = "Penitent's Rope", Level = 60 },     -- INT+5 MND+5
             -- Wish: Lv.50 Ocean Stone [INT+3]
             -- Wish: Lv.41 Reverend Sash [INT+2]
@@ -147,7 +148,7 @@ profile.Sets.Midcast_Default_Priority = {
     },
     Neck  = {
             -- Wish: Lv.75 Moepapa Pendant [INT+8 MCrit+5 Enm-5] {Arch Christelle@DynaValk}
-            -- Wish: Lv.75 Lmg. Medallion +1 [INT+5 ElemSkill+5] {DI 25k points}
+        { Name = "Lmg. Medallion +1", Level = 75 },   -- INT+5 ElemSkill+5
             -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
         { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
             -- Wish: Lv.20 Black Silk Neckerchief [INT+1]
@@ -177,13 +178,17 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
     },
     Back  = {
-            -- Wish: Merciful Cape? [EleSkill+5]
+            -- Wish: Lv.75 Hachirin-no-Obi (depending on day/weather)
+            -- Wish: Lv.75 Resonance Sash [ElemSkill+8 MBDmg+5]
+            -- Wish: Lv.75 Hecate's Cape? [MACC+3 MAB+3]
+            -- Wish: Lv.75 Merciful Cape? [EleSkill+5]
         { Name = "Black Cape +1", Level = 32 },       -- INT+1
         { Name = "Cotton Cape", Level = 18 },         -- INT+1
         { Name = "Mist Silk Cape", Level = 10 },
     },
     Waist = {
-            -- Wish: Lv.70 Sorcerer's Belt [INT+6 (Aug) ElemSkill+6 MAB+3]
+            -- Wish? Lv.70 Sorcerer's Belt [INT+6 (Aug) ElemSkill+6 MAB+3]
+        { Name = "Salire Belt", Level = 75 },         -- MACC+4 MAB+4
         { Name = "Penitent's Rope", Level = 60 },     -- INT+5                 Enm-3
             -- Wish: Lv.50 Ocean Stone [INT+3]
             -- Wish: Lv.41 Reverend Sash [INT+2]
@@ -192,6 +197,7 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
+            -- Wish: Lv.75 Shadow Trews +0/1? [MACC+4/5 MAB+4/5 (Aug) MAB+1~4 ElemSkill+1~6 ConserveMP+1~6]
             -- Wish: Lv.75 Src. Tonban +1 [INT+3 (Aug) ElemSkill+8 MCrit+8 MCritDmg+8]
         { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
         { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
