@@ -4,13 +4,14 @@ profile.Sets.LockStyle = {
     Head  = "remove",
     Body  = "Custom Gilet +1",
     Hands = "remove",
-    Legs  = "remove",
-    Feet  = "remove",
+    Legs  = "Etoile's Tights",
+    Feet  = "Etoile Toe Shoes +1",
 };
 
 profile.Sets.Engaged_Default_Priority = {
     Main  = {
             -- Wish: Lv.75 Polyhymnia {Oboro}
+        { Name = "Atoyac", Level = 75 },
         { Name = "Gully", Level = 72 },
         { Name = "Avis", Level = 57 },
             -- Wish: Lv.50->75 Bushwhacker +1 {Yagudo Incursions}
@@ -25,7 +26,7 @@ profile.Sets.Engaged_Default_Priority = {
     Sub  = {
             -- Wish: Lv.75 Taming Sari {Great DI NM Gensai}
             -- Wish: Lv.75 Bushwhacker +1 {Yagudo Incursions}
-        { Name = "Atoyac", Level = 75 },
+        { Name = "Joyeuse", Level = 70 },
         { Name = "Bone Knife +1", Level = 57 },
             -- Wish: Lv.50->75 Mercurial Kris {Jailer of Prudence}
         { Name = "Mrc.Cpt. Kukri", Level = 50 },
@@ -34,6 +35,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Range = {
         -- Wish: Lv.75 Flamedancer Glaive {Brew+2 Coeurl} [CHR+5 StepACC+10 SambaDuration+15 {Aug} STR+4 DEX+4 ACC+2]
+        { Name = "War Hoop", Level = 40 },
         { Name = "Rogetsurin", Level = 15 },
     },
     Ear1 = {
@@ -48,7 +50,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Dodge Earring", Level = 29 },
     },
     Head  = {
-        { Name = "Rog. Bonnet +1", Level = 74 },      -- Haste+5  CritRate+3  EVA+10
+        { Name = "Rawhide Mask", Level = 75 },        -- DEX+5 ACC+10 ATK+10 DA+3
         { Name = "Wivre Mask", Level = 65 },          -- ACC+5 DEX+3
         { Name = "Storm Zucchetto", Level = 50 },     -- ACC+4
         { Name = "Emperor Hairpin", Level = 24 },
@@ -61,6 +63,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
+        { Name = "Rawhide Vest", Level = 75 },        -- DEX+10 AGI+10 ATK+10 Haste+5% Dagger+10 Sword+30 Inquartata+2
         { Name = "Scorpion Harness", Level = 57 },    -- ACC+10 EVA+10
         { Name = "Raptor Jerkin", Level = 48 },
         { Name = "Garrison Tunica +1", Level = 20 },
@@ -68,6 +71,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Hume Tunic",
     },
     Hands = {
+            -- Wish: Lv.68 Cobra Mittens [ACC+4 STP+3 (Aug) VIT+5 PDT-2% Haste+6]
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         { Name = "Battle Gloves", Level = 14 },
@@ -87,6 +91,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
+            -- Wish: Lv.70 Etoile Cape [DEX+5 ACC+5 EVA+5 (Aug) ATK+9]
         { Name = "Exile's Cloak", Level = 50 },
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
@@ -99,7 +104,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
-        { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7 H+2 (Wish Aug: STP+3)
+        { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2
         { Name = "Raptor Trousers", Level = 50 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
         { Name = "Phl. Trousers", Level = 15 },
@@ -107,7 +112,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Adhemar Gamashes", Level = 75 },
+            -- Wish: Lv.68 Cobra Leggings [ACC+4 STP+3 (Aug) STR+4 CHR+4 Haste+2]
+        { Name = "Etoile Toe Shoes +1", Level = 75 }, -- ACC+5 DEX+4
         { Name = "Raptor Ledelsens", Level = 48 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
@@ -116,6 +122,7 @@ profile.Sets.Engaged_Default_Priority = {
 
 profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
 profile.Sets.Idle_Default_Priority.Head = {
+    { Name = "Rawhide Mask", Level = 75 },
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Cmp. Eye Circlet", Level = 9 },         -- EVA+3
@@ -145,15 +152,64 @@ profile.Sets.Resting_Default_Priority = {
     },
 };
 
--- Goal: Waltz Potency > CHR (caster) & VIT (target)
-profile.Sets.JA_CuringWaltz_Priority = {
+--
+-- Job Abilities
+--
+
+-- Goal: Duration
+local jigs = {
+    Legs  = { { Name = "Etoile Tights", Level = 74 } },       -- Duration+25% (could +1 for +35%)
+    Feet  = { { Name = "Dancer's Toe Shoes", Level = 56 } },  -- Duration+25% (could +1 for +35%)
+};
+profile.Sets.JA_ChocoboJig_Priority = jigs;
+profile.Sets.JA_ChocoboJigII_Priority = jigs;
+profile.Sets.JA_SpectralJig_Priority = jigs;
+
+-- Goal: Duration
+local sambas = { Head  = { { Name = "Dancer's Tiara", Level = 54 } } };  -- Duration+30s
+profile.Sets.AspirSamba_Priority = sambas;
+profile.Sets.AspirSambaII_Priority = sambas;
+profile.Sets.DrainSambaII_Priority = sambas;
+profile.Sets.DrainSambaIII_Priority = sambas;
+profile.Sets.HasteSamba_Priority = sambas;
+profile.Sets.JA_DrainSamba_Priority = sambas;
+
+-- Goal: ACC
+local steps = {
+    Hands = {
+        { Name = "Dancer's Bangles", Level = 52 },    -- StepACC+10
+    },
+    Feet  = {
+        { Name = "Etoile Toe Shoes +1", Level = 75 }, -- StepACC+10
+    },
+};
+profile.Sets.JA_BoxStep_Priority = steps;
+profile.Sets.JA_FeatherStep_Priority = steps;
+profile.Sets.JA_Quickstep_Priority = steps;
+profile.Sets.JA_StutterStep_Priority = steps;
+
+-- Goal: Waltz Potency (Max 50%) > CHR (caster) > Waltz Potency Received (Max 30%) > VIT (target)
+--> HP Cured = floor( (Waltz Potency gear + Waltz Potency Received) × floor( M × (User's CHR + Target's VIT) + B ) )
+--> With M as Curing/Divine 1/2/3/4 = 0.25/0.5/0.75/1.0
+--> With B as Curing 1/2/3/4 = 60/130/270/450 ; Divine 1/2 = 60/280
+local waltz = {
+    Ear1  = {
+        { Name = "Beastly Earring", Level = 72 },     -- CHR+2
+    },
+    Ear2  = {
+        -- Wish: Roundel Earring [WaltzPot+5%]
+    },
     Head  = {
+        { Name = "Rawhide Mask", Level = 75 },        -- WaltzPot+7%
+        { Name = "Dancer's Tiara", Level = 54 },      -- CHR+4
         { Name = "Shade Tiara", Level = 25 },         -- CHR+2
     },
     Neck  = {
         { Name = "Bird Whistle", Level = 15 },        -- CHR+3
     },
     Body  = {
+            -- Wish: Lv.74 Dancer's Casaque +1 [WaltzPot+10% (Aug) WaltzPot+5% WaltzDelay-5]
+        { Name = "Dancer's Casaque", Level = 60 },    -- WaltzPot+10%
         { Name = "Raptor Jerkin", Level = 48 },       -- CHR+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- CHR+2
     },
@@ -162,6 +218,7 @@ profile.Sets.JA_CuringWaltz_Priority = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
     },
     Back  = {
+            -- Wish: Lv.70 Etoile Cape [CHR+5]
         { Name = "Traveler's Mantle", Level = 28 },   -- Make sure Exile's Cloack with CHR-3 isn't equiped
     },
     Waist = {
@@ -169,11 +226,20 @@ profile.Sets.JA_CuringWaltz_Priority = {
         { Name = "Griot Belt", Level = 28 },          -- CHR+1
     },
     Legs  = {
+        { Name = "Etoile Tights", Level = 74 },       -- CHR+3
         { Name = "Raptor Trousers", Level = 48 },     -- VIT+4
     },
-}
-profile.Sets.JA_CuringWaltzII_Priority = profile.Sets.JA_CuringWaltz_Priority
-profile.Sets.JA_DivineWaltz_Priority = profile.Sets.JA_CuringWaltz_Priority
+};
+profile.Sets.JA_CuringWaltz_Priority = waltz;
+profile.Sets.JA_CuringWaltzII_Priority = waltz;
+profile.Sets.JA_CuringWaltzIII_Priority = waltz;
+profile.Sets.JA_CuringWaltzIV_Priority = waltz;
+profile.Sets.JA_DivineWaltz_Priority = waltz;
+profile.Sets.JA_DivineWaltzII_Priority = waltz;
+
+--
+-- Weapon Skills
+--
 
 -- Goal: ACC & DEX & AGI
 profile.Sets.WS_Default_Priority = {

@@ -22,11 +22,12 @@ profile.Sets.Idle_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
-            -- Wish: Lv.66 Phantom Tathlum [INT+2]
+            -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tathlum", Level = 25 },      -- INT+1
         { Name = "Happy Egg", Level = 1 },
     },
     Head  = {
+        { Name = "Wizard's Petasos +1", Level = 74 }, -- Refresh +1
         { Name = "Demon Helm", Level = 74 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Gambler's Chapeau", Level = 50 },   -- MP+20 INT+3
@@ -52,9 +53,9 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Justice Badge", Level = 7 },        --        MND+3
     },
     Body  = {
-        { Name = "Sorcerer's Coat", Level = 74 },       -- Refresh+1
-        { Name = "Vermillion Cloak", Level = 59 },       -- Refresh+1
-        { Name = "Garrison Tunica +1", Level = 20 },     -- Refresh+1 while below lv.50
+        { Name = "Sorcerer's Coat", Level = 74 },     -- Refresh+1
+        { Name = "Vermillion Cloak", Level = 59 },    -- Refresh+1
+        { Name = "Garrison Tunica +1", Level = 20 },  -- Refresh+1 while below lv.50
         { Name = "Druid's Robe", Level = 8 },
         "Kingdom Aketon", 
     },
@@ -127,17 +128,17 @@ profile.Sets.Midcast_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
-            -- Wish: Lv.66 Phantom Tathlum [INT+2]
+            -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
     },
     Head  = {
             -- Wish: Lv.75 Src. Petasos +1 [ElemSkill+10 (Aug) INT+8 MAB+6 Enm-5]
         { Name = "Demon Helm", Level = 73 },          -- INT+5  ElemSkill +5
-            -- Wish: Lv.60 Wizard's Petasos [INT+4]
         { Name = "Gambler's Chapeau", Level = 20 },   -- INT+3
     },
     Ear1 = {
-            -- Wish: Lv.75 Novio Earring {Aura of Adulation@Jailer of Love}
+            -- Wish: Lv.75 Novio Earring {Aura of Adulation@Jailer of Love} [MAB+7]
+            -- Wish: Lv.60 Adept's Earring {DI@25 merits} [MAB+5 Enm-3 (Aug) ConserveMP+2]
             -- Wish: Lv.29 Morion Earring +1 [INT+2]
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
@@ -160,10 +161,7 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Seer's Tunic", Level = 29 },        -- INT+1
     },
     Hands = {
-            -- Wish: Lv.73 Genie Manillas [MAB+3 ElemSkill+6 (Aug) INT+8 MCrit+8 ConserveMP+6 OccultAcumen+30]
-            -- Wish: Lv.75 Src. Gloves +1 [(Aug) INT+8 MAB+6]
-            -- Wish: Lv.74 Wizard's Gloves +1 [INT+3 ElemSkill+15 (Aug) MAB+5 ConserveMP+5]
-            -- Wish: Lv.75 Morrigan's Cuffs [MAB+5 MACC+5 INT+3]
+            -- Wish: Lv.75 Zenith Mitts +1 [MAB+6 (Aug) INT+1~6 MBDmg+1~6 ConserveMP+1~6]
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
     },
     Ring1 = {

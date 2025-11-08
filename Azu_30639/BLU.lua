@@ -14,6 +14,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Sapara", Level = 7 },
     },
     Sub   = {
+            -- Wish: Lv.40 Combat Caster's Scimitar
         { Name = "Nadrs", Level = 24 },
         { Name = "Sapara", Level = 20 },
         "Kupo Shield",

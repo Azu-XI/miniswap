@@ -13,7 +13,7 @@ profile.Sets.Idle_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
-            -- Wish: Lv.66 Phantom Tathlum [INT+2]
+            -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tathlum", Level = 25 },      -- INT+1
         { Name = "Happy Egg", Level = 1 },
     },
@@ -108,7 +108,7 @@ profile.Sets.Midcast_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
-            -- Wish: Lv.66 Phantom Tathlum [INT+2]
+            -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
     },
     Head  = {

@@ -97,7 +97,7 @@ profile.Sets.Midcast_Default_Priority = {
     },
     Range = '',
     Ammo  = {
-            -- Wish: Lv.66 Phantom Tathlum [INT+2]
+            -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
     },
     Head  = {

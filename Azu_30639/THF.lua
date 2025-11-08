@@ -112,7 +112,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
-        { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7 H+2 (Wish Aug: STP+3)
+        { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2
         { Name = "Raptor Trousers", Level = 50 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
         { Name = "Phl. Trousers", Level = 15 },

@@ -45,7 +45,7 @@ profile.Sets.HELM = {
 };
 
 profile.Sets.Provenance = {
-    Ring1 = "Provenance Ring",
+    Ring2 = "Provenance Ring",
 };
 
 profile.Sets.Town_SandOria = {
