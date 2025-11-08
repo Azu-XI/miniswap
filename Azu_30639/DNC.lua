@@ -229,6 +229,7 @@ local waltz = {
         { Name = "Etoile Tights", Level = 74 },       -- CHR+3
         { Name = "Raptor Trousers", Level = 48 },     -- VIT+4
     },
+    -- Feet  = {},
 };
 profile.Sets.JA_CuringWaltz_Priority = waltz;
 profile.Sets.JA_CuringWaltzII_Priority = waltz;
@@ -252,6 +253,8 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },           --             ACC+1
     },
     Body = {
+        { Name = "Rawhide Vest", Level = 75 },        -- DEX+10 AGI+10 ATK+10 Dagger+10 Sword+30
+        { Name = "Scorpion Harness", Level = 57 },    -- ACC+10 EVA+10
         { Name = "Raptor Jerkin", Level = 48 },       -- DEX+4       ATK+8
         { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
     },
@@ -280,6 +283,22 @@ profile.Sets.WS_Default_Priority = {
     Feet  = {
         { Name = "Leaping Boots", Level = 7 },        -- DEX+3 AGI+3
     },
+};
+
+-- Goal: fTP & ACC & AGI & DA & TA & CRIT
+profile.Sets.WS_Exenterator = {
+    Head  = "Raptor Helm",                            -- AGI+4          ATK+4
+    Ear2  = "Luminous Earring",                       --        ACC+3   ATK+4
+    Ear2  = "Brutal Earring",                         --                        DA+1
+    Neck  = "Soil Gorget",                            -- fTP+0.1
+    Body  = "Rawhide Vest",                           -- AGI+10 ATK+10 Dagger+10 Sword+30
+    -- Hands = "",
+    Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
+    Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
+    -- Back  = "",
+    Waist = "Virtuoso Belt",                          --        ACC+12  ATK+4
+    Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
+    Feet  = "Raptor Ledelsens",                       -- AGI+4
 };
 
 return profile;

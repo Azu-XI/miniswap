@@ -312,7 +312,7 @@ profile.Sets.WS_Default_Priority = {
 profile.Sets.WS_Exenterator = {
     Head  = "Adhemar Bonnet",                         -- AGI+6  DEX+6  Crit+3
         -- Wish: Dragon Cap +1 [AGI+5 (Aug) AGI+6 Dagger+8]
-    Neck  = "Loxo Scarf",                             -- AGI+4
+    Neck  = "Soil Gorget",                            -- fTP+0.1
         -- Wish: Fotia Gorget [WSAcc+10 WSD+10%]
     Body  = "Adhemar Jacket",                         --             ATK+10 Crit+
         -- Wish: Lv.75 Dragon Harness +1 [DEX+7 AGI+7 ATK+12 (Aug) DEX+3 AGI+3 ATK+12 Skillchain Dmg+4]
