@@ -145,6 +145,10 @@ profile.Sets.Idle_Default_Priority.Ring2 = {
     { Name = "Lava's Ring", Level = 55 },
     "Provenance Ring",
 };
+profile.Sets.Idle_Default_Priority.Legs = {
+    { Name = "Acrobat's Breeches", Level = 75 },      -- EVA+11
+    table.unpack(profile.Sets.Idle_Default_Priority.Legs),
+};
 
 profile.Sets.Resting_Default_Priority = {
     Hands = {
