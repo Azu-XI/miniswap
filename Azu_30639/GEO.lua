@@ -4,7 +4,7 @@ profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Earth Staff", Level = 51 },         -- PDT-20
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
-        { Name = "Maple Wand +1", Level = 1 },
+        "Maple Wand +1",
     },
     Sub   = {
             -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
@@ -89,11 +89,13 @@ profile.Sets.Idle_Default_Priority = {
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
         { Name = "Iridal Staff", Level = 51 },
-        { Name = "Maple Wand +1", Level = 1 },        -- INT+2  MND+2
+        { Name = "Ash Pole +1", Level = 5 },          -- INT+3
+        "Maple Wand +1",
     },
     Sub   = {
-        { Name = "Neph. Grip", Level = 51 },          -- INT+1
-        { Name = "Pelte", Level = 8 },                -- INT+1
+        { Name = "Neph. Grip", Level = 8 },           -- INT+1
+        { Name = "remove", Level = 5 },               -- No shield with staff
+        "Kupo Shield",
     },
     Range = '',
     Ammo  = {

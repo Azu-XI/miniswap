@@ -13,7 +13,7 @@ profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Radiance", Level = 20 },
         { Name = "Ash Pole +1", Level = 5 },
-        { Name = "Maple Wand +1", Level = 1 },
+        "Maple Wand +1",
     },
     Sub   = {
         { Name = "Neph. Grip", Level = 8 },

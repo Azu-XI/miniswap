@@ -170,7 +170,7 @@ profile.Sets.Idle_Default_Priority = {
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
         { Name = "Iridal Staff", Level = 51 },
-        { Name = "Maple Wand +1", Level = 1 },
+        "Maple Wand +1",
     },
     Sub   = {
         { Name = "Neph. Grip", Level = 51 },          -- INT+1

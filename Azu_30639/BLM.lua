@@ -13,7 +13,7 @@ profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Earth Staff", Level = 51 },         -- PDT-20
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
-        { Name = "Maple Wand +1", Level = 1 },
+        "Maple Wand +1",
     },
     Sub   = {
             -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
@@ -117,7 +117,7 @@ profile.Sets.Midcast_Default_Priority = {
             -- Wish: Lv.51 Chatoyant Staff
         { Name = "Iridal Staff", Level = 51 },
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
-        { Name = "Maple Wand +1", Level = 1 },
+        "Maple Wand +1",
     },
     Sub   = {
             -- Wish: Lv.75 Reflexive Grip +1 [MACC+4]
