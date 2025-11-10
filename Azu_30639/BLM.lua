@@ -209,6 +209,14 @@ profile.Sets.Midcast_Default_Priority = {
     },
 };
 
+profile.Sets.Midcast_ElementalMagic_Day_Priority = {
+    Waist = { { Name = "Hachirin-no-Obi", Level = 71 } },
+    Legs  = { { Name = "Sorcerer's Tonban", Level = 73 } },
+};
+profile.Sets.Midcast_ElementalMagic_Weather_Priority = {
+    Waist = { { Name = "Hachirin-no-Obi", Level = 71 } },
+};
+
 -- Goal: Drain/Aspir Potency ; Dark magic skill
 profile.Sets.Midcast_Drain_Priority = {
     Ear1  = {
@@ -315,5 +323,27 @@ profile.Sets.Resting_Default_Priority = {
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };
+
+
+profile.HandleMidcast = function()
+    -- Default behavior
+    profile.MiniSwap.HandleMidcast();
+
+    -- Match elemental magic with day/weather
+    local action = gData.GetAction();
+    local actionSkill = profile.MiniSwap.Slugify(action.Skill);
+    if (actionSkill ~= "ElementalMagic") then return end
+
+    local environment = gData.GetEnvironment();
+    local actionElement = action.Element;
+
+    if (environment.DayElement == actionElement) then
+        profile.MiniSwap.TryEquipSet("Midcast_ElementalMagic_Day");
+    end
+
+    if (environment.WeatherElement == actionElement) then
+        profile.MiniSwap.TryEquipSet("Midcast_ElementalMagic_Weather");
+    end
+end
 
 return profile;

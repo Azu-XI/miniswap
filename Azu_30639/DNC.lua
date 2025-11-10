@@ -71,6 +71,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Hume Tunic",
     },
     Hands = {
+            -- Wish: Lv.75 Swift Gages [STP+2 Haste+4 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
             -- Wish: Lv.68 Cobra Mittens [ACC+4 STP+3 (Aug) VIT+5 PDT-2% Haste+6]
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
@@ -201,7 +202,7 @@ local waltz = {
         { Name = "Beastly Earring", Level = 72 },     -- CHR+2
     },
     Ear2  = {
-        -- Wish: Roundel Earring [WaltzPot+5%]
+        -- Wish: Roundel Earring [WaltzPot+5%] {Suzaku@Sky2.0}
     },
     Head  = {
         { Name = "Rawhide Mask", Level = 75 },        -- WaltzPot+7%
@@ -230,6 +231,7 @@ local waltz = {
         { Name = "Griot Belt", Level = 28 },          -- CHR+1
     },
     Legs  = {
+            -- Wish: Lv.68 Cobra Leggings [(Aug) CHR+4 WaltzPot+2%]
         { Name = "Etoile Tights", Level = 74 },       -- CHR+3
         { Name = "Raptor Trousers", Level = 48 },     -- VIT+4
     },
@@ -296,7 +298,7 @@ profile.Sets.WS_Exenterator = {
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Body  = "Rawhide Vest",                           -- AGI+10 ATK+10 Dagger+10 Sword+30
-    -- Hands = "",
+    -- Hands = "",  -- Wish: Swift Gages [AGI+8 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     -- Back  = "",
