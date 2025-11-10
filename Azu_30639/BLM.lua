@@ -60,7 +60,7 @@ profile.Sets.Idle_Default_Priority = {
         "Kingdom Aketon", 
     },
     Hands = {
-        { Name = "Sorcerer's Gloves", Level = 72 },
+        { Name = "Zenith Mitts", Level = 73 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- MP+5 INT+2
         { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
@@ -162,6 +162,7 @@ profile.Sets.Midcast_Default_Priority = {
     },
     Hands = {
             -- Wish: Lv.75 Zenith Mitts +1 [MAB+6 (Aug) INT+1~6 MBDmg+1~6 ConserveMP+1~6]
+        { Name = "Zenith Mitts", Level = 73 },        -- MAB+5
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
     },
     Ring1 = {
