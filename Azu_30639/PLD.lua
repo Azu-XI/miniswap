@@ -57,7 +57,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Earth Mantle", Level = 40 },
+        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4  STR+4  DEX+4
+        { Name = "Earth Mantle", Level = 40 },        --        STR+2  VIT+1
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },

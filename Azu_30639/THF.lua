@@ -100,7 +100,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Exile's Cloak", Level = 50 },
+        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4  STR+4  DEX+4
+        { Name = "Exile's Cloak", Level = 50 },       --        STR+4  ATK+3
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },
@@ -324,9 +325,8 @@ profile.Sets.WS_Exenterator = {
     Hands = "Adhemar Wristbands",                     --             ACC+10 ATK+10 Enhance Trick Attack
     Ring1 = "Kusha's Ring",
     Ring2 = "Lava's Ring",
-    Back  = "Exile's Cloak",                          --             STR+2  ATK+3
+    Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
     Waist = "Virtuoso Belt",                          --                    ATK+4  ACC+12
-        -- Wish: Fotia Belt [WSAcc+10 WSD+10%]
     Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
     Feet  = "Adhemar Gamashes",                       --               TA+2
         -- Wish: Dragon Leggings +1 [AGI+4 (Aug) Acc+8 Atk+8 Crit+3]

@@ -54,7 +54,6 @@ profile.Sets.Engaged_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Earth Mantle", Level = 40 },
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },
@@ -113,7 +112,6 @@ profile.Sets.WS_Default_Priority = {
         "San d'Orian Ring",
     },
     Back  = {
-        { Name = "Earth Mantle", Level = 40 },
         { Name = "Lizard Mantle", Level = 17 },
     },
     Legs  = {

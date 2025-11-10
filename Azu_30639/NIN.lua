@@ -62,7 +62,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Exile's Cloak", Level = 50 },
+        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4  STR+4  DEX+4
+        { Name = "Exile's Cloak", Level = 50 },       --        STR+4  ATK+3       --        STR+4  ATK+3
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },
@@ -122,7 +123,7 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Virtuoso Belt", Level = 54 },
     },
     Back  = {
-        { Name = "Exile's Cloak", Level = 50 },       -- STR+1 ATK+3  (STR+4 once full augmented)
+        { Name = "Exile's Cloak", Level = 50 },       -- STR+4 ATK+3
         { Name = "Lizard Mantle", Level = 17 },       -- STR+1
     },
 };

@@ -81,8 +81,9 @@ profile.Sets.Engaged_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
+        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4  STR+4  DEX+4
             -- Wish: Lv. 61 Amemet Mantle +1 [STR+2 ATK+15]
-        { Name = "Exile's Cloak", Level = 50 },       -- STR+4 ATK+3
+        { Name = "Exile's Cloak", Level = 50 },       --        STR+4  ATK+3
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
         { Name = "Rabbit Mantle", Level = 4 },
@@ -228,7 +229,7 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12 ATK+4
     },
     Back  = {
-        { Name = "Exile's Cloak", Level = 50 },       -- STR+1 ATK+3  (STR+4 once full augmented)
+        { Name = "Exile's Cloak", Level = 50 },       -- STR+4 ATK+3
         { Name = "Lizard Mantle", Level = 17 },       -- STR+1
     },
     Feet  = {
@@ -239,43 +240,28 @@ profile.Sets.WS_Default_Priority = {
 -- Goal: ACC (Multi-hits WS) & DEX (Mod 73%)
 profile.Sets.WS_ShijinSpiral = {
     -- Ammo  = "",
-
     Head  = "Assailant's Visor",                      --              DEX+11 STR+5
         -- Wish: Augment to ACC+5 ATK+5 DA+2
-
     -- Ear1  = "",
         -- Wish: Hollow Earring [DEX+2 ACC+3]
-
     Ear2  = "Outlaw's Earring",                       --        ATK+4 DEX+2
-
     Neck  = "Peacock Charm",                          -- ACC+10
-        -- Wish: Fotia Gorget [WSAcc+10 WSD+10%]
+        -- Wish: Flame/Light/Fotia Gorget [WSAcc+10 WSD+10%]
         -- Wish: Ancient Torque [DEX+4 ACC+9]
-
     Body  = "Naga Samue",                             -- ACC+15 ATK+15
         -- Wish: High: Usukane Haramaki [DEX+8 ACC+12 (Aug) DA+3]
         -- Wish: Med: Antares Harness [DEX+8 ACC+8]
-
     Hands = "Shinobi Tekko",                          -- ACC+8  ATK+8
         -- Wish: Hachiryu Kote
-
     Ring1 = "Kusha's Ring",                           -- ACC+12 ATK+6        (Set w/ Lava's Ring)
-
     Ring2 = "Lava's Ring",                            -- ACC+12 ATK+6        (Set w/ Kusha's Ring)
-
-    Back  = "Exile's Cloak",                          --        ATK+3 STR+4
-        -- Wish: High: Cuchulain's Mantle [DEX+4 ACC+5] Is it even obtainable here?
-        -- Wish: Mid: Amemet Mantle +1 [STR+2 ATK+15]
-
+    Back  = "Cuchulain's Mantle",                     -- ACC+5        DEX+4
     Waist = "Virtuoso Belt",                          -- ACC+12 ATK+4
-        -- Wish: Fotia Belt [WSAcc+10 WSD+10%]
         -- Wish: Warwolf Belt [DEX+5 STR+5] If enough ACC elsewhere?
-
     Legs  = "Garrison Hose +1",                       --              DEX+2
         -- Wish: High: Byakko's Haidate [DEX+15]
         -- Wish: Med: Usukane Hizayoroi [DEX+5 ATK+10 (Aug) ACC+5]
         -- Wish: Med: Acrobat's Breeches [DEX+2 TA+2 (Aug) DEX+5 ATK+5]
-
     Feet  = "Melee Gaiters",                           --             DEX+4
         -- Wish: Melee Gaiters +1 [DEX+5 (Aug) ACC+8]
 }
