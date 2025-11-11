@@ -299,6 +299,7 @@ profile.Sets.WS_Default_Priority = {
     },
     Waist  = {
         {Name = "Virtuoso Belt", Level = 54 },        --             ACC+12  ATK+4
+        {Name = "Lizard Belt", Level = 17 },          -- DEX+2
     },
     Legs  = {
         { Name = "Adhemar Kecks", Level = 75 },       -- DEX+4 AGI+4
@@ -321,8 +322,8 @@ profile.Sets.WS_Exenterator = {
         -- Wish: Lv.70 Bloody Aketon [AGI+6/7 (Aug) AGI+4 ACC+8]
     Hands = "Adhemar Wristbands",                     --             ACC+10 ATK+10 Enhance Trick Attack
         -- Wish: Swift Gages [AGI+8 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
-    Ring1 = "Kusha's Ring",
-    Ring2 = "Lava's Ring",
+    Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
+    Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
     Waist = "Virtuoso Belt",                          --                    ATK+4  ACC+12
     Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2

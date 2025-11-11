@@ -519,7 +519,7 @@ profile.Sets.WS_Default_Priority = {
         "San d'Orian Ring",
     },
     Back  = {
-        { Name = "Lizard Mantle", Level = 17 },
+        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
     },
     Waist = {
             -- Wish: Stormlord Shawl +0/1 [STR+3/4 MND+3/4 ATK+10/15 DA+0/1]

@@ -125,7 +125,7 @@ profile.Sets.Resting = {
 
 profile.Sets.WS_Default_Priority = {
     Head  = {
-        { Name = "Shade Tiara", Level = 25 },          -- STR+2
+        { Name = "Shade Tiara", Level = 25 },         -- STR+2
     },
     Neck  = {
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
@@ -139,10 +139,10 @@ profile.Sets.WS_Default_Priority = {
     },
     Back  = {
         { Name = "Earth Mantle", Level = 40 },
-        { Name = "Lizard Mantle", Level = 17 },
+        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
     },
     Legs  = {
-        { Name = "Garrison Hose +1", Level = 20 },        -- STR+2
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2
     },
 };
 

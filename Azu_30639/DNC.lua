@@ -72,7 +72,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Hands = {
             -- Wish: Lv.75 Swift Gages [STP+2 Haste+4 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
-            -- Wish: Lv.68 Cobra Mittens [ACC+4 STP+3 (Aug) VIT+5 PDT-2% Haste+6]
+            -- Wish: Lv.68 Cobra Mittens [ACC+4 STP+3 (Aug) VIT+5 PDT-2% Haste+2]
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         { Name = "Battle Gloves", Level = 14 },
@@ -279,10 +279,11 @@ profile.Sets.WS_Default_Priority = {
     Back  = {
         {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4       ACC+4
         {Name = "Exile's Cloak", Level = 50 },        --                     ATK+3  STR+4
-        {Name = "Lizard Mantle", Level = 17 },
+        {Name = "Lizard Mantle", Level = 17 },        -- STR+1
     },
     Waist  = {
         {Name = "Virtuoso Belt", Level = 54 },        --             ACC+12  ATK+4
+        {Name = "Lizard Belt", Level = 17 },          -- DEX+2
     },
     Legs  = {
         { Name = "Velvet Slops", Level = 38 },        -- DEX+2       ATK+4

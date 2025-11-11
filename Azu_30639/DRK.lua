@@ -117,7 +117,7 @@ profile.Sets.WS_Default_Priority = {
     },
     Back  = {
         { Name = "Earth Mantle", Level = 40 },
-        { Name = "Lizard Mantle", Level = 17 },
+        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
     },
     Legs  = {
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2
