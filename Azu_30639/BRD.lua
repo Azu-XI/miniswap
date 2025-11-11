@@ -64,12 +64,14 @@ profile.Sets.Engaged_Default_Priority = {
         "Dream Mittens +1",
     },
     Ring1 = {
-        { Name = "Kusha's Ring", Level = 55 },
-        { Name = "Archer's Ring", Level = 30 },
+        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4 STP+1
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {
-        { Name = "Lava's Ring", Level = 55 },
+        { Name = "Rajas Ring", Level = 30 },          -- STP+5 SB+5 STR+2~5 DEX+2~5
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "Provenance Ring",
     },
     Back  = {
@@ -156,14 +158,16 @@ profile.Sets.Idle_Default_Priority = {
     Ring1 = {
             -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
         { Name = "Coral Ring", Level = 70 },          -- MDT-3
-        { Name = "Kusha's Ring", Level = 55 },
-        { Name = "Archer's Ring", Level = 30 },
+        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4 STP+1
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {
             -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
         { Name = "Coral Ring", Level = 70 },          -- MDT-3
-        { Name = "Lava's Ring", Level = 55 },
+        { Name = "Rajas Ring", Level = 30 },
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "Provenance Ring",
     },
     Back  = {
@@ -279,7 +283,7 @@ profile.Sets.Midcast_HealingMagic_Priority = {
             -- Wish: Zenith Pumps+0/1 [(Aug) CurePot+5/6]
             -- Wish: Medium's Sabots [CurePot+4] {DomainInvasion}
     };
-}
+};
 
 -- Goal: Max FastCast 80% ; Max Haste 25% ; Max SIRD 102%
 -- Erase & -na spells don't care about skill, so prioritize recast (and SIRD)
@@ -324,12 +328,12 @@ local midcastFastCast = {
         { Name = "Raptor Ledelsens", Level = 48 },    --               Haste+2
     },
 };
-profile.Sets.Midcast_Poisona_Priority = midcastFastCast
-profile.Sets.Midcast_Paralyna_Priority = midcastFastCast
-profile.Sets.Midcast_Blindna_Priority = midcastFastCast
-profile.Sets.Midcast_Silenana_Priority = midcastFastCast
-profile.Sets.Midcast_Erase_Priority = midcastFastCast
-profile.Sets.Midcast_Raise_Priority = midcastFastCast
+profile.Sets.Midcast_Poisona_Priority = midcastFastCast;
+profile.Sets.Midcast_Paralyna_Priority = midcastFastCast;
+profile.Sets.Midcast_Blindna_Priority = midcastFastCast;
+profile.Sets.Midcast_Silenana_Priority = midcastFastCast;
+profile.Sets.Midcast_Erase_Priority = midcastFastCast;
+profile.Sets.Midcast_Raise_Priority = midcastFastCast;
 
 -- Goal: CHR & Skill ; SongRecast- & SongDuration+
 profile.Sets.Midcast_Singing_Priority = {
@@ -448,7 +452,7 @@ profile.Sets.Precast_Default_Priority = {
     Feet  = {
             -- Wish: Suzaku's Sune-Ate [(Aug) FC+4]
     };
-}
+};
 
 -- Goal: Max FastCast 80% ; Cure Spellcasting
 profile.Sets.Precast_HealingMagic_Priority = {
@@ -462,7 +466,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
     Feet  = {
             -- Wish: Zenith Pumps+0/1 [(Aug) CureSpellcasting-5/6]
     };
-}
+};
 
 -- Goal: Max FastCast 80% ; Song Spellcasting
 profile.Sets.Precast_Singing_Priority = {

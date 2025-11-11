@@ -80,15 +80,14 @@ profile.Sets.Engaged_Default_Priority = {
         "Dream Mittens +1",
     },
     Ring1 = {
-            -- Wish: Zilant Ring [DEX+6 ACC+3] {Dyna Bubu Boss}
-            -- Use: Toreador's Ring Lv.57 [ACC+7] instead of Kusha when using Rajas
-        { Name = "Kusha's Ring", Level = 55 },
-        { Name = "Archer's Ring", Level = 30 },
+        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4 STP+1
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {
-        { Name = "Lava's Ring", Level = 55 },
-            -- Wish: Lv.30~75 Rajas Ring [STR+2~5 DEX+2~5 STP+5 SB+5]
+        { Name = "Rajas Ring", Level = 30 },          -- STP+5 SB+5 STR+2~5 DEX+2~5
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "Provenance Ring",
     },
     Back  = {
@@ -137,15 +136,12 @@ profile.Sets.Idle_Default_Priority.Neck = {
 profile.Sets.Idle_Default_Priority.Ring1 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
-    { Name = "Kusha's Ring", Level = 55 },
-    { Name = "Archer's Ring", Level = 30 },
-    "San d'Orian Ring",
+    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
 };
 profile.Sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
-    { Name = "Lava's Ring", Level = 55 },
-    "Provenance Ring",
+    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
 };
 profile.Sets.Idle_Default_Priority.Legs = {
     { Name = "Acrobat's Breeches", Level = 75 },      -- EVA+11
@@ -270,19 +266,23 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Battle Gloves", Level = 48 },       --             ACC+3
     },
     Ring1 = {
-        { Name = "Kusha's Ring", Level = 55 },
+        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4 STP+1
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {
-        { Name = "Lava's Ring", Level = 55 },
-        { Name = "Archer's Ring", Level = 30 },
+        { Name = "Rajas Ring", Level = 30 },          -- STR+2~5 DEX+2~5
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
+        "Provenance Ring",
     },
     Back  = {
-        {Name = "Exile's Cloak", Level = 50 },        --            STR+2 ATK+3
+        {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4       ACC+4
+        {Name = "Exile's Cloak", Level = 50 },        --                     ATK+3  STR+4
         {Name = "Lizard Mantle", Level = 17 },
     },
     Waist  = {
-        {Name = "Virtuoso Belt", Level = 54 },        --             ACC+12 ATK+4
+        {Name = "Virtuoso Belt", Level = 54 },        --             ACC+12  ATK+4
     },
     Legs  = {
         { Name = "Velvet Slops", Level = 38 },        -- DEX+2       ATK+4
@@ -299,10 +299,11 @@ profile.Sets.WS_Exenterator = {
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Body  = "Rawhide Vest",                           -- AGI+10 ATK+10 Dagger+10 Sword+30
-    -- Hands = "",  -- Wish: Swift Gages [AGI+8 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
+    Hands = "Dancer's Bangles",                       -- AGI+2
+        -- Wish: Swift Gages [AGI+8 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
-    -- Back  = "",
+    Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
     Waist = "Virtuoso Belt",                          --        ACC+12  ATK+4
     Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
     Feet  = "Raptor Ledelsens",                       -- AGI+4

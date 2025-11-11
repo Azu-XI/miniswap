@@ -54,8 +54,9 @@ profile.Sets.Engaged_Default_Priority = {
         "Dream Mittens +1",
     },
     Ring1 = {
-        { Name = "Ecphoria Ring", Level = 49 },
-        { Name = "Archer's Ring", Level = 30 },
+        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4 STP+1
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {

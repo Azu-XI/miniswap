@@ -46,14 +46,14 @@ profile.Sets.Engaged_Default_Priority = {
         "Dream Mittens +1",
     },
     Ring1 = {
-            -- Wish: Zilant Ring [DEX+6 ACC+3] {Dyna Bubu Boss}
-        -- { Name = "Kusha's Ring", Level = 55 },
-        { Name = "Archer's Ring", Level = 30 },
+        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4 STP+1
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {
-            -- Wish: Rajas Ring [STR+2~5 DEX+2~5 STP+5 SB+5]
-        -- { Name = "Lava's Ring", Level = 55 },
+        { Name = "Rajas Ring", Level = 30 },          -- STP+5 SB+5 STR+2~5 DEX+2~5
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "Provenance Ring",
     },
     Back  = {
@@ -138,10 +138,16 @@ profile.Sets.Idle_Default_Priority = {
         "Dream Mittens +1",
     },
     Ring1 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+        { Name = "Coral Ring", Level = 70 },          -- MDT-3
         { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
         "Windurstian Ring",
     },
     Ring2 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+        { Name = "Coral Ring", Level = 70 },          -- MDT-3
+        { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
+        { Name = "Eremite's Ring", Level = 10 },      -- INT+2
         "Provenance Ring",
     },
     Back  = {
@@ -200,12 +206,12 @@ profile.Sets.Midcast_Default_Priority = {
 
 local midcastEnfeeblingMND = {
     Ring1 = {
-        { Name = "Saintly Ring", Level = 10 },        -- MND+2
             -- Wish: +1
+        { Name = "Saintly Ring", Level = 10 },        -- MND+2
     },
     Ring2 = {
+        { Name = "Tamas Ring", Level = 30 },          -- MND+2~5
         { Name = "Saintly Ring", Level = 10 },        -- MND+2
-            -- Wish: +1
     },
 }
 profile.Sets.Midcast_Paralyze_Priority = midcastEnfeeblingMND;
@@ -216,11 +222,12 @@ local midcastEnfeeblingINT = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
     },
     Ring1 = {
+        { Name = "Hibernal Ring", Level = 75 },       -- INT+5
         { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
     },
     Ring2 = {
+        { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
-            -- Wish: +1
     },
 }
 profile.Sets.Midcast_Blind_Priority = midcastEnfeeblingINT;
@@ -237,6 +244,78 @@ profile.Sets.Midcast_ElementalMagic_Priority = {
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
     },
 }
+
+-- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
+profile.Sets.Midcast_HealingMagic_Priority = {
+    Main  = {
+            -- Wish: Chatoyant Staff [CurePot+15]
+        { Name = "Iridal Staff", Level = 51 },        -- CurePot+10
+    },
+    Sub   = {
+            -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
+        { Name = "Neph. Grip", Level = 51 },
+    },
+    Neck  = {
+        { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
+    },
+    Ring1 = {
+            -- Wish: +1
+        { Name = "Saintly Ring", Level = 10 },        -- MND+2
+    },
+    Ring2 = {
+        { Name = "Tamas Ring", Level = 30 },          -- MND+2~5
+        { Name = "Saintly Ring", Level = 10 },        -- MND+2
+    },
+    Back  = {
+        { Name = "Dew Silk Cape +1", Level = 75 },    -- CurePot+3  Enm-3
+        { Name = "Mist Silk Cape", Level = 10 },      -- CurePot+1
+    },
+    Waist = {
+        { Name = "Pythia Sash", Level = 75 },         --                   ConserveMP+4
+        { Name = "Penitent's Rope", Level = 60 },     -- MND+5      Enm-3
+    },
+    Feet  = {
+            -- Wish: Zenith Pumps+0/1 [(Aug) CurePot+5/6]
+            -- Wish: Medium's Sabots [CurePot+4] {DomainInvasion}
+    };
+};
+
+-- Goal: Max FastCast 80% ; Max Haste 25% ; Max SIRD 102%
+-- Erase & -na spells don't care about skill, so prioritize recast (and SIRD)
+local midcastFastCast = {
+    Head  = {
+        { Name = "Entrancing Ribbon", Level = 11 },   --         FC+1
+    },
+    Ear1  = {
+        { Name = "Loquac. Earring", Level = 75 },     --         FC+2          MP+30 (Balance MPs)
+    },
+    Body  = {
+        { Name = "Minstrel's Coat", Level = 63 },     --               Haste+2
+    },
+    Ring1 = {
+        { Name = "Hibernal Ring", Level = 75 },       --          FC+2
+    },
+    Ring2 = {
+        { Name = "Astral Ring", Level = 10 },         --                        MP+25 (Balance MPs)
+    },
+    Waist = {
+        { Name = "Griot Belt", Level = 28 },          --               Haste+2
+        { Name = "Silver Obi", Level = 20 },          -- SIRD-8
+    },
+    Legs  = {
+        { Name = "White Slacks", Level = 50 },        --               Haste+3
+        { Name = "Garrison Hose +1", Level = 20 },    --               Haste+2
+    },
+    Feet  = {
+        { Name = "Raptor Ledelsens", Level = 48 },    --               Haste+2
+    },
+};
+profile.Sets.Midcast_Poisona_Priority = midcastFastCast;
+profile.Sets.Midcast_Paralyna_Priority = midcastFastCast;
+profile.Sets.Midcast_Blindna_Priority = midcastFastCast;
+profile.Sets.Midcast_Silenana_Priority = midcastFastCast;
+profile.Sets.Midcast_Erase_Priority = midcastFastCast;
+profile.Sets.Midcast_Raise_Priority = midcastFastCast;
 
 -- Goal: Max FastCast 80% ; Max Haste 25% ; Max SIRD 102%
 -- Erase & -na spells don't care about skill, so prioritize recast (and SIRD)
@@ -276,10 +355,30 @@ profile.Sets.Midcast_Raise_Priority = midcastFastCast
 
 -- Goal: Max FastCast 80%
 profile.Sets.Precast_Default_Priority = {
-    -- Wish Apaisante (downgraded to lv75 on CEXI) for cure precast
+        -- Wish: Lv.75 Reflexive Grip +0/1 [FC+1/3]
     Head  = {
-        { Name = "Entrancing Ribbon", Level = 11 },       -- FC+1
+        { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
+        { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
+    Ear1  = {
+        { Name = "Loquac. Earring", Level = 75 },     -- FC+2
+    },
+    Body  = {
+            -- Wish: Dalmatica +0/1 [(Aug) FC+4] // Carreful with Occ. Quickens Spellcasting!!
+        { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
+    },
+    Hands = {
+            -- Wish: Brd. Cuffs +1 [(Aug) FC+3]
+    },
+    Ring1 = {
+        { Name = "Hibernal Ring", Level = 75 },       -- FC+2
+    },
+    Back  = {
+            -- Wish: Hierarch's Mantle [(Aug) FC+2]
+    },
+    Feet  = {
+            -- Wish: Suzaku's Sune-Ate [(Aug) FC+4]
+    };
 };
 
 -- Goal: Max FastCast 80% ; Cure Spellcasting
@@ -294,16 +393,16 @@ profile.Sets.Precast_HealingMagic_Priority = {
     Feet  = {
             -- Wish: Zenith Pumps+0/1 [(Aug) CureSpellcasting-5/6]
     };
-}
+};
 
 profile.Sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Iridal Staff", Level = 51 },        -- HMP+10
-        { Name = "Pilgrim's Wand", Level = 10 },      -- HMP+3
+        { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
     },
     Sub   = {
         { Name = "remove", Level = 51 },              -- No shield because of staff
-        { Name = "Pelte", Level = 8 },                -- HMP+2
+        { Name = "Pelte", Level = 8 },                -- MMP+2
     },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
