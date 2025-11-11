@@ -1,5 +1,14 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
+profile.Sets.LockStyle = {
+    Main  = "Baqil Staff",
+    Head  = "remove",
+    Body  = "Poroggo Coat",
+    Hands = "Custom M Gloves",
+    Legs  = "Garrison Hose +1",
+    Feet  = "Custom M Boots",
+};
+
 profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Earth Staff", Level = 51 },         -- PDT-20

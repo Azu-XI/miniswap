@@ -3,9 +3,9 @@ local profile = gFunc.LoadFile('common/miniswap.lua');
 profile.Sets.LockStyle = {
     Main  = "Baqil Staff",
     Head  = "Summoner's Horn",
-    Body  = "Chironic Doublet",
+    Body  = "Otokogimi Yukata",  -- Try Mariner's Tunica {Fishing Ventures}
     Hands = "Smn. Bracers +1",
-    Legs  = "Chironic Hose",
+    Legs  = "Summoner's Spats",
     Feet  = "Summoner's Pgch.",
 };
 
