@@ -105,7 +105,7 @@ profile.Sets.Engaged_Default_Priority = {
 
 profile.Sets.Idle_Default_Priority = {
     Main  = {
-        { Name = "Earth Staff", Level = 51 },         -- PDT-20
+        { Name = "Terra's Staff", Level = 51 },         -- PDT-20
         { Name = "Monster Signa", Level = 17 },
         { Name = "Beestinger", Level = 7 },
     },
@@ -205,7 +205,7 @@ profile.Sets.Idle_Default_Priority = {
 -- Goal: Max SIRD 102%; Max FastCast 80% ; Max Haste 25%
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
-        { Name = "Iridal Staff", Level = 51 },
+        { Name = "Chatoyant Staff", Level = 51 },
     },
     Sub   = {
             -- Wish: Lv.75 Reflexive Grip +1 [MACC+4]
@@ -255,8 +255,7 @@ profile.Sets.Midcast_Default_Priority = {
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
 profile.Sets.Midcast_HealingMagic_Priority = {
     Main  = {
-            -- Wish: Chatoyant Staff [CurePot+15]
-        { Name = "Iridal Staff", Level = 51 },        -- CurePot+10
+        { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+15
     },
     Sub   = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
@@ -338,7 +337,7 @@ profile.Sets.Midcast_Raise_Priority = midcastFastCast;
 -- Goal: CHR & Skill ; SongRecast- & SongDuration+
 profile.Sets.Midcast_Singing_Priority = {
     Main  = {
-        { Name = "Iridal Staff", Level = 51 },
+        { Name = "Chatoyant Staff", Level = 51 },
         { Name = "Monster Signa", Level = 17 },
     },
     Sub   = {
@@ -490,7 +489,7 @@ profile.Sets.Precast_Singing_Priority = {
 
 profile.Sets.Resting_Default_Priority = {
     Main  = {
-        { Name = "Iridal Staff", Level = 51 },        -- HMP+10
+        { Name = "Chatoyant Staff", Level = 51 },        -- HMP+10
     },
     Sub   = {
         { Name = "remove", Level = 51 },              -- No shield because of staff

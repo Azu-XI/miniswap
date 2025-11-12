@@ -11,7 +11,7 @@ profile.Sets.LockStyle = {
 
 profile.Sets.Idle_Default_Priority = {
     Main  = {
-        { Name = "Earth Staff", Level = 51 },         -- PDT-20
+        { Name = "Terra's Staff", Level = 51 },         -- PDT-20
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
         "Maple Wand +1",
     },
@@ -112,9 +112,8 @@ profile.Sets.Idle_Default_Priority = {
 -- Goal: Max SIRD 102%; Max FastCast 80% ; Max Haste 25%
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
-            -- Wish: Lv.75 Kaladanda {Oboro}
-            -- Wish: Lv.51 Chatoyant Staff
-        { Name = "Iridal Staff", Level = 51 },
+        { Name = "Kaladanda", Level = 75 },           -- MagicPot+15% MACC+30 Stats+6
+        { Name = "Chatoyant Staff", Level = 51 },
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
         "Maple Wand +1",
     },
@@ -251,8 +250,7 @@ profile.Sets.Midcast_Slow_Priority = midcastEnfeeblingMND;
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
 profile.Sets.Midcast_HealingMagic_Priority = {
     Main  = {
-            -- Wish: Chatoyant Staff [CurePot+15]
-        { Name = "Iridal Staff", Level = 51 },        -- CurePot+10
+        { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+15
     },
     Sub   = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
@@ -345,6 +343,13 @@ profile.Sets.Precast_Default_Priority = {
     };
 };
 
+-- Goal: Max FastCast 80% ; Elemental Spellcasting
+profile.Sets.Precast_ElementalMagic_Priority = {
+    Main  = {
+        { Name = "Kaladanda", Level = 75 },           -- ElementalSpellcasting-8
+    },
+}
+
 -- Goal: Max FastCast 80% ; Cure Spellcasting
 profile.Sets.Precast_HealingMagic_Priority = {
     Head  = {
@@ -361,7 +366,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
 
 profile.Sets.Resting_Default_Priority = {
     Main  = {
-        { Name = "Iridal Staff", Level = 51 },        -- HMP+10
+        { Name = "Chatoyant Staff", Level = 51 },        -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
     },
     Sub   = {

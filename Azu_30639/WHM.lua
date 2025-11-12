@@ -11,7 +11,7 @@ profile.Sets.LockStyle = {
 
 profile.Sets.Idle_Default_Priority = {
     Main  = {
-        { Name = "Earth Staff", Level = 51 },         -- PDT-20
+        { Name = "Terra's Staff", Level = 51 },         -- PDT-20
         { Name = "Pilgrim's Wand", Level = 10 },
         "Maple Wand +1",
     },
@@ -86,7 +86,7 @@ profile.Sets.Idle_Default_Priority = {
 
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
-        { Name = "Iridal Staff", Level = 51 },
+        { Name = "Chatoyant Staff", Level = 51 },
         "Maple Wand +1",        -- MND+2
     },
     Sub   = {

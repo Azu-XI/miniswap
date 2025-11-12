@@ -106,8 +106,7 @@ profile.Sets.Idle_Default_Priority = {
 -- Goal: Perpetuation Cost ; Avatar ATK / ACC / PDT / ...
 local petDefaultPriority = {
     Main  = {
-            -- Wish: Lv. 51 Chatoyant Staff [PerpCost-3]
-        { Name = "Iridal Staff", Level = 51 },        -- PerpCost-2
+        { Name = "Chatoyant Staff", Level = 51 },        -- PerpCost-3
         { Name = "Radiance", Level = 20 },            --                       PetATK+10  Refresh+1
     },
     Ammo  = {
@@ -226,8 +225,7 @@ profile.Sets.JA_BloodPactWard_Priority = bloodPact;
 
 profile.Sets.JA_ElementalSiphon = {
     Main  = {
-            -- Wish: Lv. 51 Chatoyant Staff [EleSiphon+10]
-        { Name = "Iridal Staff", Level = 51 },        -- EleSiphon+5
+        { Name = "Chatoyant Staff", Level = 51 },        -- EleSiphon+10
     },
     Neck  = {
         { Name = "Radiant Lantern", Level = 60 },     -- EleSiphon+3
@@ -272,8 +270,7 @@ profile.Sets.Midcast_Default_Priority = {
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
 profile.Sets.Midcast_HealingMagic_Priority = {
     Main  = {
-            -- Wish: Chatoyant Staff [CurePot+15]
-        { Name = "Iridal Staff", Level = 51 },        -- CurePot+10
+        { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+15
     },
     Sub   = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
@@ -389,7 +386,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
 
 profile.Sets.Resting_Default_Priority = {
     Main  = {
-        { Name = "Iridal Staff", Level = 51 },        -- HMP+10
+        { Name = "Chatoyant Staff", Level = 51 },        -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
     },
     Sub   = {

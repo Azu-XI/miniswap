@@ -85,7 +85,7 @@ profile.Sets.Engaged_Default_Priority = {
 
 profile.Sets.Idle_Default_Priority = {
     Main  = {
-        { Name = "Earth Staff", Level = 51 },         -- PDT-20
+        { Name = "Terra's Staff", Level = 51 },         -- PDT-20
         { Name = "Centurion's Sword", Level = 30 },
         { Name = "Auriga Xiphos", Level = 19 },
         { Name = "Xiphos", Level = 7 },
@@ -176,7 +176,7 @@ profile.Sets.Idle_Default_Priority = {
 -- Goal: Max SIRD 102%; Max FastCast 80% ; Max Haste 25%
 profile.Sets.Midcast_Default_Priority = {
     Main  = {
-        { Name = "Iridal Staff", Level = 51 },
+        { Name = "Chatoyant Staff", Level = 51 },
         "Maple Wand +1",
     },
     Sub   = {
@@ -248,8 +248,7 @@ profile.Sets.Midcast_ElementalMagic_Priority = {
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
 profile.Sets.Midcast_HealingMagic_Priority = {
     Main  = {
-            -- Wish: Chatoyant Staff [CurePot+15]
-        { Name = "Iridal Staff", Level = 51 },        -- CurePot+10
+        { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+15
     },
     Sub   = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
@@ -397,7 +396,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
 
 profile.Sets.Resting_Default_Priority = {
     Main  = {
-        { Name = "Iridal Staff", Level = 51 },        -- HMP+10
+        { Name = "Chatoyant Staff", Level = 51 },        -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
     },
     Sub   = {
