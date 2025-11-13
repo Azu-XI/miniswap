@@ -1,7 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
 profile.Sets.LockStyle = {
-    Main  = "Baqil Staff",
+    Main  = "Kaladanda",
     Head  = "Demon Helm",
     Body  = "Vanya Robe",
     Hands = "Sorcerer's Gloves",
