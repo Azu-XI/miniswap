@@ -381,6 +381,14 @@ profile.Sets.Midcast_Singing_Priority = {
         { Name = "Choral Cuffs", Level = 60 },        -- CHR+4  SingSkill+5
         { Name = "Raptor Gloves", Level = 48 },       -- CHR+4
     },
+    Ring1 = {
+            -- Wish: Lv.75 Carbuncle Ring +0/1 [CHR+6/8] {Goldsmithing Guild NM}
+        { Name = "Light Ring", Level = 74 },          -- CHR+5
+    },
+    Ring2 = {
+            -- Wish: Lv.75 Veela Ring [CHR+6 Enm-2] {Cirrate Christelle@Dynamis Valkurm}
+        { Name = "Light Ring", Level = 74 },          -- CHR+5
+    },
     Back  = {
         { Name = "Jester's Cape +1", Level = 54 },    -- CHR+7
         { Name = "Tundra Mantle", Level = 39 },       -- CHR+2
