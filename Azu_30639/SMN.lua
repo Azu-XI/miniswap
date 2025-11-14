@@ -54,7 +54,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Vermillion Cloak", Level = 59 },    -- Refresh+1
         { Name = "Garrison Tunica +1", Level = 20 },  -- Refresh+1 while below lv.50
         { Name = "Druid's Robe", Level = 8 },
-        "Kingdom Aketon", 
+        "Tidal Talisman",
     },
     Hands = {
         { Name = "Smn. Bracers +1", Level = 75 },

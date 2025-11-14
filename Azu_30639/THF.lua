@@ -78,7 +78,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Jerkin", Level = 48 },
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Leather Vest +1", Level = 7 },
-        "Hume Tunic",
+        "Tidal Talisman",
     },
     Hands = {
         { Name = "Adhemar Wristbands", Level = 75 },  -- ACC+10 ATK+10 H+3 TH+1

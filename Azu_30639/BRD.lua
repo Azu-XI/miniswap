@@ -53,7 +53,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Jerkin", Level = 48 },
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Leather Vest +1", Level = 7 },
-        "Kingdom Aketon", 
+        "Tidal Talisman",
     },
     Hands = {
         { Name = "Pursuer's Cuffs", Level = 75 },
@@ -145,7 +145,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Raptor Jerkin", Level = 50 },
         { Name = "Garrison Tunica +1", Level = 20 },  -- Refresh+1 while below lv.50
         { Name = "Leather Vest +1", Level = 7 },
-        "Kingdom Aketon", 
+        "Tidal Talisman",
     },
     Hands = {
         { Name = "Pursuer's Cuffs", Level = 75 },

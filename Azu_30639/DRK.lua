@@ -1,13 +1,19 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
 profile.Sets.Engaged_Default_Priority = {
-    -- Main  = {
-    -- },
-    -- Sub   = {
-    -- },
+    Main  = {
+        { Name = "Surviver", Level = 6 },
+        "Rusty Greatsword",
+    },
+    Sub   = {
+        { Name = "Neph. Grip", Level = 8 },           -- INT+1
+    },
+    Range = {
+        { Name = "Crossbow", Level = 12 },
+        "Light Crossbow"
+    },
     Ammo = {
-        { Name = "Bibiki seashell", Level = 60 },     -- VIT+4
-        { Name = "Happy Egg", Level = 1 },
+        { Name = "Crossbow Bolt", Level = 1 },
     },
     Head  = {
         { Name = "Valkyrie's Mask", Level = 43 },
@@ -34,7 +40,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Scale Mail", Level = 10 },
         { Name = "Leather Vest +1", Level = 7 },
-        "Kingdom Aketon", 
+        "Tidal Talisman",
     },
     Hands = {
         { Name = "Raptor Gloves", Level = 48 },
@@ -93,6 +99,16 @@ profile.Sets.Idle_Default_Priority.Head = {
 profile.Sets.Idle_Default_Priority.Neck = {
     { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
     table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+};
+profile.Sets.Idle_Default_Priority.Ring1 = {
+        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
+    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+};
+profile.Sets.Idle_Default_Priority.Ring2 = {
+        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
 };
 
 profile.Sets.Resting_Default_Priority = {

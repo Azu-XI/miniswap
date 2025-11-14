@@ -58,7 +58,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Power Gi", Level = 13 },
         { Name = "Kenpogi", Level = 8 },
-        "Kingdom Aketon", 
+        "Tidal Talisman",
     },
     Hands = {
         -- { Name = "Naga Tekko", Level = 75 },          -- ACC+6 Counter+3 DEX+3 AGI+3

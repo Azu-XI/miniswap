@@ -37,7 +37,7 @@ profile.Sets.Engaged_Default_Priority = {
     Body  = {
         { Name = "Raptor Jerkin", Level = 48 },
         { Name = "Garrison Tunica +1", Level = 20 },
-        "Kingdom Aketon", 
+        "Tidal Talisman",
     },
     Hands = {
         { Name = "Raptor Gloves", Level = 48 },       -- DEX+4 CHR+4 PetAtk+5 PetRAtk+5

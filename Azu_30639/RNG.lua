@@ -40,7 +40,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Scale Mail", Level = 10 },
         { Name = "Leather Vest +1", Level = 7 },
-        "Kingdom Aketon", 
+        "Tidal Talisman",
     },
     Hands = {
         { Name = "Raptor Gloves", Level = 48 },

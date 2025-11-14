@@ -44,7 +44,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Power Gi", Level = 13 },
         { Name = "Kenpogi", Level = 8 },
         { Name = "Leather Vest +1", Level = 7 },
-        "Kingdom Aketon", 
+        "Tidal Talisman",
     },
     Hands = {
         { Name = "Shinobi Tekko", Level = 49 },

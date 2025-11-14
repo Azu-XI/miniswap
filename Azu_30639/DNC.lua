@@ -68,7 +68,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Jerkin", Level = 48 },
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Leather Vest +1", Level = 7 },
-        "Hume Tunic",
+        "Tidal Talisman",
     },
     Hands = {
             -- Wish: Lv.75 Swift Gages [STP+2 Haste+4 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
