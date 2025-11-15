@@ -15,6 +15,10 @@ profile.Sets.Engaged_Default_Priority = {
     Range = {
         { Name = "Rogetsurin", Level = 15 },
     },
+    Ammo  = {
+        { Name = "remove", Level = 15 },
+        "Happy Egg",
+    },
     Head  = {
         { Name = "Shinobi Hachigane", Level = 49 },
         { Name = "Emperor Hairpin", Level = 24 },

@@ -4,7 +4,7 @@ profile.Sets.Engaged_Default_Priority = {
     Main  = {
         -- { Name = "Archer's Knife", Level = 28 },      -- RACC+10
         { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
-        { Name = "Knife", Level = 13 },
+        { Name = "Knife +1", Level = 13 },
         -- Wish: Lv.7 Jack's Knife {Ordelle Incursion}
         "Bronze Knife",
     },
@@ -25,7 +25,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Bullet", Level = 22 },              -- Fire Crystal + Firesand + Brass Ingot
         { Name = "Tin Bullet", Level = 11 },          -- Fire Crystal + Firesand + Tin Ingot
         { Name = "Bronze Bullet", Level = 6 },        -- Fire Crystal + Firesand + Bronze Ingot
-        { Name = "Happy Egg", Level = 1 },
+        "Happy Egg",
     },
     Head  = {
         { Name = "Emperor Hairpin", Level = 24 },

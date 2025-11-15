@@ -15,7 +15,7 @@ profile.Sets.Idle_Default_Priority = {
     Ammo = {
             -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tathlum", Level = 25 },      -- INT+1
-        { Name = "Happy Egg", Level = 1 },
+        "Happy Egg",
     },
     Head  = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak

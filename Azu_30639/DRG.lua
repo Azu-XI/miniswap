@@ -98,7 +98,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Ammo = {
         { Name = "Bibiki seashell", Level = 60 },     -- VIT+4
-        { Name = "Happy Egg", Level = 1 },
+        "Happy Egg",
     },
     Head  = {
         { Name = "Wivre Mask", Level = 65 },          -- ACC+5 EVA+10 STR+2 VIT+2 DEX+3

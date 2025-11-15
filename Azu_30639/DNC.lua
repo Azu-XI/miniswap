@@ -19,9 +19,9 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Mrc.Cpt. Kukri", Level = 30 },
             -- Wish: Lv.20->50 Bushwhacker {Yagudo Incursions}
         { Name = "Mercenary's Knife", Level = 20 },
-        { Name = "Knife", Level = 13 },
+        { Name = "Knife +1", Level = 13 },
             -- Wish: Lv.7 Jack's Knife {Ordelle Incursion}
-        "Bronze Knife",
+        "Bronze Knife +1",
     },
     Sub  = {
             -- Wish: Lv.75 Taming Sari {Great DI NM Gensai}
@@ -37,6 +37,10 @@ profile.Sets.Engaged_Default_Priority = {
         -- Wish: Lv.75 Flamedancer Glaive {Brew+2 Coeurl} [CHR+5 StepACC+10 SambaDuration+15 {Aug} STR+4 DEX+4 ACC+2]
         { Name = "War Hoop", Level = 40 },
         { Name = "Rogetsurin", Level = 15 },
+    },
+    Ammo  = {
+        { Name = "remove", Level = 15 },
+        "Happy Egg",
     },
     Ear1 = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1

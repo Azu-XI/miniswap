@@ -24,7 +24,7 @@ profile.Sets.Idle_Default_Priority = {
     Ammo = {
         { Name = "Talon Tathlum", Level = 50 },
         { Name = "Morion Tathlum", Level = 25 },
-        { Name = "Happy Egg", Level = 1 },
+        "Happy Egg",
     },
     Ear1 = {
         { Name = "Outlaw's Earring", Level = 50 },

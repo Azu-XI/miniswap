@@ -39,10 +39,11 @@ profile.Sets.Engaged_Default_Priority = {
     Range = {
         { Name = "Atetepeyorg", Level = 75 },
         { Name = "Rogetsurin", Level = 15 },
-        { Name = "Crossbow", Level = 12 },
     },
     Ammo  = {
         { Name = "Crossbow Bolt", Level = 75 },
+        { Name = "remove", Level = 15 },
+        "Happy Egg",
     },
     Ear1  = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1

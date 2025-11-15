@@ -12,7 +12,8 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Shell Shield", Level = 7 },
         "Kupo Shield",
     },
-    Range = {
+    Ammo  = {
+        "Happy Egg",
     },
     Head  = {
         { Name = "Emperor Hairpin", Level = 24 },

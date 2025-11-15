@@ -15,6 +15,10 @@ profile.Sets.Engaged_Default_Priority = {
     Range = {
         { Name = "Crossbow", Level = 12 },
     },
+    Ammo  = {
+        { Name = "Crossbow Bolt", Level = 12 },
+        "Happy Egg",
+    },
     Head  = {
         -- { Name = "Eisenschaller", Level = 29 },
         { Name = "Emperor Hairpin", Level = 24 },
