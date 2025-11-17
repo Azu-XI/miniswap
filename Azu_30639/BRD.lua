@@ -60,7 +60,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Battle Gloves", Level = 14 },
-        { Name = "Brass Mittens", Level = 11 },
+        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -152,7 +152,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Battle Gloves", Level = 14 },
-        { Name = "Brass Mittens", Level = 11 },
+        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {

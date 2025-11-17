@@ -18,7 +18,7 @@ profile.Sets.Engaged_Default_Priority = {
     Head  = {
         { Name = "Valkyrie's Mask", Level = 43 },
         { Name = "Emperor Hairpin", Level = 24 },
-        { Name = "Brass Cap", Level = 11 },
+        { Name = "Brass Cap +1", Level = 11 },
         "Coven Hat",
     },
     Ear1 = {
@@ -46,7 +46,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },
-        { Name = "Brass Mittens", Level = 11 },
+        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {

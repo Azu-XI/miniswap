@@ -67,7 +67,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Shinobi Tekko", Level = 49 },       -- ACC+8 ATK+8 STP+2
             -- Wish: Lv.34 Ochimusha Kote [ATK+20 EVA-5]
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
-        { Name = "Brass Mittens", Level = 11 },
+        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -119,7 +119,7 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Naga Somen", Level = 75 },
     { Name = "Shinobi Hachigane", Level = 50 },
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
-    { Name = "Brass Cap", Level = 11 },
+    { Name = "Brass Cap +1", Level = 11 },
     "Coven Hat",
 };
 profile.Sets.Idle_Default_Priority.Neck = {

@@ -1,10 +1,13 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
 profile.Sets.Engaged_Default_Priority = {
-    -- Main  = {
-    -- },
-    -- Sub   = {
-    -- },
+    Main  = {
+        { Name = "Surviver", Level = 6 },
+        "Rusty Greatsword",
+    },
+    Sub   = {
+        { Name = "Neph. Grip", Level = 8 },           -- INT+1
+    },
     Ammo = {
         { Name = "Bibiki seashell", Level = 60 },     -- VIT+4
         "Happy Egg",
@@ -12,7 +15,7 @@ profile.Sets.Engaged_Default_Priority = {
     Head  = {
         { Name = "Valkyrie's Mask", Level = 43 },
         { Name = "Emperor Hairpin", Level = 24 },
-        { Name = "Brass Cap", Level = 11 },
+        { Name = "Brass Cap +1", Level = 11 },
         "Coven Hat",
     },
     Ear1 = {
@@ -40,7 +43,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },
-        { Name = "Brass Mittens", Level = 11 },
+        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -87,7 +90,7 @@ profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Enga
 profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
-    { Name = "Brass Cap", Level = 11 },
+    { Name = "Brass Cap +1", Level = 11 },
     "Coven Hat",
 };
 profile.Sets.Idle_Default_Priority.Neck = {

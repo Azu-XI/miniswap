@@ -80,7 +80,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         { Name = "Battle Gloves", Level = 14 },
-        { Name = "Brass Mittens", Level = 11 },
+        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
