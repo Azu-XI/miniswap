@@ -56,7 +56,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Pursuer's Cuffs", Level = 75 },
+            -- Wish: Augments [(Aug) DA+2 ATK+5]
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Battle Gloves", Level = 14 },
@@ -148,7 +149,7 @@ profile.Sets.Idle_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Pursuer's Cuffs", Level = 75 },
+        { Name = "Pursuer's Cuffs", Level = 75 },     -- Regen+1
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Battle Gloves", Level = 14 },
@@ -540,6 +541,7 @@ profile.Sets.WS_Exenterator = {
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Body  = "Bard's Jstcorps",                        -- AGI+8          ATK+18
+        -- Wish: Kirin's Osode [AGI+10 (Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
     Hands = "Black Mitts",                            -- AGI+5
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)

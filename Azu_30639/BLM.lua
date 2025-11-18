@@ -22,7 +22,7 @@ profile.Sets.Idle_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
-            -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
+            -- Wish: Lv.60 Rimestone {Dragonslaying@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tathlum", Level = 25 },      -- INT+1
         "Happy Egg",
     },
@@ -78,7 +78,8 @@ profile.Sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Black Cape +1", Level = 32 },       -- INT+1
+        { Name = "Oneiro's Cape", Level = 75 },       -- MACC+4
+        { Name = "Black Cape +1", Level = 32 },       -- INT+3
         { Name = "Cotton Cape", Level = 18 },         -- INT+1
         { Name = "Mist Silk Cape", Level = 10 },
     },
@@ -126,7 +127,7 @@ profile.Sets.Midcast_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
-            -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
+            -- Wish: Lv.60 Rimestone {Dragonslaying@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
     },
     Head  = {
@@ -178,7 +179,8 @@ profile.Sets.Midcast_Default_Priority = {
             -- Wish: Lv.75 Resonance Sash [ElemSkill+8 MBDmg+5]
             -- Wish: Lv.75 Hecate's Cape? [MACC+3 MAB+3]
             -- Wish: Lv.75 Merciful Cape? [EleSkill+5]
-        { Name = "Black Cape +1", Level = 32 },       -- INT+1
+        { Name = "Oneiro's Cape", Level = 75 },       -- MACC+4
+        { Name = "Black Cape +1", Level = 32 },       -- INT+3
         { Name = "Cotton Cape", Level = 18 },         -- INT+1
         { Name = "Mist Silk Cape", Level = 10 },
     },
@@ -214,6 +216,85 @@ profile.Sets.Midcast_ElementalMagic_Day_Priority = {
 profile.Sets.Midcast_ElementalMagic_Weather_Priority = {
     Waist = { { Name = "Hachirin-no-Obi", Level = 71 } },
 };
+
+-- Goal: Total INT > 150 for 13 INT down (23 if `Elemental Magic Debuff` Effect merited)
+profile.Sets.Midcast_ElementalEnfeeble_Priority = {
+    Main  = {
+        { Name = "Kirin's Pole", Level = 75 },        -- INT+10
+        { Name = "Ash Pole +1", Level = 5 },          -- INT+3
+    }
+    Sub   = {
+        { Name = "Neph. Grip", Level = 5 },           -- INT+1
+    },
+    Ammo = {
+            -- Wish: Lv.60 Rimestone {Dragonslaying@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
+        { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
+    },
+    Head  = {
+            -- Wish: Lv.75 Src. Petasos +1 [ElemSkill+10 (Aug) INT+8 MAB+6 Enm-5]
+        { Name = "Demon Helm", Level = 73 },          -- INT+5  ElemSkill +5
+        { Name = "Gambler's Chapeau", Level = 20 },   -- INT+3
+    },
+    Ear1 = {
+            -- Wish: Lv.29 Morion Earring +1 [INT+2]
+        { Name = "Cunning Earring", Level = 29 },     -- INT+1
+    },
+    Ear2 = {
+            -- Wish: Lv.29 Morion Earring +1 [INT+2]
+        { Name = "Cunning Earring", Level = 29 },     -- INT+1
+    },
+    Neck  = {
+            -- Wish: Lv.75 Moepapa Pendant [INT+8 MCrit+5 Enm-5] {Arch Christelle@DynaValk}
+        { Name = "Lmg. Medallion +1", Level = 75 },   -- INT+5 ElemSkill+5
+            -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
+        { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
+            -- Wish: Lv.20 Black Silk Neckerchief [INT+1]
+    },
+    Body  = {
+            -- Wish: Lv.72 Mahatma Houppelande [INT+11]
+            -- Wish: Morrigan's Robe [INT+8 MAB+5 MACC+5]
+        { Name = "Vanya Robe", Level = 75 },          -- INT+5  MAB+5  MagicBurst+5
+        { Name = "Seer's Tunic", Level = 29 },        -- INT+1
+    },
+    Hands = {
+            -- Wish: Src. Gloves +1 [(Aug) INT+8]
+            -- Wish: Lv.75 Zenith Mitts +1 [MAB+6 (Aug) INT+1~6 MBDmg+1~6 ConserveMP+1~6]
+        { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
+    },
+    Ring1 = {
+        { Name = "Hibernal Ring", Level = 75 },       -- INT+5
+        { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
+        "Windurstian Ring",                           -- INT+1
+    },
+    Ring2 = {
+        { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
+        { Name = "Eremite's Ring", Level = 10 },      -- INT+2
+    },
+    Back  = {
+            -- Wish: Lv.71 Prism Cape [INT+4]
+        { Name = "Black Cape +1", Level = 32 },       -- INT+3
+        { Name = "Cotton Cape", Level = 18 },         -- INT+1
+        { Name = "Mist Silk Cape", Level = 10 },
+    },
+    Waist = {
+            -- Wish: Lv.70 Sorcerer's Belt [INT+6]
+        { Name = "Penitent's Rope", Level = 60 },     -- INT+5                 Enm-3
+            -- Wish: Lv.50 Ocean Stone [INT+3]
+            -- Wish: Lv.41 Reverend Sash [INT+2]
+            -- Wish: Lv.28 Shaman's Belt [INT+1]
+    },
+    Legs  = {
+            -- Wish: Lv.75 Morigans Slops [INT+10]
+        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
+        { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
+    },
+    Feet  = {
+            -- Wish: Lv.75 Src. Sabots +1 [INT+3]
+        { Name = "Sorcerer's Sabots", Level = 71 },   -- INT+2  ConserveMP+5
+        { Name = "Custom M Boots", Level = 29 },      -- INT+3
+        { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
+    },
+}
 
 -- Goal: Drain/Aspir Potency ; Dark magic skill
 profile.Sets.Midcast_Drain_Priority = {

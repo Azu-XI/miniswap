@@ -4,7 +4,7 @@ profile.Sets.LockStyle = {
     Head  = "remove",
     Body  = "Custom Gilet +1",
     Hands = "remove",
-    Legs  = "Etoile's Tights",
+    Legs  = "Etoile Tights",
     Feet  = "Etoile Toe Shoes +1",
 };
 
@@ -75,7 +75,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-            -- Wish: Lv.75 Swift Gages [STP+2 Haste+4 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
+            -- Wish: Augments [(Aug) DA+2 ATK+5]
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4
             -- Wish: Lv.68 Cobra Mittens [ACC+4 STP+3 (Aug) VIT+5 PDT-2% Haste+2]
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
@@ -103,7 +104,8 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
-        { Name = "Virtuoso Belt", Level = 54 },
+            -- Test: Subtle Sash [Haste+3 SB+8 ATK+5]
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12 ATK+4
         { Name = "Griot Belt", Level = 28 },
         { Name = "Lizard Belt", Level = 17 },
         { Name = "Friar's Rope", Level = 14 },
@@ -310,6 +312,7 @@ profile.Sets.WS_Exenterator = {
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
     Waist = "Virtuoso Belt",                          --        ACC+12  ATK+4
+        -- Test: Subtle Sash [AGI+5 ATK+5]
     Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
     Feet  = "Raptor Ledelsens",                       -- AGI+4
 };

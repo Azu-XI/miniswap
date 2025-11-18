@@ -107,7 +107,8 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
-        { Name = "Virtuoso Belt", Level = 54 },
+            -- Test: Subtle Sash [Haste+3 SB+8 ATK+5]
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12 ATK+4
         { Name = "Griot Belt", Level = 28 },
         { Name = "Lizard Belt", Level = 17 },
         { Name = "Friar's Rope", Level = 14 },
@@ -327,6 +328,7 @@ profile.Sets.WS_Exenterator = {
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
     Waist = "Virtuoso Belt",                          --                    ATK+4  ACC+12
+        -- Test: Subtle Sash [AGI+5 ATK+5]
     Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
     Feet  = "Adhemar Gamashes",                       --               TA+2
         -- Wish: Dragon Leggings +1 [AGI+4 (Aug) Acc+8 Atk+8 Crit+3]

@@ -13,7 +13,7 @@ profile.Sets.Idle_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
-            -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
+            -- Wish: Lv.60 Rimestone {Dragonslaying@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tathlum", Level = 25 },      -- INT+1
         "Happy Egg",
     },
@@ -67,7 +67,7 @@ profile.Sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Black Cape +1", Level = 32 },       -- INT+1
+        { Name = "Black Cape +1", Level = 32 },       -- INT+3
         { Name = "Cotton Cape", Level = 18 },         -- INT+1
         { Name = "Mist Silk Cape", Level = 10 },
     },
@@ -108,7 +108,7 @@ profile.Sets.Midcast_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
-            -- Wish: Lv.60 Rimestone {DI@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
+            -- Wish: Lv.60 Rimestone {Dragonslaying@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
     },
     Head  = {
@@ -145,7 +145,7 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
     },
     Back  = {
-        { Name = "Black Cape +1", Level = 32 },       -- INT+1
+        { Name = "Black Cape +1", Level = 32 },       -- INT+3
         { Name = "Cotton Cape", Level = 18 },         -- INT+1
         { Name = "Mist Silk Cape", Level = 10 },
     },
