@@ -1,7 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
 profile.Sets.LockStyle = {
-    Head  = "remove",
+    Head  = "Etoile Tiara",
     Body  = "Custom Gilet +1",
     Hands = "remove",
     Legs  = "Etoile Tights",
@@ -188,7 +188,7 @@ local steps = {
         { Name = "Dancer's Bangles", Level = 52 },    -- StepACC+10
     },
     Feet  = {
-        { Name = "Etoile Toe Shoes +1", Level = 75 }, -- StepACC+10
+        { Name = "Rawhide Boots", Level = 75 },       -- Max Finishing Move +1
     },
 };
 profile.Sets.JA_BoxStep_Priority = steps;

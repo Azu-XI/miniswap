@@ -222,7 +222,7 @@ profile.Sets.Midcast_ElementalEnfeeble_Priority = {
     Main  = {
         { Name = "Kirin's Pole", Level = 75 },        -- INT+10
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
-    }
+    },
     Sub   = {
         { Name = "Neph. Grip", Level = 5 },           -- INT+1
     },
