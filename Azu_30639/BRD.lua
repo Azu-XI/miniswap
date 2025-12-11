@@ -484,8 +484,8 @@ profile.Sets.Precast_Singing_Priority = {
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
     Body  = {
-            -- Wish: Yigit Gomlek [SongCast-10]
-            --    or Sha'ir Manteel +0/1 [SongCast-12/13]
+            -- Wish: +1 [SongCast-13]
+        { Name = "Sha'ir Manteel", Level = 72 },      --       SongCast-12
         { Name = "Minstrel's Coat", Level = 63 },     --       SongCast-5
     },
     Legs  = {
