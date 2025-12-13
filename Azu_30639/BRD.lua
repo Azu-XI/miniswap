@@ -57,7 +57,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Hands = {
             -- Wish: Augments [(Aug) DA+2 ATK+5]
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Battle Gloves", Level = 14 },
@@ -233,6 +233,7 @@ profile.Sets.Midcast_Default_Priority = {
             -- Wish: Brd. Cuffs +1 [(Aug) FC+3]
     },
     Ring1 = {
+        { Name = "Tamas Ring", Level = 30 },          --                        MP+30 (Balance MPs)
         { Name = "Astral Ring", Level = 10 },         --                        MP+25 (Balance MPs)
     },
     Ring2 = {
@@ -268,13 +269,21 @@ profile.Sets.Midcast_HealingMagic_Priority = {
     Neck  = {
         { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
     },
+    Ring1 = {
+        { Name = "Tamas Ring", Level = 30 },          -- MND+2~5 Enm-3
+        { Name = "Saintly Ring", Level = 10 },        -- MND+2
+        "Windurstian Ring",
+    },
+    Ring2 = {
+        { Name = "Saintly Ring", Level = 10 },        -- MND+2
+    },
     Back  = {
         { Name = "Dew Silk Cape +1", Level = 75 },    -- CurePot+3  Enm-3
         { Name = "Mist Silk Cape", Level = 10 },      -- CurePot+1
     },
     Waist = {
-        { Name = "Pythia Sash", Level = 75 },         --                   ConserveMP+4
-        { Name = "Penitent's Rope", Level = 60 },     -- MND+5      Enm-3
+        { Name = "Penitent's Rope", Level = 60 },     -- MND+5 Enm-3
+        { Name = "Silver Obi", Level = 20 },          -- SIRD-8
     },
     Legs  = {
             -- Wish: Brd. Cannions +1 [(Aug) CurePot+5]

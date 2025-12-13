@@ -52,11 +52,12 @@ profile.Sets.Idle_Default_Priority = {
     },
     Hands = {
         -- { Name = "Garrison Gloves +1", Level = 20 },  -- MP+5 INT+2
-        { Name = "Zealot's Mitts", Level = 11 },         -- MP+5 MND+3
+        { Name = "Zealot's Mitts", Level = 11 },      -- MP+5 MND+3
         { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
     },
     Ring1 = {
+        { Name = "Tamas Ring", Level = 30 },          -- MP+30 MND+2~5
         "Windurstian Ring",
     },
     Ring2 = {
@@ -68,6 +69,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Mist Silk Cape", Level = 10 },
     },
     Waist = {
+        { Name = "Penitent's Rope", Level = 60 },     -- MND+5 Enm-3
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
@@ -96,10 +98,19 @@ profile.Sets.Midcast_Default_Priority = {
     Neck  = {
         { Name = "Justice Badge", Level = 7 },
     },
+    Ring1 = {
+        { Name = "Tamas Ring", Level = 30 },          -- MND+2~5 Enm-3
+        { Name = "Saintly Ring", Level = 10 },        -- MND+2
+        "Windurstian Ring",
+    },
+    Ring2 = {
+        { Name = "Saintly Ring", Level = 10 },        -- MND+2
+    },
     Back  = {
         { Name = "Mist Silk Cape", Level = 10 },      -- CurePot+1
     },
     Waist = {
+        { Name = "Penitent's Rope", Level = 60 },     -- MND+5 Enm-3
         { Name = "Silver Obi", Level = 20 },          -- SIRD-8
     },
 };

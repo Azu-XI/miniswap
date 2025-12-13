@@ -115,8 +115,9 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2
-        { Name = "Raptor Trousers", Level = 50 },
-        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
+        { Name = "Acrobat's Breeches", Level = 70 },  --                     H+2 TA+2 EVA+11
+        { Name = "Raptor Trousers", Level = 50 },     -- ACC+5
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
@@ -322,8 +323,7 @@ profile.Sets.WS_Exenterator = {
     Body  = "Adhemar Jacket",                         --             ATK+10 Crit+
         -- Wish: Lv.75 Dragon Harness +1 [DEX+7 AGI+7 ATK+12 (Aug) DEX+3 AGI+3 ATK+12 Skillchain Dmg+4]
         -- Wish: Lv.70 Bloody Aketon [AGI+6/7 (Aug) AGI+4 ACC+8]
-    Hands = "Adhemar Wristbands",                     --             ACC+10 ATK+10 Enhance Trick Attack
-        -- Wish: Swift Gages [AGI+8 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
+    Hands = "Swift Gages",                            -- AGI+8 DA+2 ATK+5
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4

@@ -75,8 +75,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-            -- Wish: Augments [(Aug) DA+2 ATK+5]
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
             -- Wish: Lv.68 Cobra Mittens [ACC+4 STP+3 (Aug) VIT+5 PDT-2% Haste+2]
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
@@ -112,8 +111,9 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2
-        { Name = "Raptor Trousers", Level = 50 },
-        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
+        { Name = "Acrobat's Breeches", Level = 70 },  --                     H+2 TA+2 EVA+11
+        { Name = "Raptor Trousers", Level = 50 },     -- ACC+5
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
@@ -182,19 +182,51 @@ profile.Sets.DrainSambaIII_Priority = sambas;
 profile.Sets.HasteSamba_Priority = sambas;
 profile.Sets.JA_DrainSamba_Priority = sambas;
 
--- Goal: ACC
+-- Goal: ACC ; MaxFinishingMove+
 local steps = {
+    Head  = {
+        { Name = "Rawhide Mask", Level = 75 },        -- ACC+10
+        { Name = "Wivre Mask", Level = 65 },          -- ACC+5
+        { Name = "Storm Zucchetto", Level = 50 },     -- ACC+4
+    },
+    Neck  = {
+        { Name = "Peacock Charm", Level = 33 },       -- ACC+10
+        { Name = "Pile Chain", Level = 3 },           -- ACC+1
+    },
+    Body  = {
+        { Name = "Scorpion Harness", Level = 57 },    -- ACC+10
+    },
     Hands = {
         { Name = "Dancer's Bangles", Level = 52 },    -- StepACC+10
     },
+    Ring1 = {
+        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4
+    },
+    Back  = {
+        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4
+    },
+    Waist = {
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12 ATK+4
+    },
+    Legs  = {
+        { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4
+        { Name = "Raptor Trousers", Level = 50 },     -- ACC+5
+    },
     Feet  = {
-        { Name = "Rawhide Boots", Level = 75 },       -- Max Finishing Move +1
+        { Name = "Rawhide Boots", Level = 75 },       -- MaxFinishingMove+1
     },
 };
 profile.Sets.JA_BoxStep_Priority = steps;
 profile.Sets.JA_FeatherStep_Priority = steps;
 profile.Sets.JA_Quickstep_Priority = steps;
 profile.Sets.JA_StutterStep_Priority = steps;
+
+profile.Sets.JA_NoFootRise_Priority = {
+    Feet  = {
+        { Name = "Rawhide Boots", Level = 75 },       -- MaxFinishingMove+1
+    },
+};
 
 -- Goal: Waltz Potency (Max 50%) > CHR (caster) > Waltz Potency Received (Max 30%) > VIT (target)
 --> HP Cured = floor( (Waltz Potency gear + Waltz Potency Received) × floor( M × (User's CHR + Target's VIT) + B ) )
@@ -246,6 +278,19 @@ profile.Sets.JA_CuringWaltzIII_Priority = waltz;
 profile.Sets.JA_CuringWaltzIV_Priority = waltz;
 profile.Sets.JA_DivineWaltz_Priority = waltz;
 profile.Sets.JA_DivineWaltzII_Priority = waltz;
+
+-- Goal: MACC
+profile.Sets.JA_ViolentFlourish_Priority = {
+    Head = {
+        { Name = "Storm Zucchetto", Level = 50 },     -- MACC+2
+    },
+    Body  = {
+        { Name = "Etoile Casaque", Level = 75 },      -- Enhances "Violent Flourish" effect
+    },
+    Waist = {
+        { Name = "Salire Belt", Level = 75 },         -- MACC+4
+    },
+};
 
 --
 -- Weapon Skills
@@ -306,8 +351,7 @@ profile.Sets.WS_Exenterator = {
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Body  = "Rawhide Vest",                           -- AGI+10 ATK+10 Dagger+10 Sword+30
-    Hands = "Dancer's Bangles",                       -- AGI+2
-        -- Wish: Swift Gages [AGI+8 (Aug) DA+2 ATK+5] {Brjota@Dragonslaying}
+    Hands = "Swift Gages",                            -- AGI+8 DA+2 ATK+5
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
