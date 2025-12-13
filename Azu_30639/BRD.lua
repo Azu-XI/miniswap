@@ -527,9 +527,11 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
-        { Name = "Bard's Jstcorps", Level = 74 },
+            -- Wish: Kirin's Osode [AllStats+10 (Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
+        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
     },
     Hands = {
+        { Name = "Swift Gages", Level = 75 },         -- AGI+8  DEX+5   ATK+5   DA+2
         { Name = "Guerilla Gloves", Level = 13 },
     },
     Ring1 = {
@@ -549,9 +551,9 @@ profile.Sets.WS_Exenterator = {
     Ear2  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
-    Body  = "Bard's Jstcorps",                        -- AGI+8          ATK+18
-        -- Wish: Kirin's Osode [AGI+10 (Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
-    Hands = "Black Mitts",                            -- AGI+5
+    Body  = "Kirin's Osode",                          -- AllStats+10
+        -- Wish: Kirin's Osode [AllStats+10 (Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
+    Hands = "Swift Gages",                            -- AGI+8          ATK+5   DA+2
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     Back  = "Bard's Cape",                            --        ACC+7
