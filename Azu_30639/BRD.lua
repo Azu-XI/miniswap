@@ -112,6 +112,7 @@ profile.Sets.Idle_Default_Priority = {
     },
     Sub   = {
             -- Wish: Lv75  Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
+        { Name = "Oneiros Grip", Level = 75 },        -- Regen +1
         { Name = "Neph. Grip", Level = 17 },
         "Kupo Shield",
     },
@@ -173,7 +174,7 @@ profile.Sets.Idle_Default_Priority = {
     },
     Back  = {
             -- Wish: Lv.68 Umbra Cape [PDT-6]
-        { Name = "Jester's Cape +1", Level = 54 },       -- CHR+7
+        { Name = "Jester's Cape +1", Level = 54 },    -- CHR+10
         { Name = "Tundra Mantle", Level = 39 },       -- CHR+2 MND+2
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
@@ -362,8 +363,8 @@ profile.Sets.Midcast_Singing_Priority = {
         { Name = "Maple Harp +1", Level = 1 },
     },
     Head  = {
-            -- Wish: Bard's Roundlet +1 [CHR+6 SingSkill+5 (Aug) WindSkill+7]
-        { Name = "Bard's Roundlet", Level = 72 },     -- CHR+5  SingSkill+5
+            -- Wish: Aug: WindSkill+7
+        { Name = "Brd. Roundlet +1", Level = 72 },    -- CHR+6  SingSkill+5
         { Name = "Raptor Helm", Level = 48 },         -- CHR+4
         { Name = "Shade Tiara", Level = 25 },         -- CHR+2
         { Name = "Entrancing Ribbon", Level = 11 },   -- CHR+2
@@ -387,7 +388,7 @@ profile.Sets.Midcast_Singing_Priority = {
     },
     Hands = {
             -- Wish: Sheikh Gages [SongRecast-4] // Only if potency it not an issue
-            -- Wish: Choral Cuffs +1 [CHR+4  SingSkill+5 (Aug) CHR+3 MACC+3]
+            -- Wish: Choral Cuffs +1 [CHR+7 SingSkill+5 (Aug) CHR+3 MACC+3]
         { Name = "Choral Cuffs", Level = 60 },        -- CHR+4  SingSkill+5
         { Name = "Raptor Gloves", Level = 48 },       -- CHR+4
     },
@@ -400,7 +401,7 @@ profile.Sets.Midcast_Singing_Priority = {
         { Name = "Light Ring", Level = 74 },          -- CHR+5
     },
     Back  = {
-        { Name = "Jester's Cape +1", Level = 54 },    -- CHR+7
+        { Name = "Jester's Cape +1", Level = 54 },    -- CHR+10
         { Name = "Tundra Mantle", Level = 39 },       -- CHR+2
     },
     Waist = {
@@ -548,7 +549,7 @@ profile.Sets.WS_Default_Priority = {
 -- Goal: fTP & ACC & AGI & DA & TA & CRIT
 profile.Sets.WS_Exenterator = {
     Head  = "Raptor Helm",                            -- AGI+4          ATK+4
-    Ear2  = "Luminous Earring",                       --        ACC+3   ATK+4
+    Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Body  = "Kirin's Osode",                          -- AllStats+10
@@ -562,6 +563,24 @@ profile.Sets.WS_Exenterator = {
     Feet  = "Raptor Ledelsens",                       -- AGI+4
 };
 
-profile.Sets.WS_MordantRime = {};
+-- Goal: CHR & ACC & DA & TA & CRIT
+profile.Sets.WS_MordantRime = {
+    Range = "Rouser +1",                              -- CHR+5
+    Head  = "Brd. Roundlet +1",                       -- CHR+6
+    Ear1  = "Luminous Earring",                       --             ACC+3   ATK+4
+    Ear2  = "Beastly Earring",                        -- CHR+2
+    Neck  = "Timeless Ocarina",                       -- CHR+5               ATK+10  STR+5
+    Body  = "Kirin's Osode",                          -- AllStats+10
+        -- Wish: Kirin's Osode [AllStats+10 (Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
+    Hands = "Choral Cuffs",                           -- CHR+4
+        -- Wish: Choral Cuffs +1 [CHR+7 (Aug) CHR+3]
+    Ring1 = "Light Ring",                             -- CHR+5
+    Ring2 = "Light Ring",                             -- CHR+5
+    Back  = "Bard's Cape",                            -- CHR+7       ACC+7
+    Waist = "Gleeman's Belt",                         -- CHR+6       ACC+8
+    Legs  = "Marduk's Shalwar",                       -- CHR+10
+    Feet  = "Raptor Ledelsens",                       -- CHR+4
+        -- Wish: Brd. Slippers +1 [(Aug) CHR+8]
+};
 
 return profile;

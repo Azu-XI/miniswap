@@ -17,6 +17,7 @@ profile.Sets.Idle_Default_Priority = {
     },
     Sub   = {
             -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
+        { Name = "Oneiros Grip", Level = 75 },        -- Regen +1
         { Name = "Neph. Grip", Level = 51 },          -- INT+1
         { Name = "Pelte", Level = 8 },
         "Kupo Shield",

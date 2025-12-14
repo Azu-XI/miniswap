@@ -34,7 +34,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Kupo Shield",
     },
     Range = {
-        -- Wish: Lv.75 Flamedancer Glaive {Brew+2 Coeurl} [CHR+5 StepACC+10 SambaDuration+15 {Aug} STR+4 DEX+4 ACC+2]
+            -- Wish: Lv.75 Flamedancer Glaive {Brew+2 Coeurl} [CHR+5 StepACC+10 SambaDuration+15 {Aug} STR+4 DEX+4 ACC+2]
         { Name = "War Hoop", Level = 40 },
         { Name = "Rogetsurin", Level = 15 },
     },
@@ -95,8 +95,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4  STR+4  DEX+4
-            -- Wish: Lv.70 Etoile Cape [DEX+5 ACC+5 EVA+5 (Aug) ATK+9]
+        { Name = "Etoile Cape", Level = 70 },         -- DEX+5         ATK+9  ACC+5  EVA+5
         { Name = "Exile's Cloak", Level = 50 },       --        STR+4  ATK+3
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
@@ -299,45 +298,46 @@ profile.Sets.JA_ViolentFlourish_Priority = {
 -- Goal: ACC & DEX & AGI
 profile.Sets.WS_Default_Priority = {
     Head  = {
-        { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3 AGI+3
+        { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3  AGI+3
     },
     Neck  = {
             -- Wish: Lv.75 Love Torque [DEX+5 Dagger+7]
-        { Name = "Spike Necklace", Level = 21 },      -- DEX+3       STR+3
-        { Name = "Pile Chain", Level = 3 },           --             ACC+1
+        { Name = "Spike Necklace", Level = 21 },      -- DEX+3                           STR+3
+        { Name = "Pile Chain", Level = 3 },           --                 ACC+1
     },
     Body = {
-        { Name = "Rawhide Vest", Level = 75 },        -- DEX+10 AGI+10 ATK+10 Dagger+10 Sword+30
-        { Name = "Scorpion Harness", Level = 57 },    -- ACC+10 EVA+10
-        { Name = "Raptor Jerkin", Level = 48 },       -- DEX+4       ATK+8
+        { Name = "Rawhide Vest", Level = 75 },        -- DEX+10  AGI+10          ATK+10  Dagger+10  Sword+30
+        { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
+        { Name = "Raptor Jerkin", Level = 48 },       -- DEX+4                   ATK+8
         { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
     },
     Hands = {
         { Name = "Raptor Gloves", Level = 48 },       -- DEX+4
-        { Name = "Battle Gloves", Level = 48 },       --             ACC+3
+        { Name = "Battle Gloves", Level = 48 },       --                 ACC+3
     },
     Ring1 = {
-        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
-        { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4 STP+1
+        { Name = "Zilant Ring", Level = 57 },         -- DEX+6           ACC+3
+        { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
         { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {
-        { Name = "Rajas Ring", Level = 30 },          -- STR+2~5 DEX+2~5
+        { Name = "Rajas Ring", Level = 30 },          -- DEX+2~5                        STR+2~5
         { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "Provenance Ring",
     },
     Back  = {
-        {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4       ACC+4
-        {Name = "Exile's Cloak", Level = 50 },        --                     ATK+3  STR+4
+        {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4           ACC+4
+        {Name = "Exile's Cloak", Level = 50 },        --                         ATK+3  STR+4
         {Name = "Lizard Mantle", Level = 17 },        -- STR+1
     },
     Waist  = {
-        {Name = "Virtuoso Belt", Level = 54 },        --             ACC+12  ATK+4
+        {Name = "Virtuoso Belt", Level = 54 },        --                 ACC+12  ATK+4
         {Name = "Lizard Belt", Level = 17 },          -- DEX+2
     },
     Legs  = {
-        { Name = "Velvet Slops", Level = 38 },        -- DEX+2       ATK+4
+        { Name = "Velvet Slops", Level = 38 },        -- DEX+2                   ATK+4
     },
     Feet  = {
         { Name = "Leaping Boots", Level = 7 },        -- DEX+3 AGI+3
@@ -347,7 +347,7 @@ profile.Sets.WS_Default_Priority = {
 -- Goal: fTP & ACC & AGI & DA & TA & CRIT
 profile.Sets.WS_Exenterator = {
     Head  = "Raptor Helm",                            -- AGI+4          ATK+4
-    Ear2  = "Luminous Earring",                       --        ACC+3   ATK+4
+    Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Body  = "Rawhide Vest",                           -- AGI+10 ATK+10 Dagger+10 Sword+30
@@ -359,6 +359,24 @@ profile.Sets.WS_Exenterator = {
         -- Test: Subtle Sash [AGI+5 ATK+5]
     Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
     Feet  = "Raptor Ledelsens",                       -- AGI+4
+};
+
+-- Goal: fTP & ACC & DEX & STR & DA & TA & CRIT
+profile.Sets.WS_PyrrhicKleos = {
+    Head  = "Assailant's Visor",                      -- DEX+11  STR+5
+        -- Wish: Aug: ATK+5 ACC+5 DA+2
+    Ear1  = "Luminous Earring",                       --                ACC+3   ATK+4
+    Ear2  = "Brutal Earring",                         --                                DA+1
+    Neck  = "Soil Gorget",                            -- fTP+0.1
+    Body  = "Rawhide Vest",                           -- DEX+10                 ATK+10         Dagger+10
+    Hands = "Swift Gages",                            -- DEX+5                  ATK+5   DA+2
+    Ring1 = "Zilant Ring",                            -- DEX+6          ACC+3
+    Ring2 = "Rajas Ring",                             -- DEX+5   STR+5
+    Back  = "Etoile Cape",                            -- DEX+5          ACC+5   ATK+9          SCDmg+3
+    Waist = "Virtuoso Belt",                          --                ACC+12  ATK+4
+    Legs  = "Skadi's Chausses",                       --         STR+3  ACC+4   ATK+5
+    Feet  = "Etoile Toe Shoes +1",                    -- DEX+4          ACC+5
+        -- Wish: Aug: STR+7 ATK+12 ConserveTP+10
 };
 
 return profile;

@@ -17,6 +17,7 @@ profile.Sets.Idle_Default_Priority = {
     },
     Sub   = {
             -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
+        { Name = "Oneiros Grip", Level = 75 },        -- Regen +1
         { Name = "Neph. Grip", Level = 8 },           -- INT+1
         { Name = "remove", Level = 5 },               -- No shield with staff
         "Kupo Shield",
@@ -453,6 +454,9 @@ profile.Sets.Resting_Default_Priority = {
     Sub   = {
         { Name = "remove", Level = 51 },              -- No shield because of staff
         { Name = "Pelte", Level = 8 },                -- MMP+2
+    },
+    Head  = {
+        { Name = "Wzd. Petasos +1", Level = 74 },     -- HMP+4
     },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
