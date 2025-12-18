@@ -48,7 +48,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Cassie Earring", Level = 1 },
     },
     Ear2 = {
-        { Name = "Luminous Earring", Level = 75 },
+        { Name = "Suppanomimi", Level = 72 },
         { Name = "Bandit's Earring", Level = 60 },
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
@@ -374,6 +374,8 @@ profile.Sets.WS_PyrrhicKleos = {
     Ring2 = "Rajas Ring",                             -- DEX+5   STR+5
     Back  = "Etoile Cape",                            -- DEX+5          ACC+5   ATK+9          SCDmg+3
     Waist = "Virtuoso Belt",                          --                ACC+12  ATK+4
+        -- Wish: Warwolf Belt? STR+5 DEX+5
+        -- Wish: Warwolf Belt+1? STR+6 DEX+6 ATK+10
     Legs  = "Skadi's Chausses",                       --         STR+3  ACC+4   ATK+5
     Feet  = "Etoile Toe Shoes +1",                    -- DEX+4          ACC+5
         -- Wish: Aug: STR+7 ATK+12 ConserveTP+10

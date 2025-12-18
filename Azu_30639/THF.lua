@@ -51,7 +51,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Cassie Earring", Level = 1 },
     },
     Ear2  = {
-        { Name = "Luminous Earring", Level = 75 },
+        { Name = "Suppanomimi", Level = 72 },
         { Name = "Bandit's Earring", Level = 60 },
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
