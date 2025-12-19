@@ -51,7 +51,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Cassie Earring", Level = 1 },
     },
     Ear2  = {
-        { Name = "Suppanomimi", Level = 72 },
+        { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
         { Name = "Bandit's Earring", Level = 60 },
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
@@ -288,19 +288,24 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Battle Gloves", Level = 48 },       --             ACC+3
     },
     Ring1 = {
-        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
+        { Name = "Zilant Ring", Level = 57 },         -- DEX+6           ACC+3
+        { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {
-        { Name = "Rajas Ring", Level = 30 },          -- STR+2~5 DEX+2~5
+        { Name = "Rajas Ring", Level = 30 },          -- DEX+2~5                        STR+2~5
         { Name = "Balance Ring", Level = 14 },        -- DEX+2
+        "Provenance Ring",
     },
     Back  = {
         {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4       ACC+4
         {Name = "Exile's Cloak", Level = 50 },        --                     ATK+3  STR+4
         {Name = "Lizard Mantle", Level = 17 },
     },
-    Waist  = {
+    Waist = {
+        {Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4
         {Name = "Virtuoso Belt", Level = 54 },        --             ACC+12  ATK+4
         {Name = "Lizard Belt", Level = 17 },          -- DEX+2
     },

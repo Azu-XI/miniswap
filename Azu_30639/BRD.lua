@@ -34,7 +34,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Coven Hat",
     },
     Ear1 = {
-        { Name = "Suppanomimi", Level = 72 },
+        { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
         { Name = "Insomnia Earring", Level = 50 },
     },
     Ear2 = {
@@ -508,7 +508,7 @@ profile.Sets.Precast_Singing_Priority = {
 
 profile.Sets.Resting_Default_Priority = {
     Main  = {
-        { Name = "Chatoyant Staff", Level = 51 },        -- HMP+10
+        { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
     },
     Sub   = {
         { Name = "remove", Level = 51 },              -- No shield because of staff
@@ -521,29 +521,56 @@ profile.Sets.Resting_Default_Priority = {
     }
 };
 
+-- Goal: ACC & DEX & AGI
 profile.Sets.WS_Default_Priority = {
-    Neck  = {
-        { Name = "Peacock Charm", Level = 33 },       -- ACC+10
-        { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
-        { Name = "Pile Chain", Level = 3 },
+    Head  = {
+        { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3  AGI+3
     },
-    Body  = {
-            -- Wish: Kirin's Osode [AllStats+10 (Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
+    Neck  = {
+            -- Wish: Lv.75 Love Torque [DEX+5 Dagger+7]
+        { Name = "Peacock Charm", Level = 33 },       -- ACC+10
+        { Name = "Spike Necklace", Level = 21 },      -- DEX+3                           STR+3
+        { Name = "Pile Chain", Level = 3 },           --                 ACC+1
+    },
+    Body = {
         { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
+        { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
+        { Name = "Raptor Jerkin", Level = 48 },       -- DEX+4                   ATK+8
+        { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
     },
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- AGI+8  DEX+5   ATK+5   DA+2
-        { Name = "Guerilla Gloves", Level = 13 },
+        { Name = "Raptor Gloves", Level = 48 },       -- DEX+4
+        { Name = "Battle Gloves", Level = 48 },       --                 ACC+3
     },
     Ring1 = {
+        { Name = "Zilant Ring", Level = 57 },         -- DEX+6           ACC+3
+        { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
+    Ring2 = {
+        { Name = "Rajas Ring", Level = 30 },          -- DEX+2~5                        STR+2~5
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
+        "Provenance Ring",
+    },
     Back  = {
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4           ACC+4
+        {Name = "Exile's Cloak", Level = 50 },        --                         ATK+3  STR+4
+        {Name = "Lizard Mantle", Level = 17 },        -- STR+1
     },
     Waist = {
-            -- Wish: Stormlord Shawl +0/1 [STR+3/4 MND+3/4 ATK+10/15 DA+0/1]
-    }
+        {Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4
+        {Name = "Virtuoso Belt", Level = 54 },        --                 ACC+12  ATK+4
+        {Name = "Lizard Belt", Level = 17 },          -- DEX+2
+    },
+    Legs  = {
+        { Name = "Velvet Slops", Level = 38 },        -- DEX+2                   ATK+4
+    },
+    Feet  = {
+        { Name = "Leaping Boots", Level = 7 },        -- DEX+3 AGI+3
+    },
 };
 
 -- Goal: fTP & ACC & AGI & DA & TA & CRIT

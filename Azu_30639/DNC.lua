@@ -48,7 +48,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Cassie Earring", Level = 1 },
     },
     Ear2 = {
-        { Name = "Suppanomimi", Level = 72 },
+        { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
         { Name = "Bandit's Earring", Level = 60 },
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
@@ -119,7 +119,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Feet  = {
             -- Wish: Lv.68 Cobra Leggings [ACC+4 STP+3 (Aug) STR+4 CHR+4 Haste+2]
-        { Name = "Etoile Toe Shoes +1", Level = 75 }, -- ACC+5 DEX+4
+        { Name = "Etoile Toe Shoes +1", Level = 75 }, -- STR+7 DEX+4 ATK+12 ACC+5
         { Name = "Raptor Ledelsens", Level = 48 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
@@ -332,7 +332,8 @@ profile.Sets.WS_Default_Priority = {
         {Name = "Exile's Cloak", Level = 50 },        --                         ATK+3  STR+4
         {Name = "Lizard Mantle", Level = 17 },        -- STR+1
     },
-    Waist  = {
+    Waist = {
+        {Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4
         {Name = "Virtuoso Belt", Level = 54 },        --                 ACC+12  ATK+4
         {Name = "Lizard Belt", Level = 17 },          -- DEX+2
     },
@@ -377,7 +378,7 @@ profile.Sets.WS_PyrrhicKleos = {
         -- Wish: Warwolf Belt? STR+5 DEX+5
         -- Wish: Warwolf Belt+1? STR+6 DEX+6 ATK+10
     Legs  = "Skadi's Chausses",                       --         STR+3  ACC+4   ATK+5
-    Feet  = "Etoile Toe Shoes +1",                    -- DEX+4          ACC+5
+    Feet  = "Etoile Toe Shoes +1",                    -- DEX+4   STR+7  ACC+5   ATK+12          ConserveTP+10
         -- Wish: Aug: STR+7 ATK+12 ConserveTP+10
 };
 

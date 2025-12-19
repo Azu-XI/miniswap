@@ -448,7 +448,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
 
 profile.Sets.Resting_Default_Priority = {
     Main  = {
-        { Name = "Chatoyant Staff", Level = 51 },        -- HMP+10
+        { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
     },
     Sub   = {
