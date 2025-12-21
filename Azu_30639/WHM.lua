@@ -36,7 +36,6 @@ profile.Sets.Idle_Default_Priority = {
     },
     Head  = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
-        -- { Name = "Gambler's Chapeau", Level = 20 },   -- MP+20 INT+3
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
         { Name = "Traveler's Hat", Level = 6 },
         "Coven Hat",
@@ -46,19 +45,20 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Justice Badge", Level = 7 },
     },
     Body  = {
-        { Name = "Vermillion Cloak", Level = 59 },       -- Refresh+1
-        { Name = "Garrison Tunica +1", Level = 20 },     -- Refresh+1 while below lv.50
+        { Name = "Vermillion Cloak", Level = 59 },    -- Refresh+1
+        { Name = "Garrison Tunica +1", Level = 20 },  -- Refresh+1 while below lv.50
         { Name = "Druid's Robe", Level = 8 },
         "Tidal Talisman",
     },
     Hands = {
-        -- { Name = "Garrison Gloves +1", Level = 20 },  -- MP+5 INT+2
+        { Name = "Devotees Mitts", Level = 27 },      -- MP+8 MND+5
         { Name = "Zealot's Mitts", Level = 11 },      -- MP+5 MND+3
         { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
     },
     Ring1 = {
         { Name = "Tamas Ring", Level = 30 },          -- MP+30 MND+2~5
+        { Name = "Saintly Ring", Level = 10 },        -- MND+2
         "Windurstian Ring",
     },
     Ring2 = {
@@ -74,14 +74,15 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
-        { Name = "White Slacks", Level = 50 },            -- Haste+3 Regen +1
-        { Name = "Garrison Hose +1", Level = 20 },        -- Haste+2
+        { Name = "White Slacks", Level = 50 },        -- Haste+3 Regen +1
+        { Name = "Custom Slacks", Level = 31 },       -- MP+32 MND+3
+        { Name = "Garrison Hose +1", Level = 20 },    -- Haste+2
         { Name = "Slacks +1", Level = 8 },
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Garrison Boots +1", Level = 20 },       -- INT+2 MND+2
-        { Name = "Power Sandals", Level = 18 },           -- VIT+3
+        { Name = "Garrison Boots +1", Level = 20 },   -- INT+2 MND+2
+        { Name = "Power Sandals", Level = 18 },       -- VIT+3
         { Name = "Solea +1", Level = 8 },
         "Dream Boots +1",
     },
@@ -97,6 +98,7 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Pelte", Level = 8 },                -- MND+1
     },
     Neck  = {
+        { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
         { Name = "Justice Badge", Level = 7 },
     },
     Ring1 = {
@@ -108,12 +110,17 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Saintly Ring", Level = 10 },        -- MND+2
     },
     Back  = {
+        { Name = "Dew Silk Cape +1", Level = 75 },    -- CurePot+3  Enm-3
         { Name = "Mist Silk Cape", Level = 10 },      -- CurePot+1
     },
     Waist = {
         { Name = "Penitent's Rope", Level = 60 },     -- MND+5 Enm-3
         { Name = "Silver Obi", Level = 20 },          -- SIRD-8
     },
+    Feet  = {
+            -- Wish: Zenith Pumps+0/1 [(Aug) CurePot+5/6]
+            -- Wish: Medium's Sabots [CurePot+4] {DomainInvasion}
+    };
 };
 
 -- Goal: Max FastCast 80%
@@ -139,9 +146,12 @@ profile.Sets.Precast_HealingMagic_Priority = {
 
 profile.Sets.Resting_Default_Priority = {
     Main  = {
+        { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
     },
     Sub   = {
+        { Name = "Oneiros Grip", Level = 75 },        -- Regen +1
+        { Name = "Neph. Grip", Level = 51 },
         { Name = "Pelte", Level = 8 },                -- MMP+2
     },
     Hands = {

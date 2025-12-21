@@ -6,7 +6,7 @@ profile.Sets.LockStyle = {
     Body  = "Custom Gilet +1",
     Hands = "remove",
     Legs  = "Choral Cannions",
-    Feet  = "Bard's Slippers",
+    Feet  = "Brd. Slippers +1",
 };
 
 profile.Sets.Engaged_Default_Priority = {
@@ -84,7 +84,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
-            -- Wish: Bard's Cape [ACC+7 EVA+7 (Aug) STP+5]
+        { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3        H+3
         { Name = "Virtuoso Belt", Level = 54 },       --               ACC+12 ATK+4
         { Name = "Heko Obi", Level = 8 },             -- AGI+3         ACC+3
     },
@@ -117,7 +117,8 @@ profile.Sets.Idle_Default_Priority = {
         "Kupo Shield",
     },
     Range = {
-        { Name = "Terpander", Level = 75 },
+        { Name = "Gjallarhorn", Level = 75 },
+        -- { Name = "Terpander", Level = 75 },
         { Name = "Rouser +1", Level = 50 },
         -- { Name = "Rouser", Level = 20 },
     },
@@ -173,6 +174,7 @@ profile.Sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
+        { Name = "Bard's Cape", Level = 70 },         -- ACC+7 EVA+7
             -- Wish: Lv.68 Umbra Cape [PDT-6]
         { Name = "Jester's Cape +1", Level = 54 },    -- CHR+10
         { Name = "Tundra Mantle", Level = 39 },       -- CHR+2 MND+2
@@ -181,6 +183,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
+        { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3  Haste+3
         { Name = "Gleeman's Belt", Level = 60 },      -- CHR+6
         { Name = "Corsette +1", Level = 40 },         -- CHR+6
         { Name = "Friar's Rope", Level = 14 },        --       MND+1
@@ -299,7 +302,8 @@ profile.Sets.Midcast_HealingMagic_Priority = {
 -- Erase & -na spells don't care about skill, so prioritize recast (and SIRD)
 local midcastFastCast = {
     Range = {
-        { Name = "Rousser", Level = 20 },             --               Haste+1
+        { Name = "Rouser +1", Level = 50 },           --               Haste+3
+        { Name = "Rouser", Level = 20 },              --               Haste+1
     },
     Head  = {
         { Name = "Pursuer's Beret", Level = 75 },     --               Haste+5
@@ -358,38 +362,36 @@ profile.Sets.Midcast_Singing_Priority = {
         { Name = "Neph. Grip", Level = 20 },
     },
     Range = {
-        { Name = "Rouser +1", Level = 50 },           -- CHR+5 AllSongs+1   WindSkill+3  Duration+15%
-        -- { Name = "Rouser", Level = 20 },              -- CHR+3 AllSongs+1   WindSkill+3  Duration+5%
+        { Name = "Gjallarhorn", Level = 75 },         -- CHR+4  SingSkill+10  WindSkill+10  AllSongs+2
+        { Name = "Rouser +1", Level = 50 },           -- CHR+5                WindSkill+3   AllSongs+1  Duration+15%
+        -- { Name = "Rouser", Level = 20 },              -- CHR+3             WindSkill+3  AllSongs+1  Duration+5%
         { Name = "Maple Harp +1", Level = 1 },
     },
     Head  = {
             -- Wish: Aug: WindSkill+7
-        { Name = "Brd. Roundlet +1", Level = 72 },    -- CHR+6  SingSkill+5
+        { Name = "Brd. Roundlet +1", Level = 72 },    -- CHR+6   SingSkill+5
         { Name = "Raptor Helm", Level = 48 },         -- CHR+4
         { Name = "Shade Tiara", Level = 25 },         -- CHR+2
         { Name = "Entrancing Ribbon", Level = 11 },   -- CHR+2
     },
     Ear1  = {
-        -- { Name = "Loquac. Earring", Level = 75 },     --         FC+2 MP+30
         { Name = "Beastly Earring", Level = 72 },     -- CHR+2
     },
     Ear2 = {
-        { Name = "Musical Earring", Level = 70 },     --                    WindSkill+5 StringSkill+5
+        { Name = "Musical Earring", Level = 70 },     --         WindSkill+5 StringSkill+5
     },
     Neck  = {
-        { Name = "Timeless Ocarina", Level = 70 },    -- CHR+5 WindSkill+10 SongDuration+10
+        { Name = "Timeless Ocarina", Level = 70 },    -- CHR+5   WindSkill+10 SongDuration+10
         { Name = "Bird Whistle", Level = 15 },        -- CHR+3
     },
     Body  = {
             -- Wish: Brd. Jstcorps +1 [(Aug) SingSkill+7 SongDuration+5] (for buffs)
-        { Name = "Chl. Jstcorps +1", Level = 74 },    -- CHR+10 SingSkill+5  WindSkill+6  StringSkill+6
-        { Name = "Minstrel's Coat", Level = 63 },     -- CHR+4  SingSkill+3  WindSkill+3
+        { Name = "Chl. Jstcorps +1", Level = 74 },    -- CHR+10  SingSkill+5  WindSkill+6  StringSkill+6
+        { Name = "Minstrel's Coat", Level = 63 },     -- CHR+4   SingSkill+3  WindSkill+3
         { Name = "Raptor Jerkin", Level = 48 },       -- CHR+4
     },
     Hands = {
-            -- Wish: Sheikh Gages [SongRecast-4] // Only if potency it not an issue
-            -- Wish: Choral Cuffs +1 [CHR+7 SingSkill+5 (Aug) CHR+3 MACC+3]
-        { Name = "Choral Cuffs", Level = 60 },        -- CHR+4  SingSkill+5
+        { Name = "Chl. Cuffs +1", Level = 74 },       -- CHR+10  SingSkill+5  MACC+3
         { Name = "Raptor Gloves", Level = 48 },       -- CHR+4
     },
     Ring1 = {
@@ -411,24 +413,19 @@ profile.Sets.Midcast_Singing_Priority = {
         { Name = "Silver Obi", Level = 20 },          --                                 SIRD+8
     },
     Legs  = {
-        { Name = "Marduk's Shalwar", Level = 75 },    -- CHR+10 WindSkill+5 MACC+3~4 SongDuration+5~6 (need last augment)
+        { Name = "Marduk's Shalwar", Level = 75 },    -- CHR+10  WindSkill+5 MACC+3~4 SongDuration+5~6 (need last augment)
         { Name = "Choral Cannions", Level = 56 },     --                    WindSkill+3
         { Name = "Custom Slacks", Level = 31 },       -- CHR+1
     },
     Feet  = {
-            -- Wish: Brd. Slippers +1 [StringSkill+3 (Aug) CHR+8 StringSkill+8 SongRecast-3] // Only if potency it not an issue
-        { Name = "Pursuer's Gaiters", Level = 75 },   --                                 Duration+10%
+        { Name = "Brd. Slippers +1", Level = 75 },    -- CHR+8  StringSkill+8+3 SongRecast-3
         { Name = "Raptor Ledelsens", Level = 48 },    -- CHR+4
     },
 };
 
-profile.Sets.Midcast_Ballad_Priority = {
-    Range = {
-        { Name = "Terpander", Level = 75 },           -- Ballad+2
-    },
-};
 profile.Sets.Midcast_Finale_Priority = {
     Range = {
+        { Name = "Gjallarhorn", Level = 75 },         -- AllSongs+2
         { Name = "Military Harp", Level = 33 },       -- Finale+2
     },
 };
@@ -440,6 +437,7 @@ profile.Sets.Midcast_Lullaby_Priority = {
 };
 profile.Sets.Midcast_March_Priority = {
     Range = {
+        { Name = "Gjallarhorn", Level = 75 },         -- AllSongs+2
         { Name = "Battle Horn +1", Level = 25 },      -- March+2
     },
 };
@@ -599,15 +597,13 @@ profile.Sets.WS_MordantRime = {
     Neck  = "Timeless Ocarina",                       -- CHR+5               ATK+10  STR+5
     Body  = "Kirin's Osode",                          -- AllStats+10
         -- Wish: Kirin's Osode [AllStats+10 (Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
-    Hands = "Choral Cuffs",                           -- CHR+4
-        -- Wish: Choral Cuffs +1 [CHR+7 (Aug) CHR+3]
+    Hands = "Chl. Cuffs +1",                          -- CHR+10
     Ring1 = "Light Ring",                             -- CHR+5
     Ring2 = "Light Ring",                             -- CHR+5
     Back  = "Bard's Cape",                            -- CHR+7       ACC+7
     Waist = "Gleeman's Belt",                         -- CHR+6       ACC+8
     Legs  = "Marduk's Shalwar",                       -- CHR+10
-    Feet  = "Raptor Ledelsens",                       -- CHR+4
-        -- Wish: Brd. Slippers +1 [(Aug) CHR+8]
+    Feet  = "Brd. Slippers +1",                       -- CHR+8
 };
 
 return profile;

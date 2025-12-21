@@ -201,6 +201,7 @@ local bloodPact = {
         -- Wish: Lv.50 Austere Robe [BP-3]
     },
     Hands = {
+            -- Wish: Nashira Gages [(Aug) BPII-3 BloodBoon+5]
         { Name = "Smn. Bracers +1", Level = 75 },     -- BP-2
         -- Wish: Lv.50 Penance Cuffs [BP-2]
         -- Wish: Lv.50 Austere Cuffs [BP-1]

@@ -107,7 +107,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
-            -- Test: Subtle Sash [Haste+3 SB+8 ATK+5]
+        { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3        H+3
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12 ATK+4
         { Name = "Griot Belt", Level = 28 },
         { Name = "Lizard Belt", Level = 17 },
