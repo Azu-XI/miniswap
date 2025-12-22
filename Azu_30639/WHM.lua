@@ -23,6 +23,7 @@ profile.Sets.Idle_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
+        { Name = "Rimestone", Level = 60 },           -- MP+35  MACC+3  INT+3  MND+1  Emn-5
         { Name = "Talon Tathlum", Level = 50 },
         { Name = "Morion Tathlum", Level = 25 },
         "Happy Egg",
@@ -51,7 +52,7 @@ profile.Sets.Idle_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Devotees Mitts", Level = 27 },      -- MP+8 MND+5
+        { Name = "Devotee's Mitts", Level = 27 },      -- MP+8 MND+5
         { Name = "Zealot's Mitts", Level = 11 },      -- MP+5 MND+3
         { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
@@ -65,7 +66,7 @@ profile.Sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Tundra Mantle", Level = 39 },
+        { Name = "Tundra Mantle", Level = 39 },       -- MND+2 ConserveMP+2
         { Name = "Silver Obi", Level = 20 },
         { Name = "Mist Silk Cape", Level = 10 },
     },

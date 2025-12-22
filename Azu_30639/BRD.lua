@@ -267,6 +267,10 @@ profile.Sets.Midcast_HealingMagic_Priority = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
         { Name = "Neph. Grip", Level = 51 },
     },
+    Range = "remove",
+    Ammo  = {
+        { Name = "Rimestone", Level = 60 },           -- MP+35  MND+1  Emn-5
+    },
     Head  = {
             -- Wish: Sheikh Turban [(Aug) CurePot+5]
     },

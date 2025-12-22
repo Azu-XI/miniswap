@@ -21,7 +21,9 @@ profile.Sets.Idle_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
-        { Name = "Soothing Sachet", Level = 70 },
+            -- Wish: [(Aug) Pet: Acc+5 Atk+5 PDT-3]
+        { Name = "Soothing Sachet", Level = 70 },     -- MP+40  MND+4  Enm-4  BPII-2
+        { Name = "Rimestone", Level = 60 },           -- MP+35  MACC+3  INT+3  MND+1  Emn-5
         { Name = "Talon Tathlum", Level = 50 },
         { Name = "Morion Tathlum", Level = 25 },
         "Happy Egg",

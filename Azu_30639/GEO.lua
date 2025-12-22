@@ -112,9 +112,9 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "remove", Level = 5 },               -- No shield with staff
         "Kupo Shield",
     },
-    Range = '',
+    Range = 'remove',
     Ammo  = {
-            -- Wish: Lv.60 Rimestone {Dragonslaying@25 merits} [MACC+3 (Aug) INT+3 Enm-5]
+        { Name = "Rimestone", Level = 60 },           -- MP+35  MACC+3  INT+3  MND+1  Emn-5
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
     },
     Head  = {
@@ -179,7 +179,7 @@ profile.Sets.Midcast_Geomancy_Priority = {
     Range = {
         "Matre Bell",
     },
-    Ammo  = '',
+    Ammo  = 'remove',
 };
 
 local midcastEnfeeblingMND = {

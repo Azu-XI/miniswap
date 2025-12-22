@@ -59,9 +59,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Gothic Gauntlets", Level = 43 },    -- STR+3
-        -- { Name = "Eisenhentzes", Level = 29 },        -- ACC+2
-        -- { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2 ATK+1
         { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
