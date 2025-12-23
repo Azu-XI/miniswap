@@ -265,11 +265,12 @@ local waltz = {
         { Name = "Griot Belt", Level = 28 },          -- CHR+1
     },
     Legs  = {
-            -- Wish: Lv.68 Cobra Leggings [(Aug) CHR+4 WaltzPot+2%]
         { Name = "Etoile Tights", Level = 74 },       -- CHR+3
         { Name = "Raptor Trousers", Level = 48 },     -- VIT+4
     },
-    -- Feet  = {},
+    Feet  = {
+            -- Wish: Lv.68 Cobra Leggings [(Aug) CHR+4 WaltzPot+2%]
+    },
 };
 profile.Sets.JA_CuringWaltz_Priority = waltz;
 profile.Sets.JA_CuringWaltzII_Priority = waltz;

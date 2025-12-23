@@ -198,7 +198,7 @@ profile.Sets.Midcast_Slow_Priority = midcastEnfeeblingMND;
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
 profile.Sets.Midcast_HealingMagic_Priority = {
     Main  = {
-        { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+15
+        { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+10
     },
     Sub   = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
@@ -294,25 +294,25 @@ profile.Sets.Precast_Default_Priority = {
 -- Goal: Max FastCast 80% ; Cure Spellcasting
 profile.Sets.Precast_HealingMagic_Priority = {
     Head  = {
-        { Name = "Erudite Cap", Level = 70 },         -- CureSpellcasting-5
+        { Name = "Erudite Cap", Level = 70 },         -- CureCast-5
     },
     Back  = {
-            -- Wish: Hierarch's Mantle [CureSpellcasting-7]
-        { Name = "Mist Silk Cape", Level = 10 },      -- CureSpellcasting-1
+            -- Wish: Hierarch's Mantle [CureCast-7]
+        { Name = "Mist Silk Cape", Level = 10 },      -- CureCast-1
     },
     Feet  = {
-            -- Wish: Zenith Pumps+0/1 [(Aug) CureSpellcasting-5/6]
+            -- Wish: Zenith Pumps+0/1 [(Aug) CureCast-5/6]
     };
 };
 
 profile.Sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
-        { Name = "Pilgrim's Wand", Level = 10 },      -- MMP+3
+        { Name = "Pilgrim's Wand", Level = 10 },      -- HMP+3
     },
     Sub   = {
         { Name = "remove", Level = 51 },              -- No shield because of staff
-        { Name = "Pelte", Level = 8 },                -- MMP+2
+        { Name = "Pelte", Level = 8 },                -- HMP+2
     },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
