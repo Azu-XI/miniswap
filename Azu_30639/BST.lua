@@ -64,9 +64,11 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
-        { Name = "Virtuoso Belt", Level = 54 },
-        { Name = "Griot Belt", Level = 28 },
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
+        { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
         { Name = "Plate Belt", Level = 12 },
+        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
+        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
     },
     Legs  = {
         -- { Name = "Silver Hose", Level = 36 },        -- In storage

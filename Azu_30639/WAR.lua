@@ -2,6 +2,7 @@ local profile = gFunc.LoadFile('common/miniswap.lua');
 
 profile.Sets.Engaged_Default_Priority = {
     Main  = {
+        { Name = "Hatxiik", Level = 75 },
         { Name = "Nadziak", Level = 68 },
         { Name = "Darksteel Pick +1", Level = 62 },
         { Name = "Sirocco Axe", Level = 60 },
@@ -13,6 +14,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Bronze Axe",
     },
     Sub   = {
+        { Name = "Nadziak", Level = 75 },
         { Name = "Darksteel Pick +1", Level = 62 },
         { Name = "Viking Axe", Level = 60 },          -- EVA-10  ACC+10
         { Name = "Military Pick", Level = 28 },
@@ -84,10 +86,10 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
-        { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3        H+3
-        { Name = "Virtuoso Belt", Level = 54 },
-        { Name = "Griot Belt", Level = 28 },
-        { Name = "Plate Belt", Level = 12 },
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
+        { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
+        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
+        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
     },
     Legs  = {
         { Name = "Raptor Trousers", Level = 48 },

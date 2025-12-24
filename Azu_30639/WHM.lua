@@ -9,6 +9,24 @@ profile.Sets.LockStyle = {
     Feet  = "Zenith Pumps",
 };
 
+profile.Sets.Engaged_Default = {
+    Main  = "Tamaxchi",
+    Sub   = "Genbu's Shield",                         -- PDT-10 EVA+10
+    Ammo  = "Talon Tathlum",                          -- STR+2 DEX+2
+    Ear1  = "Emberpearl Earring",                     -- STR+2 MND+2
+    Ear2  = "Brutal Earring",                         -- DA+1
+    -- Head  = "",
+    -- Body  = "",
+    Neck  = "Peacock Charm",                          -- ACC+10
+    -- Hands = "",
+    Ring1 = "Toreador's Ring",                        -- ACC+7
+    Ring2 = "Rajas Ring",                             -- STP+5 SB+5 STR+2~5 DEX+2~5
+    -- Back  = "",
+    Waist = "Ninurta's Sash",                         -- H+6 SB+6 ATK+6
+    -- Legs  = "",
+    -- Feet  = "",
+};
+
 profile.Sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Terra's Staff", Level = 51 },       -- PDT-20
@@ -163,7 +181,10 @@ profile.Sets.Midcast_EnfeeblingMagic_Priority = {
     },
     Back  = {
         { Name = "Oneiros Cape", Level = 75 },        -- MACC+4
-    }
+    },
+    Waist = {
+        { Name = "Salire Belt", Level = 75 },         -- MACC+4  MND+5
+    },
 };
 
 -- Goal: Max FastCast 80%
@@ -205,6 +226,26 @@ profile.Sets.Resting_Default_Priority = {
         { Name = "", Level = 73 },                    -- Stop swapping boots with MP
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
+};
+
+-- Goal:
+--> Black Halo: 2 hits, 70% MND / 30% STR
+--> Realmrazer: 7 hits, 73% MND, fTP replicating
+--> Mystic Boon: 1 hit, 70% MND / 30% STR
+profile.Sets.WS_Default = {
+    Ammo  = "Talon Tathlum",                          --         STR+2
+    Ear1  = "Emberpearl Earring",                     -- MND+2   STR+2
+    Ear2  = "Brutal Earring",                         --                       DA+1
+    Head  = "Bunzi's Hat",                            -- MND+10
+    -- Body  = "",
+    Neck  = "Justice Badge",                          -- MND+3
+    Hands = "Devotee's Mitts",                        -- MND+5
+    Ring1 = "Toreador's Ring",                        --                ACC+7
+    Ring2 = "Tamas Ring",                             -- MND+5
+    Back  = "Dew Silk Cape +1",                       -- MND+6
+    Waist = "Pythia Sash",                            -- MND+5
+    Legs  = "Errant Slops",                           -- MND+7
+    -- Feet  = "",
 };
 
 return profile;

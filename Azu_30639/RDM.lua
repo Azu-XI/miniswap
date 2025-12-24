@@ -64,14 +64,13 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
-        { Name = "Virtuoso Belt", Level = 54 },
-        { Name = "Griot Belt", Level = 28 },
-        { Name = "Lizard Belt", Level = 17 },
-        { Name = "Friar's Rope", Level = 14 },
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
+        { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
+        { Name = "Heko Obi", Level = 8 },             -- AGI+3 ACC+3
     },
     Legs  = {
         { Name = "Raptor Trousers", Level = 50 },
-        { Name = "Garrison Hose +1", Level = 20 },        -- STR+2 Haste+2
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
         { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",

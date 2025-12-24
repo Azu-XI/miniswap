@@ -78,8 +78,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },
-        { Name = "Griot Belt", Level = 28 },          -- Haste +2
-        -- { Name = "Lizard Belt", Level = 17 },         -- DEX+2
+        { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
         { Name = "Heko Obi", Level = 8 },             -- AGI+3 ACC+3
     },
     Legs  = {

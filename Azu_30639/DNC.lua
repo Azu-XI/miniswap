@@ -105,8 +105,8 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3        H+3
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
         { Name = "Griot Belt", Level = 28 },
-        { Name = "Lizard Belt", Level = 17 },
-        { Name = "Friar's Rope", Level = 14 },
+        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
+        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
     },
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2

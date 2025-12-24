@@ -25,6 +25,7 @@ profile.Sets.Idle_Default_Priority = {
     Range = {
         "Matre Bell",
     },
+    Ammo  = 'remove',
     Head  = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Gambler's Chapeau", Level = 50 },   -- MP+20 INT+3
@@ -112,11 +113,6 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "remove", Level = 5 },               -- No shield with staff
         "Kupo Shield",
     },
-    Range = 'remove',
-    Ammo  = {
-        { Name = "Rimestone", Level = 60 },           -- MP+35  MACC+3  INT+3  MND+1  Emn-5
-        { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
-    },
     Head  = {
         { Name = "Demon Helm", Level = 73 },          -- INT+5  ElemSkill +5
             -- Wish: Lv.60 Wizard's Petasos [INT+4]
@@ -173,13 +169,6 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
         { Name = "Power Sandals", Level = 18 },       -- VIT+3
     },
-};
-
-profile.Sets.Midcast_Geomancy_Priority = {
-    Range = {
-        "Matre Bell",
-    },
-    Ammo  = 'remove',
 };
 
 local midcastEnfeeblingMND = {
