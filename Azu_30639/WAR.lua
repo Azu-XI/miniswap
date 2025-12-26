@@ -1,5 +1,13 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
+profile.Sets.LockStyle = {
+    Head  = "remove",
+    Body  = "Kirin's Osode",
+    Hands = "Switft Gages",
+    Legs  = "Sipahi Zerehs",
+    Feet  = "Suzaku's Sune-Ate",
+};
+
 profile.Sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Hatxiik", Level = 75 },
@@ -14,7 +22,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Bronze Axe",
     },
     Sub   = {
-        { Name = "Nadziak", Level = 75 },
+        { Name = "Xiutleato", Level = 75 },
         { Name = "Darksteel Pick +1", Level = 62 },
         { Name = "Viking Axe", Level = 60 },          -- EVA-10  ACC+10
         { Name = "Military Pick", Level = 28 },
@@ -23,14 +31,16 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Shell Shield", Level = 7 },
     },
     Range = {
+        { Name = "remove", Level = 75 },
         { Name = "Crossbow", Level = 12 },
     },
     Ammo  = {
+        { Name = "Fury's Edge", Level = 75 },
         { Name = "Crossbow Bolt", Level = 12 },
         "Happy Egg",
     },
     Head  = {
-        { Name = "Assailant's Visor", Level = 70 },   --                 STR+5  DEX+11
+        { Name = "Ares' Mask", Level = 75 },          -- HP+2% ACC+12 ATK+12 EVA-12 H+3 STP+3
         { Name = "Emperor Hairpin", Level = 24 },     --         EVA+10  DEX+3  AGI+3
         { Name = "Brass Cap +1", Level = 11 },
         "Coven Hat",
@@ -51,7 +61,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
-        { Name = "Kirin's Osode", Level = 75 },
+        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
         { Name = "Scorpion Harness", Level = 57 },    -- ACC+10  EVA+10
         { Name = "Raptor Jerkin", Level = 48 },
         { Name = "Eisenbrust", Level = 29 },
@@ -86,12 +96,15 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
+        { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3        H+3
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
         { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
         { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
         { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
     },
     Legs  = {
+            -- Wish: Aug: ACC+8 ATK+8 
+        { Name = "Ares' Flanchard", Level = 75 },     -- HP+2% STR+6 DEX+6 DA+2
         { Name = "Raptor Trousers", Level = 48 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
         { Name = "Phl. Trousers", Level = 15 },
@@ -99,6 +112,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Ares' Sollerets", Level = 75 },     -- HP+2% ACC+7 ATK+7 EVA-7 STR+4 STP+3
         { Name = "Raptor Ledelsens", Level = 48 },    -- Haste+2
         { Name = "Eisenschuhs", Level = 29 },
         { Name = "Leaping Boots", Level = 7 },
@@ -108,6 +122,7 @@ profile.Sets.Engaged_Default_Priority = {
 
 profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
 profile.Sets.Idle_Default_Priority.Head = {
+    { Name = "Ares' Mask", Level = 75 },
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Brass Cap +1", Level = 11 },
@@ -165,6 +180,12 @@ profile.Sets.JA_Provoke_Priority = {
             -- Wish: Lv.43 Gothic Sabatons [Enm+2] {Behemoth's Dominion - Treasure Casket}
     },
 };
+
+profile.Sets.JA_Warcry_Priority = {
+    Head  = {
+        { Name = "Warrior's Mask", Level = 73 },      -- Warcry+10s
+    }
+}
 
 -- Goal: ACC & STR
 profile.Sets.WS_Default_Priority = {

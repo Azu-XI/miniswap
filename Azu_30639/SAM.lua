@@ -38,8 +38,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Hands = {
         { Name = "Raptor Gloves", Level = 48 },
-        { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
-        { Name = "Guerilla Gloves", Level = 13 },
+        { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2 ATK+1
         { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
@@ -95,6 +94,28 @@ profile.Sets.Idle_Default_Priority.Neck = {
 profile.Sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
+    },
+};
+
+-- Goal: Enmity+
+profile.Sets.JA_Provoke_Priority = {
+    Head  = {
+            -- Wish: Lv.1 Cache-nez [Enm+2]
+    },
+    Hands = {
+        { Name = "Gothic Gauntlets", Level = 43 },    -- Enm+2
+    },
+    Ring2 = {
+        { Name = "Sattva Ring", Level = 30 },         -- Enm+3
+    },
+    Back  = {
+        { Name = "Ram Mantle", Level = 38 },          -- Enm+2
+    },
+    Waist = {
+            -- Wish: Lv.71 Warwolf Belt [Enm+3]
+    },
+    Feet  = {
+            -- Wish: Lv.43 Gothic Sabatons [Enm+2] {Behemoth's Dominion - Treasure Casket}
     },
 };
 

@@ -235,7 +235,7 @@ profile.Sets.JA_DivineWaltz_Priority = profile.Sets.JA_CuringWaltz_Priority
 
 profile.Sets.JA_Flee_Priority = {
     Feet = {
-        { Name = "Rogue's Poulaines", Level = 60 },
+        { Name = "Rogue's Poulaines", Level = 60 },   -- Flee+15s
     },
 };
 
@@ -250,15 +250,15 @@ profile.Sets.JA_Steal_Priority = {
         -- { Name = "Rogue's Bonnet", Level = 54 },   -- Turned into +1, worth getting again for Steal+1?
     },
     Neck  = {
-        { Name = "Rabbit Charm", Level = 7 },         -- Steal+1
+        -- { Name = "Rabbit Charm", Level = 7 },         -- Steal+1 -- In storage
     },
     Hands = {
-        { Name = "Thief's Kote", Level = 70 },        -- Steal+3
+        -- { Name = "Thief's Kote", Level = 70 },        -- Steal+3 -- In storage
         -- { Name = "Rogue's Armlets", Level = 52 },     -- Steal+1 -- In storage
     },
     Legs  = {
-        -- { Name = "Assassin's Culottes", Level = 72 },  -- Steal+5
-        { Name = "Rogue's Culottes", Level = 56 },    -- Steal+1
+        -- { Name = "Assassin's Culottes", Level = 72 }, -- Steal+5
+        -- { Name = "Rogue's Culottes", Level = 56 },    -- Steal+1 -- In storage
     },
     Feet = {
         { Name = "Rogue's Poulaines", Level = 60 },   -- Steal+2

@@ -4,7 +4,7 @@ profile.Sets.LockStyle = {
     Main  = "Baqil Staff",
     Head  = "remove",
     Body  = "Noble's Tunic",
-    Hands = "Zealot's Mitts",
+    Hands = "Hlr. Mitts +1",
     Legs  = "Cleric's Pantaln.",
     Feet  = "Zenith Pumps",
 };
@@ -75,8 +75,7 @@ profile.Sets.Idle_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-            -- Wish: Lv.74 Healer's Mitts +1
-        { Name = "Zenith Mitts", Level = 73 },        -- 50HP>MP
+        { Name = "Hlr. Mitts +1", Level = 74 },       -- MP+15 MND+7
         { Name = "Devotee's Mitts", Level = 27 },     -- MP+8 MND+5
         { Name = "Zealot's Mitts", Level = 11 },      -- MP+5 MND+3
         { Name = "Mitts +1", Level = 8 },
@@ -139,7 +138,7 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Noble's Tunic", Level = 68 },       -- CurePot+10
     },
     Hands = {
-            -- Wish: Lv.74 Healer's Mitts +1 [MND+7 Healing+15 Emn-4 (Aug) CurePot+3 ConserveMP+5]
+        { Name = "Hlr. Mitts +1", Level = 74 },       -- CurePot+3 MND+7 Healing+15 Emn-4 ConserveMP+5
     },
     Back  = {
         { Name = "Dew Silk Cape +1", Level = 75 },    -- CurePot+3  Enm-3
@@ -239,7 +238,7 @@ profile.Sets.WS_Default = {
     Head  = "Bunzi's Hat",                            -- MND+10
     -- Body  = "",
     Neck  = "Justice Badge",                          -- MND+3
-    Hands = "Devotee's Mitts",                        -- MND+5
+    Hands = "Hlr. Mitts +1",                          -- MND+7   STR+7
     Ring1 = "Toreador's Ring",                        --                ACC+7
     Ring2 = "Tamas Ring",                             -- MND+5
     Back  = "Dew Silk Cape +1",                       -- MND+6

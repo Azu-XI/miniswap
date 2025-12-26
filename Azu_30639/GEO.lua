@@ -23,6 +23,7 @@ profile.Sets.Idle_Default_Priority = {
         "Kupo Shield",
     },
     Range = {
+        { Name = "Nepote Bell", Level = 75 },
         "Matre Bell",
     },
     Ammo  = 'remove',
