@@ -190,6 +190,7 @@ profile.Sets.JA_Warcry_Priority = {
 -- Goal: ACC & STR
 profile.Sets.WS_Default_Priority = {
     Head  = {
+        { Name = "Ares' Mask", Level = 75 },          -- ACC+12 ATK+12
         { Name = "Shade Tiara", Level = 25 },         -- STR+2
     },
     Neck  = {
@@ -197,9 +198,11 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body = {
+        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
         { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
     },
     Hands = {
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 DA+2 ATK+5
         { Name = "Gothic Gauntlets", Level = 43 },    -- STR+3
         { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2
     },
@@ -216,11 +219,19 @@ profile.Sets.WS_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
+        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4                 STR+4  DEX+4
         { Name = "Earth Mantle", Level = 40 },        -- STR+2
         { Name = "Lizard Mantle", Level = 17 },       -- STR+1
     },
+    Waist = {
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
+    },
     Legs  = {
+        { Name = "Ares' Flanchard", Level = 75 },     -- STR+6 DEX+6 DA+2
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2
+    },
+    Feet  = {
+        { Name = "Ares' Sollerets", Level = 75 },     -- ACC+7 ATK+7 STR+4
     },
 };
 
