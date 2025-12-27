@@ -313,9 +313,10 @@ do -- GUI REGION
             elseif (state.LevelSynced) then
                 levelText = tostring(state.CurrentLevel) .. " (synced)"
             else
-                levelText = tostring(state.CurrentLevel) .. " (unlocked)"
+                levelText = tostring(state.CurrentLevel)
             end
-            imgui.Text("Lv. " .. levelText);
+            local player = gData.GetPlayer();
+            imgui.Text(player.MainJob .. "/" .. player.SubJob .. " " .. levelText);
 
             local TPText = state.LockedTP and "On" or "Off"
             imgui.Text("TP. " .. TPText)
