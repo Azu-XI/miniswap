@@ -44,6 +44,15 @@ profile.Sets.HELM = {
     Feet  = "Plain Boots +1",
 };
 
+-- Default low level lockstyle for jobs that don't define one.
+profile.Sets.LockStyle = {
+    Head  = "remove",
+    Body  = "Rambler's Cloak",
+    Hands = "Black Mitts",
+    Legs  = "Lth. Trousers +1",
+    Feet  = "Leaping Boots",
+};
+
 profile.Sets.Provenance = {
     Ring2 = "Provenance Ring",
 };

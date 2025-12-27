@@ -52,17 +52,15 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Ear2  = {
         { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
-        { Name = "Bandit's Earring", Level = 60 },
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
     },
     Head  = {
         { Name = "Rog. Bonnet +1", Level = 74 },      -- Haste+5  CritRate+3  EVA+10
         { Name = "Wivre Mask", Level = 65 },          -- ACC+5 DEX+3
-        { Name = "Storm Zucchetto", Level = 50 },     -- ACC+4
         { Name = "Emperor Hairpin", Level = 24 },
         { Name = "Garrison Sallet +1", Level = 20 },
-        { Name = "Cmp. Eye Circlet", Level = 9 },
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Bronze Cap",
     },
     Neck  = {
@@ -85,7 +83,6 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Adhemar Wristbands", Level = 75 },  -- ACC+10 ATK+10 H+3 TH+1
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -110,15 +107,14 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3        H+3
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
         { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
-        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
-        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
+        { Name = "Lizard Belt +1", Level = 17 },      -- HP+5 DEX+2
+        { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2
         { Name = "Acrobat's Breeches", Level = 70 },  --                     H+2 TA+2 EVA+11
         { Name = "Raptor Trousers", Level = 50 },     -- ACC+5
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -146,7 +142,7 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Rog. Bonnet +1", Level = 74 },          -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
-    { Name = "Cmp. Eye Circlet", Level = 9 },         -- EVA+3
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5         -- EVA+3
     "Coven Hat",
 };
 profile.Sets.Idle_Default_Priority.Neck = {
@@ -239,12 +235,6 @@ profile.Sets.JA_Flee_Priority = {
     },
 };
 
-profile.Sets.JA_Mug_Priority = {
-    Ear2 = {
-        { Name = "Bandit's Earring", Level = 60 },
-    },
-};
-
 profile.Sets.JA_Steal_Priority = {
     Head  = {
         -- { Name = "Rogue's Bonnet", Level = 54 },   -- Turned into +1, worth getting again for Steal+1?
@@ -302,16 +292,15 @@ profile.Sets.WS_Default_Priority = {
     Back  = {
         {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4       ACC+4
         {Name = "Exile's Cloak", Level = 50 },        --                     ATK+3  STR+4
-        {Name = "Lizard Mantle", Level = 17 },
+        {Name = "Lizard Mantle +1", Level = 17 },     -- STR+1
     },
     Waist = {
         {Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4
         {Name = "Virtuoso Belt", Level = 54 },        --             ACC+12  ATK+4
-        {Name = "Lizard Belt", Level = 17 },          -- DEX+2
+        {Name = "Lizard Belt +1", Level = 17 },       -- DEX+2
     },
     Legs  = {
         { Name = "Adhemar Kecks", Level = 75 },       -- DEX+4 AGI+4
-        { Name = "Velvet Slops", Level = 38 },        -- DEX+2       ATK+4
     },
     Feet  = {
         { Name = "Adhemar Gamashes", Level = 75 },    --                   TA+2

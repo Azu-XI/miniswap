@@ -27,10 +27,9 @@ profile.Sets.Engaged_Default_Priority = {
     Head  = {
         { Name = "Pursuer's Beret", Level = 75 },
         { Name = "Wivre Mask", Level = 65 },          -- ACC+5 DEX+3
-        { Name = "Storm Zucchetto", Level = 50 },     -- ACC+4
         { Name = "Raptor Helm", Level = 48 },
         { Name = "Emperor Hairpin", Level = 24 },
-        { Name = "Cmp. Eye Circlet", Level = 9 },
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
     },
     Ear1 = {
@@ -61,7 +60,6 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Battle Gloves", Level = 14 },
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -93,7 +91,6 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Pursuer's Pants", Level = 75 },
         { Name = "White Slacks", Level = 50 },        --       Haste+3       Regen +1
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -128,7 +125,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Emperor Hairpin", Level = 24 },     -- EVA+10 -- No Sallet, EVA > Regen for pulls
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
-        { Name = "Cmp. Eye Circlet", Level = 9 },
+            { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
     },
     Ear1 = {
@@ -156,7 +153,6 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Battle Gloves", Level = 14 },
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -196,7 +192,6 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "White Slacks", Level = 50 },        --              Regen +1
         { Name = "Custom Slacks", Level = 31 },       -- MND+3 CHR+1
         { Name = "Garrison Hose +1", Level = 20 },
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -278,13 +273,9 @@ profile.Sets.Midcast_HealingMagic_Priority = {
     Neck  = {
         { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
     },
-    Ring1 = {
-        { Name = "Tamas Ring", Level = 30 },          -- MND+2~5 Enm-3
-        { Name = "Saintly Ring", Level = 10 },        -- MND+2
-        "Windurstian Ring",
-    },
     Ring2 = {
-        { Name = "Saintly Ring", Level = 10 },        -- MND+2
+        { Name = "Tamas Ring", Level = 30 },          -- MND+2~5 Enm-3
+        "Windurstian Ring",
     },
     Back  = {
         { Name = "Dew Silk Cape +1", Level = 75 },    -- CurePot+3  Enm-3
@@ -370,7 +361,7 @@ profile.Sets.Midcast_Singing_Priority = {
         { Name = "Gjallarhorn", Level = 75 },         -- CHR+4  SingSkill+10  WindSkill+10  AllSongs+2
         { Name = "Rouser +1", Level = 50 },           -- CHR+5                WindSkill+3   AllSongs+1  Duration+15%
         -- { Name = "Rouser", Level = 20 },              -- CHR+3             WindSkill+3  AllSongs+1  Duration+5%
-        { Name = "Maple Harp +1", Level = 1 },
+        { Name = "Cornette +1", Level = 4 },
     },
     Head  = {
             -- Wish: Aug: WindSkill+7
@@ -428,22 +419,10 @@ profile.Sets.Midcast_Singing_Priority = {
     },
 };
 
-profile.Sets.Midcast_Finale_Priority = {
-    Range = {
-        { Name = "Gjallarhorn", Level = 75 },         -- AllSongs+2
-        { Name = "Military Harp", Level = 33 },       -- Finale+2
-    },
-};
 profile.Sets.Midcast_Lullaby_Priority = {
     Range = {
         { Name = "Terpander", Level = 75 },           -- Lullaby+3
         -- { Name = "Mary's Horn", Level = 14 },
-    },
-};
-profile.Sets.Midcast_March_Priority = {
-    Range = {
-        { Name = "Gjallarhorn", Level = 75 },         -- AllSongs+2
-        { Name = "Battle Horn +1", Level = 25 },      -- March+2
     },
 };
 
@@ -561,15 +540,12 @@ profile.Sets.WS_Default_Priority = {
     Back  = {
         {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4           ACC+4
         {Name = "Exile's Cloak", Level = 50 },        --                         ATK+3  STR+4
-        {Name = "Lizard Mantle", Level = 17 },        -- STR+1
+        {Name = "Lizard Mantle +1", Level = 17 },     -- STR+1
     },
     Waist = {
         {Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4
         {Name = "Virtuoso Belt", Level = 54 },        --                 ACC+12  ATK+4
-        {Name = "Lizard Belt", Level = 17 },          -- DEX+2
-    },
-    Legs  = {
-        { Name = "Velvet Slops", Level = 38 },        -- DEX+2                   ATK+4
+        {Name = "Lizard Belt +1", Level = 17 },       -- DEX+2
     },
     Feet  = {
         { Name = "Leaping Boots", Level = 7 },        -- DEX+3 AGI+3

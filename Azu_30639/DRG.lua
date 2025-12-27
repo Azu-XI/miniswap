@@ -34,7 +34,7 @@ profile.Sets.JA_Jump_Priority = {
     },
     Back  = {
         { Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
         -- { Name = "Marid Belt", Level = 45 },          -- STR+3 VIT+5                 -- IN STORAGE
@@ -42,8 +42,7 @@ profile.Sets.JA_Jump_Priority = {
     },
     Legs  = {
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2
-        { Name = "Phl. Trousers", Level = 15 },       -- STR+1
-    },
+            },
     Feet  = {
         -- { Name = "Drachen Greaves", Level = 54 },     --                    ATK+10%
         { Name = "Power Sandals", Level = 18 },       --       VIT+3
@@ -75,15 +74,14 @@ profile.Sets.JA_HighJump_Priority = {
     },
     Back  = {
         { Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
         { Name = "Vanguard Belt", Level = 45 },       -- STR+3              ATK+5
     },
     Legs  = {
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2
-        { Name = "Phl. Trousers", Level = 15 },       -- STR+1
-    },
+            },
     Feet  = {
         -- { Name = "Mettle Leggings +1", Level = 17 },  -- STR+1              ATK+2
     }
@@ -139,7 +137,6 @@ profile.Sets.Engaged_Default_Priority = {
     Hands = {
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Guerilla Gloves", Level = 13 },
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -164,13 +161,12 @@ profile.Sets.Engaged_Default_Priority = {
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
         { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
-        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
-        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
+        { Name = "Lizard Belt +1", Level = 17 },      -- HP+5 DEX+2
+        { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
         { Name = "Raptor Trousers", Level = 48 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -203,10 +199,11 @@ profile.Sets.Resting_Default_Priority = {
 -- TODO: AF head in precast, relic head in midcast
 
 -- Goal: ACC (Multi-hits WS) & STR (Generic Mod)
+-- Goal: STR & ACC
 profile.Sets.WS_Default_Priority = {
     Head  = {
-        -- TODO: AF head
-        { Name = "Wivre Mask", Level = 65 },          -- STR+2       ACC+5
+        { Name = "Ares' Mask", Level = 75 },          -- ACC+12 ATK+12
+        { Name = "Sipahi Turban", Level = 59 },       -- STR+3 DEX+2
         { Name = "Shade Tiara", Level = 25 },         -- STR+2
     },
     Neck  = {
@@ -214,27 +211,43 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
         { Name = "Pile Chain", Level = 3 },
     },
+    Body = {
+        { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
+    },
     Hands = {
-        { Name = "Custom M Gloves", Level = 27 },     -- STR+3 DEX+3
-        { Name = "Guerilla Gloves", Level = 13 },     --             ACC+2  ATK+2
+            -- Wish: Lv.70 Alkyoneus's Brc. [STR+11]
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 DA+2 ATK+5
+        { Name = "Custom M Gloves", Level = 27 },     -- STR+3
+        { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2
     },
     Ring1 = {
-        "San d'Orian Ring",                           -- STR+1
+        { Name = "Strigoi Ring", Level = 75 },        -- STR+6           ATK+3
+        { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
+        "San d'Orian Ring",
+    },
+    Ring2 = {
+        { Name = "Rajas Ring", Level = 30 },          -- STR+2~5                  DEX+2~5
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
+        "Provenance Ring",
     },
     Back  = {
+        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4                 STR+4  DEX+4
         { Name = "Earth Mantle", Level = 40 },        -- STR+2
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
-        { Name = "Virtuoso Belt", Level = 54 },       --             ACC+12 ATK+4
-        { Name = "Vanguard Belt", Level = 45 },       -- STR+3              ATK+5
+            -- Wish: Lv.70 Warrior's Stone [STR+5 ACC+7]
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
     },
     Legs  = {
+        { Name = "Ares' Flanchard", Level = 75 },     -- STR+6 DEX+6 DA+2
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2
-        { Name = "Phl. Trousers", Level = 15 },       -- STR+1
     },
     Feet  = {
-        { Name = "Leaping Boots", Level = 7 },        --                          DEX+3 AGI+3
+        { Name = "Ares' Sollerets", Level = 75 },     -- ACC+7 ATK+7 STR+4
+        { Name = "Marine M Boots", Level = 62},       -- STR+3 DEX+3
     },
 };
 

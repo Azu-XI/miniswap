@@ -31,7 +31,6 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Cassie Earring", Level = 1 },
     },
     Ear2 = {
-        { Name = "Bandit's Earring", Level = 60 },
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
     },
@@ -45,8 +44,7 @@ profile.Sets.Engaged_Default_Priority = {
     Body  = {
         { Name = "Shinobi Gi", Level = 49 },
         { Name = "Garrison Tunica +1", Level = 20 },
-        { Name = "Power Gi", Level = 13 },
-        { Name = "Kenpogi", Level = 8 },
+        { Name = "Kenpogi +1", Level = 8 },           -- HP+5 DEX+1 AGI+1
         { Name = "Leather Vest +1", Level = 7 },
         "Tidal Talisman",
     },
@@ -54,7 +52,6 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Shinobi Tekko", Level = 49 },
         -- { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -76,14 +73,13 @@ profile.Sets.Engaged_Default_Priority = {
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
         { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
-        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
-        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
+        { Name = "Lizard Belt +1", Level = 17 },      -- HP+5 DEX+2
+        { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
         { Name = "Shinobi Hakama", Level = 49 },
         -- { Name = "Jujitsu Sitabaki", Level = 37 },  -- Not worth against garrison hose if not augmented, and even then?
         { Name = "Garrison Hose +1", Level = 20 },   -- STR+2 Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -119,7 +115,7 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Hands = {
-        { Name = "Cotton Tekko", Level = 18 },        -- STR+2 ATK+4
+        { Name = "Cotton Tekko +1", Level = 18 },     -- STR+2 ATK+4
     },
     Ring1 = {
         "San d'Orian Ring",                           -- STR+1
@@ -129,7 +125,7 @@ profile.Sets.WS_Default_Priority = {
     },
     Back  = {
         { Name = "Exile's Cloak", Level = 50 },       -- STR+4 ATK+3
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
 };
 

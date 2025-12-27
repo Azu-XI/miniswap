@@ -43,7 +43,6 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -72,7 +71,6 @@ profile.Sets.Engaged_Default_Priority = {
     Legs  = {
         { Name = "Raptor Trousers", Level = 48 },
         { Name = "Garrison Hose +1", Level = 20 },        -- STR+2 Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -117,7 +115,7 @@ profile.Sets.WS_Default_Priority = {
         "San d'Orian Ring",
     },
     Back  = {
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Legs  = {
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2

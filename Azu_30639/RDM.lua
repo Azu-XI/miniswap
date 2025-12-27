@@ -20,10 +20,9 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Head  = {
         { Name = "Wivre Mask", Level = 65 },          -- ACC+5 DEX+3
-        { Name = "Storm Zucchetto", Level = 50 },     -- ACC+4
         { Name = "Emperor Hairpin", Level = 24 },     --       DEX+3 EVA+10
         { Name = "Garrison Sallet +1", Level = 20 },
-        { Name = "Cmp. Eye Circlet", Level = 9 },     --              EVA+5
+            { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5     --              EVA+5
     },
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },
@@ -71,7 +70,6 @@ profile.Sets.Engaged_Default_Priority = {
     Legs  = {
         { Name = "Raptor Trousers", Level = 50 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -116,7 +114,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Gambler's Chapeau", Level = 50 },   -- MP+20 INT+3
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
-        { Name = "Traveler's Hat", Level = 6 },
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
     },
     Neck  = {
@@ -160,7 +158,6 @@ profile.Sets.Idle_Default_Priority = {
     Legs  = {
         { Name = "White Slacks", Level = 50 },            -- Haste+3 Regen +1
         { Name = "Garrison Hose +1", Level = 20 },        -- Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -204,13 +201,8 @@ profile.Sets.Midcast_Default_Priority = {
 };
 
 local midcastEnfeeblingMND = {
-    Ring1 = {
-            -- Wish: +1
-        { Name = "Saintly Ring", Level = 10 },        -- MND+2
-    },
     Ring2 = {
         { Name = "Tamas Ring", Level = 30 },          -- MND+2~5
-        { Name = "Saintly Ring", Level = 10 },        -- MND+2
     },
 }
 profile.Sets.Midcast_Paralyze_Priority = midcastEnfeeblingMND;
@@ -256,13 +248,8 @@ profile.Sets.Midcast_HealingMagic_Priority = {
     Neck  = {
         { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
     },
-    Ring1 = {
-            -- Wish: +1
-        { Name = "Saintly Ring", Level = 10 },        -- MND+2
-    },
     Ring2 = {
         { Name = "Tamas Ring", Level = 30 },          -- MND+2~5
-        { Name = "Saintly Ring", Level = 10 },        -- MND+2
     },
     Back  = {
         { Name = "Dew Silk Cape +1", Level = 75 },    -- CurePot+3  Enm-3

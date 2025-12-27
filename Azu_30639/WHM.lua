@@ -59,7 +59,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Erudite Cap", Level = 70 },         -- MP+30
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
-        { Name = "Traveler's Hat", Level = 6 },
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
     },
     Neck  = {
@@ -76,7 +76,6 @@ profile.Sets.Idle_Default_Priority = {
     },
     Hands = {
         { Name = "Hlr. Mitts +1", Level = 74 },       -- MP+15 MND+7
-        { Name = "Devotee's Mitts", Level = 27 },     -- MP+8 MND+5
         { Name = "Zealot's Mitts", Level = 11 },      -- MP+5 MND+3
         { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
@@ -229,7 +228,7 @@ profile.Sets.Resting_Default_Priority = {
 
 -- Goal:
 --> Black Halo: 2 hits, 70% MND / 30% STR
---> Realmrazer: 7 hits, 73% MND, fTP replicating
+--> Realmrazer: 7 hits, 73% MND, fTP replicating (Flame/Thunder/Light Gorget)
 --> Mystic Boon: 1 hit, 70% MND / 30% STR
 profile.Sets.WS_Default = {
     Ammo  = "Talon Tathlum",                          --         STR+2

@@ -42,7 +42,6 @@ profile.Sets.Engaged_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -66,14 +65,12 @@ profile.Sets.Engaged_Default_Priority = {
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
         { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
-        { Name = "Plate Belt", Level = 12 },
-        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
-        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
+        { Name = "Lizard Belt +1", Level = 17 },      -- HP+5 DEX+2
+        { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
         -- { Name = "Silver Hose", Level = 36 },        -- In storage
         { Name = "Garrison Hose +1", Level = 20 },      -- STR+2 Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -126,26 +123,53 @@ profile.Sets.Resting = {
     }
 };
 
+-- Goal: STR & ACC
 profile.Sets.WS_Default_Priority = {
     Head  = {
+        { Name = "Sipahi Turban", Level = 59 },       -- STR+3 DEX+2
         { Name = "Shade Tiara", Level = 25 },         -- STR+2
     },
     Neck  = {
+        { Name = "Peacock Charm", Level = 33 },       --             ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
         { Name = "Pile Chain", Level = 3 },
     },
+    Body = {
+        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
+        { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
+    },
     Hands = {
-        { Name = "Guerilla Gloves", Level = 13 },
+            -- Wish: Lv.70 Alkyoneus's Brc. [STR+11]
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 DA+2 ATK+5
+        { Name = "Custom M Gloves", Level = 27 },     -- STR+3
+        { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2
     },
     Ring1 = {
+        { Name = "Strigoi Ring", Level = 75 },        -- STR+6           ATK+3
+        { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
+    Ring2 = {
+        { Name = "Rajas Ring", Level = 30 },          -- STR+2~5                  DEX+2~5
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
+        "Provenance Ring",
+    },
     Back  = {
-        { Name = "Earth Mantle", Level = 40 },
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4                 STR+4  DEX+4
+        { Name = "Earth Mantle", Level = 40 },        -- STR+2
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
+    },
+    Waist = {
+            -- Wish: Lv.70 Warrior's Stone [STR+5 ACC+7]
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
     },
     Legs  = {
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2
+    },
+    Feet  = {
+        { Name = "Marine M Boots", Level = 62},       -- STR+3 DEX+3
     },
 };
 

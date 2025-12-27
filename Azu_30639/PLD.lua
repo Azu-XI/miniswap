@@ -43,7 +43,6 @@ profile.Sets.Engaged_Default_Priority = {
         -- { Name = "Eisenhentzes", Level = 29 }, 
         { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -67,15 +66,14 @@ profile.Sets.Engaged_Default_Priority = {
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
         { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
-        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
-        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
+        { Name = "Lizard Belt +1", Level = 17 },      -- HP+5 DEX+2
+        { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
         { Name = "Raptor Trousers", Level = 48 },
         -- { Name = "Silver Hose", Level = 36 },
         -- { Name = "Eisendiechlings", Level = 29 },
         { Name = "Garrison Hose +1", Level = 20 },        -- STR+2 Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -106,6 +104,28 @@ profile.Sets.Resting_Default_Priority = {
     },
 };
 
+-- Goal: Enmity+
+profile.Sets.JA_Provoke_Priority = {
+    Head  = {
+            -- Wish: Lv.1 Cache-nez [Enm+2]
+    },
+    Hands = {
+        { Name = "Gothic Gauntlets", Level = 43 },    -- Enm+2
+    },
+    Ring2 = {
+        { Name = "Sattva Ring", Level = 30 },         -- Enm+3
+    },
+    Back  = {
+        { Name = "Ram Mantle", Level = 38 },          -- Enm+2
+    },
+    Waist = {
+            -- Wish: Lv.71 Warwolf Belt [Enm+3]
+    },
+    Feet  = {
+            -- Wish: Lv.43 Gothic Sabatons [Enm+2] {Behemoth's Dominion - Treasure Casket}
+    },
+};
+
 profile.Sets.WS_Default_Priority = {
     Head  = {
         { Name = "Shade Tiara", Level = 25 },          -- STR+2
@@ -122,7 +142,7 @@ profile.Sets.WS_Default_Priority = {
     },
     Back  = {
         { Name = "Earth Mantle", Level = 40 },
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Legs  = {
         { Name = "Garrison Hose +1", Level = 20 },        -- STR+2

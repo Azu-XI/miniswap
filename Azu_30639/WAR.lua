@@ -41,6 +41,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Head  = {
         { Name = "Ares' Mask", Level = 75 },          -- HP+2% ACC+12 ATK+12 EVA-12 H+3 STP+3
+        { Name = "Walkure Mask", Level = 43 },        -- ATK+6
         { Name = "Emperor Hairpin", Level = 24 },     --         EVA+10  DEX+3  AGI+3
         { Name = "Brass Cap +1", Level = 11 },
         "Coven Hat",
@@ -74,7 +75,6 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Gothic Gauntlets", Level = 43 },    -- STR+3
         { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2 ATK+1
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -99,15 +99,14 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3        H+3
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
         { Name = "Griot Belt", Level = 28 },          -- HP+5 H+2
-        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
-        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
+        { Name = "Lizard Belt +1", Level = 17 },      -- HP+5 DEX+2
+        { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
             -- Wish: Aug: ACC+8 ATK+8 
         { Name = "Ares' Flanchard", Level = 75 },     -- HP+2% STR+6 DEX+6 DA+2
         { Name = "Raptor Trousers", Level = 48 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -152,6 +151,7 @@ profile.Sets.Resting_Default_Priority = {
 -- Goal: Enmity+
 profile.Sets.JA_Provoke_Priority = {
     Head  = {
+        { Name = "Warrior's Mask", Level = 73 },    -- Enm+1
             -- Wish: Lv.1 Cache-nez [Enm+2]
     },
     Body  = {
@@ -187,13 +187,19 @@ profile.Sets.JA_Warcry_Priority = {
     }
 }
 
--- Goal: ACC & STR
+--
+-- Weapon Skills
+--
+
+-- Goal: STR & ACC
 profile.Sets.WS_Default_Priority = {
     Head  = {
         { Name = "Ares' Mask", Level = 75 },          -- ACC+12 ATK+12
+        { Name = "Sipahi Turban", Level = 59 },       -- STR+3 DEX+2
         { Name = "Shade Tiara", Level = 25 },         -- STR+2
     },
     Neck  = {
+        { Name = "Peacock Charm", Level = 33 },       --             ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
         { Name = "Pile Chain", Level = 3 },
     },
@@ -202,8 +208,9 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
     },
     Hands = {
+            -- Wish: Lv.70 Alkyoneus's Brc. [STR+11]
         { Name = "Swift Gages", Level = 75 },         -- STP+2 DA+2 ATK+5
-        { Name = "Gothic Gauntlets", Level = 43 },    -- STR+3
+        { Name = "Custom M Gloves", Level = 27 },     -- STR+3
         { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2
     },
     Ring1 = {
@@ -221,9 +228,10 @@ profile.Sets.WS_Default_Priority = {
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4                 STR+4  DEX+4
         { Name = "Earth Mantle", Level = 40 },        -- STR+2
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
+            -- Wish: Lv.70 Warrior's Stone [STR+5 ACC+7]
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
     },
     Legs  = {
@@ -232,7 +240,27 @@ profile.Sets.WS_Default_Priority = {
     },
     Feet  = {
         { Name = "Ares' Sollerets", Level = 75 },     -- ACC+7 ATK+7 STR+4
+        { Name = "Marine M Boots", Level = 62},       -- STR+3 DEX+3
     },
 };
+
+--> Decimation: 3 hits, 50% STR, fTP replicating (Flame/Aqua/Light Gorget)
+--> Ruinator: 4 hits, 73% STR, 1.1 ATK, fTP replicating (Aqua/Breeze/Snow Gorget)
+--> Upheaval: 4 hits, 75% STR / 75% VIT
+--> Savage Blade: 2 hits, 50% STR / 50% MND
+
+--> Requiescat: 4 hits, 73% MND, fTP replicating (Soil/Shadow Gorget)
+profile.Sets.WS_Requiescat = {
+    Body  = "Kirin's Osode",                          -- AllStats+10
+    Ring1 = "Tamas Ring",                             -- MND+5
+    Waist = "Salire Belt",                            -- MND+5
+    Feet  = "Suzaku's Sune-Ate",                      -- MND+15
+};
+
+--> Resolution: 5 his, 73% STR, 0.85 ATK, fTP replicating (Soil/Breeze/Thunder Gorget)
+--> Entropy: 4 hits, 73% INT, fTP replicating (Soil/Aqua/Shadow Gorget)
+--> Stardiver: 4 hits, 75% STR, fTP replicating (Soil/Light/Shadow Gorget)
+--> Black Halo: 2 hits, 70% MND / 30% STR
+--> Realmrazer: 7 hits, 73% MND, fTP replicating (Flame/Thunder/Light Gorget)
 
 return profile;

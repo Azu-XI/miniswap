@@ -17,7 +17,6 @@ profile.Sets.Engaged_Default_Priority = {
         -- { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3 AGI+3 EVA+10
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetAcc+2 PetRAcc+2
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
-        { Name = "Traveler's Hat", Level = 5 },
         "Coven Hat",
     },
     Ear1 = {
@@ -85,8 +84,7 @@ profile.Sets.Engaged_Default_Priority = {
 profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
 profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
-    { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
-    { Name = "Traveler's Hat", Level = 5 },
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
     "Coven Hat",
 };
 profile.Sets.Idle_Default_Priority.Neck = {

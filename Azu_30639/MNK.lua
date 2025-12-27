@@ -56,8 +56,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Shinobi Gi", Level = 49 },          -- ACC+8 ATK+8 MDT-2
             -- Wish: Lv.40 Jujitsu Gi [ACC+4 (Aug) STR+2 AGI+2 STP+1]
         { Name = "Garrison Tunica +1", Level = 20 },
-        { Name = "Power Gi", Level = 13 },
-        { Name = "Kenpogi", Level = 8 },
+        { Name = "Kenpogi +1", Level = 8 },           -- HP+5 DEX+1 AGI+1
         "Tidal Talisman",
     },
     Hands = {
@@ -67,7 +66,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Shinobi Tekko", Level = 49 },       -- ACC+8 ATK+8 STP+2
             -- Wish: Lv.34 Ochimusha Kote [ATK+20 EVA-5]
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
-        { Name = "Brass Mittens +1", Level = 11 },
+        { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -99,7 +98,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Naga Hakama", Level = 75 },         -- H+5
             -- Wish: Lv.75 Usukane Hizayoroi [STR+5 DEX+5 ATK+10 H+3 (Aug) ACC+5 KA+3 (Set) H+3~9]
             -- Wish: Lv.75 Melee Hose +1 [KA+5 SB+5 (Aug) MartialArts+6 KA+5 PDT+4]
-        { Name = "Shinobi Hakama", Level = 49 },
+        { Name = "Shinobi Hakama", Level = 49 },      -- ATK+8 H+2 Counter+3
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Slacks +1", Level = 8 },
         "Dream Trousers +1",
@@ -110,6 +109,7 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Shinobi Kyahan", Level = 49 },      -- ACC+8 H+2 MDT-3
             -- Wish: Lv.39 Sarutobi Kyahan [H+3]
         { Name = "Power Sandals", Level = 18},        -- VIT+3
+        { Name = "Solea +1", Level = 8},
         "Dream Boots +1",
     },
 };
@@ -221,7 +221,7 @@ profile.Sets.WS_Default_Priority = {
     },
     Hands = {
         { Name = "Shinobi Tekko", Level = 49 },       -- ATK+8 ACC+8
-        { Name = "Cotton Tekko", Level = 18 },        -- STR+2 ATK+4
+        { Name = "Cotton Tekko +1", Level = 18 },     -- STR+2 ATK+4
     },
     Ring1 = {
         "San d'Orian Ring",                           -- STR+1
@@ -231,10 +231,11 @@ profile.Sets.WS_Default_Priority = {
     },
     Back  = {
         { Name = "Exile's Cloak", Level = 50 },       -- STR+4 ATK+3
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Feet  = {
         { Name = "Naga Kyahan", Level = 75 },         -- ACC+6 ATK+6
+        { Name = "Marine M Boots", Level = 62},       -- STR+3 DEX+3
     },
 };
 

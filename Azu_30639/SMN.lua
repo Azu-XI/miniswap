@@ -43,7 +43,7 @@ profile.Sets.Idle_Default_Priority = {
         { Name = "Summoner's Horn", Level = 75 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },
-        { Name = "Traveler's Hat", Level = 6 },
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
     },
     Neck  = {

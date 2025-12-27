@@ -65,16 +65,14 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Ear2 = {
         { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
-        { Name = "Bandit's Earring", Level = 60 },
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
     },
     Head  = {
         { Name = "Rawhide Mask", Level = 75 },        -- DEX+5 ACC+10 ATK+10 DA+3
         { Name = "Wivre Mask", Level = 65 },          -- ACC+5 DEX+3
-        { Name = "Storm Zucchetto", Level = 50 },     -- ACC+4
-        { Name = "Emperor Hairpin", Level = 24 },
-        { Name = "Cmp. Eye Circlet", Level = 9 },
+        { Name = "Emperor Hairpin", Level = 24 },     -- EVA+10
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Bronze Cap",
     },
     Neck  = {
@@ -96,7 +94,6 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         { Name = "Battle Gloves", Level = 14 },
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -121,15 +118,14 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3        H+3
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
         { Name = "Griot Belt", Level = 28 },
-        { Name = "Lizard Belt", Level = 17 },         -- HP+5 DEX+2
-        { Name = "Leather Belt", Level = 7 },         -- HP+10 AGI+1
+        { Name = "Lizard Belt +1", Level = 17 },      -- HP+5 DEX+2
+        { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2
         { Name = "Acrobat's Breeches", Level = 70 },  --                     H+2 TA+2 EVA+11
         { Name = "Raptor Trousers", Level = 50 },     -- ACC+5
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -147,7 +143,7 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Rawhide Mask", Level = 75 },
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
-    { Name = "Cmp. Eye Circlet", Level = 9 },         -- EVA+3
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5         -- EVA+3
     "Coven Hat",
 };
 profile.Sets.Idle_Default_Priority.Neck = {
@@ -202,7 +198,6 @@ local steps = {
     Head  = {
         { Name = "Rawhide Mask", Level = 75 },        -- ACC+10
         { Name = "Wivre Mask", Level = 65 },          -- ACC+5
-        { Name = "Storm Zucchetto", Level = 50 },     -- ACC+4
     },
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10
@@ -297,9 +292,6 @@ profile.Sets.JA_DivineWaltzII_Priority = waltz;
 
 -- Goal: MACC
 profile.Sets.JA_ViolentFlourish_Priority = {
-    Head = {
-        { Name = "Storm Zucchetto", Level = 50 },     -- MACC+2
-    },
     Body  = {
         { Name = "Etoile Casaque", Level = 75 },      -- Enhances "Violent Flourish" effect
     },
@@ -347,15 +339,12 @@ profile.Sets.WS_Default_Priority = {
     Back  = {
         {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4           ACC+4
         {Name = "Exile's Cloak", Level = 50 },        --                         ATK+3  STR+4
-        {Name = "Lizard Mantle", Level = 17 },        -- STR+1
+        {Name = "Lizard Mantle +1", Level = 17 },     -- STR+1
     },
     Waist = {
         {Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4
         {Name = "Virtuoso Belt", Level = 54 },        --                 ACC+12  ATK+4
-        {Name = "Lizard Belt", Level = 17 },          -- DEX+2
-    },
-    Legs  = {
-        { Name = "Velvet Slops", Level = 38 },        -- DEX+2                   ATK+4
+        {Name = "Lizard Belt +1", Level = 17 },       -- DEX+2
     },
     Feet  = {
         { Name = "Leaping Boots", Level = 7 },        -- DEX+3 AGI+3

@@ -1,13 +1,5 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
-profile.Sets.LockStyle = {
-    Head  = "remove",
-    Body  = "Rambler's Cloak",
-    Hands = "Guerilla Gloves",
-    Legs  = "Lth. Trousers +1",
-    Feet  = "Leaping Boots",
-};
-
 profile.Sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Fealty", Level = 20 },
@@ -24,7 +16,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Happy Egg",
     },
     Head  = {
-        { Name = "Valkyrie's Mask", Level = 43 },
+        { Name = "Walkure Mask", Level = 43 },
         { Name = "Emperor Hairpin", Level = 24 },
         { Name = "Brass Cap +1", Level = 11 },
         "Coven Hat",
@@ -55,7 +47,6 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },
-        { Name = "Brass Mittens +1", Level = 11 },
         "Dream Mittens +1",
     },
     Ring1 = {
@@ -84,7 +75,6 @@ profile.Sets.Engaged_Default_Priority = {
     Legs  = {
         { Name = "Raptor Trousers", Level = 48 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
-        { Name = "Phl. Trousers", Level = 15 },
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
@@ -129,7 +119,7 @@ profile.Sets.WS_Default_Priority = {
         "San d'Orian Ring",
     },
     Back  = {
-        { Name = "Lizard Mantle", Level = 17 },       -- STR+1
+        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Legs  = {
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2
