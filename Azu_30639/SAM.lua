@@ -20,12 +20,8 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Brass Grip", Level = 30 },
     },
     Range = {
-        { Name = "Ajjub Bow", Level = 75 },     -- VIT+4
-    },
-    Ammo  = {
-        { Name = "remove", Level = 75 },
-        { Name = "Bibiki seashell", Level = 60 },     -- VIT+4
-        "Happy Egg",
+        { Name = "Ajjub Bow", Level = 75 },
+        { Name = "Self Bow", Level = 7 },
     },
     Head  = {
         { Name = "Shinobi Hachigane", Level = 49 },   -- ATK+2 H+2 Counter+3

@@ -22,7 +22,7 @@ profile.Sets.Engaged_Default_Priority = {
         "Bronze Axe",
     },
     Sub   = {
-        { Name = "Xiutleato", Level = 75 },
+        { Name = "Joyeuse", Level = 70 },
         { Name = "Darksteel Pick +1", Level = 62 },
         { Name = "Viking Axe", Level = 60 },          -- EVA-10  ACC+10
         { Name = "Military Pick", Level = 28 },

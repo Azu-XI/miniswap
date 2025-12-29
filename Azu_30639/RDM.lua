@@ -8,7 +8,7 @@ profile.Sets.Engaged_Default_Priority = {
             -- Wish: { Name = "Crimson Blade", Level = 49 },
         { Name = "Centurion's Sword", Level = 30 },
         { Name = "Auriga Xiphos", Level = 19 },
-        { Name = "Xiphos", Level = 7 },
+        { Name = "Beestinger", Level = 7 },
         "Ash Staff",
             -- Wish: Wax Sword +1?
     },
@@ -82,18 +82,12 @@ profile.Sets.Engaged_Default_Priority = {
 
 profile.Sets.Idle_Default_Priority = {
     Main  = {
-        { Name = "Terra's Staff", Level = 51 },         -- PDT-20
-        { Name = "Centurion's Sword", Level = 30 },
-        { Name = "Auriga Xiphos", Level = 19 },
-        { Name = "Xiphos", Level = 7 },
-        "Ash Staff",
-            -- Wish: Wax Sword +1?
+        { Name = "Chatoyant Staff", Level = 51 },
+        "Maple Wand +1",
     },
-    Sub  = {
-        { Name = "remove", Level = 51 },              -- No shield because of staff. TODO: Find a grip
-        { Name = "Viking Shield", Level = 45 },
-        { Name = "Pelte", Level = 8 },
-        { Name = "Kupo Shield", Level = 7 },
+    Sub   = {
+        { Name = "Neph. Grip", Level = 51 },          -- INT+1
+        "Kupo Shield",
     },
     Ammo = {
         { Name = "Talon Tahtlum", Level = 50 },
