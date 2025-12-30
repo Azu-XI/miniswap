@@ -81,10 +81,12 @@ profile.Sets.Idle_Default_Priority = {
         "Dream Mittens +1",
     },
     Ring1 = {
-        { Name = "Serket Ring", Level = 51 },         -- 50HP>MP
+        { Name = "Defending Ring", Level = 70 },      -- DT-10
         { Name = "Astral Ring", Level = 10 },         -- 25HP>MP
     },
     Ring2 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+        { Name = "Coral Ring", Level = 70 },              -- MDT-3
         { Name = "Tamas Ring", Level = 30 },          -- MP+30 MND+2~5
         { Name = "Astral Ring", Level = 10 },         -- 25HP>MP
         "Windurstian Ring",

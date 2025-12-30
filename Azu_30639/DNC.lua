@@ -70,8 +70,8 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Head  = {
         { Name = "Rawhide Mask", Level = 75 },        -- DEX+5 ACC+10 ATK+10 DA+3
-        { Name = "Wivre Mask", Level = 65 },          -- ACC+5 DEX+3
-        { Name = "Emperor Hairpin", Level = 24 },     -- EVA+10
+        { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
+        { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Bronze Cap",
     },
@@ -151,8 +151,7 @@ profile.Sets.Idle_Default_Priority.Neck = {
     table.unpack(profile.Sets.Idle_Default_Priority.Neck),
 };
 profile.Sets.Idle_Default_Priority.Ring1 = {
-        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
-    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+    { Name = "Defending Ring", Level = 70 },      -- DT-10
     table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
 };
 profile.Sets.Idle_Default_Priority.Ring2 = {
@@ -353,7 +352,7 @@ profile.Sets.WS_Default_Priority = {
 
 -- Goal: fTP & ACC & AGI & DA & TA & CRIT
 profile.Sets.WS_Exenterator = {
-    Head  = "Raptor Helm",                            -- AGI+4          ATK+4
+    -- Head  = "Maat's Cap",
     Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
@@ -363,7 +362,6 @@ profile.Sets.WS_Exenterator = {
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
     Waist = "Virtuoso Belt",                          --        ACC+12  ATK+4
-        -- Test: Subtle Sash [AGI+5 ATK+5]
     Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
     Feet  = "Raptor Ledelsens",                       -- AGI+4
 };

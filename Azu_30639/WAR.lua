@@ -10,6 +10,8 @@ profile.Sets.LockStyle = {
 
 profile.Sets.Engaged_Default_Priority = {
     Main  = {
+            -- Wish: Juggernaut
+            -- Wish: Tabarzin {GG + Augs, can augs be transfered to +1?}
         { Name = "Hatxiik", Level = 75 },
         { Name = "Nadziak", Level = 68 },
         { Name = "Darksteel Pick +1", Level = 62 },
@@ -41,7 +43,8 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Head  = {
         { Name = "Ares' Mask", Level = 75 },          -- HP+2% ACC+12 ATK+12 EVA-12 H+3 STP+3
-        { Name = "Walkure Mask", Level = 43 },        -- ATK+6
+        { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
+        { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
         { Name = "Emperor Hairpin", Level = 24 },     --         EVA+10  DEX+3  AGI+3
         { Name = "Brass Cap +1", Level = 11 },
         "Coven Hat",
@@ -132,8 +135,7 @@ profile.Sets.Idle_Default_Priority.Neck = {
     table.unpack(profile.Sets.Idle_Default_Priority.Neck),
 };
 profile.Sets.Idle_Default_Priority.Ring1 = {
-        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
-    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+        { Name = "Defending Ring", Level = 70 },      -- DT-10
     table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
 };
 profile.Sets.Idle_Default_Priority.Ring2 = {

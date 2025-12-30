@@ -16,8 +16,8 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Crossbow Bolt", Level = 1 },
     },
     Head  = {
-        { Name = "Walkure Mask", Level = 43 },
-        { Name = "Emperor Hairpin", Level = 24 },
+        { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
+        { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
         { Name = "Brass Cap +1", Level = 11 },
         "Coven Hat",
     },
@@ -98,8 +98,7 @@ profile.Sets.Idle_Default_Priority.Neck = {
     table.unpack(profile.Sets.Idle_Default_Priority.Neck),
 };
 profile.Sets.Idle_Default_Priority.Ring1 = {
-        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
-    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+    { Name = "Defending Ring", Level = 70 },      -- DT-10
     table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
 };
 profile.Sets.Idle_Default_Priority.Ring2 = {

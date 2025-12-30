@@ -16,7 +16,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Happy Egg",
     },
     Head  = {
-        { Name = "Emperor Hairpin", Level = 24 },
+        { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
+        { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
         { Name = "Entrancing Ribbon", Level = 11 },
         "Coven Hat",
     },
@@ -84,7 +85,7 @@ profile.Sets.Engaged_Default_Priority = {
 
 profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
 profile.Sets.Idle_Default_Priority.Head = {
-    { Name = "Emperor Hairpin", Level = 50 },
+    { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Brass Cap +1", Level = 11 },
     "Coven Hat",
@@ -93,11 +94,19 @@ profile.Sets.Idle_Default_Priority.Neck = {
     { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
     table.unpack(profile.Sets.Idle_Default_Priority.Neck),
 };
+profile.Sets.Idle_Default_Priority.Ring1 = {
+        { Name = "Defending Ring", Level = 70 },      -- DT-10
+    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+};
+profile.Sets.Idle_Default_Priority.Ring2 = {
+        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
+    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+};
 
 profile.Sets.JA_Charm_Priority = {
     Head  = {
-        -- { Name = "Raptor Helm", Level = 48 },           -- CHR+4  (Need 3/3 augment)
-        { Name = "Shade Tiara", Level = 25 },           -- CHR+2
+        { Name = "Garrison Sallet +1", Level = 20 },  -- CHR+2
         { Name = "Entrancing Ribbon", Level = 11 },     -- CHR+2
     },
     Neck  = {

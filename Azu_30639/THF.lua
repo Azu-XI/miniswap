@@ -57,8 +57,9 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Head  = {
         { Name = "Rog. Bonnet +1", Level = 74 },      -- Haste+5  CritRate+3  EVA+10
-        { Name = "Wivre Mask", Level = 65 },          -- ACC+5 DEX+3
-        { Name = "Emperor Hairpin", Level = 24 },
+        { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
+        { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
+        { Name = "Emperor Hairpin", Level = 24 },     -- EVA+10
         { Name = "Garrison Sallet +1", Level = 20 },
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Bronze Cap",
@@ -142,7 +143,7 @@ profile.Sets.Idle_Default_Priority.Head = {
     { Name = "Rog. Bonnet +1", Level = 74 },          -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
-        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5         -- EVA+3
+    { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5         -- EVA+3
     "Coven Hat",
 };
 profile.Sets.Idle_Default_Priority.Neck = {
@@ -150,8 +151,7 @@ profile.Sets.Idle_Default_Priority.Neck = {
     table.unpack(profile.Sets.Idle_Default_Priority.Neck),
 };
 profile.Sets.Idle_Default_Priority.Ring1 = {
-        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4
-    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+    { Name = "Defending Ring", Level = 70 },      -- DT-10
     table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
 };
 profile.Sets.Idle_Default_Priority.Ring2 = {
@@ -164,7 +164,7 @@ profile.Sets.Idle_Default_Priority.Legs = {
     table.unpack(profile.Sets.Idle_Default_Priority.Legs),
 };
 profile.Sets.Idle_Default_Priority.Feet = {
-    { Name = "Strider Boots", Level = 20 },
+    { Name = "Strider Boots", Level = 20 },           -- MVT+18
     { Name = "Leaping Boots", Level = 7 },
 };
 
@@ -322,7 +322,6 @@ profile.Sets.WS_Exenterator = {
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
     Waist = "Virtuoso Belt",                          --                    ATK+4  ACC+12
-        -- Test: Subtle Sash [AGI+5 ATK+5]
     Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
     Feet  = "Adhemar Gamashes",                       --               TA+2
         -- Wish: Dragon Leggings +1 [AGI+4 (Aug) Acc+8 Atk+8 Crit+3]

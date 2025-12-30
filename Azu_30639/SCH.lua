@@ -55,8 +55,7 @@ profile.Sets.Idle_Default_Priority = {
         "Dream Mittens +1",
     },
     Ring1 = {
-            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-        { Name = "Coral Ring", Level = 70 },          -- MDT-3
+        { Name = "Defending Ring", Level = 70 },      -- DT-10
         { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
         "Windurstian Ring",
     },

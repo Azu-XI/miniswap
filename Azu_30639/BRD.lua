@@ -26,8 +26,8 @@ profile.Sets.Engaged_Default_Priority = {
     },
     Head  = {
         { Name = "Pursuer's Beret", Level = 75 },
-        { Name = "Wivre Mask", Level = 65 },          -- ACC+5 DEX+3
-        { Name = "Raptor Helm", Level = 48 },
+        { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
+        { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
         { Name = "Emperor Hairpin", Level = 24 },
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
@@ -156,8 +156,7 @@ profile.Sets.Idle_Default_Priority = {
         "Dream Mittens +1",
     },
     Ring1 = {
-            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-        { Name = "Coral Ring", Level = 70 },          -- MDT-3
+        { Name = "Defending Ring", Level = 70 },      -- DT-10
         { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
         { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4 STP+1
         { Name = "Balance Ring", Level = 14 },        -- DEX+2
@@ -366,8 +365,7 @@ profile.Sets.Midcast_Singing_Priority = {
     Head  = {
             -- Wish: Aug: WindSkill+7
         { Name = "Brd. Roundlet +1", Level = 72 },    -- CHR+6   SingSkill+5
-        { Name = "Raptor Helm", Level = 48 },         -- CHR+4
-        { Name = "Shade Tiara", Level = 25 },         -- CHR+2
+        { Name = "Garrison Sallet +1", Level = 20 },  -- CHR+2
         { Name = "Entrancing Ribbon", Level = 11 },   -- CHR+2
     },
     Ear1  = {
@@ -554,7 +552,7 @@ profile.Sets.WS_Default_Priority = {
 
 -- Goal: fTP & ACC & AGI & DA & TA & CRIT
 profile.Sets.WS_Exenterator = {
-    Head  = "Raptor Helm",                            -- AGI+4          ATK+4
+    -- Head  = "Maat's Cap",
     Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
