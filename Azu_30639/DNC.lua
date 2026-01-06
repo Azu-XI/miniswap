@@ -50,7 +50,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Kupo Shield",
     },
     Range = {
-            -- Wish: Lv.75 Flamedancer Glaive {Brew+2 Coeurl} [CHR+5 StepACC+10 SambaDuration+15 {Aug} STR+4 DEX+4 ACC+2]
+            -- Wish: Aug: STR+4 DEX+4 ACC+2
+        { Name = "Flamedancer Glaive", Level = 75 },  -- CHR+5 StepACC+10 SambaDuration+15
         { Name = "War Hoop", Level = 40 },
         { Name = "Rogetsurin", Level = 15 },
     },

@@ -6,7 +6,7 @@ profile.Sets.LockStyle = {
     Body  = "Noble's Tunic",
     Hands = "Hlr. Mitts +1",
     Legs  = "Cleric's Pantaln.",
-    Feet  = "Zenith Pumps",
+    Feet  = "Bunzi's Sabots",
 };
 
 profile.Sets.Engaged_Default = {
@@ -112,7 +112,7 @@ profile.Sets.Idle_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Zenith Pumps", Level = 73 },        -- 50HP>MP
+        { Name = "Bunzi's Sabots", Level = 75 },
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2 MND+2
         { Name = "Power Sandals", Level = 18 },       -- VIT+3
         { Name = "Solea +1", Level = 8 },
@@ -157,9 +157,7 @@ profile.Sets.Midcast_Default_Priority = {
         { Name = "Cleric's Pantaln.", Level = 73 },   -- Healing+15 Enm-2 BarSpells+20
     },
     Feet  = {
-            -- Wish: Zenith Pumps+1 [(Aug) CurePot+5/6]
-            -- Wish: Medium's Sabots [CurePot+4] {DomainInvasion}
-        { Name = "Zenith Pumps", Level = 73 },        -- CurePot+2
+        { Name = "Bunzi's Sabots", Level = 75 },      -- 1%CuredToMP
     };
 };
 
@@ -170,13 +168,13 @@ profile.Sets.Midcast_Regen_Priority = {
 };
 
 profile.Sets.Midcast_Banish_Priority = {
-    Body  = {
+    Hands  = {
         { Name = "Cleric's Mitts", Level = 75 },      -- BanishPotVsUndead
     },
 };
 
 profile.Sets.Midcast_EnfeeblingMagic_Priority = {
-    Body  = {
+    Hands  = {
         { Name = "Cleric's Mitts", Level = 75 },      -- Enfeebling+15
     },
     Back  = {
@@ -190,15 +188,24 @@ profile.Sets.Midcast_EnfeeblingMagic_Priority = {
 -- Goal: Max FastCast 80%
 profile.Sets.Precast_Default_Priority = {
     Head  = {
+        { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
     Ear1  = {
         { Name = "Loquac. Earring", Level = 75 },     -- FC+2
-    }
+    },
+    Body  = {
+            -- Wish: Dalmatica +0/1 [(Aug) FC+4]
+        { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
+    },
+    Feet  = {
+        { Name = "Bunzi's Sabots", Level = 75 },      -- FC+2
+    },
 };
 
 -- Goal: Max FastCast 80% ; Cure Spellcasting
 profile.Sets.Precast_HealingMagic_Priority = {
+    -- Wish: Genbu's Shield [(Aug) CureCast-5]
     Head  = {
         { Name = "Bunzi's Hat", Level = 75 },         -- CureCast-5
         { Name = "Erudite Cap", Level = 70 },         -- CureCast-5
@@ -223,7 +230,6 @@ profile.Sets.Resting_Default_Priority = {
         { Name = "Cleric's Belt", Level = 70 },       -- HMP+3
     },
     Feet  = {
-        { Name = "", Level = 73 },                    -- Stop swapping boots with MP
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };
@@ -245,7 +251,7 @@ profile.Sets.WS_Default = {
     Back  = "Dew Silk Cape +1",                       -- MND+6
     Waist = "Pythia Sash",                            -- MND+5
     Legs  = "Errant Slops",                           -- MND+7
-    -- Feet  = "",
+    Feet  = "Bunzi's Sabots",                         -- MND+5
 };
 
 return profile;

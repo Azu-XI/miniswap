@@ -262,10 +262,6 @@ profile.Sets.Midcast_HealingMagic_Priority = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
         { Name = "Neph. Grip", Level = 51 },
     },
-    Range = "remove",
-    Ammo  = {
-        { Name = "Rimestone", Level = 60 },           -- MP+35  MND+1  Emn-5
-    },
     Head  = {
             -- Wish: Sheikh Turban [(Aug) CurePot+5]
     },
@@ -296,10 +292,6 @@ profile.Sets.Midcast_HealingMagic_Priority = {
 -- Goal: Max FastCast 80% ; Max Haste 25% ; Max SIRD 102%
 -- Erase & -na spells don't care about skill, so prioritize recast (and SIRD)
 local midcastFastCast = {
-    Range = {
-        { Name = "Rouser +1", Level = 50 },           --               Haste+3
-        { Name = "Rouser", Level = 20 },              --               Haste+1
-    },
     Head  = {
         { Name = "Pursuer's Beret", Level = 75 },     --               Haste+5
         { Name = "Entrancing Ribbon", Level = 11 },   --         FC+1
