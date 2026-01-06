@@ -17,12 +17,17 @@ profile.Sets.Engaged_Default_Priority = {
         { Name = "Katayama", Level = 10 },
     },
     Sub   = {
-        { Name = "Platinum Grip +1", Level = 65 },
-        { Name = "Brass Grip", Level = 30 },
+            -- Wish: Lv.74 Gatta Strap +0/1 [STR+3/4 DEX+3/4 ATK+3/4] {Leathercraft GuildNM}
+        { Name = "Mythril Grip +1", Level = 55 },     -- STR+2 VIT+2 ACC+2
+        { Name = "Tigris Grip", Level = 40 },         -- STP+2 DEX+3 ATK+2
+            -- Wish: Lv.20 Orcish Axegrip [HP+15 PDT-2 (Aug) DEF+4 ACC+3 Enm+2]
     },
     Range = {
         { Name = "Ajjub Bow", Level = 75 },
-        { Name = "Self Bow", Level = 7 },
+        { Name = "War Bow +1", Level = 50 },
+        { Name = "Battle Bow +1", Level = 40 },
+        { Name = "Great Bow +1", Level = 30 },
+        { Name = "Self Bow +1", Level = 7 },
     },
     Head  = {
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2

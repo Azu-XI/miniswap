@@ -11,9 +11,12 @@ profile.Sets.Engaged_Default_Priority = {
     Sub   = {
         "Kupo Shield",
     },
-    Ammo = {
-        { Name = "Bibiki seashell", Level = 60 },     -- VIT+4
-        "Happy Egg",
+    Range = {
+        { Name = "Ajjub Bow", Level = 75 },
+        { Name = "War Bow +1", Level = 50 },
+        { Name = "Battle Bow +1", Level = 40 },
+        { Name = "Great Bow +1", Level = 30 },
+        { Name = "Self Bow +1", Level = 7 },
     },
     Head  = {
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
