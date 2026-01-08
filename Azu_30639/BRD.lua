@@ -498,6 +498,12 @@ profile.Sets.WS_Default_Priority = {
     Head  = {
         { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3  AGI+3
     },
+    Ear1 = {
+        -- TODO
+    },
+    Ear2 = {
+        -- TODO
+    },
     Neck  = {
             -- Wish: Lv.75 Love Torque [DEX+5 Dagger+7]
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10
@@ -542,7 +548,7 @@ profile.Sets.WS_Default_Priority = {
     },
 };
 
--- Goal: fTP & ACC & AGI & DA & TA & CRIT
+-- Exenterator: fTP & ACC & AGI & DA & TA & CRIT
 profile.Sets.WS_Exenterator = {
     -- Head  = "Maat's Cap",
     Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
@@ -559,7 +565,7 @@ profile.Sets.WS_Exenterator = {
     Feet  = "Raptor Ledelsens",                       -- AGI+4
 };
 
--- Goal: CHR & ACC & DA & TA & CRIT
+-- Mordant Rime: CHR & ACC & DA & TA & CRIT
 profile.Sets.WS_MordantRime = {
     Range = "Rouser +1",                              -- CHR+5
     Head  = "Brd. Roundlet +1",                       -- CHR+6
@@ -575,6 +581,17 @@ profile.Sets.WS_MordantRime = {
     Waist = "Gleeman's Belt",                         -- CHR+6       ACC+8
     Legs  = "Marduk's Shalwar",                       -- CHR+10
     Feet  = "Brd. Slippers +1",                       -- CHR+8
+};
+
+--> Requiescat: 4 hits, 73% MND, fTP replicating (Soil/Shadow Gorget)
+profile.Sets.WS_Requiescat = {
+    Head  = "Brd. Roundlet +1",                       -- MND+6
+    Neck  = "Soil Gorget",                            -- fTP+0.1
+    Body  = "Kirin's Osode",                          -- AllStats+10
+    Ear1  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
+    Ring1 = "Tamas Ring",                             -- MND+5
+    Waist = "Salire Belt",                            -- MND+5
+    Feet  = "Suzaku's Sune-Ate",                      -- MND+15
 };
 
 return profile;

@@ -205,6 +205,12 @@ profile.Sets.WS_Default_Priority = {
         { Name = "Sipahi Turban", Level = 59 },       -- STR+3 DEX+2
         { Name = "Shade Tiara", Level = 25 },         -- STR+2
     },
+    Ear1 = {
+        -- TODO
+    },
+    Ear2 = {
+        -- TODO
+    },
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },       --             ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
@@ -259,6 +265,8 @@ profile.Sets.WS_Default_Priority = {
 --> Requiescat: 4 hits, 73% MND, fTP replicating (Soil/Shadow Gorget)
 profile.Sets.WS_Requiescat = {
     Body  = "Kirin's Osode",                          -- AllStats+10
+    Neck  = "Soil Gorget",                            -- fTP+0.1
+    Ear2  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
     Ring1 = "Tamas Ring",                             -- MND+5
     Waist = "Salire Belt",                            -- MND+5
     Feet  = "Suzaku's Sune-Ate",                      -- MND+15

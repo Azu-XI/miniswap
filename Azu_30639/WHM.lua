@@ -240,9 +240,9 @@ profile.Sets.Resting_Default_Priority = {
 --> Mystic Boon: 1 hit, 70% MND / 30% STR
 profile.Sets.WS_Default = {
     Ammo  = "Talon Tathlum",                          --         STR+2
-    Ear1  = "Emberpearl Earring",                     -- MND+2   STR+2
-    Ear2  = "Brutal Earring",                         --                       DA+1
     Head  = "Bunzi's Hat",                            -- MND+10
+    Ear1  = "Brutal Earring",                         --                                DA+1
+    Ear2  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
     -- Body  = "",
     Neck  = "Justice Badge",                          -- MND+3
     Hands = "Hlr. Mitts +1",                          -- MND+7   STR+7

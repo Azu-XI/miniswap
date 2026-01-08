@@ -50,8 +50,8 @@ profile.Sets.Engaged_Default_Priority = {
         "Kupo Shield",
     },
     Range = {
-            -- Wish: Aug: STR+4 DEX+4 ACC+2
-        { Name = "Flamedancer Glaive", Level = 75 },  -- CHR+5 StepACC+10 SambaDuration+15
+            -- Wish: Aug max for added: STR+1 DEX+1 ACC+2
+        { Name = "Flamedancer Glaive", Level = 75 },  -- CHR+5 STR+3 DEX+3 StepACC+10 SambaDuration+15
         { Name = "War Hoop", Level = 40 },
         { Name = "Rogetsurin", Level = 15 },
     },
@@ -309,6 +309,12 @@ profile.Sets.WS_Default_Priority = {
     Head  = {
         { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3  AGI+3
     },
+    Ear1 = {
+        -- TODO
+    },
+    Ear2 = {
+        -- TODO
+    },
     Neck  = {
             -- Wish: Lv.75 Love Torque [DEX+5 Dagger+7]
         { Name = "Spike Necklace", Level = 21 },      -- DEX+3                           STR+3
@@ -347,6 +353,7 @@ profile.Sets.WS_Default_Priority = {
         {Name = "Lizard Belt +1", Level = 17 },       -- DEX+2
     },
     Feet  = {
+        { Name = "Etoile Toe Shoes +1", Level = 75 }, -- DEX+4   STR+7  ACC+5   ATK+12          ConserveTP+10
         { Name = "Leaping Boots", Level = 7 },        -- DEX+3 AGI+3
     },
 };
@@ -384,7 +391,6 @@ profile.Sets.WS_PyrrhicKleos = {
         -- Wish: Warwolf Belt+1? STR+6 DEX+6 ATK+10
     Legs  = "Skadi's Chausses",                       --         STR+3  ACC+4   ATK+5
     Feet  = "Etoile Toe Shoes +1",                    -- DEX+4   STR+7  ACC+5   ATK+12          ConserveTP+10
-        -- Wish: Aug: STR+7 ATK+12 ConserveTP+10
 };
 
 return profile;
