@@ -16,18 +16,6 @@ Thanks to Thorny for the amazing [LuAshitacast][], and [Jyouya][] and [avogadro-
 [Jyouya]: https://github.com/Jyouya/Ashita-Stuff/tree/master/config/addons/luashitacast
 [avogadro-war]: https://github.com/avogadro-war/ashita_profiles
 
-**Table of Content**
-
-- [Getting Started](#getting-started)
-- [Aliases](#aliases)
-- [Bindings](#bindings)
-- [Gear Sets](#gear-sets)
-- [Level Sync](#level-sync)
-- [LockStyle](#lockstyle)
-- [Modes](#modes)
-- [Shared Configuration Between Jobs](#shared-configuration-between-jobs)
-- [Further Customization](#further-customization)
-
 ## Getting Started
 
 1. Copy the `common/miniswap.lua` file to your `ashita/config/addons/LuAshitacast/common/` folder.
