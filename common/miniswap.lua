@@ -16,11 +16,11 @@ local state = {
 
 local shared = gFunc.LoadFile('shared.lua') or {};
 local profile = {
-    Aliases = shared.Aliases or {},
-    Bindings = shared.Bindings or {},
+    Aliases = {},
+    Bindings = {},
     MiniSwap = {},
     Packer = {},
-    Sets = shared.Sets or {},
+    Sets = {},
 };
 
 do -- COMMANDS REGION
@@ -945,6 +945,10 @@ do -- PROFILE LIFECYCLE REGION
     profile.MiniSwap.OnLoad = function()
         profile.MiniSwap.ProcessActionGroupsMapping();
 
+        profile.Aliases = profile.MiniSwap.MergeTables(shared.Aliases or {}, profile.Aliases);
+        profile.Bindings = profile.MiniSwap.MergeTables(shared.Bindings or {}, profile.Bindings);
+        profile.Sets = profile.MiniSwap.MergeTables(shared.Sets or {}, profile.Sets);
+
         gSettings.AllowAddSet = true;
 
         gui.Initialize();
@@ -1018,6 +1022,13 @@ do -- UTILS REGION
             state.CurrentLevel = level;
         end
         state.LevelSynced = player.MainJobLevel ~= player.MainJobSync
+    end
+
+    profile.MiniSwap.MergeTables = function(t1, t2)
+        for k, v in pairs(t2) do
+            t1[k] = v
+        end
+        return t1
     end
 
     profile.MiniSwap.ShowDebug = function(message)
