@@ -996,15 +996,17 @@ do -- PROFILE LIFECYCLE REGION
 end
 
 do -- UTILS REGION
-    profile.MiniSwap.DeepCopy = function(original)
-        local copy = {}
-        for k, v in pairs(original) do
-            if type(v) == "table" then
-                v = profile.MiniSwap.DeepCopy(v)
-            end
-            copy[k] = v
+    profile.MiniSwap.DeepCopy = function(obj, seen)
+        if type(obj) ~= 'table' then return obj end
+        if seen and seen[obj] then return seen[obj] end
+        
+        local s = seen or {}
+        local res = setmetatable({}, getmetatable(obj))
+        s[obj] = res
+        for k, v in pairs(obj) do
+            res[profile.MiniSwap.DeepCopy(k, s)] = profile.MiniSwap.DeepCopy(v, s)
         end
-        return copy
+        return res
     end
 
     profile.MiniSwap.DelayCommand = function (command, delay)
