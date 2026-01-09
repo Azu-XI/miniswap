@@ -1,19 +1,10 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
--- profile.Sets.LockStyle = {
---     Head  = "Etoile Tiara",
---     Body  = "Custom Gilet +1",
---     Hands = "remove",
---     Legs  = "Etoile Tights",
---     Feet  = "Etoile Toe Shoes +1",
--- };
-
 profile.Sets.LockStyle = {
     Main  = "Atoyac",
     Sub   = "Xiutleato",
     Head  = "Etoile Tiara",
     Body  = "Freya's Jerkin",
-    -- Body  = "Kirin's Osode",
     Hands = "Switft Gages",
     -- Legs  = "Skadi's Chausses",
     Legs  = "Sipahi Zerehs",
