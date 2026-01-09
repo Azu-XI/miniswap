@@ -16,6 +16,18 @@ Thanks to Thorny for the amazing [LuAshitacast][], and [Jyouya][] and [avogadro-
 [Jyouya]: https://github.com/Jyouya/Ashita-Stuff/tree/master/config/addons/luashitacast
 [avogadro-war]: https://github.com/avogadro-war/ashita_profiles
 
+**Table of Content**
+
+- [Getting Started](#getting-started)
+- [Aliases](#aliases)
+- [Bindings](#bindings)
+- [Gear Sets](#gear-sets)
+- [Level Sync](#level-sync)
+- [LockStyle](#lockstyle)
+- [Modes](#modes)
+- [Shared Configuration Between Jobs](#shared-configuration-between-jobs)
+- [Further Customization](#further-customization)
+
 ## Getting Started
 
 1. Copy the `common/miniswap.lua` file to your `ashita/config/addons/LuAshitacast/common/` folder.
@@ -26,9 +38,42 @@ Thanks to Thorny for the amazing [LuAshitacast][], and [Jyouya][] and [avogadro-
 ```lua
 local profile = gFunc.LoadFile('common/miniswap.lua');
 
--- Add job gear sets, aliases and bindings here.
+local aliases = {
+  -- Add your job specific aliases
+};
 
+local bindings = {
+  -- Add your job specific bindings
+};
+
+local sets = {
+  -- Add your job specific gear sets
+};
+
+profile.Aliases = aliases;
+profile.Bindings = bindings;
+profile.Sets = sets;
 return profile;
+```
+
+## Aliases
+
+In your job profile, add aliases like so:
+
+```lua
+local aliases = {
+  ["/locklv"] = "/lac fwd locklv",
+};
+```
+
+## Bindings
+
+In your job profile, add bindings like so:
+
+```lua
+local bindings = {
+  ["^y"] = "/poke",
+};
 ```
 
 ## Gear Sets
@@ -37,8 +82,20 @@ There's no fancy lua function to write to swap gear. Simply declare sets with a 
 
 ### How to declare a set
 
+#### In game
+
+1. Use `/lac disable` to temporarily disable swapping functionality.
+2. Equip your items manually.
+3. Use `/lac addset SetName` to have it saved to your lua file.
+4. Repeat steps 1 to 3.
+
+#### Manually
+
+Within the curly brackets of the `sets` variable, write your sets as follow:
+
 ```lua
-profile.Sets.SetName = {
+local sets = {
+  SetName = {
     Main  = 'Lathi',
     Sub   = 'Enki Strap',
     Ammo  = 'Staunch Tathlum +1',
@@ -54,6 +111,7 @@ profile.Sets.SetName = {
     Waist = 'Fucho-no-Obi',
     Legs  = { Name = 'Psycloth Lappas', AugPath='D' },
     Feet  = { Name = 'Merlinic Crackows', Augment = { [1] = '"Fast Cast"+7', [2] = 'MND+10' } },
+  },
 };
 ```
 
@@ -120,7 +178,7 @@ profile.Sets.SetName = {
   - `Town` equipped when in town.
   - `Town_NAME`, where `NAME` is one of `Adoulin`, `Bastok`, `Jeuno`, `SandOria`, `Windurst`.
 
-> [!NOTE]
+> [!IMPORTANT]
 >
 > Sets are cumulatives. Any slot from a previous set which isn't overwritten by a later set will remain.
 >
@@ -133,43 +191,38 @@ profile.Sets.SetName = {
 > [!TIP]
 >
 > If you're ever unsure about which sets will be equipped for a given action,
-> run the command `/lac fwd debug` and execute any action to see a list of sets being attempted to equip.
+> run the command `/lac fwd debug` and execute any action to see a list of sets being attempted to equip.  
 > Use the same command to disable the debug output.
 
-## Modes
+## Level Sync
 
-There isn't any modes just yet, I'm not too sure how I want it to fit with the rest.
+_MiniSwap_ can automatically equip level appropriate gear when leveling, or syncing in parties and BCNMs.
 
-For weapons though, you can `/lac fwd locktp on` to disable `main/sub/range/ammo` slots (minus `range` for BRD) so you can manually equip something. Use `/lac fwd locktp off` to enable those slots again.
-
-## Aliases
-
-On your profile, add aliases like so:
+To do so, set names need to be suffixed with `_Priority` and then gear for each level needs to be defined for each slots, for example:
 
 ```lua
-profile.Aliases["/locklv"] = "/lac fwd locklv";
+local sets = {
+  Engaged_Default_Priority = {
+    Main  = {
+        { Name = "Mandau", Level = 75 },
+        { Name = "Hornetneedle", Level = 48 },
+        { Name = "Beestringer", Level = 7 },
+        "Bronze Knife",
+    },
+  },
+};
 ```
 
-## Bindings
+> [!NOTE]
+>
+> - Equipment pieces are evaluated from top to bottom, and will stop at the first valid match,
+>   so you need to order each lines accordingly.
+> - If the `Level` is omitted, it will match automatically.
 
-On your profile, add aliases like so:
-
-```lua
-profile.Bindings["^y"] = "/poke";
-```
-
-## Shared Configuration
-
-1. Create a `shared.lua` file in your `ashita/config/addons/LuAshitacast/YourName_00000/` folder.
-2. Copy the following template into it
-
-```lua
-local profile = { Aliases = {}, Bindings = {}, Sets = {} };
-
--- Add shared gear sets, aliases and bindings here.
-
-return profile;
-```
+> [!TIP]
+>
+> Before engaging in level synced content, or to verify that everything is setup properly, use `/lac fwd locklv 00`, where `00` is the target level.  
+> Use `/lac fwd locklv` without a level to disable the lock.
 
 ## LockStyle
 
@@ -180,27 +233,33 @@ Define a set called `LockStyle` for automatic lock styling when switching jobs.
 > It waits for 5 seconds before applying the lock style so it works a bit better when also changing subjob, but it's not perfect.  
 > If it failed, it can be reapplied with `/lac lockstyle Lockstyle`.
 
-## Level Sync
+## Modes
 
-_MiniSwap_ can automatically equip level appropriate gear when leveling, or syncing in parties and BCNMs.
+There isn't any modes just yet, I'm not too sure how I want it to fit with the rest.
 
-To do so, set names need to be suffixed with `_Priority` and then gear for each level needs to be defined for each slots, for example:
+For weapons though, you can `/lac fwd locktp on` to disable `main/sub/range/ammo` slots (minus `range` for BRD) so you can manually equip something. Use `/lac fwd locktp off` to enable those slots again.
+
+## Shared Configuration Between Jobs
+
+1. Create a `shared.lua` file in your `ashita/config/addons/LuAshitacast/YourName_00000/` folder.
+2. Copy the following template into it.
 
 ```lua
-profile.Sets.Engaged_Default_Priority = {
-    Main  = {
-        { Name = "Mandau", Level = 75 },
-        { Name = "Hornetneedle", Level = 48 },
-        { Name = "Beestringer", Level = 7 },
-        "Bronze Knife",
-    },
+local aliases = {
+  -- Add your shared aliases
 };
-```
 
-> [!TIP]
->
-> Before engaging in level synced content, or to verify that everything is setup properly, use `/lac fwd locklv 00`, where `00` is the target level.  
-> Use `/lac fwd locklv` without a level to disable the lock.
+local bindings = {
+  -- Add your shared bindings
+};
+
+local sets = {
+  -- Add your shared gear sets
+};
+
+local profile = { Aliases = aliases, Bindings = bindings, Sets = sets };
+return profile;
+```
 
 ## Further Customization
 
