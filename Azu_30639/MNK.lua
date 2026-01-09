@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.LockStyle = {
+sets.LockStyle = {
     Main  = "Maochinoli",
     Head  = "Naga Somen",
     Body  = "Naga Samue",
@@ -9,7 +10,7 @@ profile.Sets.LockStyle = {
     Feet  = "Naga Kyahan",
 };
 
-profile.Sets.Engaged_Default_Priority = {
+sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Maochinoli", Level = 75 },
             -- With: Blurred Claws? (https://www.bg-wiki.com/ffxi/CatsEyeXI_Systems/Synthesis)
@@ -115,44 +116,44 @@ profile.Sets.Engaged_Default_Priority = {
     },
 };
 
-profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
-profile.Sets.Idle_Default_Priority.Head = {
+sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
+sets.Idle_Default_Priority.Head = {
     { Name = "Naga Somen", Level = 75 },
     { Name = "Shinobi Hachigane", Level = 50 },       -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Brass Cap +1", Level = 11 },
     "Coven Hat",
 };
-profile.Sets.Idle_Default_Priority.Neck = {
+sets.Idle_Default_Priority.Neck = {
     { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
-    table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+    table.unpack(sets.Idle_Default_Priority.Neck),
 };
-profile.Sets.Idle_Default_Priority.Ring1 = {
+sets.Idle_Default_Priority.Ring1 = {
         { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Ring2 = {
+sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
 
 -- Goal: HHP
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
 };
 
 
-profile.Sets.JA_Boost_Priority = {
+sets.JA_Boost_Priority = {
     Hands = {
         { Name = "Temple Gloves", Level = 54 },
     },
 };
 
 -- Goal: VIT
-profile.Sets.JA_Chakra_Priority = {
+sets.JA_Chakra_Priority = {
     Head  = {
             -- Wish: Genbu's Kabuto [VIT+15]
         { Name = "Tiger Mask", Level = 75 },          -- VIT+5
@@ -175,7 +176,7 @@ profile.Sets.JA_Chakra_Priority = {
 };
 
 --Goal: MND
-profile.Sets.JA_ChiBlast_Priority = {
+sets.JA_ChiBlast_Priority = {
     Head  = {
         { Name = "Temple Crown", Level = 56 },        -- MND+5
         { Name = "Garrison Sallet +1", Level = 20 },  -- MND+2
@@ -201,26 +202,26 @@ profile.Sets.JA_ChiBlast_Priority = {
     },
 };
 
-profile.Sets.JA_Counterstance_Priority = {
+sets.JA_Counterstance_Priority = {
     Feet  = {
         { Name = "Melee Gaiters", Level = 71 },
     },
 };
 
-profile.Sets.JA_Dodge_Priority = {
+sets.JA_Dodge_Priority = {
     Feet  = {
         { Name = "Temple Gaiters", Level = 52 },
     },
 };
 
-profile.Sets.JA_Focus_Priority = {
+sets.JA_Focus_Priority = {
     Head  = {
         { Name = "Temple Crown", Level = 56 },
     },
 };
 
 -- Goal: ACC (Multi-hits WS) & STR (Generic Mod)
-profile.Sets.WS_Default_Priority = {
+sets.WS_Default_Priority = {
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3      -- STR+2 DEX+2
@@ -250,7 +251,7 @@ profile.Sets.WS_Default_Priority = {
 };
 
 -- Goal: ACC (Multi-hits WS) & DEX (Mod 73%)
-profile.Sets.WS_ShijinSpiral = {
+sets.WS_ShijinSpiral = {
     -- Ammo  = "",
     Head  = "Assailant's Visor",                      --              DEX+11 STR+5
         -- Wish: Augment to ACC+5 ATK+5 DA+2
@@ -278,4 +279,5 @@ profile.Sets.WS_ShijinSpiral = {
         -- Wish: Melee Gaiters +1 [DEX+5 (Aug) ACC+8]
 }
 
+profile.Sets = sets;
 return profile;

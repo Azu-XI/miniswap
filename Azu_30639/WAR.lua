@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.LockStyle = {
+sets.LockStyle = {
     Head  = "remove",
     Body  = "Kirin's Osode",
     Hands = "Switft Gages",
@@ -8,7 +9,7 @@ profile.Sets.LockStyle = {
     Feet  = "Suzaku's Sune-Ate",
 };
 
-profile.Sets.Engaged_Default_Priority = {
+sets.Engaged_Default_Priority = {
     Main  = {
             -- Wish: Juggernaut
             -- Wish: Tabarzin {GG + Augs, can augs be transfered to +1?}
@@ -122,36 +123,36 @@ profile.Sets.Engaged_Default_Priority = {
     },
 };
 
-profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
-profile.Sets.Idle_Default_Priority.Head = {
+sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
+sets.Idle_Default_Priority.Head = {
     { Name = "Ares' Mask", Level = 75 },
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Brass Cap +1", Level = 11 },
     "Coven Hat",
 };
-profile.Sets.Idle_Default_Priority.Neck = {
+sets.Idle_Default_Priority.Neck = {
     { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
-    table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+    table.unpack(sets.Idle_Default_Priority.Neck),
 };
-profile.Sets.Idle_Default_Priority.Ring1 = {
+sets.Idle_Default_Priority.Ring1 = {
         { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Ring2 = {
+sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
 
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
 };
 
 -- Goal: Enmity+
-profile.Sets.JA_Provoke_Priority = {
+sets.JA_Provoke_Priority = {
     Head  = {
         { Name = "Warrior's Mask", Level = 73 },    -- Enm+1
             -- Wish: Lv.1 Cache-nez [Enm+2]
@@ -188,7 +189,7 @@ profile.Sets.JA_Provoke_Priority = {
     },
 };
 
-profile.Sets.JA_Warcry_Priority = {
+sets.JA_Warcry_Priority = {
     Head  = {
         { Name = "Warrior's Mask", Level = 73 },      -- Warcry+10s
     }
@@ -199,7 +200,7 @@ profile.Sets.JA_Warcry_Priority = {
 --
 
 -- Goal: STR & ACC
-profile.Sets.WS_Default_Priority = {
+sets.WS_Default_Priority = {
     Head  = {
         { Name = "Ares' Mask", Level = 75 },          -- ACC+12 ATK+12
         { Name = "Sipahi Turban", Level = 59 },       -- STR+3 DEX+2
@@ -263,7 +264,7 @@ profile.Sets.WS_Default_Priority = {
 --> Savage Blade: 2 hits, 50% STR / 50% MND
 
 --> Requiescat: 4 hits, 73% MND, fTP replicating (Soil/Shadow Gorget)
-profile.Sets.WS_Requiescat = {
+sets.WS_Requiescat = {
     Body  = "Kirin's Osode",                          -- AllStats+10
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Ear2  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
@@ -278,4 +279,5 @@ profile.Sets.WS_Requiescat = {
 --> Black Halo: 2 hits, 70% MND / 30% STR
 --> Realmrazer: 7 hits, 73% MND, fTP replicating (Flame/Thunder/Light Gorget)
 
+profile.Sets = sets;
 return profile;

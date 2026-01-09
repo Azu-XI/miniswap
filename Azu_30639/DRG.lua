@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.JA_AncientCircle = {
+sets.JA_AncientCircle = {
     Legs = {
         { Name = "Drachen Brais", Level = 52 },
     }
@@ -8,7 +9,7 @@ profile.Sets.JA_AncientCircle = {
 
 -- Goal: STR & VIT & ACC & Jump+ & Jump TP+
 -- Note: Base damage (+fSTR) multiplier of (1 + VIT/256)
-profile.Sets.JA_Jump_Priority = {
+sets.JA_Jump_Priority = {
     Head  = {
         { Name = "Shade Tiara", Level = 25 },         -- STR+2
     },
@@ -51,7 +52,7 @@ profile.Sets.JA_Jump_Priority = {
 
 -- Goal: STR & ACC
 -- Note: Base damage (+fSTR)
-profile.Sets.JA_HighJump_Priority = {
+sets.JA_HighJump_Priority = {
     Head  = {
         { Name = "Shade Tiara", Level = 25 },         -- STR+2
     },
@@ -87,7 +88,7 @@ profile.Sets.JA_HighJump_Priority = {
     }
 };
 
-profile.Sets.Engaged_Default_Priority = {
+sets.Engaged_Default_Priority = {
     Main  = {
         -- { Name = "Kuakuakait", Level = 75 },             -- IN STORAGE
         -- { Name = "Gnd.Kgt. Lance", Level = 60 },         -- IN STORAGE
@@ -181,28 +182,28 @@ profile.Sets.Engaged_Default_Priority = {
     },
 };
 
-profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
-profile.Sets.Idle_Default_Priority.Head = {
+sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
+sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Brass Cap +1", Level = 11 },
     "Coven Hat",
 };
-profile.Sets.Idle_Default_Priority.Neck = {
+sets.Idle_Default_Priority.Neck = {
     { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
-    table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+    table.unpack(sets.Idle_Default_Priority.Neck),
 };
-profile.Sets.Idle_Default_Priority.Ring1 = {
+sets.Idle_Default_Priority.Ring1 = {
         { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Ring2 = {
+sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
 
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
@@ -212,7 +213,7 @@ profile.Sets.Resting_Default_Priority = {
 
 -- Goal: ACC (Multi-hits WS) & STR (Generic Mod)
 -- Goal: STR & ACC
-profile.Sets.WS_Default_Priority = {
+sets.WS_Default_Priority = {
     Head  = {
         { Name = "Ares' Mask", Level = 75 },          -- ACC+12 ATK+12
         { Name = "Sipahi Turban", Level = 59 },       -- STR+3 DEX+2
@@ -263,4 +264,5 @@ profile.Sets.WS_Default_Priority = {
     },
 };
 
+profile.Sets = sets;
 return profile;

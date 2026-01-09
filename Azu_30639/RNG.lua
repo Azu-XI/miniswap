@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.Engaged_Default_Priority = {
+sets.Engaged_Default_Priority = {
     Main  = {
         -- { Name = "Archer's Knife", Level = 28 },      -- RACC+10
         { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
@@ -89,34 +90,34 @@ profile.Sets.Engaged_Default_Priority = {
     },
 };
 
-profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
-profile.Sets.Idle_Default_Priority.Head = {
+sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
+sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
     "Coven Hat",
 };
-profile.Sets.Idle_Default_Priority.Ring1 = {
+sets.Idle_Default_Priority.Ring1 = {
         { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Ring2 = {
+sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Feet = {
+sets.Idle_Default_Priority.Feet = {
     { Name = "Strider Boots", Level = 20 },           -- MVT+18
     { Name = "Leaping Boots", Level = 7 },
 };
 
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
 };
 
-profile.Sets.WS_Default_Priority = {
+sets.WS_Default_Priority = {
     Head  = {
         { Name = "Shade Tiara", Level = 25 },         -- STR+2
     },
@@ -138,4 +139,5 @@ profile.Sets.WS_Default_Priority = {
     },
 };
 
+profile.Sets = sets;
 return profile;

@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.Engaged_Default_Priority = {
+sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Maochinoli", Level = 75 },
             -- With: Blurred Claws? (https://www.bg-wiki.com/ffxi/CatsEyeXI_Systems/Synthesis)
@@ -82,46 +83,46 @@ profile.Sets.Engaged_Default_Priority = {
     },
 };
 
-profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
-profile.Sets.Idle_Default_Priority.Head = {
+sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
+sets.Idle_Default_Priority.Head = {
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
     "Coven Hat",
 };
-profile.Sets.Idle_Default_Priority.Neck = {
+sets.Idle_Default_Priority.Neck = {
     { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
-    table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+    table.unpack(sets.Idle_Default_Priority.Neck),
 };
-profile.Sets.Idle_Default_Priority.Ring1 = {
+sets.Idle_Default_Priority.Ring1 = {
         { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Ring2 = {
+sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
 
 -- Goal: HHP
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
 };
 
 local maneuvers = { Neck = "Buffoon's Collar" };
-profile.Sets.JA_DarkManeuver = maneuvers;
-profile.Sets.JA_EarthManeuver = maneuvers;
-profile.Sets.JA_FireManeuver = maneuvers;
-profile.Sets.JA_IceManeuver = maneuvers;
-profile.Sets.JA_LightManeuver = maneuvers;
-profile.Sets.JA_ThunderManeuver = maneuvers;
-profile.Sets.JA_WaterManeuver = maneuvers;
-profile.Sets.JA_WindManeuver = maneuvers;
+sets.JA_DarkManeuver = maneuvers;
+sets.JA_EarthManeuver = maneuvers;
+sets.JA_FireManeuver = maneuvers;
+sets.JA_IceManeuver = maneuvers;
+sets.JA_LightManeuver = maneuvers;
+sets.JA_ThunderManeuver = maneuvers;
+sets.JA_WaterManeuver = maneuvers;
+sets.JA_WindManeuver = maneuvers;
 
 -- Goal: ACC for multi-hits WS
-profile.Sets.WS_Default_Priority = {
+sets.WS_Default_Priority = {
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3      -- STR+2 DEX+2
@@ -144,7 +145,7 @@ profile.Sets.WS_Default_Priority = {
 };
 
 -- Goal: ACC (Multi-hits WS) & DEX (Mod 73%)
-profile.Sets.WS_ShijinSpiral = {
+sets.WS_ShijinSpiral = {
     -- Ammo  = "",
     Head  = "Assailant's Visor",                      --              DEX+11 STR+5
         -- Wish: Augment to ACC+5 ATK+5 DA+2
@@ -169,4 +170,5 @@ profile.Sets.WS_ShijinSpiral = {
     -- Feet = "",
 }
 
+profile.Sets = sets;
 return profile;

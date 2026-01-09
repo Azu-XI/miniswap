@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.LockStyle = {
+sets.LockStyle = {
     Main  = "Sandung",
     Sub   = "Atoyac",
     Head  = "Tiger Mask",
@@ -10,7 +11,7 @@ profile.Sets.LockStyle = {
     Feet  = "Adhemar Gamashes",
 };
 
-profile.Sets.Engaged_Default_Priority = {
+sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Sandung", Level = 75 },
         { Name = "Gully", Level = 72 },
@@ -127,7 +128,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
 };
 
-profile.Sets.Weapons = {
+sets.Weapons = {
     ["Sandung/Atoyac"] = {
         Main = "Sandung",
         Sub = "Atoyac",
@@ -138,47 +139,47 @@ profile.Sets.Weapons = {
     }
 };
 
-profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
-profile.Sets.Idle_Default_Priority.Head = {
+sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
+sets.Idle_Default_Priority.Head = {
     { Name = "Rog. Bonnet +1", Level = 74 },          -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5         -- EVA+3
     "Coven Hat",
 };
-profile.Sets.Idle_Default_Priority.Neck = {
+sets.Idle_Default_Priority.Neck = {
     { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
-    table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+    table.unpack(sets.Idle_Default_Priority.Neck),
 };
-profile.Sets.Idle_Default_Priority.Ring1 = {
+sets.Idle_Default_Priority.Ring1 = {
     { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Ring2 = {
+sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Legs = {
+sets.Idle_Default_Priority.Legs = {
     { Name = "Acrobat's Breeches", Level = 75 },      -- EVA+11
-    table.unpack(profile.Sets.Idle_Default_Priority.Legs),
+    table.unpack(sets.Idle_Default_Priority.Legs),
 };
-profile.Sets.Idle_Default_Priority.Feet = {
+sets.Idle_Default_Priority.Feet = {
     { Name = "Strider Boots", Level = 20 },           -- MVT+18
     { Name = "Leaping Boots", Level = 7 },
 };
 
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },   -- HHP+2
     },
 };
 
 -- Goal: Snapshot & Rapid Shot
-profile.Sets.Preshot_Default = {}
+sets.Preshot_Default = {}
 
 -- Goal: RACC, RATK, STP, Crit, Recycle, Etc
-profile.Sets.Midshot_Default = {
+sets.Midshot_Default = {
     Head  = {
         { Name = "Adhemar Bonnet", Level = 75 },      -- RACC+9 RATK+9
     },
@@ -196,7 +197,7 @@ profile.Sets.Midshot_Default = {
 }; 
 
 -- Goal: Waltz Potency > CHR (caster) & VIT (target)
-profile.Sets.JA_CuringWaltz_Priority = {
+sets.JA_CuringWaltz_Priority = {
     Head  = {
         { Name = "Shade Tiara", Level = 25 },         -- CHR+2
     },
@@ -226,16 +227,16 @@ profile.Sets.JA_CuringWaltz_Priority = {
         { Name = "Adhemar Gamashes", Level = 75 },    -- VIT+5
     },
 }
-profile.Sets.JA_CuringWaltzII_Priority = profile.Sets.JA_CuringWaltz_Priority
-profile.Sets.JA_DivineWaltz_Priority = profile.Sets.JA_CuringWaltz_Priority
+sets.JA_CuringWaltzII_Priority = sets.JA_CuringWaltz_Priority
+sets.JA_DivineWaltz_Priority = sets.JA_CuringWaltz_Priority
 
-profile.Sets.JA_Flee_Priority = {
+sets.JA_Flee_Priority = {
     Feet = {
         { Name = "Rogue's Poulaines", Level = 60 },   -- Flee+15s
     },
 };
 
-profile.Sets.JA_Steal_Priority = {
+sets.JA_Steal_Priority = {
     Head  = {
         -- { Name = "Rogue's Bonnet", Level = 54 },   -- Turned into +1, worth getting again for Steal+1?
     },
@@ -256,7 +257,7 @@ profile.Sets.JA_Steal_Priority = {
 };
 
 -- Goal: ACC & DEX & AGI
-profile.Sets.WS_Default_Priority = {
+sets.WS_Default_Priority = {
     Head  = {
         { Name = "Adhemar Bonnet", Level = 75 },      -- DEX+6 AGI+6 Crit+3
         { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3 AGI+3
@@ -309,7 +310,7 @@ profile.Sets.WS_Default_Priority = {
 };
 
 -- Goal: fTP & ACC & AGI & DA & TA & CRIT
-profile.Sets.WS_Exenterator = {
+sets.WS_Exenterator = {
     Head  = "Adhemar Bonnet",                         -- AGI+6  DEX+6  Crit+3
         -- Wish: Dragon Cap +1 [AGI+5 (Aug) AGI+6 Dagger+8]
     Neck  = "Soil Gorget",                            -- fTP+0.1
@@ -327,4 +328,5 @@ profile.Sets.WS_Exenterator = {
         -- Wish: Dragon Leggings +1 [AGI+4 (Aug) Acc+8 Atk+8 Crit+3]
 };
 
+profile.Sets = sets;
 return profile;

@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.LockStyle = {
+sets.LockStyle = {
     Main  = "Baqil Staff",
     Head  = "remove",
     Body  = "Custom Gilet +1",
@@ -9,7 +10,7 @@ profile.Sets.LockStyle = {
     Feet  = "Brd. Slippers +1",
 };
 
-profile.Sets.Engaged_Default_Priority = {
+sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Atoyac", Level = 75 },
         { Name = "Gully", Level = 72 },
@@ -102,7 +103,7 @@ profile.Sets.Engaged_Default_Priority = {
     },
 };
 
-profile.Sets.Idle_Default_Priority = {
+sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Terra's Staff", Level = 51 },         -- PDT-20
         { Name = "Monster Signa", Level = 17 },
@@ -203,7 +204,7 @@ profile.Sets.Idle_Default_Priority = {
 };
 
 -- Goal: Max SIRD 102%; Max FastCast 80% ; Max Haste 25%
-profile.Sets.Midcast_Default_Priority = {
+sets.Midcast_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },
     },
@@ -254,7 +255,7 @@ profile.Sets.Midcast_Default_Priority = {
 };
 
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
-profile.Sets.Midcast_HealingMagic_Priority = {
+sets.Midcast_HealingMagic_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+10
     },
@@ -329,15 +330,15 @@ local midcastFastCast = {
         { Name = "Raptor Ledelsens", Level = 48 },    --               Haste+2
     },
 };
-profile.Sets.Midcast_Poisona_Priority = midcastFastCast;
-profile.Sets.Midcast_Paralyna_Priority = midcastFastCast;
-profile.Sets.Midcast_Blindna_Priority = midcastFastCast;
-profile.Sets.Midcast_Silenana_Priority = midcastFastCast;
-profile.Sets.Midcast_Erase_Priority = midcastFastCast;
-profile.Sets.Midcast_Raise_Priority = midcastFastCast;
+sets.Midcast_Poisona_Priority = midcastFastCast;
+sets.Midcast_Paralyna_Priority = midcastFastCast;
+sets.Midcast_Blindna_Priority = midcastFastCast;
+sets.Midcast_Silenana_Priority = midcastFastCast;
+sets.Midcast_Erase_Priority = midcastFastCast;
+sets.Midcast_Raise_Priority = midcastFastCast;
 
 -- Goal: CHR & Skill ; SongRecast- & SongDuration+
-profile.Sets.Midcast_Singing_Priority = {
+sets.Midcast_Singing_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },
         { Name = "Monster Signa", Level = 17 },
@@ -409,7 +410,7 @@ profile.Sets.Midcast_Singing_Priority = {
     },
 };
 
-profile.Sets.Midcast_Lullaby_Priority = {
+sets.Midcast_Lullaby_Priority = {
     Range = {
         { Name = "Terpander", Level = 75 },           -- Lullaby+3
         -- { Name = "Mary's Horn", Level = 14 },
@@ -417,7 +418,7 @@ profile.Sets.Midcast_Lullaby_Priority = {
 };
 
 -- Goal: Max FastCast 80%
-profile.Sets.Precast_Default_Priority = {
+sets.Precast_Default_Priority = {
         -- Wish: Lv.75 Reflexive Grip +0/1 [FC+1/3]
     Head  = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
@@ -445,7 +446,7 @@ profile.Sets.Precast_Default_Priority = {
 };
 
 -- Goal: Max FastCast 80% ; Cure Spellcasting
-profile.Sets.Precast_HealingMagic_Priority = {
+sets.Precast_HealingMagic_Priority = {
     Head  = {
         { Name = "Erudite Cap", Level = 70 },         -- CureCast-5
     },
@@ -459,7 +460,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
 };
 
 -- Goal: Max FastCast 80% ; Song Spellcasting
-profile.Sets.Precast_Singing_Priority = {
+sets.Precast_Singing_Priority = {
     Head  = {
             -- Wish: Brd. Roundlet +1 [(Aug) SongCast-5]
         { Name = "Demon Helm", Level = 72 },          --       SongCast-3
@@ -478,7 +479,7 @@ profile.Sets.Precast_Singing_Priority = {
     },
 };
 
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
     },
@@ -494,7 +495,7 @@ profile.Sets.Resting_Default_Priority = {
 };
 
 -- Goal: ACC & DEX & AGI
-profile.Sets.WS_Default_Priority = {
+sets.WS_Default_Priority = {
     Head  = {
         { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3  AGI+3
     },
@@ -549,7 +550,7 @@ profile.Sets.WS_Default_Priority = {
 };
 
 -- Exenterator: fTP & ACC & AGI & DA & TA & CRIT
-profile.Sets.WS_Exenterator = {
+sets.WS_Exenterator = {
     -- Head  = "Maat's Cap",
     Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
@@ -566,7 +567,7 @@ profile.Sets.WS_Exenterator = {
 };
 
 -- Mordant Rime: CHR & ACC & DA & TA & CRIT
-profile.Sets.WS_MordantRime = {
+sets.WS_MordantRime = {
     Range = "Rouser +1",                              -- CHR+5
     Head  = "Brd. Roundlet +1",                       -- CHR+6
     Ear1  = "Luminous Earring",                       --             ACC+3   ATK+4
@@ -584,7 +585,7 @@ profile.Sets.WS_MordantRime = {
 };
 
 --> Requiescat: 4 hits, 73% MND, fTP replicating (Soil/Shadow Gorget)
-profile.Sets.WS_Requiescat = {
+sets.WS_Requiescat = {
     Head  = "Brd. Roundlet +1",                       -- MND+6
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Body  = "Kirin's Osode",                          -- AllStats+10
@@ -594,4 +595,5 @@ profile.Sets.WS_Requiescat = {
     Feet  = "Suzaku's Sune-Ate",                      -- MND+15
 };
 
+profile.Sets = sets;
 return profile;

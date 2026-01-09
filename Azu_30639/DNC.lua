@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.LockStyle = {
+sets.LockStyle = {
     Main  = "Atoyac",
     Sub   = "Xiutleato",
     Head  = "Etoile Tiara",
@@ -15,7 +16,7 @@ profile.Sets.LockStyle = {
     -- Feet  = "Pahluwan Crackows", ???
 };
 
-profile.Sets.Engaged_Default_Priority = {
+sets.Engaged_Default_Priority = {
     Main  = {
             -- Wish: Lv.75 Polyhymnia {Oboro}
         { Name = "Atoyac", Level = 75 },
@@ -130,33 +131,33 @@ profile.Sets.Engaged_Default_Priority = {
     },
 };
 
-profile.Sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(profile.Sets.Engaged_Default_Priority)
-profile.Sets.Idle_Default_Priority.Head = {
+sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
+sets.Idle_Default_Priority.Head = {
     { Name = "Rawhide Mask", Level = 75 },
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5         -- EVA+3
     "Coven Hat",
 };
-profile.Sets.Idle_Default_Priority.Neck = {
+sets.Idle_Default_Priority.Neck = {
     { Name = "Oneiros Torque", Level = 75 },          -- EVA+5 PDT-2
-    table.unpack(profile.Sets.Idle_Default_Priority.Neck),
+    table.unpack(sets.Idle_Default_Priority.Neck),
 };
-profile.Sets.Idle_Default_Priority.Ring1 = {
+sets.Idle_Default_Priority.Ring1 = {
     { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Ring2 = {
+sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
-    table.unpack(profile.Sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring2),
 };
-profile.Sets.Idle_Default_Priority.Legs = {
+sets.Idle_Default_Priority.Legs = {
     { Name = "Acrobat's Breeches", Level = 75 },      -- EVA+11
-    table.unpack(profile.Sets.Idle_Default_Priority.Legs),
+    table.unpack(sets.Idle_Default_Priority.Legs),
 };
 
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
@@ -171,18 +172,18 @@ local jigs = {
     Legs  = { { Name = "Etoile Tights", Level = 74 } },       -- Duration+25% (could +1 for +35%)
     Feet  = { { Name = "Dancer's Toe Shoes", Level = 56 } },  -- Duration+25% (could +1 for +35%)
 };
-profile.Sets.JA_ChocoboJig_Priority = jigs;
-profile.Sets.JA_ChocoboJigII_Priority = jigs;
-profile.Sets.JA_SpectralJig_Priority = jigs;
+sets.JA_ChocoboJig_Priority = jigs;
+sets.JA_ChocoboJigII_Priority = jigs;
+sets.JA_SpectralJig_Priority = jigs;
 
 -- Goal: Duration
 local sambas = { Head  = { { Name = "Dancer's Tiara", Level = 54 } } };  -- Duration+30s
-profile.Sets.AspirSamba_Priority = sambas;
-profile.Sets.AspirSambaII_Priority = sambas;
-profile.Sets.DrainSambaII_Priority = sambas;
-profile.Sets.DrainSambaIII_Priority = sambas;
-profile.Sets.HasteSamba_Priority = sambas;
-profile.Sets.JA_DrainSamba_Priority = sambas;
+sets.AspirSamba_Priority = sambas;
+sets.AspirSambaII_Priority = sambas;
+sets.DrainSambaII_Priority = sambas;
+sets.DrainSambaIII_Priority = sambas;
+sets.HasteSamba_Priority = sambas;
+sets.JA_DrainSamba_Priority = sambas;
 
 -- Goal: ACC ; MaxFinishingMove+
 local steps = {
@@ -218,12 +219,12 @@ local steps = {
         { Name = "Rawhide Boots", Level = 75 },       -- MaxFinishingMove+1
     },
 };
-profile.Sets.JA_BoxStep_Priority = steps;
-profile.Sets.JA_FeatherStep_Priority = steps;
-profile.Sets.JA_Quickstep_Priority = steps;
-profile.Sets.JA_StutterStep_Priority = steps;
+sets.JA_BoxStep_Priority = steps;
+sets.JA_FeatherStep_Priority = steps;
+sets.JA_Quickstep_Priority = steps;
+sets.JA_StutterStep_Priority = steps;
 
-profile.Sets.JA_NoFootRise_Priority = {
+sets.JA_NoFootRise_Priority = {
     Feet  = {
         { Name = "Rawhide Boots", Level = 75 },       -- MaxFinishingMove+1
     },
@@ -274,15 +275,15 @@ local waltz = {
             -- Wish: Lv.68 Cobra Leggings [(Aug) CHR+4 WaltzPot+2%]
     },
 };
-profile.Sets.JA_CuringWaltz_Priority = waltz;
-profile.Sets.JA_CuringWaltzII_Priority = waltz;
-profile.Sets.JA_CuringWaltzIII_Priority = waltz;
-profile.Sets.JA_CuringWaltzIV_Priority = waltz;
-profile.Sets.JA_DivineWaltz_Priority = waltz;
-profile.Sets.JA_DivineWaltzII_Priority = waltz;
+sets.JA_CuringWaltz_Priority = waltz;
+sets.JA_CuringWaltzII_Priority = waltz;
+sets.JA_CuringWaltzIII_Priority = waltz;
+sets.JA_CuringWaltzIV_Priority = waltz;
+sets.JA_DivineWaltz_Priority = waltz;
+sets.JA_DivineWaltzII_Priority = waltz;
 
 -- Goal: MACC
-profile.Sets.JA_ViolentFlourish_Priority = {
+sets.JA_ViolentFlourish_Priority = {
     Body  = {
         { Name = "Etoile Casaque", Level = 75 },      -- Enhances "Violent Flourish" effect
     },
@@ -296,7 +297,7 @@ profile.Sets.JA_ViolentFlourish_Priority = {
 --
 
 -- Goal: ACC & DEX & AGI
-profile.Sets.WS_Default_Priority = {
+sets.WS_Default_Priority = {
     Head  = {
         { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3  AGI+3
     },
@@ -350,7 +351,7 @@ profile.Sets.WS_Default_Priority = {
 };
 
 -- Goal: fTP & ACC & AGI & DA & TA & CRIT
-profile.Sets.WS_Exenterator = {
+sets.WS_Exenterator = {
     -- Head  = "Maat's Cap",
     Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
@@ -366,7 +367,7 @@ profile.Sets.WS_Exenterator = {
 };
 
 -- Goal: fTP & ACC & DEX & STR & DA & TA & CRIT
-profile.Sets.WS_PyrrhicKleos = {
+sets.WS_PyrrhicKleos = {
     Head  = "Assailant's Visor",                      -- DEX+11  STR+5
         -- Wish: Aug: ATK+5 ACC+5 DA+2
     Ear1  = "Luminous Earring",                       --                ACC+3   ATK+4
@@ -384,4 +385,5 @@ profile.Sets.WS_PyrrhicKleos = {
     Feet  = "Etoile Toe Shoes +1",                    -- DEX+4   STR+7  ACC+5   ATK+12          ConserveTP+10
 };
 
+profile.Sets = sets;
 return profile;

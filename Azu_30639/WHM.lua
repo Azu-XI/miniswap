@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.LockStyle = {
+sets.LockStyle = {
     Main  = "Baqil Staff",
     Head  = "remove",
     Body  = "Noble's Tunic",
@@ -9,7 +10,7 @@ profile.Sets.LockStyle = {
     Feet  = "Bunzi's Sabots",
 };
 
-profile.Sets.Engaged_Default = {
+sets.Engaged_Default = {
     Main  = "Tamaxchi",
     Sub   = "Genbu's Shield",                         -- PDT-10 EVA+10
     Ammo  = "Talon Tathlum",                          -- STR+2 DEX+2
@@ -27,7 +28,7 @@ profile.Sets.Engaged_Default = {
     -- Feet  = "",
 };
 
-profile.Sets.Idle_Default_Priority = {
+sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Terra's Staff", Level = 51 },       -- PDT-20
         { Name = "Pilgrim's Wand", Level = 10 },
@@ -120,7 +121,7 @@ profile.Sets.Idle_Default_Priority = {
     },
 };
 
-profile.Sets.Midcast_Default_Priority = {
+sets.Midcast_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- CurePot+10
         "Maple Wand +1",                              -- MND+2
@@ -161,19 +162,19 @@ profile.Sets.Midcast_Default_Priority = {
     };
 };
 
-profile.Sets.Midcast_Regen_Priority = {
+sets.Midcast_Regen_Priority = {
     Body  = {
         { Name = "Cleric's Bliaut", Level = 74 },     -- RegenPot+1
     },
 };
 
-profile.Sets.Midcast_Banish_Priority = {
+sets.Midcast_Banish_Priority = {
     Hands  = {
         { Name = "Cleric's Mitts", Level = 75 },      -- BanishPotVsUndead
     },
 };
 
-profile.Sets.Midcast_EnfeeblingMagic_Priority = {
+sets.Midcast_EnfeeblingMagic_Priority = {
     Hands  = {
         { Name = "Cleric's Mitts", Level = 75 },      -- Enfeebling+15
     },
@@ -186,7 +187,7 @@ profile.Sets.Midcast_EnfeeblingMagic_Priority = {
 };
 
 -- Goal: Max FastCast 80%
-profile.Sets.Precast_Default_Priority = {
+sets.Precast_Default_Priority = {
     Head  = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
@@ -204,7 +205,7 @@ profile.Sets.Precast_Default_Priority = {
 };
 
 -- Goal: Max FastCast 80% ; Cure Spellcasting
-profile.Sets.Precast_HealingMagic_Priority = {
+sets.Precast_HealingMagic_Priority = {
     -- Wish: Genbu's Shield [(Aug) CureCast-5]
     Head  = {
         { Name = "Bunzi's Hat", Level = 75 },         -- CureCast-5
@@ -216,7 +217,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
     },
 }
 
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- HMP+3
@@ -238,7 +239,7 @@ profile.Sets.Resting_Default_Priority = {
 --> Black Halo: 2 hits, 70% MND / 30% STR
 --> Realmrazer: 7 hits, 73% MND, fTP replicating (Flame/Thunder/Light Gorget)
 --> Mystic Boon: 1 hit, 70% MND / 30% STR
-profile.Sets.WS_Default = {
+sets.WS_Default = {
     Ammo  = "Talon Tathlum",                          --         STR+2
     Head  = "Bunzi's Hat",                            -- MND+10
     Ear1  = "Brutal Earring",                         --                                DA+1
@@ -254,4 +255,5 @@ profile.Sets.WS_Default = {
     Feet  = "Bunzi's Sabots",                         -- MND+5
 };
 
+profile.Sets = sets;
 return profile;

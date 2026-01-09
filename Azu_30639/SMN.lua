@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.LockStyle = {
+sets.LockStyle = {
     Main  = "Baqil Staff",
     Head  = "Summoner's Horn",
     Body  = "Otokogimi Yukata",  -- Try Mariner's Tunica {Fishing Ventures}
@@ -9,7 +10,7 @@ profile.Sets.LockStyle = {
     Feet  = "Summoner's Pgch.",
 };
 
-profile.Sets.Idle_Default_Priority = {
+sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Radiance", Level = 20 },
         { Name = "Ash Pole +1", Level = 5 },
@@ -146,8 +147,8 @@ local petDefaultPriority = {
             -- Wish: Lv.75 Marduk's Crackows [(Aug) PetDT-4]
     },
 };
-profile.Sets.Idle_Pet_Default_Priority = petDefaultPriority;
-profile.Sets.Engaged_Pet_Default_Priority = petDefaultPriority;
+sets.Idle_Pet_Default_Priority = petDefaultPriority;
+sets.Engaged_Pet_Default_Priority = petDefaultPriority;
 
 -- Goal: Carbuncle Perpetuation Cost ; Carbuncle ATK / ACC / PDT / ...
 local petCarbunclePriority  = {
@@ -155,8 +156,8 @@ local petCarbunclePriority  = {
         { Name = "Carbuncle Mitts", Level = 20 },     -- CarbyPerpCost-50% PetDEF+10
     },
 };
-profile.Sets.Idle_Pet_Carbuncle_Priority = petCarbunclePriority;
-profile.Sets.Engaged_Pet_Garuda_Priority = petCarbunclePriority;
+sets.Idle_Pet_Carbuncle_Priority = petCarbunclePriority;
+sets.Engaged_Pet_Garuda_Priority = petCarbunclePriority;
 
 -- Goal: Garuda Perpetuation Cost ; Garuda ATK / ACC / PDT / ...
 local petGarudaPriority = {
@@ -164,24 +165,24 @@ local petGarudaPriority = {
         -- Wish: Lv.73 Karura Hachigane [GarudaPerfCost-2 GarudaATK+10 GarudaDEF+10]
     },
 };
-profile.Sets.Idle_Pet_Garuda_Priority = petGarudaPriority;
-profile.Sets.Engaged_Pet_Garuda_Priority = petGarudaPriority;
+sets.Idle_Pet_Garuda_Priority = petGarudaPriority;
+sets.Engaged_Pet_Garuda_Priority = petGarudaPriority;
 
 local petMatchesDayPriority = {
     Body  = {
         { Name = "Summoner's Dblt.", Level = 74 },    -- PerpCost-3
     },
 };
-profile.Sets.Idle_Pet_Day_Priority = petMatchesDayPriority;
-profile.Sets.Engaged_Pet_Day_Priority = petMatchesDayPriority;
+sets.Idle_Pet_Day_Priority = petMatchesDayPriority;
+sets.Engaged_Pet_Day_Priority = petMatchesDayPriority;
 
 local petMatchesWeatherPriority = {
     Head  = {
         { Name = "Summoner's Horn", Level = 75 },     -- PerpCost-3
     },
 };
-profile.Sets.Idle_Pet_Weather_Priority = petMatchesWeatherPriority;
-profile.Sets.Engaged_Pet_Weather_Priority = petMatchesWeatherPriority;
+sets.Idle_Pet_Weather_Priority = petMatchesWeatherPriority;
+sets.Engaged_Pet_Weather_Priority = petMatchesWeatherPriority;
 
 -- Goal: Blood Pact Ability Delay (Max 15 per tier) ; Blood Boon
 local bloodPact = {
@@ -222,10 +223,10 @@ local bloodPact = {
         { Name = "Summoner's Pgch.", Level = 73 },    -- BP-2
     }
 };
-profile.Sets.JA_BloodPactRage_Priority = bloodPact;
-profile.Sets.JA_BloodPactWard_Priority = bloodPact;
+sets.JA_BloodPactRage_Priority = bloodPact;
+sets.JA_BloodPactWard_Priority = bloodPact;
 
-profile.Sets.JA_ElementalSiphon = {
+sets.JA_ElementalSiphon = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },        -- EleSiphon+10
     },
@@ -238,7 +239,7 @@ profile.Sets.JA_ElementalSiphon = {
 };
 
 -- Goal: Max SIRD 102%; Max FastCast 80% ; Max Haste 25%
-profile.Sets.Midcast_Default_Priority = {
+sets.Midcast_Default_Priority = {
     Head  = {
         { Name = "Entrancing Ribbon", Level = 11 },   --         FC+1
     },
@@ -270,7 +271,7 @@ profile.Sets.Midcast_Default_Priority = {
 };
 
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
-profile.Sets.Midcast_HealingMagic_Priority = {
+sets.Midcast_HealingMagic_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+10
     },
@@ -335,12 +336,12 @@ local midcastFastCast = {
     Feet  = {
     },
 };
-profile.Sets.Midcast_Poisona_Priority = midcastFastCast
-profile.Sets.Midcast_Paralyna_Priority = midcastFastCast
-profile.Sets.Midcast_Blindna_Priority = midcastFastCast
-profile.Sets.Midcast_Silenana_Priority = midcastFastCast
-profile.Sets.Midcast_Erase_Priority = midcastFastCast
-profile.Sets.Midcast_Raise_Priority = midcastFastCast
+sets.Midcast_Poisona_Priority = midcastFastCast
+sets.Midcast_Paralyna_Priority = midcastFastCast
+sets.Midcast_Blindna_Priority = midcastFastCast
+sets.Midcast_Silenana_Priority = midcastFastCast
+sets.Midcast_Erase_Priority = midcastFastCast
+sets.Midcast_Raise_Priority = midcastFastCast
 
 -- TODO: Midcast Avatar BP, need to update miniswap ; Goal: ATK / ACC / SMNSkill (or is SMNSkill in JA?)
 -- Head Lv.75 Chironic Doublet [BPDmg+3]
@@ -349,7 +350,7 @@ profile.Sets.Midcast_Raise_Priority = midcastFastCast
 -- Grip Lv.75 Norn's Grip +0/1 [BPDmg+2/3]
 
 -- Goal: Max FastCast 80%
-profile.Sets.Precast_Default_Priority = {
+sets.Precast_Default_Priority = {
     Head  = {
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
@@ -373,7 +374,7 @@ profile.Sets.Precast_Default_Priority = {
 }
 
 -- Goal: Max FastCast 80% ; Cure Spellcasting
-profile.Sets.Precast_HealingMagic_Priority = {
+sets.Precast_HealingMagic_Priority = {
     Head  = {
         { Name = "Erudite Cap", Level = 70 },         -- CureCast-5
     },
@@ -386,7 +387,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
     };
 }
 
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- HMP+3
@@ -455,4 +456,5 @@ profile.HandleDefault = function()
     end
 end
 
+profile.Sets = sets;
 return profile;

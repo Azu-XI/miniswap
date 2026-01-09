@@ -1,6 +1,7 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+local sets = {};
 
-profile.Sets.LockStyle = {
+sets.LockStyle = {
     Main  = "Baqil Staff",
     Head  = "remove",
     Body  = "Poroggo Coat",
@@ -9,7 +10,7 @@ profile.Sets.LockStyle = {
     Feet  = "Custom M Boots",
 };
 
-profile.Sets.Idle_Default_Priority = {
+sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Terra's Staff", Level = 51 },         -- PDT-20
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
@@ -102,7 +103,7 @@ profile.Sets.Idle_Default_Priority = {
 };
 
 -- Goal: Max SIRD 102%; Max FastCast 80% ; Max Haste 25%
-profile.Sets.Midcast_Default_Priority = {
+sets.Midcast_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },
         { Name = "Ash Pole +1", Level = 5 },          -- INT+3
@@ -176,11 +177,11 @@ local midcastEnfeeblingMND = {
         { Name = "Tamas Ring", Level = 30 },          -- MND+2~5
     },
 }
-profile.Sets.Midcast_Paralyze_Priority = midcastEnfeeblingMND;
-profile.Sets.Midcast_Slow_Priority = midcastEnfeeblingMND;
+sets.Midcast_Paralyze_Priority = midcastEnfeeblingMND;
+sets.Midcast_Slow_Priority = midcastEnfeeblingMND;
 
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
-profile.Sets.Midcast_HealingMagic_Priority = {
+sets.Midcast_HealingMagic_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+10
     },
@@ -235,15 +236,15 @@ local midcastFastCast = {
         { Name = "Garrison Hose +1", Level = 20 },    --               Haste+2
     },
 };
-profile.Sets.Midcast_Poisona_Priority = midcastFastCast;
-profile.Sets.Midcast_Paralyna_Priority = midcastFastCast;
-profile.Sets.Midcast_Blindna_Priority = midcastFastCast;
-profile.Sets.Midcast_Silenana_Priority = midcastFastCast;
-profile.Sets.Midcast_Erase_Priority = midcastFastCast;
-profile.Sets.Midcast_Raise_Priority = midcastFastCast;
+sets.Midcast_Poisona_Priority = midcastFastCast;
+sets.Midcast_Paralyna_Priority = midcastFastCast;
+sets.Midcast_Blindna_Priority = midcastFastCast;
+sets.Midcast_Silenana_Priority = midcastFastCast;
+sets.Midcast_Erase_Priority = midcastFastCast;
+sets.Midcast_Raise_Priority = midcastFastCast;
 
 -- Goal: Max FastCast 80%
-profile.Sets.Precast_Default_Priority = {
+sets.Precast_Default_Priority = {
         -- Wish: Lv.75 Reflexive Grip +0/1 [FC+1/3]
     Head  = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
@@ -271,7 +272,7 @@ profile.Sets.Precast_Default_Priority = {
 };
 
 -- Goal: Max FastCast 80% ; Cure Spellcasting
-profile.Sets.Precast_HealingMagic_Priority = {
+sets.Precast_HealingMagic_Priority = {
     Head  = {
         { Name = "Erudite Cap", Level = 70 },         -- CureCast-5
     },
@@ -284,7 +285,7 @@ profile.Sets.Precast_HealingMagic_Priority = {
     };
 };
 
-profile.Sets.Resting_Default_Priority = {
+sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- HMP+3
@@ -301,4 +302,5 @@ profile.Sets.Resting_Default_Priority = {
     }
 };
 
+profile.Sets = sets;
 return profile;
