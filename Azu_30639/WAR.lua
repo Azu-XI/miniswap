@@ -158,12 +158,11 @@ sets.JA_Provoke_Priority = {
             -- Wish: Lv.1 Cache-nez [Enm+2]
     },
     Body  = {
-            -- Wish: Lv.74 Fighter's Lorica +1 [Enm+8 (Aug) Enm+6]
+        { Name = "Ftr. Lorica +1", Level = 74 },      -- Enm+8+6
             -- Wish: Lv.60 Fighter's Lorica [Enm+8]
     },
     Hands = {
             -- Wish: Lv.74 Fighter's Mufflers +1 [Enm+3 (Aug) Enm+6]
-            -- Wish: Lv.54 Fighter's Mufflers [Enm+3]
         { Name = "Gothic Gauntlets", Level = 43 },    -- Enm+2
     },
     Ring1 = {
