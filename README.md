@@ -35,7 +35,7 @@ return profile;
 
 There's no fancy lua function to write to swap gear. Simply declare sets with a specific name and it will be used automatically.
 
-How to declare a set:
+### How to declare a set
 
 ```lua
 profile.Sets.SetName = {
@@ -57,12 +57,12 @@ profile.Sets.SetName = {
 };
 ```
 
-Note that:
+> [!NOTE]
+>
+> - Each slot is optional
+> - As shown on the `Legs` and `Feet` slots, multiple versions of augmented gears can be distinguished with `AugPath` and `Augment`.
 
-- Each slot is optional
-- As shown on the `Legs` and `Feet` slots, multiple versions of augmented gears can be distinguished with `AugPath` and `Augment`.
-
-List of expected set names:
+### Expected set names
 
 - **Stances**
 
@@ -120,12 +120,21 @@ List of expected set names:
   - `Town` equipped when in town.
   - `Town_NAME`, where `NAME` is one of `Adoulin`, `Bastok`, `Jeuno`, `SandOria`, `Windurst`.
 
-> [!TIP]
+> [!NOTE]
 >
 > Sets are cumulatives. Any slot from a previous set which isn't overwritten by a later set will remain.
 >
-> For example, when casting `Cure IV`, _MiniSwap_ will try to equip in this order `Midcast_Default`, `Midcast_HealingMagic`, `Midcast_Cure`, `Midcast_CureIV`.  
-> So if `Midcast_Default` equips the `Chatoyant Staff` and `Crow Bracers`, and `Midcast_HealingMagic` equips the `Healer's Mitts`, then the midcast action as a whole will equip the `Chatoyant Staff` and `Healer's Mitts`.
+> For example, when casting `Cure IV`, _MiniSwap_ will try to equip in this order
+> `Midcast_Default`, `Midcast_HealingMagic`, `Midcast_Cure`, and `Midcast_CureIV`.  
+> So if `Midcast_Default` equips the `Chatoyant Staff` (main) and `Crow Bracers` (hands),
+> and `Midcast_HealingMagic` equips the `Healer's Mitts` (hands),
+> then the midcast action as a whole will equip the `Chatoyant Staff` (main) and `Healer's Mitts` (hands).
+
+> [!TIP]
+>
+> If you're ever unsure about which sets will be equipped for a given action,
+> run the command `/lac fwd debug` and execute any action to see a list of sets being attempted to equip.
+> Use the same command to disable the debug output.
 
 ## Modes
 
@@ -146,7 +155,7 @@ profile.Aliases["/locklv"] = "/lac fwd locklv";
 On your profile, add aliases like so:
 
 ```lua
-profile.Aliases["^y"] = "/poke";
+profile.Bindings["^y"] = "/poke";
 ```
 
 ## Shared Configuration

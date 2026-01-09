@@ -5,9 +5,40 @@
 local fonts = require('fonts');
 local imgui = require('imgui');
 
+local colors = {
+    Aqua = string.char(0x1e, 0x52),
+    Azure = string.char(0x1e, 0x5a),
+    DarkMagenta = string.char(0x1e, 0x48),
+    DarkOrchid = string.char(0x1e, 0x51),
+    DarkSalmon = string.char(0x1e, 0x55),
+    DimGrey = string.char(0x1e, 0x41),
+    Grey = string.char(0x1e, 0x43),
+    LightCyan = string.char(0x1e, 0x5c),
+    LightGoldenRodYellow = string.char(0x1e, 0x60),
+    Lime = string.char(0x1e, 0x4f),
+    MediumPurple = string.char(0x1e, 0x59),
+    MediumSpringGreen = string.char(0x1e, 0x58),
+    MistyRose = string.char(0x1e, 0x4d),
+    PaleGoldenRod = string.char(0x1e, 0x4e),
+    PaleGreen = string.char(0x1e, 0x50),
+    Plum = string.char(0x1e, 0x69),
+    Reset = string.char(0x1e, 0x01),
+    RoyalBlue = string.char(0x1e, 0x47),
+    Salmon = string.char(0x1e, 0x44),
+    SpringGreen = string.char(0x1e, 0x53),
+    Tomato = string.char(0x1e, 0x4c),
+    Violet = string.char(0x1e, 0x49),
+    Yellow = string.char(0x1e, 0x45),
+};
+local chars  = {
+    implies = string.char(0x81, 0xC3),
+};
+
 local state = {
     CurrentLevel = 0,
     Debug = false,
+    DebugLastActionType = "",
+    DebugSkipRepeatedActionMessage = false,
     LevelSynced = false,
     LockedLevel = nil,
     LockedTP = false,
@@ -46,6 +77,8 @@ do -- COMMANDS REGION
             state.Debug = string.lower(targetValue):any('on', 'enable');
         end
         gFunc.Message("Debug: " .. (state.Debug and "ON" or "OFF"));
+        state.DebugLastActionType = "";
+        state.DebugSkipRepeatedActionMessage = false;
     end
 
     profile.MiniSwap.HandleCommandLockTP = function(targetValue)
@@ -103,7 +136,9 @@ do -- GEAR LIFECYCLE REGION
 
         -- Stance: Engaged
         if (player.Status == 'Engaged') then
-            gFunc.EquipSet(profile.Sets.Engaged_Default);
+            profile.MiniSwap.ShowDebugActionType("Engaged");
+
+            profile.MiniSwap.TryEquipSet("Engaged_Default");
 
             local pet = gData.GetPet();
             if (pet ~= nil) then
@@ -115,11 +150,15 @@ do -- GEAR LIFECYCLE REGION
 
         -- Stance: Resting
         elseif (player.Status == 'Resting') then
-            gFunc.EquipSet(profile.Sets.Resting_Default);
+            profile.MiniSwap.ShowDebugActionType("Resting");
+
+            profile.MiniSwap.TryEquipSet("Resting_Default");
 
         -- Stance: Idle
         elseif (player.Status == 'Idle') then
-            gFunc.EquipSet(profile.Sets.Idle_Default);
+            profile.MiniSwap.ShowDebugActionType("Idle");
+
+            profile.MiniSwap.TryEquipSet("Idle_Default");
 
             local pet = gData.GetPet();
             if (pet ~= nil) then
@@ -145,6 +184,8 @@ do -- GEAR LIFECYCLE REGION
     profile.HandleDefault = profile.MiniSwap.HandleDefault;
 
     profile.MiniSwap.HandleAbility = function()
+        profile.MiniSwap.ShowDebugActionType("Ability");
+
         local action = gData.GetAction();
         
         -- TYPE, one of:
@@ -161,6 +202,8 @@ do -- GEAR LIFECYCLE REGION
     profile.HandleAbility = profile.MiniSwap.HandleAbility;
 
     profile.MiniSwap.HandleItem = function()
+        profile.MiniSwap.ShowDebugActionType("Item");
+
         local action = gData.GetAction();
         local actionName = profile.MiniSwap.Slugify(action.Name);
         profile.MiniSwap.TryEquipSet("Item_" .. actionName);
@@ -168,6 +211,8 @@ do -- GEAR LIFECYCLE REGION
     profile.HandleItem = profile.MiniSwap.HandleItem;
 
     profile.MiniSwap.HandlePrecast = function()
+        profile.MiniSwap.ShowDebugActionType("Precast");
+
         profile.MiniSwap.TryEquipSet("Precast_Default");
 
         local action = gData.GetAction();
@@ -193,6 +238,8 @@ do -- GEAR LIFECYCLE REGION
     profile.HandlePrecast = profile.MiniSwap.HandlePrecast;
 
     profile.MiniSwap.HandleMidcast = function()
+        profile.MiniSwap.ShowDebugActionType("Midcast");
+
         -- DEFAULT
         profile.MiniSwap.TryEquipSet("Midcast_Default");
 
@@ -219,16 +266,22 @@ do -- GEAR LIFECYCLE REGION
     profile.HandleMidcast = profile.MiniSwap.HandleMidcast;
 
     profile.MiniSwap.HandlePreshot = function()
+        profile.MiniSwap.ShowDebugActionType("Preshot");
+
         profile.MiniSwap.TryEquipSet("Preshot_Default");
     end
     profile.HandlePreshot = profile.MiniSwap.HandlePreshot;
 
     profile.MiniSwap.HandleMidshot = function()
+        profile.MiniSwap.ShowDebugActionType("Midshot");
+
         profile.MiniSwap.TryEquipSet("Midshot_Default");
     end
     profile.HandleMidshot = profile.MiniSwap.HandleMidshot;
 
     profile.MiniSwap.HandleWeaponskill = function()
+        profile.MiniSwap.ShowDebugActionType("Weaponskill");
+
         profile.MiniSwap.TryEquipSet("WS_Default");
 
         local action = gData.GetAction();
@@ -1039,6 +1092,24 @@ do -- UTILS REGION
         end
     end
 
+    profile.MiniSwap.ShowDebugActionType = function(actionType)
+        state.DebugSkipRepeatedActionMessage = state.DebugLastActionType == actionType;
+        state.DebugLastActionType = actionType;
+
+        if (state.DebugSkipRepeatedActionMessage) then return end
+
+        profile.MiniSwap.ShowDebug("");
+        profile.MiniSwap.ShowDebug(chars.implies .. " " .. actionType);
+    end
+
+    profile.MiniSwap.ShowDebugEquipSet = function(setName, success)
+        if (state.DebugSkipRepeatedActionMessage) then return end
+
+        local color = success and colors.SpringGreen or colors.Salmon;
+        local word = success and "Applied" or "Missing";
+        profile.MiniSwap.ShowDebug("   " .. color .. word .. colors.Reset .. " " .. setName);
+    end
+
     profile.MiniSwap.Slugify = function(rawName)
         return string.gsub(rawName, "[^%w]+", "")
     end
@@ -1046,13 +1117,12 @@ do -- UTILS REGION
     profile.MiniSwap.TryEquipSet = function(setName)
         local set = profile.Sets[setName]
         if (set ~= nil) then
-            profile.MiniSwap.ShowDebug("Equipping Set: " .. setName)
+            profile.MiniSwap.ShowDebugEquipSet(setName, true)
             gFunc.EquipSet(setName);
         else
-            profile.MiniSwap.ShowDebug("MISSING Set: " .. setName)
+            profile.MiniSwap.ShowDebugEquipSet(setName, false)
         end
     end
 end
-
 
 return profile;
