@@ -18,7 +18,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Mrc.Cpt. Kukri", Level = 30 },
         { Name = "Mercenary's Knife", Level = 20 },
         { Name = "Beestinger", Level = 7 },
-        "Bronze Knife",
+        "Wax Sword +1",
     },
     Sub   = {
         { Name = "Genbu's Shield", Level = 74 },

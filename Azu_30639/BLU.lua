@@ -4,12 +4,12 @@ local sets = {};
 sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Fealty", Level = 20 },
-        { Name = "Sapara", Level = 7 },
+        { Name = "Xiphos +1", Level = 7 },
     },
     Sub   = {
             -- Wish: Lv.40 Combat Caster's Scimitar
         { Name = "Nadrs", Level = 24 },
-        { Name = "Sapara", Level = 20 },
+        { Name = "Xiphos +1", Level = 20 },
         "Kupo Shield",
     },
     Ammo = {
@@ -101,7 +101,7 @@ sets.Idle_Default_Priority.Neck = {
 };
 sets.Idle_Default_Priority.Ring1 = {
         { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]

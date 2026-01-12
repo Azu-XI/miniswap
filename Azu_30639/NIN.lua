@@ -3,15 +3,18 @@ local sets = {};
 
 sets.Engaged_Default_Priority = {
     Main  = {
+        { Name = "Mujin Tanto", Level = 75 },
+            -- TODO: Some katanas from lv.40
+        { Name = "Nikkariaoe", Level = 30 },
         { Name = "Gassan", Level = 15 },
-        { Name = "Shinobi-Gatana", Level = 13 },
-        { Name = "Wakizashi", Level = 7 },
-        "Kunai",
+        { Name = "Xiphos +1", Level = 7 },
+        "Wax Sword +1",
     },
     Sub   = {
-        { Name = "Shinobi-Gatana", Level = 15 },
-        { Name = "Wakizashi", Level = 13 },
-        { Name = "Kunai", Level = 10 },
+        { Name = "Taikogane", Level = 75 },
+            -- TODO: Some katanas from lv.40
+        { Name = "Gassan", Level = 15 },
+        { Name = "Wax Sword +1", Level = 10 },
     },
     Range = {
         { Name = "Rogetsurin", Level = 15 },
@@ -105,7 +108,7 @@ sets.Idle_Default_Priority.Neck = {
 };
 sets.Idle_Default_Priority.Ring1 = {
         { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]

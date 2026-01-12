@@ -137,7 +137,7 @@ sets.Idle_Default_Priority.Neck = {
 };
 sets.Idle_Default_Priority.Ring1 = {
         { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
@@ -244,7 +244,7 @@ sets.WS_Default_Priority = {
         { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
-            -- Wish: Lv.70 Warrior's Stone [STR+5 ACC+7]
+        { Name = "Warrior's Stone", Level = 70 },     -- ACC+7  STR+5
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
     },
     Legs  = {

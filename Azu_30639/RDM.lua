@@ -9,15 +9,14 @@ sets.Engaged_Default_Priority = {
             -- Wish: { Name = "Crimson Blade", Level = 49 },
         { Name = "Centurion's Sword", Level = 30 },
         { Name = "Auriga Xiphos", Level = 19 },
-        { Name = "Beestinger", Level = 7 },
-        "Ash Staff",
-            -- Wish: Wax Sword +1?
+        { Name = "Xiphos +1", Level = 7 },
+        "Wax Sword +1",
     },
     Sub  = {
         { Name = "Genbu's Shield", Level = 74 },
         { Name = "Thorin's Shield", Level = 65 },
         { Name = "Viking Shield", Level = 45 },
-        { Name = "Kupo Shield", Level = 7 },
+        "Kupo Shield",
     },
     Head  = {
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
@@ -84,7 +83,7 @@ sets.Engaged_Default_Priority = {
 
 sets.Idle_Default_Priority = {
     Main  = {
-        { Name = "Chatoyant Staff", Level = 51 },
+        { Name = "Terra's Staff", Level = 51 },       -- PDT-20
         "Maple Wand +1",
     },
     Sub   = {
@@ -143,22 +142,24 @@ sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Tundra Mantle", Level = 39 },
-        { Name = "Silver Obi", Level = 20 },
+        { Name = "Dew Silk Cape +1", Level = 75 },
+        { Name = "Tundra Mantle", Level = 39 },       -- MP+5 MND+2
         { Name = "Mist Silk Cape", Level = 10 },
     },
     Waist = {
+        { Name = "Penitent's Rope", Level = 60 },
+        { Name = "Silver Obi", Level = 20 },          -- MP+10
         { Name = "Heko Obi", Level = 8 },             -- AGI+3 ACC+3
     },
     Legs  = {
-        { Name = "White Slacks", Level = 50 },            -- Haste+3 Regen +1
-        { Name = "Garrison Hose +1", Level = 20 },        -- Haste+2
+        { Name = "White Slacks", Level = 50 },        -- Haste+3 Regen +1
+        { Name = "Garrison Hose +1", Level = 20 },    -- Haste+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Garrison Boots +1", Level = 20 },       -- INT+2 MND+2
-        { Name = "Power Sandals", Level = 18 },           -- VIT+3
+        { Name = "Garrison Boots +1", Level = 20 },   -- INT+2 MND+2
+        { Name = "Power Sandals", Level = 18 },       -- VIT+3
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
     },

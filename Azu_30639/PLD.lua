@@ -2,11 +2,18 @@ local profile = gFunc.LoadFile('common/miniswap.lua');
 local sets = {};
 
 sets.Engaged_Default_Priority = {
-    -- Main  = {
-    -- },
+    Main  = {
+        { Name = "Xiutleato", Level = 75 },
+        { Name = "Verdun", Level = 73 },
+            -- TODO: Some swords from lv.50
+        { Name = "Fealty", Level = 20 },
+        { Name = "Auriga Xiphos", Level = 19 },
+        { Name = "Xiphos +1", Level = 7 },
+        "Wax Sword +1",
+    },
     Sub   = {
-        { Name = "Clipeus", Level = 9 },
-        { Name = "Shell Shield", Level = 7 },
+            -- TODO: Some shields..
+        { Name = "Clipeus", Level = 19 },
         "Kupo Shield",
     },
     Ammo = {
@@ -98,8 +105,8 @@ sets.Idle_Default_Priority.Neck = {
     table.unpack(sets.Idle_Default_Priority.Neck),
 };
 sets.Idle_Default_Priority.Ring1 = {
-        { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(sets.Idle_Default_Priority.Ring2),
+    { Name = "Defending Ring", Level = 70 },      -- DT-10
+    table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]

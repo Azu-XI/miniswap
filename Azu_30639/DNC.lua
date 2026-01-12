@@ -29,7 +29,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Mercenary's Knife", Level = 20 },
         { Name = "Knife +1", Level = 13 },
             -- Wish: Lv.7 Jack's Knife {Ordelle Incursion}
-        "Bronze Knife +1",
+        "Cat Baghnakhs +1",
     },
     Sub  = {
             -- Wish: Lv.75 Taming Sari {Great DI NM Gensai}
@@ -39,7 +39,7 @@ sets.Engaged_Default_Priority = {
             -- Wish: Lv.50->75 Mercurial Kris {Jailer of Prudence}
         { Name = "Mrc.Cpt. Kukri", Level = 50 },
         { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
-        "Kupo Shield",
+        { Name = "Kupo Shield", Level = 7 },
     },
     Range = {
             -- Wish: Aug max for added: STR+1 DEX+1 ACC+2
@@ -145,7 +145,7 @@ sets.Idle_Default_Priority.Neck = {
 };
 sets.Idle_Default_Priority.Ring1 = {
     { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]

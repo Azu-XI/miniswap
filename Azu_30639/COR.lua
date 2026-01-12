@@ -7,7 +7,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
         { Name = "Knife +1", Level = 13 },
         -- Wish: Lv.7 Jack's Knife {Ordelle Incursion}
-        "Bronze Knife",
+        "Bronze Knife +1",
     },
     Sub   = {
         "Kupo Shield",
@@ -109,7 +109,7 @@ sets.Idle_Default_Priority.Neck = {
 };
 sets.Idle_Default_Priority.Ring1 = {
         { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]

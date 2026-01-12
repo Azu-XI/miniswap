@@ -26,7 +26,7 @@ sets.Engaged_Default_Priority = {
             -- Wish: Lv.20->50 Bushwhacker {Yagudo Incursions}
         { Name = "Mercenary's Knife", Level = 20 },
         { Name = "Beestringer", Level = 7 },
-        "Bronze Knife",
+        "Cat Baghnakhs +1",
     },
     Sub  = {
             -- Wish: Lv.75 Taming Sari {Great DI NM Gensai}
@@ -35,7 +35,7 @@ sets.Engaged_Default_Priority = {
             -- Wish: Lv.50->75 Mercurial Kris {Jailer of Prudence}
         { Name = "Hornetneedle", Level = 50 },
         { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
-        "Kupo Shield",
+        { Name = "Kupo Shield", Level = 7 },
     },
     Range = {
         { Name = "Atetepeyorg", Level = 75 },
@@ -153,7 +153,7 @@ sets.Idle_Default_Priority.Neck = {
 };
 sets.Idle_Default_Priority.Ring1 = {
     { Name = "Defending Ring", Level = 70 },      -- DT-10
-    table.unpack(sets.Idle_Default_Priority.Ring2),
+    table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]

@@ -31,7 +31,6 @@ sets.Engaged_Default = {
 sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Terra's Staff", Level = 51 },       -- PDT-20
-        { Name = "Pilgrim's Wand", Level = 10 },
         "Maple Wand +1",
     },
     Sub   = {
@@ -94,7 +93,7 @@ sets.Idle_Default_Priority = {
     },
     Back  = {
         { Name = "Dew Silk Cape +1", Level = 75 },
-        { Name = "Tundra Mantle", Level = 39 },       -- MP+5
+        { Name = "Tundra Mantle", Level = 39 },       -- MP+5 MND+2
         { Name = "Mist Silk Cape", Level = 10 },
     },
     Waist = {
