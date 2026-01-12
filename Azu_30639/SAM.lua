@@ -59,7 +59,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
         -- { Name = "Scorpion Harness", Level = 57 },    -- ACC+10  EVA+10
         { Name = "Shinobi Gi", Level = 49 },          -- ACC+8 ATK+8 MDT-2
-        { Name = "Raptor Jerkin", Level = 48 },
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Kenpogi +1", Level = 8 },           -- HP+5 DEX+1 AGI+1
         "Tidal Talisman",

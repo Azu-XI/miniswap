@@ -34,7 +34,7 @@ sets.Engaged_Default_Priority = {
         -- Wish: Lv.70 Bloody Aketon [AGI+6/7 (Aug) AGI+4 ACC+8]
         -- Wish: Lv.60 Aketon [AGI+5 (Aug) ACC+5 ATK+5 H+2]
         -- Wish: Lv.57 Scorpion Harness [ACC+10 EVA+10 (Aug) PDT+3 Regen+1]
-        { Name = "Raptor Jerkin", Level = 48 },       -- DEX+4 ATK+8
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Leather Vest +1", Level = 7 },
         "Kingdom Aketon",
@@ -95,6 +95,13 @@ sets.Idle_Default_Priority = {
         { Name = "Morion Tahtlum", Level = 25 },
         "Happy Egg",
     },
+    Head  = {
+        { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
+        { Name = "Gambler's Chapeau", Level = 50 },   -- MP+20 INT+3
+        { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
+        "Coven Hat",
+    },
     Ear1 = {
         { Name = "Outlaw's Earring", Level = 50 },
         { Name = "Cunning Earring", Level = 29 },
@@ -104,13 +111,6 @@ sets.Idle_Default_Priority = {
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
         { Name = "remove", Level = 1 },
-    },
-    Head  = {
-        { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
-        { Name = "Gambler's Chapeau", Level = 50 },   -- MP+20 INT+3
-        { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
-        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
-        "Coven Hat",
     },
     Neck  = {
         { Name = "Oneiros Torque", Level = 75 },      -- EVA+5 PDT-2
@@ -241,6 +241,9 @@ sets.Midcast_HealingMagic_Priority = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
         { Name = "Neph. Grip", Level = 51 },
     },
+    Ear2 = {
+        { Name = "Roundel Earring", Level = 73 },     -- CurePot+5%
+    },
     Neck  = {
         { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
     },
@@ -267,11 +270,11 @@ local midcastFastCast = {
     Head  = {
         { Name = "Entrancing Ribbon", Level = 11 },   --         FC+1
     },
-    Ear1  = {
-        { Name = "Loquac. Earring", Level = 75 },     --         FC+2          MP+30 (Balance MPs)
-    },
     Body  = {
         { Name = "Minstrel's Coat", Level = 63 },     --               Haste+2
+    },
+    Ear1  = {
+        { Name = "Loquac. Earring", Level = 75 },     --         FC+2          MP+30 (Balance MPs)
     },
     Ring1 = {
         { Name = "Hibernal Ring", Level = 75 },       --          FC+2

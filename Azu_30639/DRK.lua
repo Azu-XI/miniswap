@@ -27,10 +27,12 @@ sets.Engaged_Default_Priority = {
         "Coven Hat",
     },
     Ear1 = {
-        { Name = "Insomnia Earring", Level = 50 },
+        { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
+        { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4 EVA+4
     },
     Ear2 = {
-        { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4
+        { Name = "Assault Earring", Level = 58 },     -- ACC+2 ATK+5 EVA-2 DEF-3
+        { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },       -- EVA+3
     },
     Neck  = {
@@ -40,7 +42,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
-        { Name = "Raptor Jerkin", Level = 48 },
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Scale Mail", Level = 10 },
         { Name = "Leather Vest +1", Level = 7 },

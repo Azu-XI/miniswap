@@ -19,7 +19,7 @@ sets.JA_Jump_Priority = {
     },
     Body  = {
         -- { Name = "Thrk. Breastplate", Level = 61 },   -- STR+3        ACC+7 ATK+7  -- IN STORAGE
-        { Name = "Raptor Jerkin", Level = 48 },       --                    ATK+8
+        { Name = "Brigandine +1", Level = 45 },       --        VIT+3 ATK+4
         { Name = "Custom Tunic", Level = 33 },        --        VIT+3
         { Name = "Leather Vest +1", Level = 7 },      --        VIT+1
     },
@@ -62,7 +62,7 @@ sets.JA_HighJump_Priority = {
     },
     Body  = {
         -- { Name = "Thrk. Breastplate", Level = 61 },   -- STR+3        ACC+7 ATK+7  -- IN STORAGE
-        { Name = "Raptor Jerkin", Level = 48 },       --                    ATK+8
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 ATK+4
     },
     Hands = {
         { Name = "Custom M Gloves", Level = 27 },     -- STR+3
@@ -117,11 +117,12 @@ sets.Engaged_Default_Priority = {
     },
     Ear1 = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
-        { Name = "Insomnia Earring", Level = 50 },
+        { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4 EVA+4
         { Name = "Cassie Earring", Level = 1 },
     },
     Ear2 = {
-        { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4
+        { Name = "Assault Earring", Level = 58 },     -- ACC+2 ATK+5 EVA-2 DEF-3
+        { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },       -- EVA+3
     },
     Neck  = {
@@ -132,7 +133,7 @@ sets.Engaged_Default_Priority = {
     },
     Body  = {
         -- { Name = "Thrk. Breastplate", Level = 61 },   -- STR+3 DEX+3   ACC+7 ATK+7 STP+3  -- IN STORAGE
-        { Name = "Raptor Jerkin", Level = 48 },
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Scale Mail", Level = 10 },
         { Name = "Leather Vest +1", Level = 7 },

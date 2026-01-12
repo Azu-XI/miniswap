@@ -50,7 +50,7 @@ sets.Engaged_Default_Priority = {
     Body  = {
         { Name = "Pursuer's Doublet", Level = 75 },
         { Name = "Scorpion Harness", Level = 57 },    -- ACC+10 EVA+10
-        { Name = "Raptor Jerkin", Level = 48 },
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Leather Vest +1", Level = 7 },
         "Tidal Talisman",
@@ -144,7 +144,7 @@ sets.Idle_Default_Priority = {
     Body  = {
         { Name = "Pursuer's Doublet", Level = 75 },
         { Name = "Vermillion Cloak", Level = 59 },    -- Refresh+1
-        { Name = "Raptor Jerkin", Level = 50 },
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- Refresh+1 while below lv.50
         { Name = "Leather Vest +1", Level = 7 },
         "Tidal Talisman",
@@ -263,6 +263,9 @@ sets.Midcast_HealingMagic_Priority = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
         { Name = "Neph. Grip", Level = 51 },
     },
+    Ear2 = {
+        { Name = "Roundel Earring", Level = 73 },     -- CurePot+5%
+    },
     Head  = {
             -- Wish: Sheikh Turban [(Aug) CurePot+5]
     },
@@ -375,7 +378,7 @@ sets.Midcast_Singing_Priority = {
             -- Wish: Brd. Jstcorps +1 [(Aug) SingSkill+7 SongDuration+5] (for buffs)
         { Name = "Chl. Jstcorps +1", Level = 74 },    -- CHR+10  SingSkill+5  WindSkill+6  StringSkill+6
         { Name = "Minstrel's Coat", Level = 63 },     -- CHR+4   SingSkill+3  WindSkill+3
-        { Name = "Raptor Jerkin", Level = 48 },       -- CHR+4
+        { Name = "Garrison Tunica +1", Level = 20 },  -- CHR+2
     },
     Hands = {
         { Name = "Chl. Cuffs +1", Level = 74 },       -- CHR+10  SingSkill+5  MACC+3
@@ -514,7 +517,7 @@ sets.WS_Default_Priority = {
     Body = {
         { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
         { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
-        { Name = "Raptor Jerkin", Level = 48 },       -- DEX+4                   ATK+8
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
     },
     Hands = {

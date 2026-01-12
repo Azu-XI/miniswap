@@ -333,6 +333,9 @@ sets.Midcast_HealingMagic_Priority = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
         { Name = "Neph. Grip", Level = 51 },
     },
+    Ear2 = {
+        { Name = "Roundel Earring", Level = 73 },     -- CurePot+5%
+    },
     Neck  = {
         { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
     },

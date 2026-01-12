@@ -14,9 +14,9 @@ sets.Engaged_Default = {
     Main  = "Tamaxchi",
     Sub   = "Genbu's Shield",                         -- PDT-10 EVA+10
     Ammo  = "Talon Tathlum",                          -- STR+2 DEX+2
+    -- Head  = "",
     Ear1  = "Emberpearl Earring",                     -- STR+2 MND+2
     Ear2  = "Brutal Earring",                         -- DA+1
-    -- Head  = "",
     -- Body  = "",
     Neck  = "Peacock Charm",                          -- ACC+10
     -- Hands = "",
@@ -46,14 +46,6 @@ sets.Idle_Default_Priority = {
         { Name = "Morion Tathlum", Level = 25 },      -- MP+3
         "Happy Egg",
     },
-    Ear1 = {
-        { Name = "Loquac. Earring", Level = 75 },     -- MP+30
-        { Name = "Outlaw's Earring", Level = 50 },    -- MP+15
-    },
-    Ear2 = {
-        { Name = "Insomnia Earring", Level = 50 },    -- MP+15 ResistSleep+2
-        { Name = "Dodge Earring", Level = 29 },
-    },
     Head  = {
         { Name = "Bunzi's Hat", Level = 75 },         -- Refresh+1  MP+25 
         { Name = "Erudite Cap", Level = 70 },         -- MP+30
@@ -61,6 +53,15 @@ sets.Idle_Default_Priority = {
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
+    },
+    Ear1 = {
+        { Name = "Loquac. Earring", Level = 75 },     -- MP+30
+        { Name = "Outlaw's Earring", Level = 50 },    -- MP+15
+    },
+    Ear2 = {
+        { Name = "Roundel Earring", Level = 73 },     -- CurePot+5%
+        { Name = "Insomnia Earring", Level = 50 },    -- MP+15 ResistSleep+2
+        { Name = "Dodge Earring", Level = 29 },
     },
     Neck  = {
         { Name = "Radiant Lantern", Level = 60 },     -- MP+40
@@ -129,11 +130,14 @@ sets.Midcast_Default_Priority = {
         { Name = "Neph. Grip", Level = 51 },          -- INT+1
         { Name = "Pelte", Level = 8 },                -- MND+1
     },
-    Neck  = {
-        { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
+    Ear2 = {
+        { Name = "Roundel Earring", Level = 73 },     -- CurePot+5%
     },
     Head  = {
         { Name = "Bunzi's Hat", Level = 70 },         -- MND+10 Divine+10
+    },
+    Neck  = {
+        { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
     },
     Body  = {
         { Name = "Noble's Tunic", Level = 68 },       -- CurePot+10

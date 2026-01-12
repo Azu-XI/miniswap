@@ -29,6 +29,14 @@ sets.Idle_Default_Priority = {
         { Name = "Morion Tathlum", Level = 25 },
         "Happy Egg",
     },
+    Head  = {
+        -- Wish: Lv.74 Evoker's Horn +1 [(Aug) Refresh+1]
+        { Name = "Summoner's Horn", Level = 75 },
+        { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
+        { Name = "Entrancing Ribbon", Level = 11 },
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
+        "Coven Hat",
+    },
     Ear1 = {
         { Name = "Loquac. Earring", Level = 75 },
         { Name = "Outlaw's Earring", Level = 50 },
@@ -38,14 +46,6 @@ sets.Idle_Default_Priority = {
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
         { Name = "remove", Level = 1 },
-    },
-    Head  = {
-            -- Wish: Lv.74 Evoker's Horn +1 [(Aug) Refresh+1]
-        { Name = "Summoner's Horn", Level = 75 },
-        { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
-        { Name = "Entrancing Ribbon", Level = 11 },
-        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
-        "Coven Hat",
     },
     Neck  = {
         { Name = "Radiant Lantern", Level = 60 },
@@ -114,13 +114,13 @@ local petDefaultPriority = {
     Ammo  = {
         { Name = "Soothing Sachet", Level = 70 },     -- PetACC+5 PetAtk+5 PetDT-3
     },
-    Ear1 = {
-        -- { Name = "Wilderness Earring", Level = 45 },  -- PetACC+1  -- STORED
-    },
     Head  = {
-            -- Wish: Lv.74 Evoker's Horn +1 [(Aug) PetPDT-4 Refresh+1]
+        -- Wish: Lv.74 Evoker's Horn +1 [(Aug) PetPDT-4 Refresh+1]
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2
+    },
+    Ear1 = {
+        -- { Name = "Wilderness Earring", Level = 45 },  -- PetACC+1  -- STORED
     },
     Body  = {
         { Name = "Chironic Doublet", Level = 75 },    -- PetDT-5  Refresh+1  DT-5  
@@ -278,6 +278,9 @@ sets.Midcast_HealingMagic_Priority = {
     Sub   = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
         { Name = "Neph. Grip", Level = 51 },
+    },
+    Ear2 = {
+        { Name = "Roundel Earring", Level = 73 },     -- CurePot+5%
     },
     Head  = {
             -- Wish: Sheikh Turban [(Aug) CurePot+5]

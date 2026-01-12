@@ -76,7 +76,7 @@ sets.Engaged_Default_Priority = {
         -- Wish: Lv.70 Bloody Aketon [AGI+6/7 (Aug) AGI+4 ACC+8]
         -- Wish: Lv.60 Aketon [AGI+5 (Aug) ACC+5 ATK+5 H+2]
         { Name = "Scorpion Harness", Level = 57 },    -- ACC+10 EVA+10
-        { Name = "Raptor Jerkin", Level = 48 },
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Leather Vest +1", Level = 7 },
         "Tidal Talisman",
@@ -205,7 +205,6 @@ sets.JA_CuringWaltz_Priority = {
         { Name = "Bird Whistle", Level = 15 },        -- CHR+3
     },
     Body  = {
-        { Name = "Raptor Jerkin", Level = 48 },       -- CHR+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- CHR+2
     },
     Hands = {
@@ -270,7 +269,7 @@ sets.WS_Default_Priority = {
     },
     Body = {
         { Name = "Adhemar Wristbands", Level = 75 },  --             ACC+10 ATK+10 Enhance Trick Attack
-        { Name = "Raptor Jerkin", Level = 48 },       -- DEX+4       ATK+8
+        { Name = "Brigandine +1", Level = 45 },       -- DEX+3 AGI+3 STR+3  ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
     },
     Hands = {

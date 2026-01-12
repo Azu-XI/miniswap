@@ -114,10 +114,10 @@ sets.JA_Charm_Priority = {
         { Name = "Bird Whistle", Level = 15 },          -- CHR+3
     },
     Body  = {
-        { Name = "Raptor Jerkin", Level = 48 },         -- CHR+2~4
+        { Name = "Garrison Tunica +1", Level = 20 },  -- CHR+2
     },
     Hands = {
-        { Name = "Raptor Gloves", Level = 48 },         -- CHR+2~4
+        { Name = "Raptor Gloves", Level = 48 },         -- CHR+4
     },
     Feet  = {
         { Name = "Raptor Ledelsens", Level = 48 },      -- CHR+4

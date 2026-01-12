@@ -51,6 +51,13 @@ sets.Engaged_Default_Priority = {
         { Name = "remove", Level = 15 },
         "Happy Egg",
     },
+    Head  = {
+        { Name = "Rawhide Mask", Level = 75 },        -- DEX+5 ACC+10 ATK+10 DA+3
+        { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
+        { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
+        "Bronze Cap",
+    },
     Ear1 = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
         { Name = "Outlaw's Earring", Level = 50 },
@@ -61,13 +68,6 @@ sets.Engaged_Default_Priority = {
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Dodge Earring", Level = 29 },
     },
-    Head  = {
-        { Name = "Rawhide Mask", Level = 75 },        -- DEX+5 ACC+10 ATK+10 DA+3
-        { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
-        { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
-        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
-        "Bronze Cap",
-    },
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
@@ -76,7 +76,7 @@ sets.Engaged_Default_Priority = {
     Body  = {
         { Name = "Rawhide Vest", Level = 75 },        -- DEX+10 AGI+10 ATK+10 Haste+5% Dagger+10 Sword+30 Inquartata+2
         { Name = "Scorpion Harness", Level = 57 },    -- ACC+10 EVA+10
-        { Name = "Raptor Jerkin", Level = 48 },
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Leather Vest +1", Level = 7 },
         "Tidal Talisman",
@@ -235,16 +235,16 @@ sets.JA_NoFootRise_Priority = {
 --> With M as Curing/Divine 1/2/3/4 = 0.25/0.5/0.75/1.0
 --> With B as Curing 1/2/3/4 = 60/130/270/450 ; Divine 1/2 = 60/280
 local waltz = {
-    Ear1  = {
-        { Name = "Beastly Earring", Level = 72 },     -- CHR+2
-    },
-    Ear2  = {
-        -- Wish: Roundel Earring [WaltzPot+5%] {Suzaku@Sky2.0}
-    },
     Head  = {
         { Name = "Rawhide Mask", Level = 75 },        -- WaltzPot+7%
         { Name = "Dancer's Tiara", Level = 54 },      -- CHR+4
         { Name = "Shade Tiara", Level = 25 },         -- CHR+2
+    },
+    Ear1  = {
+        { Name = "Beastly Earring", Level = 72 },     -- CHR+2
+    },
+    Ear2  = {
+        { Name = "Roundel Earring", Level = 73 },     -- WaltzPot+5%
     },
     Neck  = {
         { Name = "Bird Whistle", Level = 15 },        -- CHR+3
@@ -252,7 +252,6 @@ local waltz = {
     Body  = {
             -- Wish: Lv.74 Dancer's Casaque +1 [WaltzPot+10% (Aug) WaltzPot+5% WaltzDelay-5]
         { Name = "Dancer's Casaque", Level = 60 },    -- WaltzPot+10%
-        { Name = "Raptor Jerkin", Level = 48 },       -- CHR+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- CHR+2
     },
     Hands = {
@@ -315,7 +314,7 @@ sets.WS_Default_Priority = {
     Body = {
         { Name = "Rawhide Vest", Level = 75 },        -- DEX+10  AGI+10          ATK+10  Dagger+10  Sword+30
         { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
-        { Name = "Raptor Jerkin", Level = 48 },       -- DEX+4                   ATK+8
+        { Name = "Brigandine +1", Level = 45 },       -- DEX+3 AGI+3
         { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
     },
     Hands = {

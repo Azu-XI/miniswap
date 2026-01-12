@@ -36,7 +36,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
-        { Name = "Raptor Jerkin", Level = 48 },
+        { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         "Tidal Talisman",
     },
