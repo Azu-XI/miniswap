@@ -18,8 +18,7 @@ sets.LockStyle = {
 
 sets.Engaged_Default_Priority = {
     Main  = {
-            -- Wish: Lv.75 Polyhymnia {Oboro}
-        { Name = "Atoyac", Level = 75 },
+        { Name = "Polyhymnia", Level = 75 },
         { Name = "Gully", Level = 72 },
         { Name = "Avis", Level = 57 },
             -- Wish: Lv.50->75 Bushwhacker +1 {Yagudo Incursions}
