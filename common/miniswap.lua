@@ -411,7 +411,7 @@ do -- MAPPINGS REGION
         ["Army's Paeon IV"] = {"Paeon"},
         ["Army's Paeon V"] = {"Paeon"},
         ["Army's Paeon VI"] = {"Paeon"},
-        ["Aspir"] = {"Aspir"},
+        -- ["Aspir"] = {"Aspir"},
         ["Aspir II"] = {"Aspir"},
         ["Asuran Claws"] = {"BluPhysicalDex", "BluPhysical"},
         ["Atra. Libations"] = {"BluMagicalVit", "BluMagical"},
@@ -420,7 +420,7 @@ do -- MAPPINGS REGION
         ["Aurorastorm II"] = {"Storm"},
         ["Awful Eye"] = {"BluMagicalAcc", "BluMagical"},
         ["Bad Breath"] = {"BluBreath"},
-        ["Banish"] = {"Banish"},
+        -- ["Banish"] = {"Banish"},
         ["Banish II"] = {"Banish"},
         ["Banish III"] = {"Banish"},
         ["Banishga II"] = {"Banish"},
@@ -492,15 +492,15 @@ do -- MAPPINGS REGION
         ["Corrosive Ooze"] = {"BluMagicalAcc", "BluMagical"},
         ["Cryohelix"] = {"Helix"},
         ["Cryohelix II"] = {"Helix"},
-        ["Cura"] = {"Cura"},
-        ["Cura II"] = {"Cura"},
-        ["Cura III"] = {"Cura"},
-        ["Curaga"] = {"Cura"},
-        ["Curaga II"] = {"Cura"},
-        ["Curaga III"] = {"Cura"},
-        ["Curaga IV"] = {"Cura"},
-        ["Curaga V"] = {"Cura"},
-        ["Cure"] = {"Cure"},
+        -- ["Cura"] = {"Cura"},
+        ["Cura II"] = {"Cure", "Cura"},
+        ["Cura III"] = {"Cure", "Cura"},
+        ["Curaga"] = {"Cure", "Curaga"},
+        ["Curaga II"] = {"Cure", "Curaga"},
+        ["Curaga III"] = {"Cure", "Curaga"},
+        ["Curaga IV"] = {"Cure", "Curaga"},
+        ["Curaga V"] = {"Cure", "Curaga"},
+        -- ["Cure"] = {"Cure"},
         ["Cure II"] = {"Cure"},
         ["Cure III"] = {"Cure"},
         ["Cure IV"] = {"Cure"},
@@ -583,8 +583,8 @@ do -- MAPPINGS REGION
         ["Flurry"] = {"EnhancingDuration"},
         ["Flying Hip Press"] = {"BluBreath"},
         ["Foe Lullaby"] = {"Lullaby"},
-        ["Foe Requiem"] = {"Requiem"},
         ["Foe Lullaby II"] = {"Lullaby"},
+        ["Foe Requiem"] = {"Requiem"},
         ["Foe Requiem II"] = {"Requiem"},
         ["Foe Requiem III"] = {"Requiem"},
         ["Foe Requiem IV"] = {"Requiem"},
@@ -655,7 +655,7 @@ do -- MAPPINGS REGION
         ["Hecatomb Wave"] = {"BluBreath", "BluMagicalAcc", "BluMagical"},
         ["Helldive"] = {"BluPhysicalAgi", "BluPhysical"},
         ["Herculean Etude"] = {"Etude"},
-        ["Holy"] = {"Holy"},
+        -- ["Holy"] = {"Holy"},
         ["Holy II"] = {"Holy"},
         ["Horde Lullaby"] = {"Lullaby"},
         ["Horde Lullaby II"] = {"Lullaby"},
@@ -775,7 +775,7 @@ do -- MAPPINGS REGION
         ["Poisona"] = {"StatusRemoval"},
         ["Pollen"] = {"BluHealing"},
         ["Power Attack"] = {"BluPhysicalVit", "BluPhysical"},
-        ["Protect"] = {"ProShell", "Protect"},
+        ["Protect"] = {"ProShell"},
         ["Protect II"] = {"ProShell", "Protect"},
         ["Protect III"] = {"ProShell", "Protect"},
         ["Protect IV"] = {"ProShell", "Protect"},
@@ -807,11 +807,11 @@ do -- MAPPINGS REGION
         ["Rasp"] = {"ElementalEnfeeble"},
         ["Reactor Cool"] = {"BluSkill"},
         ["Reaving Wind"] = {"BluMagicalAcc", "BluMagical"},
-        ["Refresh"] = {"Refresh"},
+        -- ["Refresh"] = {"Refresh"},
         ["Refresh II"] = {"Refresh"},
         ["Refresh III"] = {"Refresh"},
         ["Refueling"] = {"BluEnhancing"},
-        ["Regen"] = {"Regen"},
+        -- ["Regen"] = {"Regen"},
         ["Regen II"] = {"Regen"},
         ["Regen III"] = {"Regen"},
         ["Regen IV"] = {"Regen"},
@@ -838,7 +838,7 @@ do -- MAPPINGS REGION
         ["Self-Destruct"] = {"BluBreath"},
         ["Sheep Song"] = {"BluMagicalAcc", "BluMagical"},
         ["Sheepfoe Mambo"] = {"Mambo"},
-        ["Shell"] = {"ProShell", "Shell"},
+        ["Shell"] = {"ProShell"},
         ["Shell II"] = {"ProShell", "Shell"},
         ["Shell III"] = {"ProShell", "Shell"},
         ["Shell IV"] = {"ProShell", "Shell"},
@@ -934,6 +934,105 @@ do -- MAPPINGS REGION
         ["Windstorm"] = {"Storm"},
         ["Yawn"] = {"BluMagicalAcc", "BluMagical"},
         ["Zephyr Mantle"] = {"BluEnhancing"},
+        -- TODO: Groups for
+        -- Aero
+        -- Aero II
+        -- Aero III
+        -- Aero IV
+        -- Aero V
+        -- Aero VI
+        -- Aeroga
+        -- Aeroga II
+        -- Aeroga III
+        -- Aeroja
+        -- Aerora
+        -- Aerora II
+        -- Aerora III
+        -- Blizzaga
+        -- Blizzaga II
+        -- Blizzaga III
+        -- Blizzaja
+        -- Blizzara
+        -- Blizzara II
+        -- Blizzara III
+        -- Blizzard
+        -- Blizzard II
+        -- Blizzard III
+        -- Blizzard IV
+        -- Blizzard V
+        -- Blizzard VI
+        -- Burn
+        -- Burst
+        -- Burst II
+        -- Comet
+        -- Drown
+        -- Fira
+        -- Fira II
+        -- Fira III
+        -- Firaga
+        -- Firaga II
+        -- Firaga III
+        -- Firaja
+        -- Fire
+        -- Fire II
+        -- Fire III
+        -- Fire IV
+        -- Fire V
+        -- Fire VI
+        -- Flare
+        -- Flare II
+        -- Flood
+        -- Flood II
+        -- Freeze
+        -- Freeze II
+        -- Frost
+        -- Impact
+        -- Meteor
+        -- Quake
+        -- Quake II
+        -- Rasp
+        -- Shock
+        -- Stone
+        -- Stone II
+        -- Stone III
+        -- Stone IV
+        -- Stone V
+        -- Stone VI
+        -- Stonega
+        -- Stonega II
+        -- Stonega III
+        -- Stoneja
+        -- Stonera
+        -- Stonera II
+        -- Stonera III
+        -- Thundaga
+        -- Thundaga II
+        -- Thundaga III
+        -- Thundaja
+        -- Thundara
+        -- Thundara II
+        -- Thundara III
+        -- Thunder
+        -- Thunder II
+        -- Thunder III
+        -- Thunder IV
+        -- Thunder V
+        -- Thunder VI
+        -- Tornado
+        -- Tornado II
+        -- Water
+        -- Water II
+        -- Water III
+        -- Water IV
+        -- Water V
+        -- Water VI
+        -- Watera
+        -- Watera II
+        -- Watera III
+        -- Waterga
+        -- Waterga II
+        -- Waterga III
+        -- Waterja
     }
 
     -- Normalized action name to the mapping
