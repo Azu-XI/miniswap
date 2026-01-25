@@ -176,12 +176,16 @@ sets.Midcast_Default_Priority = {
         "Kupo Shield",
     },
     Ammo = {
+        { Name = "Rimestone", Level = 60 },           -- MP+35  MACC+3  INT+3  MND+1  Emn-5
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
     },
     Head  = {
         { Name = "Gambler's Chapeau", Level = 20 },   -- INT+3
     },
     Ear1 = {
+        { Name = "Cunning Earring", Level = 29 },     -- INT+1
+    },
+    Ear2 = {
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
     },
     Neck  = {
@@ -197,14 +201,40 @@ sets.Midcast_Default_Priority = {
 };
 
 local midcastEnfeeblingMND = {
+    Neck  = {
+        { Name = "Mohbwa Scarf +1", Level = 40 },     -- MND+2
+        { Name = "Justice Badge", Level = 7 },        -- MND+3
+    },
     Ring2 = {
         { Name = "Tamas Ring", Level = 30 },          -- MND+2~5
     },
+    Back  = {
+        { Name = "Dew Silk Cape +1", Level = 75 },    -- MND+6
+        { Name = "Tundra Mantle", Level = 39 },       -- MND+2
+    },
+    Waist = {
+        { Name = "Salire Belt", Level = 75 },         -- MND+5 MACC+4
+        { Name = "Penitent's Rope", Level = 60 },     -- MND+5                 Enm-3
+        { Name = "Friar's Rope", Level = 14 },        -- MND+1
+    },
+    Legs  = {
+        { Name = "Custom Slacks", Level = 31 },       -- MND+3
+    },
+    Feet  = {
+        { Name = "Garrison Boots +1", Level = 20 },   -- MND+2
+    },
 }
 sets.Midcast_Paralyze_Priority = midcastEnfeeblingMND;
-sets.Midcast_Slow_Priority = midcastEnfeeblingMND;
+sets.Midcast_Slow_Priority = midcastEnfeeblingMND;  -- TODO: Add Earth Grip
 
 local midcastEnfeeblingINT = {
+    Neck  = {
+            -- Wish: Lv.75 Moepapa Pendant [INT+8 MCrit+5 Enm-5] {Arch Christelle@DynaValk}
+        { Name = "Lmg. Medallion +1", Level = 75 },   -- INT+5 ElemSkill+5
+            -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
+        { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
+            -- Wish: Lv.20 Black Silk Neckerchief [INT+1]
+    },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
     },
@@ -213,24 +243,91 @@ local midcastEnfeeblingINT = {
         { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
     },
     Ring2 = {
+        { Name = "Galdr Ring", Level = 30 },          -- INT+6
         { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
+    },
+    Back  = {
+        { Name = "Oneiro's Cape", Level = 75 },       -- MACC+4
+        { Name = "Black Cape +1", Level = 32 },       -- INT+3
+        { Name = "Cotton Cape", Level = 18 },         -- INT+1
+    },
+    Waist = {
+        { Name = "Salire Belt", Level = 75 },         -- MACC+4
+        { Name = "Penitent's Rope", Level = 60 },     -- INT+5                 Enm-3
+            -- Wish: Lv.50 Ocean Stone [INT+3]
+            -- Wish: Lv.41 Reverend Sash [INT+2]
+            -- Wish: Lv.28 Shaman's Belt [INT+1]
+        { Name = "Silver Obi", Level = 20 },          -- SIRD-8
+    },
+    Legs  = {
+        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
+        { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
+    },
+    Feet  = {
+        { Name = "Custom M Boots", Level = 29 },      -- INT+3
+        { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
     },
 }
 sets.Midcast_Blind_Priority = midcastEnfeeblingINT;
 sets.Midcast_Poison_Priority = midcastEnfeeblingINT;
 
 sets.Midcast_ElementalMagic_Priority = {
+    Ear2 = {
+        { Name = "Moldavite Earring", Level = 47 },   --       MAB+5
+        { Name = "Cunning Earring", Level = 29 },     -- INT+1
+    },
+    Neck  = {
+            -- Wish: Lv.75 Moepapa Pendant [INT+8 MCrit+5 Enm-5] {Arch Christelle@DynaValk}
+        { Name = "Lmg. Medallion +1", Level = 75 },   -- INT+5 ElemSkill+5
+            -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
+        { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
+            -- Wish: Lv.20 Black Silk Neckerchief [INT+1]
+    },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
     },
     Ring1 = {
+        { Name = "Hibernal Ring", Level = 75 },       -- INT+5  MAC+2  FC+2
         { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
+        "Windurstian Ring",                           -- INT+1
     },
     Ring2 = {
+        { Name = "Galdr Ring", Level = 30 },          -- INT+6  MAB+1
+        { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
     },
-}
+    Back  = {
+            -- Wish: Lv.75 Hachirin-no-Obi (depending on day/weather)
+            -- Wish: Lv.75 Resonance Sash [ElemSkill+8 MBDmg+5]
+            -- Wish: Lv.75 Hecate's Cape? [MACC+3 MAB+3]
+            -- Wish: Lv.75 Merciful Cape? [EleSkill+5]
+        { Name = "Oneiro's Cape", Level = 75 },       -- MACC+4
+        { Name = "Black Cape +1", Level = 32 },       -- INT+3
+        { Name = "Cotton Cape", Level = 18 },         -- INT+1
+        { Name = "Mist Silk Cape", Level = 10 },
+    },
+    Waist = {
+        { Name = "Salire Belt", Level = 75 },         -- MACC+4 MAB+4
+        { Name = "Penitent's Rope", Level = 60 },     -- INT+5                 Enm-3
+            -- Wish: Lv.50 Ocean Stone [INT+3]
+            -- Wish: Lv.41 Reverend Sash [INT+2]
+            -- Wish: Lv.28 Shaman's Belt [INT+1]
+        { Name = "Silver Obi", Level = 20 },          -- SIRD-8
+    },
+    Legs  = {
+            -- Wish: Lv.75 Shadow Trews +0/1? [MACC+4/5 MAB+4/5 (Aug) MAB+1~4 ElemSkill+1~6 ConserveMP+1~6]
+        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
+        { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
+    },
+    Feet  = {
+        { Name = "Custom M Boots", Level = 29 },      -- INT+3
+        { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
+    },
+};
+
+sets.Midcast_Stone_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
+sets.Midcast_Aero_Priority = { Sub = {{ Name = "Wind Grip", Level = 75 }} };
 
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
 sets.Midcast_HealingMagic_Priority = {

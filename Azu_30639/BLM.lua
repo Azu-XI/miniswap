@@ -166,12 +166,13 @@ sets.Midcast_Default_Priority = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
     },
     Ring1 = {
-        { Name = "Hibernal Ring", Level = 75 },       -- INT+5
+        { Name = "Hibernal Ring", Level = 75 },       -- INT+5  MAB+2  FC+2
             -- Wish: Lv.50 Sorcerer's Ring [MAB+10 when HP<=75%] for elemental only
         { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
         "Windurstian Ring",                           -- INT+1
     },
     Ring2 = {
+        { Name = "Galdr Ring", Level = 30 },          -- INT+6  MAB+1
         { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
     },
@@ -206,7 +207,6 @@ sets.Midcast_Default_Priority = {
         { Name = "Sorcerer's Sabots", Level = 71 },   -- INT+2  ConserveMP+5
         { Name = "Custom M Boots", Level = 29 },      -- INT+3
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
-        { Name = "Power Sandals", Level = 18 },       -- VIT+3
     },
 };
 
@@ -217,6 +217,9 @@ sets.Midcast_ElementalMagic_Day_Priority = {
 sets.Midcast_ElementalMagic_Weather_Priority = {
     Waist = { { Name = "Hachirin-no-Obi", Level = 71 } },
 };
+
+sets.Midcast_Stone_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
+sets.Midcast_Aero_Priority = { Sub = {{ Name = "Wind Grip", Level = 75 }} };
 
 -- Goal: Total INT > 150 for 13 INT down (23 if `Elemental Magic Debuff` Effect merited)
 sets.Midcast_ElementalEnfeeble_Priority = {
@@ -268,6 +271,7 @@ sets.Midcast_ElementalEnfeeble_Priority = {
         "Windurstian Ring",                           -- INT+1
     },
     Ring2 = {
+        { Name = "Galdr Ring", Level = 30 },          -- INT+6
         { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
     },

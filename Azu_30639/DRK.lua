@@ -114,6 +114,54 @@ sets.Idle_Default_Priority.Ring2 = {
     table.unpack(sets.Idle_Default_Priority.Ring2),
 };
 
+
+sets.Midcast_ElementalMagic_Priority = {
+    Head = {
+        { Name = "Demon Helm", Level = 73 },          -- INT+5  ElemSkill +5
+    },
+    Ear2 = {
+        { Name = "Moldavite Earring", Level = 47 },   --       MAB+5
+        { Name = "Cunning Earring", Level = 29 },     -- INT+1
+    },
+    Neck  = {
+            -- Wish: Lv.75 Moepapa Pendant [INT+8 MCrit+5 Enm-5] {Arch Christelle@DynaValk}
+        { Name = "Lmg. Medallion +1", Level = 75 },   -- INT+5 ElemSkill+5
+            -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
+        { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
+            -- Wish: Lv.20 Black Silk Neckerchief [INT+1]
+    },
+    Hands = {
+        { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
+    },
+    Ring1 = {
+        { Name = "Galdr Ring", Level = 30 },          -- INT+6  MAB+1
+        { Name = "Eremite's Ring +1", Level = 10 },   -- INT+3
+        "Windurstian Ring",                           -- INT+1
+    },
+    Ring2 = {
+        { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
+        { Name = "Eremite's Ring", Level = 10 },      -- INT+2
+    },
+    Waist = {
+        { Name = "Salire Belt", Level = 75 },         -- MACC+4 MAB+4
+        { Name = "Penitent's Rope", Level = 60 },     -- INT+5                 Enm-3
+            -- Wish: Lv.50 Ocean Stone [INT+3]
+            -- Wish: Lv.41 Reverend Sash [INT+2]
+            -- Wish: Lv.28 Shaman's Belt [INT+1]
+        { Name = "Silver Obi", Level = 20 },          -- SIRD-8
+    },
+    Legs  = {
+            -- Wish: Lv.75 Shadow Trews +0/1? [MACC+4/5 MAB+4/5 (Aug) MAB+1~4 ElemSkill+1~6 ConserveMP+1~6]
+        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
+        { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
+    },
+    Feet  = {
+        { Name = "Custom M Boots", Level = 29 },      -- INT+3
+        { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
+    },
+};
+
+
 sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2

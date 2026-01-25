@@ -420,6 +420,10 @@ sets.Midcast_Lullaby_Priority = {
     },
 };
 
+sets.Midcast_Elegy_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
+sets.Midcast_LightningThrenody_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
+sets.Midcast_EarthThrenody_Priority = { Sub = {{ Name = "Wind Grip", Level = 75 }} };
+
 -- Goal: Max FastCast 80%
 sets.Precast_Default_Priority = {
         -- Wish: Lv.75 Reflexive Grip +0/1 [FC+1/3]
