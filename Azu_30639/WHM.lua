@@ -254,7 +254,7 @@ sets.WS_Default = {
     Ring2 = "Tamas Ring",                             -- MND+5
     Back  = "Dew Silk Cape +1",                       -- MND+6
     Waist = "Pythia Sash",                            -- MND+5
-    Legs  = "Errant Slops",                           -- MND+7
+    -- Legs  = "",
     Feet  = "Bunzi's Sabots",                         -- MND+5
 };
 

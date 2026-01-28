@@ -218,6 +218,7 @@ local midcastEnfeeblingMND = {
         { Name = "Friar's Rope", Level = 14 },        -- MND+1
     },
     Legs  = {
+        { Name = "Morrigan's Slops", Level = 75 },    -- MND+10
         { Name = "Custom Slacks", Level = 31 },       -- MND+3
     },
     Feet  = {
@@ -261,7 +262,7 @@ local midcastEnfeeblingINT = {
         { Name = "Silver Obi", Level = 20 },          -- SIRD-8
     },
     Legs  = {
-        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
+        { Name = "Morrigan's Slops", Level = 75 },    -- INT+10
         { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
     },
     Feet  = {
@@ -317,8 +318,8 @@ sets.Midcast_ElementalMagic_Priority = {
     },
     Legs  = {
             -- Wish: Lv.75 Shadow Trews +0/1? [MACC+4/5 MAB+4/5 (Aug) MAB+1~4 ElemSkill+1~6 ConserveMP+1~6]
-        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
-        { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
+        { Name = "Morrigan's Slops", Level = 75 },    -- INT+10  Enmity-2
+        { Name = "Seer's Slacks", Level = 29 },       -- INT+1   MACC+2
     },
     Feet  = {
         { Name = "Custom M Boots", Level = 29 },      -- INT+3

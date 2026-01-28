@@ -144,16 +144,12 @@ sets.Midcast_ElementalMagic_Priority = {
     },
     Waist = {
         { Name = "Salire Belt", Level = 75 },         -- MACC+4 MAB+4
-        { Name = "Penitent's Rope", Level = 60 },     -- INT+5                 Enm-3
             -- Wish: Lv.50 Ocean Stone [INT+3]
             -- Wish: Lv.41 Reverend Sash [INT+2]
             -- Wish: Lv.28 Shaman's Belt [INT+1]
         { Name = "Silver Obi", Level = 20 },          -- SIRD-8
     },
     Legs  = {
-            -- Wish: Lv.75 Shadow Trews +0/1? [MACC+4/5 MAB+4/5 (Aug) MAB+1~4 ElemSkill+1~6 ConserveMP+1~6]
-        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
-        { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
     },
     Feet  = {
         { Name = "Custom M Boots", Level = 29 },      -- INT+3

@@ -94,7 +94,7 @@ sets.Idle_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
-        { Name = "Sorcerer's Tonban", Level = 73 },
+        { Name = "Morrigan's Slops", Level = 75 },
         { Name = "White Slacks", Level = 50 },        -- Regen +1
         { Name = "Seer's Slacks", Level = 29 },
         { Name = "Garrison Hose +1", Level = 20 },
@@ -199,7 +199,7 @@ sets.Midcast_Default_Priority = {
     Legs  = {
             -- Wish: Lv.75 Shadow Trews +0/1? [MACC+4/5 MAB+4/5 (Aug) MAB+1~4 ElemSkill+1~6 ConserveMP+1~6]
             -- Wish: Lv.75 Src. Tonban +1 [INT+3 (Aug) ElemSkill+8 MCrit+8 MCritDmg+8]
-        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
+        { Name = "Morrigan's Slops", Level = 75 },    -- INT+10  Enmity-2
         { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
     },
     Feet  = {
@@ -289,8 +289,7 @@ sets.Midcast_ElementalEnfeeble_Priority = {
             -- Wish: Lv.28 Shaman's Belt [INT+1]
     },
     Legs  = {
-            -- Wish: Lv.75 Morigans Slops [INT+10]
-        { Name = "Errant Slops", Level = 72 },        -- INT+7  Enmity-3
+        { Name = "Morrigan's Slops", Level = 75 },    -- INT+10
         { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
     },
     Feet  = {

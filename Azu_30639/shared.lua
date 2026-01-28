@@ -20,9 +20,10 @@ sets.Chocobo = {
 }
 
 sets.Crafting = {
+    Main  = "Debahocho +1",
     Sub   = "Kupo Shield",
     Head  = "Midras's Helm +1",
-    Body = "Carpenter's Apron",
+    Body  = "Carpenter's Apron",
     Neck  = "Artisan's Torque",
     Ring1 = "Craftmaster's Ring",
     Ring2 = "Artificer's Ring",

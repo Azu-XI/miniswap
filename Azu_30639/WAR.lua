@@ -164,6 +164,7 @@ sets.JA_Provoke_Priority = {
     },
     Hands = {
             -- Wish: Lv.74 Fighter's Mufflers +1 [Enm+3 (Aug) Enm+6]
+            -- Wish: Lv.70 Hydra Moufles [Enm+6]
         { Name = "Gothic Gauntlets", Level = 43 },    -- Enm+2
     },
     Ring1 = {
@@ -182,9 +183,11 @@ sets.JA_Provoke_Priority = {
     },
     Legs  = {
             -- Wish: Lv.74 Fighter's Cuisses +1 [Enm+3 (Aug) Enm+6]
+            -- Wish: Lv.70 Hydra Brayettes [Enm+6]
             -- Wish: Lv.58 Fighter's Cuisses [Enm+2]
     },
     Feet  = {
+            -- Wish: Lv.70 Hydra Sollerets [Enm+4]
             -- Wish: Lv.43 Gothic Sabatons [Enm+2] {Behemoth's Dominion - Treasure Casket}
     },
 };
