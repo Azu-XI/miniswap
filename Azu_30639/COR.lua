@@ -40,7 +40,9 @@ sets.Engaged_Default_Priority = {
     },
     Ear2 = {
         { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4
-        { Name = "Dodge Earring", Level = 29 },       -- EVA+3
+        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
+        { Name = "Tribal Earring", Level = 20 },
+        "remove",
     },
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10 RACC+10
@@ -83,13 +85,14 @@ sets.Engaged_Default_Priority = {
         { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
+        { Name = "Skadi's Chausses", Level = 75 },    -- RACC+4 RATK+5 STP+7+3 H+2
         { Name = "Raptor Trousers", Level = 48 },
-        { Name = "Garrison Hose +1", Level = 20 },        -- STR+2 Haste+2
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Raptor Ledelsens", Level = 48 },        -- Haste+2
+        { Name = "Raptor Ledelsens", Level = 48 },    -- Haste+2
         { Name = "Greaves", Level = 24 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",

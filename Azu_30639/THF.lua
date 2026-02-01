@@ -19,14 +19,14 @@ sets.Engaged_Default_Priority = {
         { Name = "Thief's Knife", Level = 70 },
             -- Wish: Lv.50 Bushwhacker +1 {Yagudo Incursions}
         { Name = "Corsair's Knife", Level = 50 },
-        { Name = "Hornetneedle", Level = 48 },
-        { Name = "Bone Knife +1", Level = 46 },
-        { Name = "Marauder's Knife", Level = 40 },
-        { Name = "Mrc.Cpt. Kukri", Level = 30 },
+        -- { Name = "Hornetneedle", Level = 48 },
+        -- { Name = "Bone Knife +1", Level = 46 },
+        -- { Name = "Marauder's Knife", Level = 40 },
+        -- { Name = "Mrc.Cpt. Kukri", Level = 30 },
             -- Wish: Lv.20->50 Bushwhacker {Yagudo Incursions}
-        { Name = "Mercenary's Knife", Level = 20 },
-        { Name = "Beestringer", Level = 7 },
-        "Cat Baghnakhs +1",
+        { Name = "Bushwhacker", Level = 20 },
+        { Name = "Sapara +1", Level = 7 },
+        "Wax Sword +1",
     },
     Sub  = {
             -- Wish: Lv.75 Taming Sari {Great DI NM Gensai}
@@ -54,7 +54,8 @@ sets.Engaged_Default_Priority = {
     Ear2  = {
         { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
         { Name = "Insomnia Earring", Level = 50 },
-        { Name = "Dodge Earring", Level = 29 },
+        { Name = "Tribal Earring", Level = 20 },
+        "remove",
     },
     Head  = {
         { Name = "Rog. Bonnet +1", Level = 74 },      -- Haste+5  CritRate+3  EVA+10
@@ -144,7 +145,7 @@ sets.Idle_Default_Priority.Head = {
     { Name = "Rog. Bonnet +1", Level = 74 },          -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
-    { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5         -- EVA+3
+    { Name = "Cmp. Eye Circlet", Level = 9 },         -- EVA+5         -- EVA+3
     "Coven Hat",
 };
 sets.Idle_Default_Priority.Neck = {

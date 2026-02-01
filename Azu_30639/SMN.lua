@@ -40,12 +40,13 @@ sets.Idle_Default_Priority = {
     Ear1 = {
         { Name = "Loquac. Earring", Level = 75 },
         { Name = "Outlaw's Earring", Level = 50 },
-        { Name = "remove", Level = 1 },
+        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
+        "remove",
     },
     Ear2 = {
         { Name = "Insomnia Earring", Level = 50 },
-        { Name = "Dodge Earring", Level = 29 },
-        { Name = "remove", Level = 1 },
+        { Name = "Tribal Earring", Level = 20 },
+        "remove",
     },
     Neck  = {
         { Name = "Radiant Lantern", Level = 60 },
@@ -89,17 +90,17 @@ sets.Idle_Default_Priority = {
     },
     Legs  = {
         { Name = "Chironic Hose", Level = 75 }, 
-        { Name = "White Slacks", Level = 50 },            -- Haste+3 Regen +1
-        { Name = "Custom Slacks", Level = 31 },           -- MP+32
-        { Name = "Garrison Hose +1", Level = 20 },        -- Haste+2
+        { Name = "White Slacks", Level = 50 },        -- Haste+3 Regen +1
+        { Name = "Custom Slacks", Level = 31 },       -- MP+32
+        { Name = "Garrison Hose +1", Level = 20 },    -- Haste+2
         { Name = "Slacks +1", Level = 8 },
         "Dream Trousers +1",
     },
     Feet  = {
         { Name = "Summoner's Pgch.", Level = 73 },
-        { Name = "Custom M Boots", Level = 29 },          -- MP+12       Eva+5
-        { Name = "Garrison Boots +1", Level = 20 },       -- 
-        { Name = "Power Sandals", Level = 18 },           -- VIT+3
+        { Name = "Custom M Boots", Level = 29 },      -- MP+12       Eva+5
+        { Name = "Garrison Boots +1", Level = 20 },   -- INT+2 MND+2
+        { Name = "Power Sandals", Level = 18 },       -- VIT+3
         { Name = "Solea +1", Level = 8 },
         "Dream Boots +1",
     },

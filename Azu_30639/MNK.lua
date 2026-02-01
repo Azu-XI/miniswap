@@ -45,7 +45,8 @@ sets.Engaged_Default_Priority = {
     Ear2 = {
         { Name = "Luminous Earring", Level = 75 },    --       ATK+3 ACC+3             SB+2
         { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4
-        { Name = "Dodge Earring", Level = 29 },       -- EVA+3
+        { Name = "Tribal Earring", Level = 20 },
+        "remove",
     },
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },       --             ACC+10
@@ -54,7 +55,7 @@ sets.Engaged_Default_Priority = {
     },
     Body  = {
         { Name = "Naga Samue", Level = 75 },          -- ACC+15 ATK+15 Regen+1 DT-5
-            -- Wish: Lv.75 Usukane Haramaki [STR+8 DEX+8 ACC+12 EVA+12 STP+6 (Aug) DA+3 MDB+3 (Set) H+3~9]
+            -- Wish: Lv.75 Usukane Haramaki [STR+8 DEX+8 ACC+12 EVA+12 STP+6 (Aug) DA+3 MDB+3 (Set) H+5]
         { Name = "Shinobi Gi", Level = 49 },          -- ACC+8 ATK+8 MDT-2
             -- Wish: Lv.40 Jujitsu Gi [ACC+4 (Aug) STR+2 AGI+2 STP+1]
         { Name = "Garrison Tunica +1", Level = 20 },
@@ -98,7 +99,7 @@ sets.Engaged_Default_Priority = {
     },
     Legs  = {
         { Name = "Naga Hakama", Level = 75 },         -- H+5
-            -- Wish: Lv.75 Usukane Hizayoroi [STR+5 DEX+5 ATK+10 H+3 (Aug) ACC+5 KA+3 (Set) H+3~9]
+            -- Wish: Lv.75 Usukane Hizayoroi [STR+5 DEX+5 ATK+10 H+3 (Aug) ACC+5 KA+3 (Set) H+5]
             -- Wish: Lv.75 Melee Hose +1 [KA+5 SB+5 (Aug) MartialArts+6 KA+5 PDT+4]
         { Name = "Shinobi Hakama", Level = 49 },      -- ATK+8 H+2 Counter+3
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
@@ -107,7 +108,7 @@ sets.Engaged_Default_Priority = {
     },
     Feet  = {
         { Name = "Naga Kyahan", Level = 75 },         -- ACC+6 ATK+6 H+3
-            -- Wish: Lv.75 Usukane Sune-Ate [ACC+7 ATK+7 STP+7 H+2 (Aug) DEX+3 AGI+3 (Set) H+3~9]
+            -- Wish: Lv.75 Usukane Sune-Ate [ACC+7 ATK+7 STP+7 H+2 (Aug) DEX+3 AGI+3 (Set) H+5]
         { Name = "Shinobi Kyahan", Level = 49 },      -- ACC+8 H+2 MDT-3
             -- Wish: Lv.39 Sarutobi Kyahan [H+3]
         { Name = "Power Sandals", Level = 18},        -- VIT+3

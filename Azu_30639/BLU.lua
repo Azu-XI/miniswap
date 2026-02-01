@@ -4,12 +4,13 @@ local sets = {};
 sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Fealty", Level = 20 },
-        { Name = "Xiphos +1", Level = 7 },
+        { Name = "Sapara +1", Level = 7 },
+        "Wax Sword +1",
     },
     Sub   = {
             -- Wish: Lv.40 Combat Caster's Scimitar
         { Name = "Nadrs", Level = 24 },
-        { Name = "Xiphos +1", Level = 20 },
+        { Name = "Sapara +1", Level = 20 },
         "Kupo Shield",
     },
     Ammo = {
@@ -25,11 +26,12 @@ sets.Engaged_Default_Priority = {
     },
     Ear1 = {
         { Name = "Insomnia Earring", Level = 50 },
+        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         "remove",
     },
     Ear2 = {
         { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4
-        { Name = "Dodge Earring", Level = 29 },       -- EVA+3
+        { Name = "Tribal Earring", Level = 20 },
         "remove",
     },
     Neck  = {

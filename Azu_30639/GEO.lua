@@ -38,11 +38,14 @@ sets.Idle_Default_Priority = {
     Ear1 = {
             -- Wish: Lv.29 Morion Earring +1 [INT+2]
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
+        "remove",
     },
     Ear2 = {
         { Name = "Moldavite Earring", Level = 47 },   --       MAB+5
             -- Wish: Lv.29 Morion Earring +1 [INT+2]
         { Name = "Cunning Earring", Level = 29 },     -- INT+1
+        { Name = "Tribal Earring", Level = 20 },
+        "remove",
     },
     Neck  = {
             -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
@@ -169,7 +172,6 @@ sets.Midcast_Default_Priority = {
     Feet  = {
         { Name = "Custom M Boots", Level = 29 },      -- INT+3
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
-        { Name = "Power Sandals", Level = 18 },       -- VIT+3
     },
 };
 

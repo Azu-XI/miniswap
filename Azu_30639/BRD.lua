@@ -132,10 +132,13 @@ sets.Idle_Default_Priority = {
     Ear1 = {
         { Name = "Beastly Earring", Level = 72 },     -- EVA+5
         { Name = "Insomnia Earring", Level = 50 },    -- HP/MP+15  ResistSleep
+        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
+        "remove",
     },
     Ear2 = {
         { Name = "Musical Earring", Level = 70 },     -- EVA+5
-        { Name = "Dodge Earring", Level = 29 },       -- EVA+3
+        { Name = "Tribal Earring", Level = 20 },
+        "remove",
     },
     Neck  = {
         { Name = "Pegasus Collar", Level = 20 },      -- MvtSpeed+12%
