@@ -3,12 +3,14 @@ local sets = {};
 
 sets.Engaged_Default_Priority = {
     Main  = {
-        -- { Name = "Archer's Knife", Level = 28 },      -- RACC+10
+        { Name = "Archer's Knife", Level = 28 },      -- RACC+10
         { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
         { Name = "Xiphos +1 ", Level = 7 },
         "Wax Sword +1",
     },
     Sub   = {
+        { Name = "Mercurial Kris", Level = 50 },      -- OAT2~3
+        { Name = "Terrapin Traitor", Level = 28 },    -- OAT2 under lv.50
         "Kupo Shield",
     },
     Range = {
@@ -119,6 +121,27 @@ sets.Resting_Default_Priority = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
 };
+
+-- Goal: Snapshot & Rapid Shot
+sets.Preshot_Default = {}
+
+-- Goal: RACC, RATK, STP, Crit, Recycle, Etc
+sets.Midshot_Default = {
+    Ring1 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
+        { Name = "Coral Ring", Level = 70 },          -- RACC+9
+    },
+    Ring2 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
+        { Name = "Coral Ring", Level = 70 },          -- RACC+9
+    },
+    Back  = {
+        { Name = "Hunter's Shawl", Level = 30 },      -- RACC+3 RATK+3 STR+2 AGI+2
+    },
+    Legs  = {
+        { Name = "Skadi's Chausses", Level = 75 },    -- RACC+4 RATK+5 STP+7 (Wish Aug: STP+3)
+    },
+}; 
 
 sets.WS_Default_Priority = {
     Head  = {

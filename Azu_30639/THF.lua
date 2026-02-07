@@ -30,10 +30,7 @@ sets.Engaged_Default_Priority = {
     },
     Sub  = {
             -- Wish: Lv.75 Taming Sari {Great DI NM Gensai}
-        { Name = "Atoyac", Level = 75 },
-        { Name = "Misericorde", Level = 72 },
-            -- Wish: Lv.50->75 Mercurial Kris {Jailer of Prudence}
-        { Name = "Hornetneedle", Level = 50 },
+        { Name = "Mercurial Kris", Level = 50 },      -- OAT2~3
         { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
         { Name = "Kupo Shield", Level = 7 },
     },
@@ -192,6 +189,9 @@ sets.Midshot_Default = {
             -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
         { Name = "Coral Ring", Level = 70 },          -- RACC+9
     },
+    Back  = {
+        { Name = "Hunter's Shawl", Level = 30 },      -- RACC+3 RATK+3 STR+2 AGI+2
+    },
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- RACC+4 RATK+5 STP+7 (Wish Aug: STP+3)
     },
@@ -265,7 +265,7 @@ sets.WS_Default_Priority = {
     Neck  = {
             -- Wish: Lv.75 Love Torque [DEX+5 Dagger+7]
         { Name = "Spike Necklace", Level = 21 },      -- DEX+3       STR+3
-        { Name = "Rabbit Charm", Level = 7 },         -- DEX+1 AGI+1
+        -- { Name = "Rabbit Charm", Level = 7 },         -- DEX+1 AGI+1  -- STORED
         { Name = "Pile Chain", Level = 3 },           --             ACC+1
     },
     Body = {
@@ -279,7 +279,7 @@ sets.WS_Default_Priority = {
         { Name = "Battle Gloves", Level = 48 },       --             ACC+3
     },
     Ring1 = {
-        { Name = "Zilant Ring", Level = 57 },         -- DEX+6           ACC+3
+        { Name = "Zilant Ring", Level = 75 },         -- DEX+6           ACC+3
         { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
         { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
         { Name = "Balance Ring", Level = 14 },        -- DEX+2

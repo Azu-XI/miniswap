@@ -557,7 +557,7 @@ sets.WS_Default_Priority = {
         { Name = "Battle Gloves", Level = 48 },       --                 ACC+3
     },
     Ring1 = {
-        { Name = "Zilant Ring", Level = 57 },         -- DEX+6           ACC+3
+        { Name = "Zilant Ring", Level = 75 },         -- DEX+6           ACC+3
         { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
         { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
         { Name = "Balance Ring", Level = 14 },        -- DEX+2

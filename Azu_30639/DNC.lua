@@ -3,7 +3,7 @@ local sets = {};
 
 sets.LockStyle = {
     Main  = "Atoyac",
-    Sub   = "Xiutleato",
+    Sub   = "Mercurial Kris",
     Head  = "Etoile Tiara",
     Body  = "Freya's Jerkin",
     Hands = "Switft Gages",
@@ -22,21 +22,17 @@ sets.Engaged_Default_Priority = {
         { Name = "Gully", Level = 72 },
         { Name = "Avis", Level = 57 },
             -- Wish: Lv.50->75 Bushwhacker +1 {Yagudo Incursions}
-        { Name = "Bone Knife +1", Level = 46 },
-        { Name = "Mrc.Cpt. Kukri", Level = 30 },
-            -- Wish: Lv.20->50 Bushwhacker {Yagudo Incursions}
-        { Name = "Mercenary's Knife", Level = 20 },
+        -- { Name = "Bone Knife +1", Level = 46 },
+        -- { Name = "Mrc.Cpt. Kukri", Level = 30 },
+        -- { Name = "Mercenary's Knife", Level = 20 },
+        { Name = "Bushwhacker", Level = 20 },
         { Name = "Knife +1", Level = 13 },
             -- Wish: Lv.7 Jack's Knife {Ordelle Incursion}
         "Cat Baghnakhs +1",
     },
     Sub  = {
             -- Wish: Lv.75 Taming Sari {Great DI NM Gensai}
-            -- Wish: Lv.75 Bushwhacker +1 {Yagudo Incursions}
-        { Name = "Joyeuse", Level = 70 },
-        { Name = "Bone Knife +1", Level = 57 },
-            -- Wish: Lv.50->75 Mercurial Kris {Jailer of Prudence}
-        { Name = "Mrc.Cpt. Kukri", Level = 50 },
+        { Name = "Mercurial Kris", Level = 50 },      -- OAT2~3
         { Name = "Terrapin Traitor", Level = 20 },    -- OAT2 under lv.50
         { Name = "Kupo Shield", Level = 7 },
     },
