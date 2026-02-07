@@ -123,6 +123,12 @@ sets.JA_ThunderManeuver = maneuvers;
 sets.JA_WaterManeuver = maneuvers;
 sets.JA_WindManeuver = maneuvers;
 
+sets.JA_Repair = {
+    Ear1  = {
+        { Name = "Guignol Earring", Level = 69 },     -- RegenPot+20%
+    }
+};
+
 -- Goal: ACC for multi-hits WS
 sets.WS_Default_Priority = {
     Neck  = {

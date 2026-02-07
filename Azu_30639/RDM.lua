@@ -40,6 +40,7 @@ sets.Engaged_Default_Priority = {
         "Kingdom Aketon",
     },
     Hands = {
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         { Name = "Mitts +1", Level = 8 },

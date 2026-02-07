@@ -12,9 +12,9 @@ sets.LockStyle = {
 
 sets.Engaged_Default_Priority = {
     Main  = {
+            -- Wish: Nyepel (Oboro)
         { Name = "Maochinoli", Level = 75 },
             -- With: Blurred Claws? (https://www.bg-wiki.com/ffxi/CatsEyeXI_Systems/Synthesis)
-            -- Wish: Nyepel (Oboro)
         { Name = "Poppet Katars", Level = 58 },
         { Name = "Persuasion", Level = 20 },
         { Name = "Strike Baghnakhs", Level = 14 },
@@ -26,9 +26,9 @@ sets.Engaged_Default_Priority = {
         "Happy Egg",
     },
     Head  = {
-        { Name = "Naga Somen", Level = 75 },          -- DEX+5 H+5
             -- Wish: Lv.75 Melee Crown +1 [STR+6 SB+6 (Aug) ACC+8 EVA+10 Crit+4] !! Watch out for lack of Haste
             -- Wish: Lv.70 Optical Hat [ACC+10 EVA+10 (Aug) DEX+3 AGI+3 H+3]
+        { Name = "Naga Somen", Level = 75 },          -- DEX+5 H+5
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
         { Name = "Shinobi Hachigane", Level = 49 },   -- ATK+2 H+2 Counter+3
             -- Wish: Lv.41 Voyager Sallet [STR+3 DEX+4 (Aug) VIT+4 ATK+2]
@@ -54,8 +54,8 @@ sets.Engaged_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
+            -- Wish: Lv.75 Usukane Haramaki [STR+8 DEX+8 ACC+12 EVA+12 STP+6 (Aug) DA+3 MDB+3]
         { Name = "Naga Samue", Level = 75 },          -- ACC+15 ATK+15 Regen+1 DT-5
-            -- Wish: Lv.75 Usukane Haramaki [STR+8 DEX+8 ACC+12 EVA+12 STP+6 (Aug) DA+3 MDB+3 (Set) H+5]
         { Name = "Shinobi Gi", Level = 49 },          -- ACC+8 ATK+8 MDT-2
             -- Wish: Lv.40 Jujitsu Gi [ACC+4 (Aug) STR+2 AGI+2 STP+1]
         { Name = "Garrison Tunica +1", Level = 20 },
@@ -63,9 +63,8 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        -- { Name = "Naga Tekko", Level = 75 },          -- ACC+6 Counter+3 DEX+3 AGI+3
+            -- Wish: Lv.75 Melee Gloves +1 [Atk+18 SB+5 (Aug) STR+6 VIT+6 ACC+6 ATK+6 CTP+6]
         { Name = "Melee Gloves", Level = 73 },        -- ATK+16 SB+4 
-            -- Wish: Melee Gloves +1 [Atk+18 SB+5 (Aug) STR+6 VIT+6 ACC+6 ATK+6 CTP+6]
         { Name = "Shinobi Tekko", Level = 49 },       -- ACC+8 ATK+8 STP+2
             -- Wish: Lv.34 Ochimusha Kote [ATK+20 EVA-5]
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
@@ -98,17 +97,16 @@ sets.Engaged_Default_Priority = {
         "White Belt",                                 -- STR+1
     },
     Legs  = {
+            -- Wish: Lv.75 Usukane Hizayoroi [STR+5 DEX+5 ATK+10 H+3 (Aug) ACC+5 KA+3]
         { Name = "Naga Hakama", Level = 75 },         -- H+5
-            -- Wish: Lv.75 Usukane Hizayoroi [STR+5 DEX+5 ATK+10 H+3 (Aug) ACC+5 KA+3 (Set) H+5]
-            -- Wish: Lv.75 Melee Hose +1 [KA+5 SB+5 (Aug) MartialArts+6 KA+5 PDT+4]
         { Name = "Shinobi Hakama", Level = 49 },      -- ATK+8 H+2 Counter+3
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Slacks +1", Level = 8 },
         "Dream Trousers +1",
     },
     Feet  = {
+            -- Wish: Lv.75 Usukane Sune-Ate [ACC+7 ATK+7 STP+7 H+2 (Aug) DEX+3 AGI+3]
         { Name = "Naga Kyahan", Level = 75 },         -- ACC+6 ATK+6 H+3
-            -- Wish: Lv.75 Usukane Sune-Ate [ACC+7 ATK+7 STP+7 H+2 (Aug) DEX+3 AGI+3 (Set) H+5]
         { Name = "Shinobi Kyahan", Level = 49 },      -- ACC+8 H+2 MDT-3
             -- Wish: Lv.39 Sarutobi Kyahan [H+3]
         { Name = "Power Sandals", Level = 18},        -- VIT+3

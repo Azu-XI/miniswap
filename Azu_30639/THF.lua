@@ -6,7 +6,7 @@ sets.LockStyle = {
     Sub   = "Atoyac",
     Head  = "Tiger Mask",
     Body  = "Freya's Jerkin",
-    Hands = "Adhemar Wristbands",
+    Hands = "Swift Gages",
     Legs  = "Adhemar Kecks",
     Feet  = "Adhemar Gamashes",
 };

@@ -48,6 +48,7 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },

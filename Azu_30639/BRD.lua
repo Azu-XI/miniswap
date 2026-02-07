@@ -56,7 +56,6 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-            -- Wish: Augments [(Aug) DA+2 ATK+5]
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
@@ -347,6 +346,7 @@ sets.Midcast_Raise_Priority = midcastFastCast;
 sets.Midcast_Singing_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },
+            -- Wish: Lv.40 Chanter's Staff [CHR+6 SingingSkill+4] /!\ Not available on CEXI, ENM not implemented.
         { Name = "Monster Signa", Level = 17 },
     },
     Sub   = {
@@ -358,7 +358,7 @@ sets.Midcast_Singing_Priority = {
     Range = {
         { Name = "Gjallarhorn", Level = 75 },         -- CHR+4  SingSkill+10  WindSkill+10  AllSongs+2
         { Name = "Rouser +1", Level = 50 },           -- CHR+5                WindSkill+3   AllSongs+1  Duration+15%
-        -- { Name = "Rouser", Level = 20 },              -- CHR+3             WindSkill+3  AllSongs+1  Duration+5%
+        -- { Name = "Rouser", Level = 20 },              -- CHR+3                WindSkill+3   AllSongs+1  Duration+5%
         { Name = "Cornette +1", Level = 4 },
     },
     Head  = {
@@ -368,13 +368,14 @@ sets.Midcast_Singing_Priority = {
         { Name = "Entrancing Ribbon", Level = 11 },   -- CHR+2
     },
     Ear1  = {
-        { Name = "Beastly Earring", Level = 72 },     -- CHR+2
+        { Name = "Musical Earring", Level = 70 },     --                      WindSkill+5 StringSkill+5
     },
     Ear2 = {
-        { Name = "Musical Earring", Level = 70 },     --         WindSkill+5 StringSkill+5
+        { Name = "Beastly Earring", Level = 72 },     -- CHR+2
+            -- Wish: Lv.50 Spire Earring [SingSkil+3 WindSkill+3 StringSkill+3]
     },
     Neck  = {
-        { Name = "Timeless Ocarina", Level = 70 },    -- CHR+5   WindSkill+10 SongDuration+10
+        { Name = "Timeless Ocarina", Level = 70 },    -- CHR+5                WindSkill+10 SongDuration+10
         { Name = "Bird Whistle", Level = 15 },        -- CHR+3
     },
     Body  = {
@@ -388,6 +389,51 @@ sets.Midcast_Singing_Priority = {
         { Name = "Raptor Gloves", Level = 48 },       -- CHR+4
     },
     Ring1 = {
+            -- Wish: Lv.51 Nereid Ring [WindSkill+3]
+        { Name = "Trumpet Ring", Level = 51 },        -- WindSkill+2
+    },
+    Ring2 = {
+        { Name = "Nereid Ring", Level = 51 },         -- WindSkill+3
+    },
+    Back  = {
+        { Name = "Astute Cape", Level = 73 },         -- SingSkill+5
+        { Name = "Jester's Cape +1", Level = 54 },    -- CHR+10
+        { Name = "Tundra Mantle", Level = 39 },       -- CHR+2
+    },
+    Waist = {
+            -- Wish: Lv.75 Marching Belt [WindSkill+3] {Dyna Tav 1.0 Boss}
+        { Name = "Gleeman's Belt", Level = 50 },      -- CHR+6
+        { Name = "Corsette +1", Level = 40 },         -- CHR+6
+        { Name = "Griot Belt", Level = 28 },          -- CHR+1
+        { Name = "Silver Obi", Level = 20 },          --                                 SIRD+8
+    },
+    Legs  = {
+        { Name = "Marduk's Shalwar", Level = 75 },    -- CHR+10  WindSkill+5 MACC+4 SongDuration+6
+                                                      -- Note: Choral Cannions +1 has an additional +3 WindSkill, but lacks the SongDuration 
+        { Name = "Choral Cannions", Level = 56 },     --                      WindSkill+3
+        { Name = "Custom Slacks", Level = 31 },       -- CHR+1
+    },
+    Feet  = {
+            -- Wish: Oracle's Pigache [WindSkill+5]
+        { Name = "Brd. Slippers +1", Level = 75 },    -- CHR+8  StringSkill+8+3 SongRecast-3
+        { Name = "Raptor Ledelsens", Level = 48 },    -- CHR+4
+    },
+};
+
+local midcastSingingBuffDuration = {
+    Feet  = {
+        { Name = "Pursuer's Gaiters", Level = 75 },   -- SongDuration+10
+    },
+};
+sets.Midcast_Ballad_Priority = midcastSingingBuffDuration;
+sets.Midcast_Paeon_Priority = midcastSingingBuffDuration;
+
+sets.Midcast_Lullaby_Priority = {
+    Range = {
+        { Name = "Terpander", Level = 75 },           -- Lullaby+3
+        -- { Name = "Mary's Horn", Level = 14 },
+    },
+    Ring1 = {
             -- Wish: Lv.75 Carbuncle Ring +0/1 [CHR+6/8] {Goldsmithing Guild NM}
         { Name = "Light Ring", Level = 74 },          -- CHR+5
     },
@@ -395,33 +441,11 @@ sets.Midcast_Singing_Priority = {
             -- Wish: Lv.75 Veela Ring [CHR+6 Enm-2] {Cirrate Christelle@Dynamis Valkurm}
         { Name = "Light Ring", Level = 74 },          -- CHR+5
     },
-    Back  = {
-        { Name = "Jester's Cape +1", Level = 54 },    -- CHR+10
-        { Name = "Tundra Mantle", Level = 39 },       -- CHR+2
-    },
-    Waist = {
-        { Name = "Gleeman's Belt", Level = 50 },      -- CHR+6
-        { Name = "Corsette +1", Level = 40 },         -- CHR+6
-        { Name = "Griot Belt", Level = 28 },          -- CHR+1
-        { Name = "Silver Obi", Level = 20 },          --                                 SIRD+8
-    },
-    Legs  = {
-        { Name = "Marduk's Shalwar", Level = 75 },    -- CHR+10  WindSkill+5 MACC+3~4 SongDuration+5~6 (need last augment)
-        { Name = "Choral Cannions", Level = 56 },     --                    WindSkill+3
-        { Name = "Custom Slacks", Level = 31 },       -- CHR+1
-    },
     Feet  = {
         { Name = "Brd. Slippers +1", Level = 75 },    -- CHR+8  StringSkill+8+3 SongRecast-3
-        { Name = "Raptor Ledelsens", Level = 48 },    -- CHR+4
     },
 };
 
-sets.Midcast_Lullaby_Priority = {
-    Range = {
-        { Name = "Terpander", Level = 75 },           -- Lullaby+3
-        -- { Name = "Mary's Horn", Level = 14 },
-    },
-};
 
 sets.Midcast_Elegy_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
 sets.Midcast_LightningThrenody_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };

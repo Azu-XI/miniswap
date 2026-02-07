@@ -49,6 +49,7 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
+            -- Wish: Lv.75 Seiryu's Kote [AGI+15 RACC+10 (Aug) STP+5]
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },

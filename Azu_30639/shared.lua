@@ -27,6 +27,7 @@ sets.Crafting = {
     Neck  = "Artisan's Torque",
     Ring1 = "Craftmaster's Ring",
     Ring2 = "Artificer's Ring",
+    Back  = "Bronze Cape",
 };
 
 sets.EXP = {
