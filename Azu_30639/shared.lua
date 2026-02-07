@@ -1,14 +1,9 @@
 local aliases = {
     ["/off"] = "/lac disable",
-    ["/OFF"] = "/lac disable",
     ["/on"] = "/lac enable",
-    ["/ON"] = "/lac enable",
     ["/llv"] = "/lac fwd locklv",
-    ["/LLV"] = "/lac fwd locklv",
     ["/lst"] = "/lac lockstyle Lockstyle",
-    ["/LST"] = "/lac lockstyle Lockstyle",
     ["/ltp"] = "/lac fwd locktp",
-    ["/LTP"] = "/lac fwd locktp",
 };
 
 local bindings = {};
