@@ -4,7 +4,7 @@ local sets = {};
 sets.LockStyle = {
     Main  = "Atoyac",
     Sub   = "Mercurial Kris",
-    Head  = "Etoile Tiara",
+    Head  = "Dancer's Tiara",
     Body  = "Freya's Jerkin",
     Hands = "Switft Gages",
     -- Legs  = "Skadi's Chausses",
@@ -54,12 +54,12 @@ sets.Engaged_Default_Priority = {
         "Bronze Cap",
     },
     Ear1 = {
-        { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
+        { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
         { Name = "Outlaw's Earring", Level = 50 },
         { Name = "Cassie Earring", Level = 1 },
     },
     Ear2 = {
-        { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
+        { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         { Name = "Tribal Earring", Level = 20 },
@@ -131,9 +131,10 @@ sets.Engaged_Default_Priority = {
 sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
 sets.Idle_Default_Priority.Head = {
     { Name = "Rawhide Mask", Level = 75 },
+    { Name = "Wivre Mask", Level = 65 },              -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
-        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5         -- EVA+3
+    { Name = "Cmp. Eye Circlet", Level = 9 },         -- EVA+5         -- EVA+3
     "Coven Hat",
 };
 sets.Idle_Default_Priority.Neck = {
@@ -166,8 +167,8 @@ sets.Resting_Default_Priority = {
 
 -- Goal: Duration
 local jigs = {
-    Legs  = { { Name = "Etoile Tights", Level = 74 } },       -- Duration+25% (could +1 for +35%)
-    Feet  = { { Name = "Dancer's Toe Shoes", Level = 56 } },  -- Duration+25% (could +1 for +35%)
+    Legs  = { { Name = "Etoile Tights", Level = 74 } },       -- Duration+25%
+    Feet  = { { Name = "Dancer's Toe Shoes", Level = 56 } },  -- Duration+25%
 };
 sets.JA_ChocoboJig_Priority = jigs;
 sets.JA_ChocoboJigII_Priority = jigs;
@@ -244,31 +245,41 @@ local waltz = {
         { Name = "Roundel Earring", Level = 73 },     -- WaltzPot+5%
     },
     Neck  = {
+            -- Wish: Temp. Torque [CHR+5]
         { Name = "Bird Whistle", Level = 15 },        -- CHR+3
     },
     Body  = {
-            -- Wish: Lv.74 Dancer's Casaque +1 [WaltzPot+10% (Aug) WaltzPot+5% WaltzDelay-5]
-        { Name = "Dancer's Casaque", Level = 60 },    -- WaltzPot+10%
+        { Name = "Dnc. Casaque +1", Level = 74 },    -- WaltzPot+10+5%  WaltzDelay-5
+            -- Wish: Redo: { Name = "Dancer's Casaque", Level = 60 },    -- WaltzPot+10%
         { Name = "Garrison Tunica +1", Level = 20 },  -- CHR+2
     },
     Hands = {
+            -- Wish: Lv.75 Apex Kote [(Aug) WaltzPot+5%] {Stronghold}
         { Name = "Raptor Gloves", Level = 48 },       -- CHR+4
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
     },
+    Ring1 = {
+            -- Wish: Lv.75 Carbuncle Ring +0/1 [CHR+6/8] {Goldsmithing Guild NM}
+        { Name = "Light Ring", Level = 74 },          -- CHR+5
+    },
+    Ring2 = {
+            -- Wish: Lv.75 Veela Ring [CHR+6 Enm-2] {Cirrate Christelle@Dynamis Valkurm}
+        { Name = "Light Ring", Level = 74 },          -- CHR+5
+    },
     Back  = {
-            -- Wish: Lv.70 Etoile Cape [CHR+5]
-        { Name = "Traveler's Mantle", Level = 28 },   -- Make sure Exile's Cloack with CHR-3 isn't equiped
+        { Name = "Etoile Cape", Level = 70 },         -- CHR+5
+        { Name = "Nomad's Mantle", Level = 50 },      -- Make sure Exile's Cloack with CHR-3 isn't equiped
     },
     Waist = {
         { Name = "Corsette +1", Level = 40 },         -- CHR+6
         { Name = "Griot Belt", Level = 28 },          -- CHR+1
     },
     Legs  = {
-        { Name = "Etoile Tights", Level = 74 },       -- CHR+3
+        { Name = "Dancer's Tights", Level = 74 },     -- CHR+5
         { Name = "Raptor Trousers", Level = 48 },     -- VIT+4
     },
     Feet  = {
-            -- Wish: Lv.68 Cobra Leggings [(Aug) CHR+4 WaltzPot+2%]
+            -- Wish: Lv.68 Cobra Leggings [(Aug) CHR+4 WaltzPot+2%] {Campaign}
     },
 };
 sets.JA_CuringWaltz_Priority = waltz;
@@ -295,13 +306,15 @@ sets.JA_ViolentFlourish_Priority = {
 -- Goal: ACC & DEX & AGI
 sets.WS_Default_Priority = {
     Head  = {
-        { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3  AGI+3
+        { Name = "Assailant's Visor", Level = 70 },   -- DEX+11                         STR+5
+        { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3   AGI+3
     },
     Ear1 = {
-        -- TODO
+        { Name = "Luminous Earring", Level = 75 },    --                 ACC+3  ATK+4
+        { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2
     },
     Ear2 = {
-        -- TODO
+        { Name = "Brutal Earring", Level = 75 },      --                                           DA+5
     },
     Neck  = {
             -- Wish: Lv.75 Love Torque [DEX+5 Dagger+7]
@@ -311,10 +324,11 @@ sets.WS_Default_Priority = {
     Body = {
         { Name = "Rawhide Vest", Level = 75 },        -- DEX+10  AGI+10          ATK+10  Dagger+10  Sword+30
         { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
-        { Name = "Brigandine +1", Level = 45 },       -- DEX+3 AGI+3
+        { Name = "Brigandine +1", Level = 45 },       -- DEX+3   AGI+3
         { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
     },
     Hands = {
+        { Name = "Swift Gages", Level = 75 },         -- DEX+5   AGI+8           ATK+5              DA+2      
         { Name = "Raptor Gloves", Level = 48 },       -- DEX+4
         { Name = "Battle Gloves", Level = 48 },       --                 ACC+3
     },
@@ -340,6 +354,9 @@ sets.WS_Default_Priority = {
         {Name = "Virtuoso Belt", Level = 54 },        --                 ACC+12  ATK+4
         {Name = "Lizard Belt +1", Level = 17 },       -- DEX+2
     },
+    Legs  = {
+        { Name = "Dancer's Tights +1", Level = 74 },  -- DEX+11  STR+11 ACC+5   ATK+5
+    },
     Feet  = {
         { Name = "Etoile Toe Shoes +1", Level = 75 }, -- DEX+4   STR+7  ACC+5   ATK+12          ConserveTP+10
         { Name = "Leaping Boots", Level = 7 },        -- DEX+3 AGI+3
@@ -352,14 +369,14 @@ sets.WS_Exenterator = {
     Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
-    Body  = "Rawhide Vest",                           -- AGI+10 ATK+10 Dagger+10 Sword+30
-    Hands = "Swift Gages",                            -- AGI+8 DA+2 ATK+5
+    Body  = "Rawhide Vest",                           -- AGI+10         ATK+10        Dagger+10 Sword+30
+    Hands = "Swift Gages",                            -- AGI+8          ATK+5   DA+2
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
-    Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
+    Back  = "Cuchulain's Mantle",                     --        ACC+4                 DEX+4 STR+4
     Waist = "Virtuoso Belt",                          --        ACC+12  ATK+4
-    Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
-    Feet  = "Raptor Ledelsens",                       -- AGI+4
+    Legs  = "Acrobat's Breeches",                     -- AGI+8                   TA+2 DEX+2
+    Feet  = "Etoile Toe Shoes +1",                    --        ACC+5   ATK+12                    ConserveTP+10
 };
 
 -- Goal: fTP & ACC & DEX & STR & DA & TA & CRIT
@@ -377,7 +394,7 @@ sets.WS_PyrrhicKleos = {
     Waist = "Virtuoso Belt",                          --                ACC+12  ATK+4
         -- Wish: Warwolf Belt? STR+5 DEX+5
         -- Wish: Warwolf Belt+1? STR+6 DEX+6 ATK+10
-    Legs  = "Skadi's Chausses",                       --         STR+3  ACC+4   ATK+5
+    Legs  = "Dancer's Tights +1",                     -- DEX+11  STR+11 ACC+5   ATK+5
     Feet  = "Etoile Toe Shoes +1",                    -- DEX+4   STR+7  ACC+5   ATK+12          ConserveTP+10
 };
 

@@ -116,6 +116,7 @@ sets.Engaged_Default_Priority = {
 
 sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
 sets.Idle_Default_Priority.Head = {
+    { Name = "Wivre Mask", Level = 65 },              -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Brass Cap +1", Level = 11 },

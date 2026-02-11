@@ -18,12 +18,11 @@ sets.Engaged_Default_Priority = {
         { Name = "Misericorde", Level = 71 },
         { Name = "Thief's Knife", Level = 70 },
             -- Wish: Lv.50 Bushwhacker +1 {Yagudo Incursions}
-        { Name = "Corsair's Knife", Level = 50 },
+        { Name = "Hornetneedle", Level = 50 },
         -- { Name = "Hornetneedle", Level = 48 },
         -- { Name = "Bone Knife +1", Level = 46 },
         -- { Name = "Marauder's Knife", Level = 40 },
         -- { Name = "Mrc.Cpt. Kukri", Level = 30 },
-            -- Wish: Lv.20->50 Bushwhacker {Yagudo Incursions}
         { Name = "Bushwhacker", Level = 20 },
         { Name = "Sapara +1", Level = 7 },
         "Wax Sword +1",
