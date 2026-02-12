@@ -130,18 +130,25 @@ sets.JA_Provoke_Priority = {
             -- Wish: Lv.1 Cache-nez [Enm+2]
     },
     Hands = {
+        { Name = "Hydra Moufles", Level = 70 },       -- Enm+6
         { Name = "Gothic Gauntlets", Level = 43 },    -- Enm+2
+    },
+    Ring1 = {
+            -- Wish: Lv.50 Myrmeleo Ring [(Aug) Enm+3]
     },
     Ring2 = {
         { Name = "Sattva Ring", Level = 30 },         -- Enm+3
     },
     Back  = {
+            -- Wish: Toreador's Cape [Enm+4]
+            -- Wish: Cerberus Mantle +1  [Enm+4]
         { Name = "Ram Mantle", Level = 38 },          -- Enm+2
     },
-    Waist = {
-            -- Wish: Lv.71 Warwolf Belt [Enm+3]
+    Legs  = {
+            -- Wish: Lv.70 Hydra Brayettes [Enm+6]
     },
     Feet  = {
+            -- Wish: Lv.70 Hydra Sollerets [Enm+4]
             -- Wish: Lv.43 Gothic Sabatons [Enm+2] {Behemoth's Dominion - Treasure Casket}
     },
 };

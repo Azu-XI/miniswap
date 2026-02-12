@@ -101,7 +101,7 @@ sets.Idle_Default_Priority = {
     },
     Waist = {
             -- Wish: Aug: MP+10 MDef+3
-        { Name = "Cleric's Belt", Level = 70 },       -- MP+40
+        { Name = "Cleric's Belt", Level = 70 },       -- MP+40+10 MDef+3
         { Name = "Penitent's Rope", Level = 60 },
         { Name = "Friar's Rope", Level = 14 },
     },
@@ -126,37 +126,38 @@ sets.Idle_Default_Priority = {
 sets.Midcast_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- CurePot+10
-        "Maple Wand +1",                              -- MND+2
+        "Maple Wand +1",                              --            MND+2
     },
     Sub   = {
-        { Name = "Neph. Grip", Level = 51 },          -- INT+1
-        { Name = "Pelte", Level = 8 },                -- MND+1
+            -- Wish: Verse Strap +0/1 [CurePot+2~3 MND+2~3 Enm-2~3] {Leathercraft Guild NM}
+        { Name = "Oneiros Grip", Level = 75 },        --                                                    Regen +1
+        { Name = "Neph. Grip", Level = 51 },          --                                                    INT+1
+        { Name = "Pelte", Level = 8 },                --            MND+1
     },
     Ear2 = {
-        { Name = "Roundel Earring", Level = 73 },     -- CurePot+5%
+        { Name = "Roundel Earring", Level = 73 },     -- CurePot+5
     },
     Head  = {
-        { Name = "Bunzi's Hat", Level = 70 },         -- MND+10 Divine+10
+        { Name = "Bunzi's Hat", Level = 70 },         -- MND+10                                 Divine+10
     },
     Neck  = {
-        { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
+        { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3         Enm-2
     },
     Body  = {
         { Name = "Noble's Tunic", Level = 68 },       -- CurePot+10
     },
     Hands = {
-        { Name = "Hlr. Mitts +1", Level = 74 },       -- CurePot+3 MND+7 Healing+15 Emn-4 ConserveMP+5
+        { Name = "Hlr. Mitts +1", Level = 74 },       -- CurePot+3  MND+7  Emn-4  ConserveMP+5  Healing+15
     },
     Back  = {
-        { Name = "Dew Silk Cape +1", Level = 75 },    -- CurePot+3  Enm-3
-        { Name = "Tundra Mantle", Level = 39 },       -- MND+2 ConserveMP+2
+        { Name = "Dew Silk Cape +1", Level = 75 },    -- CurePot+3         Enm-3
+        { Name = "Tundra Mantle", Level = 39 },       --            MND+2         ConserveMP+2
         { Name = "Mist Silk Cape", Level = 10 },      -- CurePot+1
     },
     Waist = {
-            -- Wish: Aug: CurePot+5
-        { Name = "Cleric's Belt", Level = 70 },       -- MND+6
-        { Name = "Penitent's Rope", Level = 60 },     -- MND+5 Enm-3
-        { Name = "Silver Obi", Level = 20 },          -- SIRD-8
+        { Name = "Cleric's Belt", Level = 70 },       -- CurePot+5  MND+6
+        { Name = "Penitent's Rope", Level = 60 },     --            MND+5  Enm-3
+        { Name = "Silver Obi", Level = 20 },          --                          SIRD-8
     },
     Legs  = {
             -- Wish: Lv.74 Clr. Pantaln. +1 [Healing+15 Enm-3 BarSpells+22 (Aug) CurePot+6 Enhancing+10]

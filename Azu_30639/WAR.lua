@@ -165,8 +165,7 @@ sets.JA_Provoke_Priority = {
             -- Wish: Lv.60 Fighter's Lorica [Enm+8]
     },
     Hands = {
-            -- Wish: Lv.74 Fighter's Mufflers +1 [Enm+3 (Aug) Enm+6]
-            -- Wish: Lv.70 Hydra Moufles [Enm+6]
+        { Name = "Hydra Moufles", Level = 70 },       -- Enm+6
         { Name = "Gothic Gauntlets", Level = 43 },    -- Enm+2
     },
     Ring1 = {
@@ -184,7 +183,6 @@ sets.JA_Provoke_Priority = {
             -- Wish: Lv.71 Warwolf Belt [Enm+3]
     },
     Legs  = {
-            -- Wish: Lv.74 Fighter's Cuisses +1 [Enm+3 (Aug) Enm+6]
             -- Wish: Lv.70 Hydra Brayettes [Enm+6]
             -- Wish: Lv.58 Fighter's Cuisses [Enm+2]
     },
