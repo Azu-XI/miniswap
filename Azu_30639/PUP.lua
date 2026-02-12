@@ -15,6 +15,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Animator", Level = 1 },
     },
     Head  = {
+        { Name = "Usukane Somen", Level = 75 },       -- STR+3 AGI+3 ACC+7 EVA+7 H+3 Counter+4 DT-4
         { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
         { Name = "Emperor Hairpin", Level = 24 },     -- EVA+10
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetAcc+2 PetRAcc+2
@@ -78,6 +79,7 @@ sets.Engaged_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Usukane Sune-Ate", Level = 75 },    -- ACC+7 ATK+7 STP+7 H+2
         { Name = "Raptor Ledelsens", Level = 48 },
         { Name = "Power Sandals", Level = 18},        -- VIT+3
         { Name = "Solea +1", Level = 8},
@@ -87,6 +89,7 @@ sets.Engaged_Default_Priority = {
 
 sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
 sets.Idle_Default_Priority.Head = {
+    { Name = "Usukane Somen", Level = 75 },           -- EVA+7 DT-4
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5

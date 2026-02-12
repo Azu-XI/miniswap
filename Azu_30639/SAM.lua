@@ -2,11 +2,11 @@ local profile = gFunc.LoadFile('common/miniswap.lua');
 local sets = {};
 
 sets.LockStyle = {
-    Head  = "Oneiros Headgear",
-    Body  = "Shinobi Gi",
-    Hands = "Shinobi Tekko",
-    Legs  = "Shinobi Hakama",
-    Feet  = "Shinobi Kyahan",
+    Head  = "Usukane Somen",
+    Body  = "Kirin's Osode",
+    Hands = "Swift Gages",
+    Legs  = "Saotome Haidate",
+    Feet  = "Usukane Sune-Ate",
 };
 
 sets.Engaged_Default_Priority = {
@@ -31,6 +31,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Self Bow +1", Level = 7 },
     },
     Head  = {
+        { Name = "Usukane Somen", Level = 75 },       -- STR+3 AGI+3 ACC+7 EVA+7 H+3 Counter+4 DT-4
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
         { Name = "Shinobi Hachigane", Level = 49 },   -- ATK+2 H+2 Counter+3
         { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
@@ -100,6 +101,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
+            -- Wish: Byakko's Haidate [DEX+5 H+5 (Aug) STP+0~5]
         { Name = "Shinobi Hakama", Level = 49 },      -- ATK+8 H+2
         { Name = "Raptor Trousers", Level = 48 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
@@ -107,6 +109,7 @@ sets.Engaged_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Usukane Sune-Ate", Level = 75 },    -- ACC+7 ATK+7 STP+7 H+2
         { Name = "Shinobi Kyahan", Level = 49 },      -- ACC+8 H+2 MDT-3
         { Name = "Raptor Ledelsens", Level = 48 },    -- H+2
         { Name = "Leaping Boots", Level = 7 },
@@ -116,6 +119,7 @@ sets.Engaged_Default_Priority = {
 
 sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
 sets.Idle_Default_Priority.Head = {
+    { Name = "Usukane Somen", Level = 75 },           -- EVA+7 DT-4
     { Name = "Wivre Mask", Level = 65 },              -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
@@ -162,6 +166,11 @@ sets.JA_Provoke_Priority = {
     Feet  = {
             -- Wish: Lv.43 Gothic Sabatons [Enm+2] {Behemoth's Dominion - Treasure Casket}
     },
+};
+
+sets.JA_Meditate_Priority = {
+    Head  = { Name = "Myochin Kabuto", Level = 60 },  -- +20~40 TP
+    Hands = { Name = "Saotome Kote", Level = 73 },    -- +20~40 TP
 };
 
 -- Goal: STR & ACC

@@ -26,9 +26,9 @@ sets.Engaged_Default_Priority = {
         "Happy Egg",
     },
     Head  = {
-            -- Wish: Lv.75 Melee Crown +1 [STR+6 SB+6 (Aug) ACC+8 EVA+10 Crit+4] !! Watch out for lack of Haste
+            -- Wish? Lv.75 Melee Crown +1 [STR+6 SB+6 (Aug) ACC+8 EVA+10 Crit+4] !! Watch out for lack of Haste
+        { Name = "Usukane Somen", Level = 75 },       -- STR+3 AGI+3 ACC+7 EVA+7 H+3 Counter+4 DT-4
             -- Wish: Lv.70 Optical Hat [ACC+10 EVA+10 (Aug) DEX+3 AGI+3 H+3]
-        { Name = "Naga Somen", Level = 75 },          -- DEX+5 H+5
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
         { Name = "Shinobi Hachigane", Level = 49 },   -- ATK+2 H+2 Counter+3
             -- Wish: Lv.41 Voyager Sallet [STR+3 DEX+4 (Aug) VIT+4 ATK+2]
@@ -97,7 +97,7 @@ sets.Engaged_Default_Priority = {
         "White Belt",                                 -- STR+1
     },
     Legs  = {
-            -- Wish: Lv.75 Usukane Hizayoroi [STR+5 DEX+5 ATK+10 H+3 (Aug) ACC+5 KA+3]
+            -- Wish: Byakko's Haidate [DEX+5 H+5 (Aug) STP+0~5]
         { Name = "Naga Hakama", Level = 75 },         -- H+5
         { Name = "Shinobi Hakama", Level = 49 },      -- ATK+8 H+2 Counter+3
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
@@ -105,8 +105,7 @@ sets.Engaged_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
-            -- Wish: Lv.75 Usukane Sune-Ate [ACC+7 ATK+7 STP+7 H+2 (Aug) DEX+3 AGI+3]
-        { Name = "Naga Kyahan", Level = 75 },         -- ACC+6 ATK+6 H+3
+        { Name = "Usukane Sune-Ate", Level = 75 },    -- ACC+7 ATK+7 STP+7 H+2
         { Name = "Shinobi Kyahan", Level = 49 },      -- ACC+8 H+2 MDT-3
             -- Wish: Lv.39 Sarutobi Kyahan [H+3]
         { Name = "Power Sandals", Level = 18},        -- VIT+3
@@ -117,7 +116,8 @@ sets.Engaged_Default_Priority = {
 
 sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
 sets.Idle_Default_Priority.Head = {
-    { Name = "Naga Somen", Level = 75 },
+    { Name = "Usukane Somen", Level = 75 },           -- EVA+7 DT-4
+    { Name = "Wivre Mask", Level = 65 },              -- EVA+10
     { Name = "Shinobi Hachigane", Level = 50 },       -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Brass Cap +1", Level = 11 },

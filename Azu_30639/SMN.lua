@@ -30,7 +30,7 @@ sets.Idle_Default_Priority = {
         "Happy Egg",
     },
     Head  = {
-        -- Wish: Lv.74 Evoker's Horn +1 [(Aug) Refresh+1]
+            -- Wish: Lv.74 Evoker's Horn +1 [(Aug) Refresh+1]
         { Name = "Summoner's Horn", Level = 75 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },
@@ -116,7 +116,7 @@ local petDefaultPriority = {
         { Name = "Soothing Sachet", Level = 70 },     -- PetACC+5 PetAtk+5 PetDT-3
     },
     Head  = {
-        -- Wish: Lv.74 Evoker's Horn +1 [(Aug) PetPDT-4 Refresh+1]
+            -- Wish: Lv.74 Evoker's Horn +1 [(Aug) PetPDT-4 Refresh+1]
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2
     },
@@ -192,32 +192,31 @@ local bloodPact = {
     },
     Head  = {
         { Name = "Summoner's Horn", Level = 75 },     -- BP-3
-        -- Wish: Lv.50 Penance Hat [BP-3]
-        -- Wish: Lv.50 Austere Hat [BP-2]
+            -- Wish: Lv.50 Penance Hat [BP-3]
+            -- Wish: Lv.50 Austere Hat [BP-2]
     },
     Body  = {
-        -- Wish: Lv.75 Smn. Doublet +1 [BP-4]
-        -- Wish: Lv.74 Evk. Doublet +1 [BP-4]
+            -- Wish: Lv.75 Smn. Doublet +1 [BP-4]
         { Name = "Summoner's Dblt.", Level = 74 },    -- BP-3
-        -- Wish: Lv.71 YinYang Robe [BP-5]
-        -- Wish: Lv.50 Penance Robe [BP-4]
-        -- Wish: Lv.50 Austere Robe [BP-3]
+            -- Wish: Lv.71 YinYang Robe [BP-5]
+            -- Wish: Lv.50 Penance Robe [BP-4]
+            -- Wish: Lv.50 Austere Robe [BP-3]
     },
     Hands = {
             -- Wish: Nashira Gages [(Aug) BPII-3 BloodBoon+5]
         { Name = "Smn. Bracers +1", Level = 75 },     -- BP-2
-        -- Wish: Lv.50 Penance Cuffs [BP-2]
-        -- Wish: Lv.50 Austere Cuffs [BP-1]
+            -- Wish: Lv.50 Penance Cuffs [BP-2]
+            -- Wish: Lv.50 Austere Cuffs [BP-1]
     },
     Ring1 = {
-        -- Wish: Lv.75 Eidolon Ring [BPII-5]
+            -- Wish: Lv.75 Eidolon Ring [BPII-5]
     },
     Back  = {
-        -- Wish: Lv.70 Summoner's Cape [(Aug) BP-2]
+            -- Wish: Lv.70 Summoner's Cape [(Aug) BP-2]
     },
     Legs  = {
-        { Name = "Chironic Hose", Level = 75 },       -- BP-2 BloodBoon3
-        -- Wish: Smn. Spats +1 [(Aug) BloodBoon+8]
+        { Name = "Chironic Hose", Level = 75 },       -- BP-2 BloodBoon+3
+            -- Wish: Smn. Spats +1 [BP-2 (Aug) BloodBoon+8]
         { Name = "Summoner's Spats", Level = 71 },    -- BP-2
     },
     Feet  = {

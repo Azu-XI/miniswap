@@ -24,6 +24,7 @@ sets.Engaged_Default_Priority = {
         "Happy Egg",
     },
     Head  = {
+        { Name = "Usukane Somen", Level = 75 },       -- STR+3 AGI+3 ACC+7 EVA+7 H+3 Counter+4 DT-4
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
         { Name = "Shinobi Hachigane", Level = 49 },   -- ATK+2 H+2 Counter+3
         { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
@@ -84,6 +85,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
+            -- Wish: Byakko's Haidate [DEX+5 H+5 (Aug) STP+0~5]
         { Name = "Shinobi Hakama", Level = 49 },
         -- { Name = "Jujitsu Sitabaki", Level = 37 },  -- Not worth against garrison hose if not augmented, and even then?
         { Name = "Garrison Hose +1", Level = 20 },   -- STR+2 Haste+2
@@ -91,6 +93,7 @@ sets.Engaged_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Usukane Sune-Ate", Level = 75 },    -- ACC+7 ATK+7 STP+7 H+2
         -- { Name = "Cotton Gaiters", Level = 23 },
         -- { Name = "Ryl.Ftm. Clogs", Level = 20 },
         { Name = "Leaping Boots", Level = 7 },
@@ -100,6 +103,8 @@ sets.Engaged_Default_Priority = {
 
 sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
 sets.Idle_Default_Priority.Head = {
+    { Name = "Usukane Somen", Level = 75 },           -- EVA+7 DT-4
+    { Name = "Wivre Mask", Level = 65 },              -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
     { Name = "Brass Cap +1", Level = 11 },
