@@ -17,6 +17,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Gully", Level = 72 },
         { Name = "Misericorde", Level = 71 },
         { Name = "Thief's Knife", Level = 70 },
+        { Name = "Avis", Level = 57 },
             -- Wish: Lv.50 Bushwhacker +1 {Yagudo Incursions}
         { Name = "Hornetneedle", Level = 50 },
         -- { Name = "Hornetneedle", Level = 48 },

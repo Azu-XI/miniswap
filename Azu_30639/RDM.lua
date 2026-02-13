@@ -125,6 +125,8 @@ sets.Idle_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
+        { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         -- { Name = "Garrison Gloves +1", Level = 20 },-- MP+5 INT+2
         { Name = "Zealot's Mitts", Level = 11 },       -- MP+5 MND+3
         { Name = "Mitts +1", Level = 8 },
@@ -153,12 +155,14 @@ sets.Idle_Default_Priority = {
         { Name = "Heko Obi", Level = 8 },             -- AGI+3 ACC+3
     },
     Legs  = {
+        { Name = "Morrigan's Slops", Level = 75 },    -- INT+10  Enmity-2
         { Name = "White Slacks", Level = 50 },        -- Haste+3 Regen +1
         { Name = "Garrison Hose +1", Level = 20 },    -- Haste+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Raptor Ledelsens", Level = 48 },
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2 MND+2
         { Name = "Power Sandals", Level = 18 },       -- VIT+3
         { Name = "Leaping Boots", Level = 7 },
@@ -180,7 +184,7 @@ sets.Midcast_Default_Priority = {
         { Name = "Rimestone", Level = 60 },           -- MP+35  MACC+3  INT+3  MND+1  Emn-5
         { Name = "Morion Tahtlum", Level = 25 },      -- INT+1
     },
-    Head  = {
+    Head = {
         { Name = "Gambler's Chapeau", Level = 20 },   -- INT+3
     },
     Ear1 = {
@@ -193,11 +197,27 @@ sets.Midcast_Default_Priority = {
         { Name = "Justice Badge", Level = 7 },
     },
     Back  = {
-        { Name = "Coton Cape", Level = 18 },          -- INT+1       -- TODO: Keep for nukes
-        { Name = "Mist Silk Cape", Level = 10 },      -- CurePot+1   -- TODO: Keep for Cure
+        { Name = "Oneiro's Cape", Level = 75 },       -- MACC+4
+        { Name = "Black Cape +1", Level = 32 },       -- INT+3
+        { Name = "Cotton Cape", Level = 18 },         -- INT+1
+        { Name = "Mist Silk Cape", Level = 10 },
     },
     Waist = {
+        { Name = "Salire Belt", Level = 75 },         -- MACC+4 MAB+4
+        { Name = "Penitent's Rope", Level = 60 },     -- INT+5                 Enm-3
+            -- Wish: Lv.50 Ocean Stone [INT+3]
+            -- Wish: Lv.41 Reverend Sash [INT+2]
+            -- Wish: Lv.28 Shaman's Belt [INT+1]
         { Name = "Silver Obi", Level = 20 },          -- SIRD-8
+        { Name = "Friar's Rope", Level = 14 },
+    },
+    Legs  = {
+        { Name = "Morrigan's Slops", Level = 75 },    -- INT+10  Enmity-2
+        { Name = "Seer's Slacks", Level = 29 },       -- INT+1  MACC+2
+    },
+    Feet  = {
+        { Name = "Custom M Boots", Level = 29 },      -- INT+3
+        { Name = "Garrison Boots +1", Level = 20 },   -- INT+2          MND+2
     },
 };
 

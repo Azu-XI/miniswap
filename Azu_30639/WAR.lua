@@ -157,7 +157,7 @@ sets.Resting_Default_Priority = {
 -- Goal: Enmity+
 sets.JA_Provoke_Priority = {
     Head  = {
-        { Name = "Warrior's Mask", Level = 73 },    -- Enm+1
+        { Name = "Hydra Salade", Level = 70 },        -- Enm+7
             -- Wish: Lv.1 Cache-nez [Enm+2]
     },
     Body  = {

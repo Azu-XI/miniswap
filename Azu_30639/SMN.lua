@@ -6,7 +6,7 @@ sets.LockStyle = {
     Head  = "Summoner's Horn",
     Body  = "Otokogimi Yukata",  -- Try Mariner's Tunica {Fishing Ventures}
     Hands = "Smn. Bracers +1",
-    Legs  = "Summoner's Spats",
+    Legs  = "Smn. Spats +1",
     Feet  = "Summoner's Pgch.",
 };
 
@@ -216,8 +216,8 @@ local bloodPact = {
     },
     Legs  = {
         { Name = "Chironic Hose", Level = 75 },       -- BP-2 BloodBoon+3
-            -- Wish: Smn. Spats +1 [BP-2 (Aug) BloodBoon+8]
-        { Name = "Summoner's Spats", Level = 71 },    -- BP-2
+            -- Wish: Aug: BloodBoon+8
+        { Name = "Smn. Spats +1", Level = 71 },    -- BP-2
     },
     Feet  = {
         { Name = "Summoner's Pgch.", Level = 73 },    -- BP-2

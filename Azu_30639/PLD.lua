@@ -21,6 +21,8 @@ sets.Engaged_Default_Priority = {
         "Happy Egg",
     },
     Head  = {
+        { Name = "Ares' Mask", Level = 75 },          -- HP+2% ACC+12 ATK+12 EVA-12 H+3 STP+3
+        { Name = "Hydra Salade", Level = 70 },        -- ACC+5 Enm+7
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
         { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
         { Name = "Emperor Hairpin", Level = 24 },
@@ -52,6 +54,7 @@ sets.Engaged_Default_Priority = {
     },
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
+        { Name = "Hydra Moufles", Level = 70 },       -- ACC+4 Enm+6
         { Name = "Raptor Gloves", Level = 48 },
         { Name = "Eisenhentzes", Level = 29 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
@@ -83,12 +86,15 @@ sets.Engaged_Default_Priority = {
         { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
+            -- Wish: Aug: ACC+8 ATK+8 
+        { Name = "Ares' Flanchard", Level = 75 },     -- HP+2% STR+6 DEX+6 DA+2
         { Name = "Raptor Trousers", Level = 48 },
         { Name = "Garrison Hose +1", Level = 20 },        -- STR+2 Haste+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Ares' Sollerets", Level = 75 },     -- HP+2% ACC+7 ATK+7 EVA-7 STR+4 STP+3
         { Name = "Raptor Ledelsens", Level = 48 },        -- Haste+2
         { Name = "Eisenschuhs", Level = 29 },
         { Name = "Greaves", Level = 24 },
@@ -127,6 +133,7 @@ sets.Resting_Default_Priority = {
 -- Goal: Enmity+
 sets.JA_Provoke_Priority = {
     Head  = {
+        { Name = "Hydra Salade", Level = 70 },        -- Enm+7
             -- Wish: Lv.1 Cache-nez [Enm+2]
     },
     Hands = {
@@ -152,6 +159,8 @@ sets.JA_Provoke_Priority = {
             -- Wish: Lv.43 Gothic Sabatons [Enm+2] {Behemoth's Dominion - Treasure Casket}
     },
 };
+
+sets.Midcast_Flash_Priority = sets.JA_Provoke_Priority;
 
 sets.WS_Default_Priority = {
     Head  = {
