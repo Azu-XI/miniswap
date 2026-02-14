@@ -546,7 +546,7 @@ sets.WS_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },           --                 ACC+1
     },
     Body = {
-        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
+        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10    ATK+3   DA+3  CritDmg+3
         { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
         { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
@@ -589,8 +589,7 @@ sets.WS_Exenterator = {
     Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
     Neck  = "Soil Gorget",                            -- fTP+0.1
-    Body  = "Kirin's Osode",                          -- AllStats+10
-        -- Wish: Kirin's Osode [AllStats+10 (Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
+    Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
     Hands = "Swift Gages",                            -- AGI+8          ATK+5   DA+2
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
@@ -607,8 +606,7 @@ sets.WS_MordantRime = {
     Ear1  = "Luminous Earring",                       --             ACC+3   ATK+4
     Ear2  = "Beastly Earring",                        -- CHR+2
     Neck  = "Timeless Ocarina",                       -- CHR+5               ATK+10  STR+5
-    Body  = "Kirin's Osode",                          -- AllStats+10
-        -- Wish: Kirin's Osode [AllStats+10 (Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
+    Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
     Hands = "Chl. Cuffs +1",                          -- CHR+10
     Ring1 = "Light Ring",                             -- CHR+5
     Ring2 = "Light Ring",                             -- CHR+5
@@ -622,7 +620,7 @@ sets.WS_MordantRime = {
 sets.WS_Requiescat = {
     Head  = "Brd. Roundlet +1",                       -- MND+6
     Neck  = "Soil Gorget",                            -- fTP+0.1
-    Body  = "Kirin's Osode",                          -- AllStats+10
+    Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
     Ear1  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
     Ring1 = "Tamas Ring",                             -- MND+5
     Waist = "Salire Belt",                            -- MND+5

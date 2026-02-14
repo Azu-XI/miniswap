@@ -150,7 +150,7 @@ sets.WS_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body = {
-        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
+        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10    ATK+3   DA+3  CritDmg+3
         { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
     },
     Hands = {

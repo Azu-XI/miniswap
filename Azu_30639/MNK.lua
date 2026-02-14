@@ -183,8 +183,9 @@ sets.JA_ChiBlast_Priority = {
     Neck  = {
         { Name = "Justice Badge", Level = 7 },        -- MND+3
     },
-    -- Body  = {},
-        -- Wish: Kirin's Osode [MND+10]
+    Body  = {
+        { Name = "Kirin's Osode", Level = 75 },       -- MND+10
+    },
     Hands = {
         { Name = "Temple Gloves", Level = 54 },       -- Enhance Boost Effect (Shouldn't be needed here no?)
         { Name = "Zealot's Mitts", Level = 54 },      -- MND+3
@@ -260,8 +261,7 @@ sets.WS_ShijinSpiral = {
     Neck  = "Peacock Charm",                          -- ACC+10
         -- Wish: Flame/Light/Fotia Gorget [WSAcc+10 WSD+10%]
         -- Wish: Ancient Torque [DEX+4 ACC+9]
-    Body  = "Kirin's Osode",                          -- DEX+10
-        -- Wish: Kirin's Osode [(Aug@SuzakuScrap) DA+3 CritDmg+3 ACC+5 ATK+5]
+    Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
         -- Wish: High: Usukane Haramaki [DEX+8 ACC+12 (Aug) DA+3]
     Hands = "Shinobi Tekko",                          -- ACC+8  ATK+8
         -- Wish: Hachiryu Kote

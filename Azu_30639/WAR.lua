@@ -69,7 +69,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
-        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
+        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10    ATK+3   DA+3  CritDmg+3
         { Name = "Scorpion Harness", Level = 57 },    -- ACC+10  EVA+10
         { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Eisenbrust", Level = 29 },
@@ -221,7 +221,7 @@ sets.WS_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body = {
-        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10
+        { Name = "Kirin's Osode", Level = 75 },       -- AllStats+10    ATK+3   DA+3  CritDmg+3
         { Name = "Scorpion Harness", Level = 57 },    --                 ACC+10
     },
     Hands = {
@@ -268,7 +268,7 @@ sets.WS_Default_Priority = {
 
 --> Requiescat: 4 hits, 73% MND, fTP replicating (Soil/Shadow Gorget)
 sets.WS_Requiescat = {
-    Body  = "Kirin's Osode",                          -- AllStats+10
+    Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Ear2  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
     Ring1 = "Tamas Ring",                             -- MND+5
