@@ -8,7 +8,7 @@ sets.Idle_Default_Priority = {
         "Maple Wand +1",
     },
     Sub   = {
-            -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
+            -- Wish: Lv75 Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1] {Leathercraft Lv.111}
         { Name = "Oneiros Grip", Level = 75 },        -- Regen +1
         { Name = "Neph. Grip", Level = 8 },           -- INT+1
         { Name = "remove", Level = 5 },               -- No shield with staff
@@ -105,6 +105,7 @@ sets.Midcast_Default_Priority = {
         "Maple Wand +1",
     },
     Sub   = {
+            -- Wish: Lv.70 Wizzan Grip [INT+2 ConserveMP+1] {Kuftal Casket}
         { Name = "Neph. Grip", Level = 8 },           -- INT+1
         { Name = "remove", Level = 5 },               -- No shield with staff
         "Kupo Shield",

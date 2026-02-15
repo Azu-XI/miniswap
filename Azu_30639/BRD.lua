@@ -109,7 +109,7 @@ sets.Idle_Default_Priority = {
         { Name = "Beestinger", Level = 7 },
     },
     Sub   = {
-            -- Wish: Lv75  Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1]
+            -- Wish: Lv75  Longbeard's Grip +0/1 [MDT-2/4 MEva+4/8 Refresh+0/1] {Leathercraft Lv.111}
         { Name = "Oneiros Grip", Level = 75 },        -- Regen +1
         { Name = "Neph. Grip", Level = 17 },
         "Kupo Shield",
