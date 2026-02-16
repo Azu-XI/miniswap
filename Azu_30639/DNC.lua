@@ -7,7 +7,6 @@ sets.LockStyle = {
     Head  = "Dancer's Tiara",
     Body  = "Freya's Jerkin",
     Hands = "Switft Gages",
-    -- Legs  = "Skadi's Chausses",
     Legs  = "Sipahi Zerehs",
     -- Legs  = "Barone Cosciales", ???
     -- Legs  = "Pahluwan Seraweels", ???

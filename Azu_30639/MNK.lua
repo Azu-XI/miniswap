@@ -97,8 +97,7 @@ sets.Engaged_Default_Priority = {
         "White Belt",                                 -- STR+1
     },
     Legs  = {
-            -- Wish: Byakko's Haidate [DEX+5 H+5 (Aug) STP+0~5]
-        { Name = "Naga Hakama", Level = 75 },         -- H+5
+        { Name = "Byakko's Haidate", Level = 75 },    -- STP+3 H+5  -- Wish: HQ Augments
         { Name = "Shinobi Hakama", Level = 49 },      -- ATK+8 H+2 Counter+3
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Slacks +1", Level = 8 },
@@ -270,10 +269,7 @@ sets.WS_ShijinSpiral = {
     Back  = "Cuchulain's Mantle",                     -- ACC+5        DEX+4
     Waist = "Virtuoso Belt",                          -- ACC+12 ATK+4
         -- Wish: Warwolf Belt [DEX+5 STR+5] If enough ACC elsewhere?
-    Legs  = "Garrison Hose +1",                       --              DEX+2
-        -- Wish: High: Byakko's Haidate [DEX+15]
-        -- Wish: Med: Usukane Hizayoroi [DEX+5 ATK+10 (Aug) ACC+5]
-        -- Wish: Med: Acrobat's Breeches [DEX+2 TA+2 (Aug) DEX+5 ATK+5]
+    Legs  = "Byakko's Haidate",                       --              DEX+15
     Feet  = "Melee Gaiters",                           --             DEX+4
         -- Wish: Melee Gaiters +1 [DEX+5 (Aug) ACC+8]
 }

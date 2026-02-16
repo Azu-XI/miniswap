@@ -26,7 +26,7 @@ sets.Engaged_Default_Priority = {
         "Kupo Shield",
     },
     Head  = {
-        { Name = "Pursuer's Beret", Level = 75 },
+        { Name = "Pursuer's Beret", Level = 75 },     -- H+5 DaggerSkill+5 DA+3
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
         { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
         { Name = "Emperor Hairpin", Level = 24 },
@@ -48,7 +48,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
-        { Name = "Pursuer's Doublet", Level = 75 },
+        { Name = "Pursuer's Doublet", Level = 75 },   -- ACC+12 ATK+12 DT-5 DA+?
         { Name = "Scorpion Harness", Level = 57 },    -- ACC+10 EVA+10
         { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
@@ -74,7 +74,7 @@ sets.Engaged_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Bard's Cape", Level = 70 },         -- ACC+7 EVA+7
+        { Name = "Bard's Cape", Level = 70 },         -- ACC+7 EVA+7 STP+5 ATK+3
         { Name = "Exile's Cloak", Level = 50 },       --        STR+4  ATK+3
         { Name = "Tundra Mantle", Level = 39 },
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
@@ -88,15 +88,15 @@ sets.Engaged_Default_Priority = {
         { Name = "Heko Obi", Level = 8 },             -- AGI+3         ACC+3
     },
     Legs  = {
-        { Name = "Pursuer's Pants", Level = 75 },
-        { Name = "White Slacks", Level = 50 },        --       Haste+3       Regen +1
-        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
+        { Name = "Pursuer's Pants", Level = 75 },     -- STP+5 H+5 DaggerSkill+8 Fencer
+        { Name = "White Slacks", Level = 50 },        --       H+3       Regen +1
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Pursuer's Gaiters", Level = 75 },
-        { Name = "Raptor Ledelsens", Level = 48 },    -- Haste+2
+        { Name = "Pursuer's Gaiters", Level = 75 },   -- H+3
+        { Name = "Raptor Ledelsens", Level = 48 },    -- H+2
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
     },
@@ -190,7 +190,7 @@ sets.Idle_Default_Priority = {
     Legs  = {
             -- Wish: Brd. Cannions +1 [(Aug) DT-4]
             -- Wish: Sha'ir Seraweels +1 [(Aug) PDT-4]
-        { Name = "Marduk's Shalwar", Level = 75 },
+        { Name = "Byakko's Haidate", Level = 75 },    -- Thunder+50
         { Name = "White Slacks", Level = 50 },        --              Regen +1
         { Name = "Custom Slacks", Level = 31 },       -- MND+3 CHR+1
         { Name = "Garrison Hose +1", Level = 20 },
@@ -577,6 +577,9 @@ sets.WS_Default_Priority = {
         {Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4
         {Name = "Virtuoso Belt", Level = 54 },        --                 ACC+12  ATK+4
         {Name = "Lizard Belt +1", Level = 17 },       -- DEX+2
+    },
+    Legs  = {
+        { Name = "Byakko's Haidate", Level = 75 },    -- DEX+15
     },
     Feet  = {
         { Name = "Leaping Boots", Level = 7 },        -- DEX+3 AGI+3

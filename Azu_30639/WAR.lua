@@ -2,10 +2,12 @@ local profile = gFunc.LoadFile('common/miniswap.lua');
 local sets = {};
 
 sets.LockStyle = {
+    Main  = "Juggernaut",
     Head  = "remove",
     Body  = "Kirin's Osode",
     Hands = "Switft Gages",
-    Legs  = "Sipahi Zerehs",
+    -- Legs  = "Sipahi Zerehs",
+    Legs = "Byakko's Haidate",
     Feet  = "Suzaku's Sune-Ate",
 };
 

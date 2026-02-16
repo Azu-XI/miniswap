@@ -85,7 +85,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
-            -- Wish: Byakko's Haidate [DEX+5 H+5 (Aug) STP+0~5]
+        { Name = "Byakko's Haidate", Level = 75 },    -- STP+3 H+5  -- Wish: HQ Augments
         { Name = "Shinobi Hakama", Level = 49 },
         -- { Name = "Jujitsu Sitabaki", Level = 37 },  -- Not worth against garrison hose if not augmented, and even then?
         { Name = "Garrison Hose +1", Level = 20 },   -- STR+2 Haste+2
