@@ -89,7 +89,7 @@ sets.Idle_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
-        { Name = "Chironic Hose", Level = 75 }, 
+        { Name = "Smn. Spats +1", Level = 75 },
         { Name = "White Slacks", Level = 50 },        -- Haste+3 Regen +1
         { Name = "Custom Slacks", Level = 31 },       -- MP+32
         { Name = "Garrison Hose +1", Level = 20 },    -- Haste+2
@@ -215,9 +215,8 @@ local bloodPact = {
             -- Wish: Lv.70 Summoner's Cape [(Aug) BP-2]
     },
     Legs  = {
+            -- Wish: Lv.75 Smn. Spats +1 [BP-2 (Aug) BloodBoon+8]
         { Name = "Chironic Hose", Level = 75 },       -- BP-2 BloodBoon+3
-            -- Wish: Aug: BloodBoon+8
-        { Name = "Smn. Spats +1", Level = 71 },    -- BP-2
     },
     Feet  = {
         { Name = "Summoner's Pgch.", Level = 73 },    -- BP-2
