@@ -150,7 +150,7 @@ sets.Midcast_Default_Priority = {
         "Windurstian Ring",                           -- INT+1
     },
     Ring2 = {
-        { Name = "Galdr Ring", Level = 30 },          -- INT+6  MAB+1
+        { Name = "Galdr Ring", Level = 75 },          -- INT+6  MAB+1
         { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
     },
