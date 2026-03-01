@@ -55,7 +55,8 @@ sets.Engaged_Default_Priority = {
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Hydra Moufles", Level = 70 },       -- ACC+4 Enm+6
-        { Name = "Raptor Gloves", Level = 48 },
+        { Name = "Mythril Gauntlets", Level = 49 },   -- MP+15 STR+4 ACC+9 H+2
+        { Name = "Gothic Gauntlets", Level = 43 },    -- STR+3 Enm+2
         { Name = "Eisenhentzes", Level = 29 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },
