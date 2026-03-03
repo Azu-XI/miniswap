@@ -117,6 +117,7 @@ local petDefaultPriority = {
     },
     Head  = {
             -- Wish: Lv.74 Evoker's Horn +1 [(Aug) PetPDT-4 Refresh+1]
+        { Name = "Summoner's Horn", Level = 75 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2
     },
@@ -124,7 +125,7 @@ local petDefaultPriority = {
         -- { Name = "Wilderness Earring", Level = 45 },  -- PetACC+1  -- STORED
     },
     Body  = {
-        { Name = "Chironic Doublet", Level = 75 },    -- PetDT-5  Refresh+1  DT-5  
+        { Name = "Chironic Doublet", Level = 75 },    -- PetDT-5  Refresh+1  DT-5
             -- Wish: Lv.50 Penance Robe [PerpCost-2]
             -- Wish: Lv.50 Austere Robe [PerpCost-1]
     },
