@@ -79,7 +79,7 @@ sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Dew Silk Cape +1", Level = 75 },
+        { Name = "Summoner's Cape", Level = 75 },
         { Name = "Tundra Mantle", Level = 39 },
         { Name = "Mist Silk Cape", Level = 10 },
     },
@@ -213,7 +213,7 @@ local bloodPact = {
             -- Wish: Lv.75 Eidolon Ring [BPII-5]
     },
     Back  = {
-            -- Wish: Lv.70 Summoner's Cape [(Aug) BP-2]
+        { Name = "Summoner's Cape", Level = 75 },     -- BP-2
     },
     Waist = {
             -- Wish: Lv.70 Covenant Belt [BloodBoon+3 (Aug) BP-2] {DI}
