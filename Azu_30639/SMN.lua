@@ -3,11 +3,11 @@ local sets = {};
 
 sets.LockStyle = {
     Main  = "Baqil Staff",
-    Head  = "Summoner's Horn",
+    Head  = "Smn. Horn +1",
     Body  = "Otokogimi Yukata",  -- Try Mariner's Tunica {Fishing Ventures}
     Hands = "Smn. Bracers +1",
     Legs  = "Smn. Spats +1",
-    Feet  = "Summoner's Pgch.",
+    Feet  = "Smn. Pigaches +1",
 };
 
 sets.Idle_Default_Priority = {
@@ -31,7 +31,7 @@ sets.Idle_Default_Priority = {
     },
     Head  = {
             -- Wish: Lv.74 Evoker's Horn +1 [(Aug) Refresh+1]
-        { Name = "Summoner's Horn", Level = 75 },
+        { Name = "Smn. Horn +1", Level = 75 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
@@ -97,7 +97,7 @@ sets.Idle_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Summoner's Pgch.", Level = 73 },
+        { Name = "Smn. Pigaches +1", Level = 75 },
         { Name = "Custom M Boots", Level = 29 },      -- MP+12       Eva+5
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2 MND+2
         { Name = "Power Sandals", Level = 18 },       -- VIT+3
@@ -116,8 +116,8 @@ local petDefaultPriority = {
         { Name = "Soothing Sachet", Level = 70 },     -- PetACC+5 PetAtk+5 PetDT-3
     },
     Head  = {
-            -- Wish: Lv.74 Evoker's Horn +1 [(Aug) PetPDT-4 Refresh+1]
-        { Name = "Summoner's Horn", Level = 75 },
+            -- Wish: Lv.74 Smn. Horn +1 [(Aug) PetPDT-4 Refresh+1]
+        { Name = "Smn. Horn +1", Level = 75 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2
     },
@@ -138,7 +138,7 @@ local petDefaultPriority = {
             -- Wish: Evoker's Ring [PerpCost-1]
     },
     Waist = {
-        { Name = "Mujin Obi", Level = 75 },           -- PetATK+?
+            -- Wish: Lv.70 Covenant Belt [PetACC+10] {DI}
         { Name = "Silver Obi", Level = 20 },          -- PetATK+1
     },
     Legs  = {
@@ -146,7 +146,7 @@ local petDefaultPriority = {
         { Name = "Evoker's Spats", Level = 52 },      -- PetACC+10
     },
     Feet  = {
-            -- Wish: Lv.75 Marduk's Crackows [(Aug) PetDT-4]
+        { Name = "Smn. Pigaches +1", Level = 75 },    -- PetATK+7 PetDA+3 PetCrit+3
     },
 };
 sets.Idle_Pet_Default_Priority = petDefaultPriority;
@@ -180,7 +180,7 @@ sets.Engaged_Pet_Day_Priority = petMatchesDayPriority;
 
 local petMatchesWeatherPriority = {
     Head  = {
-        { Name = "Summoner's Horn", Level = 75 },     -- PerpCost-3
+        { Name = "Smn. Horn +1", Level = 75 },     -- PerpCost-3
     },
 };
 sets.Idle_Pet_Weather_Priority = petMatchesWeatherPriority;
@@ -192,7 +192,7 @@ local bloodPact = {
         { Name = "Soothing Sachet", Level = 70 },     --       BPII-2
     },
     Head  = {
-        { Name = "Summoner's Horn", Level = 75 },     -- BP-3
+        { Name = "Smn. Horn +1", Level = 75 },        -- BP-3
             -- Wish: Lv.50 Penance Hat [BP-3]
             -- Wish: Lv.50 Austere Hat [BP-2]
     },
@@ -215,12 +215,15 @@ local bloodPact = {
     Back  = {
             -- Wish: Lv.70 Summoner's Cape [(Aug) BP-2]
     },
+    Waist = {
+            -- Wish: Lv.70 Covenant Belt [BloodBoon+3 (Aug) BP-2] {DI}
+    },
     Legs  = {
             -- Wish: Lv.75 Smn. Spats +1 [BP-2 (Aug) BloodBoon+8]
         { Name = "Chironic Hose", Level = 75 },       -- BP-2 BloodBoon+3
     },
     Feet  = {
-        { Name = "Summoner's Pgch.", Level = 73 },    -- BP-2
+        { Name = "Smn. Pigaches +1", Level = 75 },    -- BP-2
     }
 };
 sets.JA_BloodPactRage_Priority = bloodPact;
@@ -282,9 +285,6 @@ sets.Midcast_HealingMagic_Priority = {
     Ear2 = {
         { Name = "Roundel Earring", Level = 73 },     -- CurePot+5%
     },
-    Head  = {
-            -- Wish: Sheikh Turban [(Aug) CurePot+5]
-    },
     Neck  = {
         { Name = "Fylgja Torque +1", Level = 75 },    -- CurePot+3  Enm-2
     },
@@ -295,13 +295,8 @@ sets.Midcast_HealingMagic_Priority = {
     Waist = {
         { Name = "Pythia Sash", Level = 75 },         --                   ConserveMP+4
     },
-    Legs  = {
-            -- Wish: Brd. Cannions +1 [(Aug) CurePot+5]
-    },
     Feet  = {
-            -- Wish: Lv.75 Smn. Pigaches+1 [(Aug) CurePot+6]
-            -- Wish: Zenith Pumps+0/1 [(Aug) CurePot+5/6]
-            -- Wish: Medium's Sabots [CurePot+4] {DomainInvasion}
+        { Name = "Smn. Pigaches +1", Level = 75 },    -- CurePot+6
     };
 }
 
@@ -372,7 +367,7 @@ sets.Precast_Default_Priority = {
             -- Wish: Hierarch's Mantle [(Aug) FC+2]
     },
     Feet  = {
-            -- Wish: Lv.75 Smn. Pigaches [(Aug) FC+5]
+        { Name = "Smn. Pigaches +1", Level = 75 },    -- FC+5
     },
 }
 
