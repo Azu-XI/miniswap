@@ -59,6 +59,12 @@ sets.LockStyle = {
     Feet  = "Leaping Boots",
 };
 
+sets.Midcast_Stoneskin_Priority = {
+    Neck  = {
+        { Name = "Stone Gorget", Level = 39 },        -- StoneskinAbsorbHP+30
+    }
+};
+
 sets.Provenance = {
     Ring2 = "Provenance Ring",
 };

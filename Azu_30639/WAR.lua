@@ -100,6 +100,7 @@ sets.Engaged_Default_Priority = {
     },
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4                 STR+4  DEX+4
+        { Name = "Amemet Mantle +1", Level = 61 },    --                ATK+15 STR+2
         { Name = "Exile's Cloak", Level = 50 },       --                ATK+3  STR+4
         { Name = "Nomad's Mantle", Level = 24 },      --         EVA+3                       AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   --         EVA+3
@@ -229,38 +230,39 @@ sets.WS_Default_Priority = {
     },
     Hands = {
             -- Wish: Lv.70 Alkyoneus's Brc. [STR+11]
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 DA+2 ATK+5
-        { Name = "Custom M Gloves", Level = 27 },     -- STR+3
+        { Name = "Swift Gages", Level = 75 },         --               ATK+5 DA+2 
+        { Name = "Custom M Gloves", Level = 27 },     --       STR+3
         { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2
     },
     Ring1 = {
-        { Name = "Strigoi Ring", Level = 75 },        -- STR+6           ATK+3
-        { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
-        { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
-        { Name = "Balance Ring", Level = 14 },        -- DEX+2
+        { Name = "Strigoi Ring", Level = 75 },        --       STR+6   ATK+3
+        { Name = "Toreador's Ring", Level = 57 },     -- ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       -- ACC+4
+        { Name = "Balance Ring", Level = 14 },        --                       DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {
-        { Name = "Rajas Ring", Level = 30 },          -- STR+2~5                  DEX+2~5
-        { Name = "Balance Ring", Level = 14 },        -- DEX+2
+        { Name = "Rajas Ring", Level = 30 },          --       STR+2~5         DEX+2~5
+        { Name = "Balance Ring", Level = 14 },        --                       DEX+2
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4                 STR+4  DEX+4
-        { Name = "Earth Mantle", Level = 40 },        -- STR+2
-        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
+        { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4  STR+4          DEX+4
+        { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15
+        { Name = "Earth Mantle", Level = 40 },        --        STR+2
+        { Name = "Lizard Mantle +1", Level = 17 },    --        STR+1
     },
     Waist = {
         { Name = "Warrior's Stone", Level = 70 },     -- ACC+7  STR+5
-        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
+        { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12        ATK+4
     },
     Legs  = {
-        { Name = "Ares' Flanchard", Level = 75 },     -- STR+6 DEX+6 DA+2
-        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2
+        { Name = "Ares' Flanchard", Level = 75 },     --        STR+6          DEX+6 DA+2
+        { Name = "Garrison Hose +1", Level = 20 },    --        STR+2
     },
     Feet  = {
-        { Name = "Ares' Sollerets", Level = 75 },     -- ACC+7 ATK+7 STR+4
-        { Name = "Marine M Boots", Level = 62},       -- STR+3 DEX+3
+        { Name = "Ares' Sollerets", Level = 75 },     -- ACC+7  STR+4  ATK+7 
+        { Name = "Marine M Boots", Level = 62},       --        STR+3 DEX+3
     },
 };
 

@@ -79,7 +79,8 @@ sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Summoner's Cape", Level = 75 },
+            -- Wish: Lv.68 Umbra Cape [PDT-6]
+        { Name = "Cheviot Cape", Level = 68 },        -- PDT-5 Dark+13
         { Name = "Tundra Mantle", Level = 39 },
         { Name = "Mist Silk Cape", Level = 10 },
     },
@@ -89,7 +90,7 @@ sets.Idle_Default_Priority = {
         { Name = "Friar's Rope", Level = 14 },
     },
     Legs  = {
-        { Name = "Smn. Spats +1", Level = 75 },
+        { Name = "Zenith Slacks +1", Level = 73 },
         { Name = "White Slacks", Level = 50 },        -- Haste+3 Regen +1
         { Name = "Custom Slacks", Level = 31 },       -- MP+32
         { Name = "Garrison Hose +1", Level = 20 },    -- Haste+2
@@ -385,6 +386,14 @@ sets.Precast_HealingMagic_Priority = {
     };
 }
 
+-- Goal: QuickSpell /!\ Only for spells where midcast doesn't matter /!\
+sets.Precast_Raise_Priority = {
+    Body  = {
+            -- Wish: Aug HQ QuickSpell+6
+        { Name = "Dalmatica", Level = 73 },           -- QuickSpell+3
+    },
+};
+
 sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
@@ -394,10 +403,27 @@ sets.Resting_Default_Priority = {
         { Name = "remove", Level = 51 },              -- No shield because of staff
         { Name = "Pelte", Level = 8 },                -- HMP+2
     },
+    Head  = {
+            -- Wish: Lv.74 Evoker's Horn +1 [(Aug) HMP+4 Refresh+1]
+    },
+        -- Ear1: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
+        -- Ear2: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
+        -- Neck: Wish: Lv.50 Beak Necklace +1 [HMP+2]
+    Body  = {
+            -- Wish: Lv.74 Evoker's Doublet +1 [HMP+5 (Aug) HMP+3]
+            -- Wish: Lv.72 Mahatma Houppelande [HMP+6]
+    },
     Hands = {
+            -- Wish: Lv.72 Oracle's Gloves [HMP+2]
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
+        -- Ring1: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
+        -- Ring2: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
+        -- Back: Wish: Lv.68 Blue Cape [(Aug) HMP+2]
+        -- Waist: Wish: Lv.40 Qiqirn Sash +1 [HMP+3]
+        -- Legs: Wish: Lv.72 Oracle's Braconi [HMP+2]
     Feet  = {
+            -- Wish: Lv.70 Numerist Pumps [HMP+3]
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };

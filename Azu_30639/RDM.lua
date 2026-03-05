@@ -59,6 +59,7 @@ sets.Engaged_Default_Priority = {
     },
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4  STR+4  DEX+4
+        { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15
         { Name = "Exile's Cloak", Level = 50 },       --        STR+4  ATK+3
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
@@ -97,6 +98,7 @@ sets.Idle_Default_Priority = {
         "Happy Egg",
     },
     Head  = {
+        { Name = "Erudite Cap", Level = 73 },
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Gambler's Chapeau", Level = 50 },   -- MP+20 INT+3
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
@@ -119,6 +121,7 @@ sets.Idle_Default_Priority = {
         { Name = "Justice Badge", Level = 7 },
     },
     Body  = {
+        { Name = "Dalmatica", Level = 73 },           -- Refresh+1 MDB+5 ResistPara+2
         { Name = "Vermillion Cloak", Level = 59 },       -- Refresh+1
         { Name = "Garrison Tunica +1", Level = 20 },     -- Refresh+1 while below lv.50
         { Name = "Druid's Robe", Level = 8 },
@@ -145,7 +148,8 @@ sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Dew Silk Cape +1", Level = 75 },
+            -- Wish: Lv.68 Umbra Cape [PDT-6]
+        { Name = "Cheviot Cape", Level = 68 },        -- PDT-5 Dark+13
         { Name = "Tundra Mantle", Level = 39 },       -- MP+5 MND+2
         { Name = "Mist Silk Cape", Level = 10 },
     },
@@ -156,6 +160,7 @@ sets.Idle_Default_Priority = {
     },
     Legs  = {
         { Name = "Morrigan's Slops", Level = 75 },    -- INT+10  Enmity-2
+        { Name = "Zenith Slacks +1", Level = 73 },
         { Name = "White Slacks", Level = 50 },        -- Haste+3 Regen +1
         { Name = "Garrison Hose +1", Level = 20 },    -- Haste+2
         { Name = "Lth. Trousers +1", Level = 7 },
@@ -498,6 +503,14 @@ sets.Precast_HealingMagic_Priority = {
     };
 };
 
+-- Goal: QuickSpell /!\ Only for spells where midcast doesn't matter /!\
+sets.Precast_Raise_Priority = {
+    Body  = {
+            -- Wish: Aug HQ QuickSpell+6
+        { Name = "Dalmatica", Level = 73 },           -- QuickSpell+3
+    },
+};
+
 sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
@@ -507,10 +520,22 @@ sets.Resting_Default_Priority = {
         { Name = "remove", Level = 51 },              -- No shield because of staff
         { Name = "Pelte", Level = 8 },                -- HMP+2
     },
+        -- Ear1: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
+        -- Ear2: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
+        -- Neck: Wish: Lv.50 Beak Necklace +1 [HMP+2]
+        -- Body: Wish: Lv.72 Mahatma Houppelande [HMP+6]
+    Waist = {
+            -- Wish: Lv.70 Duelist's Belt [HMP+4]
+            -- Wish: Lv.40 Qiqirn Sash +1 [HMP+3] 
+    },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
+        -- Ring1: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
+        -- Ring2: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
     Feet  = {
+            -- Wish: Lv.74 Warlock's Boots +1 [(Aug) HMP+3]
+            -- Wish: Lv.70 Numerist Pumps [HMP+3]
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };

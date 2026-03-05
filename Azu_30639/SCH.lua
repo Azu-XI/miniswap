@@ -69,6 +69,8 @@ sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
+            -- Wish: Lv.68 Umbra Cape [PDT-6]
+        { Name = "Cheviot Cape", Level = 68 },        -- PDT-5 Dark+13
         { Name = "Black Cape +1", Level = 32 },       -- INT+3
         { Name = "Cotton Cape", Level = 18 },         -- INT+1
         { Name = "Mist Silk Cape", Level = 10 },
@@ -273,6 +275,8 @@ sets.Precast_HealingMagic_Priority = {
 };
 
 sets.Resting_Default_Priority = {
+        -- Ear1: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
+        -- Ear2: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
         { Name = "Pilgrim's Wand", Level = 10 },      -- HMP+3
@@ -281,10 +285,18 @@ sets.Resting_Default_Priority = {
         { Name = "remove", Level = 51 },              -- No shield because of staff
         { Name = "Pelte", Level = 8 },                -- HMP+2
     },
+        -- Neck: Wish: Lv.50 Beak Necklace +1 [HMP+2]
+        -- Body: Wish: Lv.72 Mahatma Houppelande [HMP+6]
     Hands = {
+        -- Wish: Lv.74 Scholar's Bracers +1 [(Aug) HMP+3 Refresh+1]
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
+        -- Ring1: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
+        -- Ring2: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
+        -- Back: Wish: Lv.68 Blue Cape [(Aug) HMP+2]
+        -- Waist: Wish: Lv.40 Qiqirn Sash +1 [HMP+3]
     Feet  = {
+            -- Wish: Lv.70 Numerist Pumps [HMP+3]
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };

@@ -88,6 +88,7 @@ sets.Engaged_Default_Priority = {
     },
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4                 STR+4  DEX+4
+        { Name = "Amemet Mantle +1", Level = 61 },    --                ATK+15 STR+2
         { Name = "Exile's Cloak", Level = 50 },       --                ATK+3  STR+4
         { Name = "Nomad's Mantle", Level = 24 },      --         EVA+3                       AGI+1  DW+1
         { Name = "Traveler's Mantle", Level = 12 },   --         EVA+3
@@ -209,11 +210,11 @@ sets.WS_Default_Priority = {
     },
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },  -- STR+4        ACC+4        DEX+4
+        { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15  RATK+15
         { Name = "Earth Mantle", Level = 40 },        -- STR+2
         { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
-            -- Wish: Lv.70 Warrior's Stone [STR+5 ACC+7]
         { Name = "Virtuoso Belt", Level = 54 },       --              ACC+12 ATK+4
     },
     Legs  = {

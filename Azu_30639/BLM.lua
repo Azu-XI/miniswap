@@ -57,7 +57,7 @@ sets.Idle_Default_Priority = {
         { Name = "Justice Badge", Level = 7 },        --        MND+3
     },
     Body  = {
-        { Name = "Sorcerer's Coat", Level = 74 },     -- Refresh+1
+        { Name = "Dalmatica", Level = 73 },           -- Refresh+1 MDB+5 ResistPara+2
         { Name = "Vermillion Cloak", Level = 59 },    -- Refresh+1
         { Name = "Garrison Tunica +1", Level = 20 },  -- Refresh+1 while below lv.50
         { Name = "Druid's Robe", Level = 8 },
@@ -82,7 +82,8 @@ sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Oneiro's Cape", Level = 75 },       -- MACC+4
+            -- Wish: Lv.68 Umbra Cape [PDT-6]
+        { Name = "Cheviot Cape", Level = 68 },        -- PDT-5 Dark+13
         { Name = "Black Cape +1", Level = 32 },       -- INT+3
         { Name = "Cotton Cape", Level = 18 },         -- INT+1
         { Name = "Mist Silk Cape", Level = 10 },
@@ -98,6 +99,7 @@ sets.Idle_Default_Priority = {
     },
     Legs  = {
         { Name = "Morrigan's Slops", Level = 75 },
+        { Name = "Zenith Slacks +1", Level = 73 },
         { Name = "White Slacks", Level = 50 },        -- Regen +1
         { Name = "Seer's Slacks", Level = 29 },
         { Name = "Garrison Hose +1", Level = 20 },
@@ -447,6 +449,14 @@ sets.Precast_HealingMagic_Priority = {
     };
 };
 
+-- Goal: QuickSpell /!\ Only for spells where midcast doesn't matter /!\
+sets.Precast_Raise_Priority = {
+    Body  = {
+            -- Wish: Aug HQ QuickSpell+6
+        { Name = "Dalmatica", Level = 73 },           -- QuickSpell+3
+    },
+};
+
 sets.Resting_Default_Priority = {
     Main  = {
         { Name = "Chatoyant Staff", Level = 51 },     -- HMP+10
@@ -457,12 +467,24 @@ sets.Resting_Default_Priority = {
         { Name = "Pelte", Level = 8 },                -- HMP+2
     },
     Head  = {
-        { Name = "Wzd. Petasos +1", Level = 74 },     -- HMP+4
+        { Name = "Wzd. Petasos +1", Level = 74 },     -- HMP+4 Refresh+1
     },
+        -- Ear1: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
+        -- Ear2: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
+        -- Neck: Wish: Lv.50 Beak Necklace +1 [HMP+2]
+        -- Body: Wish: Lv.72 Mahatma Houppelande [HMP+6]
     Hands = {
+            -- Wish: Lv.72 Oracle's Gloves [HMP+2] 
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
+        -- Ring1: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
+        -- Ring2: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
+        -- Back: Wish: Lv.68 Blue Cape [(Aug) HMP+2]
+        -- Waist: Wish: Lv.40 Qiqirn Sash +1 [HMP+3]
+        -- Legs: Wish: Lv.72 Oracle's Braconi [HMP+2]
     Feet  = {
+            -- Wish: Lv.74 Wizard's Sabots +1 [HMP+1 (Aug) HMP+3]
+            -- Wish: Lv.70 Numerist Pumps [HMP+3]
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };

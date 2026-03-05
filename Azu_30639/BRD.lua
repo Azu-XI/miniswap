@@ -75,6 +75,7 @@ sets.Engaged_Default_Priority = {
     },
     Back  = {
         { Name = "Bard's Cape", Level = 70 },         -- ACC+7 EVA+7 STP+5 ATK+3
+        { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15
         { Name = "Exile's Cloak", Level = 50 },       --        STR+4  ATK+3
         { Name = "Tundra Mantle", Level = 39 },
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
@@ -144,7 +145,8 @@ sets.Idle_Default_Priority = {
         { Name = "Justice Badge", Level = 7 },        -- MND+3
     },
     Body  = {
-        { Name = "Pursuer's Doublet", Level = 75 },
+        -- { Name = "Pursuer's Doublet", Level = 75 }, -- TODO: Add to a new Oh-Shit set for DT-5
+        { Name = "Dalmatica", Level = 73 },           -- Refresh+1 MDB+5 ResistPara+2
         { Name = "Vermillion Cloak", Level = 59 },    -- Refresh+1
         { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- Refresh+1 while below lv.50
@@ -173,8 +175,8 @@ sets.Idle_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        { Name = "Bard's Cape", Level = 70 },         -- ACC+7 EVA+7
             -- Wish: Lv.68 Umbra Cape [PDT-6]
+        { Name = "Cheviot Cape", Level = 68 },        -- PDT-5 Dark+13
         { Name = "Jester's Cape +1", Level = 54 },    -- CHR+10
         { Name = "Tundra Mantle", Level = 39 },       -- CHR+2 MND+2
         { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
@@ -493,6 +495,14 @@ sets.Precast_HealingMagic_Priority = {
     };
 };
 
+-- Goal: QuickSpell /!\ Only for spells where midcast doesn't matter /!\
+sets.Precast_Raise_Priority = {
+    Body  = {
+            -- Wish: Aug HQ QuickSpell+6
+        { Name = "Dalmatica", Level = 73 },           -- QuickSpell+3
+    },
+};
+
 -- Goal: Max FastCast 80% ; Song Spellcasting
 sets.Precast_Singing_Priority = {
     Head  = {
@@ -506,7 +516,8 @@ sets.Precast_Singing_Priority = {
         { Name = "Minstrel's Coat", Level = 63 },     --       SongCast-5
     },
     Legs  = {
-            -- Wish: Zenith Slacks +1 [(Aug) SongCast-1~6]
+            -- Wish: Aug HQ SongCast-6
+        { Name = "Zenith Slacks +1", Level = 73 },    --       SongCast-4
     },
     Feet  = {
         { Name = "Pursuer's Gaiters", Level = 75 },   --       SongCast-3
@@ -520,10 +531,22 @@ sets.Resting_Default_Priority = {
     Sub   = {
         { Name = "remove", Level = 51 },              -- No shield because of staff
     },
+        -- Ear1: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
+        -- Ear2: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
+        -- Neck: Wish: Lv.50 Beak Necklace +1 [HMP+2]
+        -- Body: Wish: Lv.72 Mahatma Houppelande [HMP+6]
     Hands = {
+            -- Wish: Lv.72 Oracle's Gloves [HMP+2]
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
+        -- Ring1: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
+        -- Ring2: Wish: Lv.75 Fenrir Ring +0/1 [HMP+3/5]
+        -- Back: Wish: Lv.68 Blue Cape [(Aug) HMP+2]
+        -- Waist: Wish: Lv.40 Qiqirn Sash +1 [HMP+3]
+        -- Legs: Wish: Lv.72 Oracle's Braconi [HMP+2]
     Feet  = {
+            -- Wish: Lv.74 Choral Slippers +1 [HMP+2 (Aug) HMP+5]
+            -- Wish: Lv.70 Numerist Pumps [HMP+3]
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };
@@ -569,14 +592,15 @@ sets.WS_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
-        {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4           ACC+4
-        {Name = "Exile's Cloak", Level = 50 },        --                         ATK+3  STR+4
-        {Name = "Lizard Mantle +1", Level = 17 },     -- STR+1
+        { Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4           ACC+4
+        { Name = "Amemet Mantle +1", Level = 61 },    --        ATK+15 STR+2
+        { Name = "Exile's Cloak", Level = 50 },        --                         ATK+3  STR+4
+        { Name = "Lizard Mantle +1", Level = 17 },     -- STR+1
     },
     Waist = {
-        {Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4
-        {Name = "Virtuoso Belt", Level = 54 },        --                 ACC+12  ATK+4
-        {Name = "Lizard Belt +1", Level = 17 },       -- DEX+2
+        { Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4
+        { Name = "Virtuoso Belt", Level = 54 },        --                 ACC+12  ATK+4
+        { Name = "Lizard Belt +1", Level = 17 },       -- DEX+2
     },
     Legs  = {
         { Name = "Byakko's Haidate", Level = 75 },    -- DEX+15
