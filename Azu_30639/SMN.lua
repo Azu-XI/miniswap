@@ -30,8 +30,7 @@ sets.Idle_Default_Priority = {
         "Happy Egg",
     },
     Head  = {
-            -- Wish: Lv.74 Evoker's Horn +1 [(Aug) Refresh+1]
-        { Name = "Smn. Horn +1", Level = 75 },
+        { Name = "Evk. Horn +1", Level = 74 },        -- Refresh+1
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
@@ -138,13 +137,18 @@ local petDefaultPriority = {
     Ring2 = {
             -- Wish: Evoker's Ring [PerpCost-1]
     },
+    Back  = {
+            -- Wish: Lv.75 Aife's Mantle [PetAtk+10]
+            -- Wish: Lv.30 Fidelity Mantle [PetSTP+3]
+    },
     Waist = {
             -- Wish: Lv.70 Covenant Belt [PetACC+10] {DI}
         { Name = "Silver Obi", Level = 20 },          -- PetATK+1
     },
     Legs  = {
-            -- Wish: Lv.74 Evoker's Spats +1 [PetACC+10 (Aug) PetDA+3 PetATK+3]
-        { Name = "Evoker's Spats", Level = 52 },      -- PetACC+10
+        { Name = "Evk. Spats +1", Level = 52 },       -- PetACC+10 PetDA+3 PetATK+3
+            -- TODO: Re-obtain NQ AF for lv sync { Name = "Evoker's Spats", Level = 52 },      -- PetACC+10
+            -- Wish: Lv.25 Herder's Subligar [(Aug) PetAtk+3]
     },
     Feet  = {
         { Name = "Smn. Pigaches +1", Level = 75 },    -- PetATK+7 PetDA+3 PetCrit+3
@@ -404,7 +408,7 @@ sets.Resting_Default_Priority = {
         { Name = "Pelte", Level = 8 },                -- HMP+2
     },
     Head  = {
-            -- Wish: Lv.74 Evoker's Horn +1 [(Aug) HMP+4 Refresh+1]
+        { Name = "Evk. Horn +1", Level = 74 },        -- HMP+4 Refresh+1
     },
         -- Ear1: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
         -- Ear2: Wish: Lv.75 Darkness/Pluto's Earring [HMP+2/3]
