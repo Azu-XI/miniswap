@@ -123,7 +123,7 @@ sets.Engaged_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Adhemar Gamashes", Level = 75 },
+        { Name = "Skadi's Jambeaux", Level = 75 },    -- ACC+5 H+3
         { Name = "Raptor Ledelsens", Level = 48 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
@@ -168,8 +168,10 @@ sets.Idle_Default_Priority.Legs = {
     table.unpack(sets.Idle_Default_Priority.Legs),
 };
 sets.Idle_Default_Priority.Feet = {
+    { Name = "Skadi's Jambeaux", Level = 75 },        -- MVT+19
     { Name = "Strider Boots", Level = 20 },           -- MVT+18
     { Name = "Leaping Boots", Level = 7 },
+    table.unpack(sets.Idle_Default_Priority.Feet),
 };
 
 sets.Resting_Default_Priority = {
@@ -200,6 +202,9 @@ sets.Midshot_Default = {
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- RACC+4 RATK+5 STP+7 (Wish Aug: STP+3)
     },
+    Feet  = {
+        { Name = "Skadi's Jambeaux", Level = 75 },    -- RACC+5
+    }
 }; 
 
 -- Goal: Waltz Potency > CHR (caster) & VIT (target)
@@ -229,7 +234,8 @@ sets.JA_CuringWaltz_Priority = {
         { Name = "Raptor Trousers", Level = 48 },     -- VIT+4
     },
     Feet  = {
-        { Name = "Adhemar Gamashes", Level = 75 },    -- VIT+5
+        -- { Name = "Adhemar Gamashes", Level = 75 },    -- VIT+5  -- STORED
+        { Name = "Skadi's Jambeaux" Level = 75 },     -- VIT+3
     },
 }
 sets.JA_CuringWaltzII_Priority = sets.JA_CuringWaltz_Priority
@@ -313,8 +319,9 @@ sets.WS_Default_Priority = {
         { Name = "Acrobat's Breeches", Level = 70 },  -- DEX+2 AGI+9 TA+2
     },
     Feet  = {
-        { Name = "Adhemar Gamashes", Level = 75 },    --                   TA+2
-        { Name = "Leaping Boots", Level = 7 },        -- DEX+3 AGI+3
+        -- { Name = "Adhemar Gamashes", Level = 75 },    --                   TA+2  -- STORED
+        { Name = "Skadi's Jambeaux", Level = 75 },    --                   TA+2
+        { Name = "Leaping Boots", Level = 7 },        --       AGI+3  ACC+5  STR+3
     },
 };
 
@@ -333,7 +340,7 @@ sets.WS_Exenterator = {
     Back  = "Cuchulain's Mantle",                     --        DEX+4              ACC+4  STR+4
     Waist = "Virtuoso Belt",                          --                    ATK+4  ACC+12
     Legs  = "Acrobat's Breeches",                     -- AGI+8  DEX+2  TA+2
-    Feet  = "Adhemar Gamashes",                       --               TA+2
+    Feet  = "Skadi's Jambeauxs",                      -- AGI+3
         -- Wish: Dragon Leggings +1 [AGI+4 (Aug) Acc+8 Atk+8 Crit+3]
 };
 

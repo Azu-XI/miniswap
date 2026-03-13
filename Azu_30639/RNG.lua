@@ -89,6 +89,7 @@ sets.Engaged_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Skadi's Jambeaux", Level = 75 },    -- RACC+5 ACC+5 H+3
         { Name = "Raptor Ledelsens", Level = 48 },    -- Haste+2
         { Name = "Greaves", Level = 24 },
         { Name = "Leaping Boots", Level = 7 },
@@ -113,8 +114,10 @@ sets.Idle_Default_Priority.Ring2 = {
     table.unpack(sets.Idle_Default_Priority.Ring2),
 };
 sets.Idle_Default_Priority.Feet = {
+    { Name = "Skadi's Jambeaux", Level = 75 },        -- MVT+19
     { Name = "Strider Boots", Level = 20 },           -- MVT+18
     { Name = "Leaping Boots", Level = 7 },
+    table.unpack(sets.Idle_Default_Priority.Feet),
 };
 
 sets.Resting_Default_Priority = {
@@ -143,6 +146,9 @@ sets.Midshot_Default = {
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- RACC+4 RATK+5 STP+7 (Wish Aug: STP+3)
     },
+    Feet  = {
+        { Name = "Skadi's Jambeaux", Level = 75 },    -- RACC+5
+    }
 }; 
 
 sets.WS_Default_Priority = {

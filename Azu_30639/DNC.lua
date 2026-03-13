@@ -153,11 +153,33 @@ sets.Idle_Default_Priority.Legs = {
     { Name = "Acrobat's Breeches", Level = 75 },      -- EVA+11
     table.unpack(sets.Idle_Default_Priority.Legs),
 };
+sets.Idle_Default_Priority.Feet = {
+    { Name = "Skadi's Jambeaux", Level = 75 },        -- MVT+19
+    table.unpack(sets.Idle_Default_Priority.Feet),
+};
 
 sets.Resting_Default_Priority = {
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- HHP+2
     },
+};
+
+-- Goal: RACC, RATK, STP, Crit, Recycle, Etc
+sets.Midshot_Default = {
+    Ring1 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
+        { Name = "Coral Ring", Level = 70 },          -- RACC+9
+    },
+    Ring2 = {
+            -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
+        { Name = "Coral Ring", Level = 70 },          -- RACC+9
+    },
+    Legs  = {
+        { Name = "Skadi's Chausses", Level = 75 },    -- RACC+4 RATK+5 STP+7 (Wish Aug: STP+3)
+    },
+    Feet  = {
+        { Name = "Skadi's Jambeaux", Level = 75 },    -- RACC+5
+    }
 };
 
 --

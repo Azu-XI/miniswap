@@ -83,6 +83,7 @@ sets.Engaged_Default_Priority = {
         "Dream Trousers +1",
     },
     Feet  = {
+        { Name = "Skadi's Jambeaux", Level = 75 },    -- ACC+5 H+3
         { Name = "Raptor Ledelsens", Level = 48 },      -- Haste+2
         { Name = "Greaves", Level = 24 },
         { Name = "Leaping Boots", Level = 7 },
@@ -109,6 +110,10 @@ sets.Idle_Default_Priority.Ring2 = {
         -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
     { Name = "Coral Ring", Level = 70 },              -- MDT-3
     table.unpack(sets.Idle_Default_Priority.Ring2),
+};
+sets.Idle_Default_Priority.Feet = {
+    { Name = "Skadi's Jambeaux", Level = 75 },        -- MVT+19
+    table.unpack(sets.Idle_Default_Priority.Feet),
 };
 
 sets.JA_Charm_Priority = {
