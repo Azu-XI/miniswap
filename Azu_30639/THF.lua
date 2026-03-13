@@ -235,7 +235,7 @@ sets.JA_CuringWaltz_Priority = {
     },
     Feet  = {
         -- { Name = "Adhemar Gamashes", Level = 75 },    -- VIT+5  -- STORED
-        { Name = "Skadi's Jambeaux" Level = 75 },     -- VIT+3
+        { Name = "Skadi's Jambeaux", Level = 75 },    -- VIT+3
     },
 }
 sets.JA_CuringWaltzII_Priority = sets.JA_CuringWaltz_Priority
