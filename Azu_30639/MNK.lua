@@ -223,7 +223,7 @@ sets.JA_Focus_Priority = {
 sets.WS_Default_Priority = {
     Neck  = {
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10
-        { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3      -- STR+2 DEX+2
+        { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
         { Name = "Pile Chain", Level = 3 },
     },
     Body = {
@@ -234,7 +234,15 @@ sets.WS_Default_Priority = {
         { Name = "Cotton Tekko +1", Level = 18 },     -- STR+2 ATK+4
     },
     Ring1 = {
-        "San d'Orian Ring",                           -- STR+1
+        { Name = "Strigoi Ring", Level = 75 },        -- STR+6           ATK+3
+        { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
+        "San d'Orian Ring",
+    },
+    Ring2 = {
+        { Name = "Rajas Ring", Level = 30 },          -- STR+2~5
+        { Name = "Balance Ring", Level = 14 },        -- DEX+2
     },
     Back  = {
         { Name = "Amemet Mantle +1", Level = 61 },    --        ATK+15 STR+2

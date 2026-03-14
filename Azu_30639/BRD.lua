@@ -589,7 +589,6 @@ sets.WS_Default_Priority = {
     Ring2 = {
         { Name = "Rajas Ring", Level = 30 },          -- DEX+2~5                        STR+2~5
         { Name = "Balance Ring", Level = 14 },        -- DEX+2
-        "Provenance Ring",
     },
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4           ACC+4
