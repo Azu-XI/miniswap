@@ -1,6 +1,6 @@
 -- MiniSwap, a LuAshitacast engine for those allergic to Lua, by Azu-XI.
 -- Source: https://github.com/Azu-XI/miniswap
--- Version: 1.0
+-- Version: 2.beta
 
 local fonts = require('fonts');
 local imgui = require('imgui');
