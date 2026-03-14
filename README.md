@@ -18,10 +18,11 @@ Thanks to Thorny for the amazing [LuAshitacast][], and [Jyouya][] and [avogadro-
 
 ## Getting Started
 
-1. Copy the `common/miniswap.lua` file to your `ashita/config/addons/LuAshitacast/common/` folder.
-2. In game, use `/lac newlua` to create a profile for your job.
-3. Locate the newly created file, it should be under `ashita/config/addons/LuAshitacast/YourName_00000/JOB.lua` where `00000` is your character ID and `JOB` the job you were on.
-4. Replace the content of the file with the following:
+1. Download `miniswap.lua` file from the [last release](https://github.com/Azu-XI/miniswap/releases/latest/)
+2. Copy the file to your `ashita/config/addons/LuAshitacast/common/` folder.
+3. In game, use `/lac newlua` to create a profile for your job.
+4. Locate the newly created file, it should be under `ashita/config/addons/LuAshitacast/YourName_00000/JOB.lua` where `00000` is your character ID and `JOB` the job you were on.
+5. Replace the content of the file with the following:
 
 ```lua
 local profile = gFunc.LoadFile('common/miniswap.lua');
