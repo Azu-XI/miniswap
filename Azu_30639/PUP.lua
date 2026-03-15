@@ -149,7 +149,7 @@ local petDefaultPriority = {
     Feet  = {
             -- Wish: Lv.75 Thurandaut Boots [PetMAB+5]
             -- Wish: Lv.74 Puppetry Babouches +1 [(Aug) PetRegen+3]
-            -- Wish: Lv.17 Mettle Leggings +0/1 [(Aug) PetATK+2 PetRATK+2]
+        { Name = "Mettle Leggings", Level = 19},      -- PetATK+2 PetRATK+2
     },
 };
 sets.Idle_Pet_Default_Priority = petDefaultPriority;

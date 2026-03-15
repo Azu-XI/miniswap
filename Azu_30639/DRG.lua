@@ -214,6 +214,34 @@ sets.Resting_Default_Priority = {
     },
 };
 
+-- Goal: Pet Acc/Atk/DA/...
+local petDefaultPriority = {
+    Head  = {
+        { Name = "Entrancing Ribbon", Level = 11 },   -- PetAcc+2 PetRAcc+2
+    },
+    Body  = {
+            -- Wish: Lv.32 Aega's Doublet [PetACC+3 (Aug) PetATK+3]
+    },
+    Hands = {
+        { Name = "Raptor Gloves", Level = 48 },       -- PetATK+5 PetRATK+5
+    },
+    Back  = {
+    },
+    Waist = {
+            -- Wish: Lv.73 Companion Belt +0/1 [PetACC+8/12 PetRACC+8/12 PetDA+0/1%]
+            -- Wish: Lv.70 Bolt Stone [PetDEX+5 PetH+3 (Aug) PetATK+3 PetH+3]
+            -- Wish: Lv.30 Fidelity Mantle [PetSTP+3]
+    },
+    Legs  = {
+            -- Wish: Lv.25 Herder's Subligar [PetAcc+5 PetRAcc+5 (Aug) DEX+3 PetAcc+3 PetRAcc+3]
+    },
+    Feet  = {
+        { Name = "Mettle Leggings", Level = 19},      -- PetATK+2 PetRATK+2
+    },
+};
+sets.Idle_Pet_Default_Priority = petDefaultPriority;
+sets.Engaged_Pet_Default_Priority = petDefaultPriority;
+
 -- TODO: AF head in precast, relic head in midcast
 
 -- Goal: ACC (Multi-hits WS) & STR (Generic Mod)

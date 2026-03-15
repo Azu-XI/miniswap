@@ -3,6 +3,7 @@ local sets = {};
 
 sets.Engaged_Default_Priority = {
     Main  = {
+        { Name = "Mrc. Greatsword", Level = 20 },
         { Name = "Surviver", Level = 6 },
         "Rusty Greatsword",
     },
