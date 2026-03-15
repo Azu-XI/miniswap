@@ -147,9 +147,10 @@ local petDefaultPriority = {
             -- Wish: Lv.25 Herder's Subligar [PetACC+5 PetRACC+5 (Aug) DEX+3 PetACC+3 PetRACC+3]
     },
     Feet  = {
+        -- { Name = "Aife's Pumps", Level = 75 },        -- PetCurePot+4%  -- STORED
             -- Wish: Lv.75 Thurandaut Boots [PetMAB+5]
             -- Wish: Lv.74 Puppetry Babouches +1 [(Aug) PetRegen+3]
-        { Name = "Mettle Leggings", Level = 19},      -- PetATK+2 PetRATK+2
+        { Name = "Mettle Leggings", Level = 19 },     -- PetATK+2 PetRATK+2
     },
 };
 sets.Idle_Pet_Default_Priority = petDefaultPriority;

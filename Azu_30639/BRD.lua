@@ -416,6 +416,7 @@ sets.Midcast_Singing_Priority = {
         { Name = "Custom Slacks", Level = 31 },       -- CHR+1
     },
     Feet  = {
+            -- Wish: Valkyrie's Clogs [(Aug) SingingSkill+6]
             -- Wish: Oracle's Pigache [WindSkill+5]
         { Name = "Brd. Slippers +1", Level = 75 },    -- CHR+8  StringSkill+8+3 SongRecast-3
         { Name = "Raptor Ledelsens", Level = 48 },    -- CHR+4
