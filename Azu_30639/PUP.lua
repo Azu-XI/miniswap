@@ -19,13 +19,13 @@ sets.Engaged_Default_Priority = {
         { Name = "Usukane Somen", Level = 75 },       -- STR+3 AGI+3 ACC+7 EVA+7 H+3 Counter+4 DT-4
         { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
         { Name = "Emperor Hairpin", Level = 24 },     -- EVA+10
-        { Name = "Entrancing Ribbon", Level = 11 },   -- PetAcc+2 PetRAcc+2
+        { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2 PetRACC+2
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
     },
     Ear1 = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
-        -- { Name = "Wilderness Earring", Level = 40 },  -- Acc+1 PetRAcc+1  -- STORED
+        -- { Name = "Wilderness Earring", Level = 40 },  -- Acc+1 PetRACC+1  -- STORED
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         "remove",
     },
@@ -122,11 +122,11 @@ sets.Idle_Default_Priority.Back = {
 local petDefaultPriority = {
     Head  = {
             -- Wish: Pantin Taj +1 [PetRegen+1 (Aug) PetDA+3]
-        { Name = "Entrancing Ribbon", Level = 11 },   -- PetAcc+2 PetRAcc+2
+        { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2 PetRACC+2
     },
     Body  = {
             -- Wish: Thurandaut Tabard [PetDT-5 PetHP+50 PetEnm+5]
-            -- Wish: Lv.32 Aega's Doublet [PetACC+3 (Aug) PetATK+3]
+        { Name = "Aega's Doublet", Level = 32},       -- PetACC+3 PetATK+3
     },
     Hands = {
             -- Wish: Thurandaut Gloves [PetH+5]
@@ -134,17 +134,17 @@ local petDefaultPriority = {
     },
     Back  = {
             -- Wish: Pantin Cape [PetAtk+15 (Aug) PetDA+5 PetCritRate+5]
+            -- Wish: Lv.30 Fidelity Mantle [PetSTP+3]
     },
     Waist = {
             -- Wish: Lv.73 Companion Belt +0/1 [PetACC+8/12 PetRACC+8/12 PetDA+0/1%]
             -- Wish: Lv.70 Bolt Stone [PetDEX+5 PetH+3 (Aug) PetATK+3 PetH+3]
-            -- Wish: Lv.30 Fidelity Mantle [PetSTP+3]
     },
     Legs  = {
             -- Wish: Lv.75 Pantin Churidars +1 [PetMACC+7 (Aug) PetMagicSkill+6 PetMND+10]
             -- Wish: Lv.75 Thurandaut Tights [PetMACC+5]
             -- Wish: Lv.74 Puppetry Churidars +1 [PetCurePot+5% (Aug) PetDA+4 PetCritRate+4]
-            -- Wish: Lv.25 Herder's Subligar [PetAcc+5 PetRAcc+5 (Aug) DEX+3 PetAcc+3 PetRAcc+3]
+            -- Wish: Lv.25 Herder's Subligar [PetACC+5 PetRACC+5 (Aug) DEX+3 PetACC+3 PetRACC+3]
     },
     Feet  = {
             -- Wish: Lv.75 Thurandaut Boots [PetMAB+5]

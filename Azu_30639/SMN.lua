@@ -128,6 +128,7 @@ local petDefaultPriority = {
         { Name = "Chironic Doublet", Level = 75 },    -- PetDT-5  Refresh+1  DT-5
             -- Wish: Lv.50 Penance Robe [PerpCost-2]
             -- Wish: Lv.50 Austere Robe [PerpCost-1]
+        { Name = "Aega's Doublet", Level = 32},       -- PetACC+3 PetATK+3
     },
     Hands = {
             -- Wish: Evoker's Bracers+1 [(Aug) PetHaste+5 PetDT-5]
@@ -138,7 +139,6 @@ local petDefaultPriority = {
             -- Wish: Evoker's Ring [PerpCost-1]
     },
     Back  = {
-            -- Wish: Lv.75 Aife's Mantle [PetAtk+10]
             -- Wish: Lv.30 Fidelity Mantle [PetSTP+3]
     },
     Waist = {

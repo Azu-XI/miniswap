@@ -1,6 +1,13 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 local sets = {};
 
+-- Lockstyle ideas:
+-- Espadon
+-- Haubergeon
+-- Deimos Gauntlets
+-- Valor Breeches
+-- Valor Leggings
+
 sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Xiutleato", Level = 75 },
