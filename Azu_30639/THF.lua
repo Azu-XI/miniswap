@@ -82,8 +82,8 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        -- { Name = "Adhemar Wristbands", Level = 75 },  -- ACC+10 ATK+10 H+3 TH+1  -- STORED
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
+        { Name = "Adhemar Wristbands", Level = 75 },  -- ACC+10 ATK+10 H+3 TH+1
+        -- { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         "Dream Mittens +1",

@@ -126,7 +126,7 @@ local petDefaultPriority = {
     },
     Body  = {
             -- Wish: Thurandaut Tabard [PetDT-5 PetHP+50 PetEnm+5]
-        { Name = "Aega's Doublet", Level = 32},       -- PetACC+3 PetATK+3
+        { Name = "Aega's Doublet", Level = 32 },       -- PetACC+3 PetATK+3
     },
     Hands = {
             -- Wish: Thurandaut Gloves [PetH+5]
@@ -134,7 +134,7 @@ local petDefaultPriority = {
     },
     Back  = {
             -- Wish: Pantin Cape [PetAtk+15 (Aug) PetDA+5 PetCritRate+5]
-            -- Wish: Lv.30 Fidelity Mantle [PetSTP+3]
+        { Name = "Fidelity Mantle", Level = 30 },    -- PetSTP+3
     },
     Waist = {
             -- Wish: Lv.73 Companion Belt +0/1 [PetACC+8/12 PetRACC+8/12 PetDA+0/1%]

@@ -128,7 +128,7 @@ local petDefaultPriority = {
         { Name = "Chironic Doublet", Level = 75 },    -- PetDT-5  Refresh+1  DT-5
             -- Wish: Lv.50 Penance Robe [PerpCost-2]
             -- Wish: Lv.50 Austere Robe [PerpCost-1]
-        { Name = "Aega's Doublet", Level = 32},       -- PetACC+3 PetATK+3
+        { Name = "Aega's Doublet", Level = 32 },       -- PetACC+3 PetATK+3
     },
     Hands = {
             -- Wish: Evoker's Bracers+1 [(Aug) PetHaste+5 PetDT-5]
@@ -139,7 +139,7 @@ local petDefaultPriority = {
             -- Wish: Evoker's Ring [PerpCost-1]
     },
     Back  = {
-            -- Wish: Lv.30 Fidelity Mantle [PetSTP+3]
+        { Name = "Fidelity Mantle", Level = 30 },    -- PetSTP+3
     },
     Waist = {
             -- Wish: Lv.70 Covenant Belt [PetACC+10] {DI}
@@ -221,7 +221,7 @@ local bloodPact = {
         { Name = "Summoner's Cape", Level = 75 },     -- BP-2
     },
     Waist = {
-            -- Wish: Lv.70 Covenant Belt [BloodBoon+3 (Aug) BP-2] {DI}
+            -- Wish: Lv.70 Covenant Belt [BloodBoon+3 (Aug) BP-2] {DragonSlaying}
     },
     Legs  = {
             -- Wish: Lv.75 Smn. Spats +1 [BP-2 (Aug) BloodBoon+8]
