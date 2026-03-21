@@ -13,9 +13,9 @@ sets.LockStyle = {
 
 sets.Engaged_Default_Priority = {
     Main  = {
-        { Name = "Sandung", Level = 75 },
-        { Name = "Gully", Level = 72 },
-        { Name = "Misericorde", Level = 71 },
+        -- { Name = "Sandung", Level = 75 },
+        -- { Name = "Gully", Level = 72 },
+        -- { Name = "Misericorde", Level = 71 },
         { Name = "Thief's Knife", Level = 70 },
         { Name = "Avis", Level = 57 },
             -- Wish: Lv.50 Bushwhacker +1 {Yagudo Incursions}

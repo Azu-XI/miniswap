@@ -11,8 +11,8 @@ sets.Engaged_Default_Priority = {
         "Cat Baghnakhs +1",
     },
     Range = {
-            -- Wish: Lv.71 Animator +1 {Einherjar shop, Cerberus, Hydra, Khimaira}
-            -- Wish: Lv.40 Turbo Animator {AF}
+        { Name = "Animator +1", Level = 71 },         -- DEX+4 PetHP+45~60 PetMP+0~60
+        -- { Name = "Turbo Animator", Level = 40 },      -- DEX+2  -- STORED
         { Name = "Animator", Level = 1 },
     },
     Head  = {
@@ -121,6 +121,7 @@ sets.Idle_Default_Priority.Back = {
 -- Goal: -- TODO: Use modes or check packets to know the automaton head/frame
 local petDefaultPriority = {
     Head  = {
+            -- Wish: Khthonios Helm [PetATK+9 PetACC+9] {Beaucedine 2.0}
             -- Wish: Pantin Taj +1 [PetRegen+1 (Aug) PetDA+3]
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2 PetRACC+2
     },
@@ -129,6 +130,7 @@ local petDefaultPriority = {
         { Name = "Aega's Doublet", Level = 32 },       -- PetACC+3 PetATK+3
     },
     Hands = {
+            -- Wish: Avesta Bangles [AutomatonMagicSkill+9] {Beaucedine 2.0}
             -- Wish: Thurandaut Gloves [PetH+5]
         { Name = "Raptor Gloves", Level = 48 },       -- PetATK+5 PetRATK+5
     },
@@ -148,6 +150,7 @@ local petDefaultPriority = {
     },
     Feet  = {
         -- { Name = "Aife's Pumps", Level = 75 },        -- PetCurePot+4%  -- STORED
+            -- Wish: Lv.75 Ryuga Sune-Ate [AutomatonSkill+5] {Beaucedine 2.0}
             -- Wish: Lv.75 Thurandaut Boots [PetMAB+5]
             -- Wish: Lv.74 Puppetry Babouches +1 [(Aug) PetRegen+3]
         { Name = "Mettle Leggings", Level = 19 },     -- PetATK+2 PetRATK+2
