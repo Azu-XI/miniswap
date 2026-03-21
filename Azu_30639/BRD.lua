@@ -43,6 +43,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Dodge Earring", Level = 29 },
     },
     Neck  = {
+        { Name = "Love Torque", Level = 73 },         -- DaggerSkill+7
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
         { Name = "Pile Chain", Level = 3 },

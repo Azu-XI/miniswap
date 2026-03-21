@@ -76,9 +76,10 @@ sets.Engaged_Default_Priority = {
         "Bronze Cap",
     },
     Neck  = {
+        { Name = "Love Torque", Level = 73 },         -- DaggerSkill+7
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
-        { Name = "Rabbit Charm", Level = 7 },
+        -- { Name = "Rabbit Charm", Level = 7 },         -- DEX+2 AGI+2 EVA+1  -- STORED
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
