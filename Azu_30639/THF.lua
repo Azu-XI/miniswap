@@ -1,4 +1,14 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
+
+profile.Aliases = {
+    ["/noth"] = "/lac fwd mode IdleAndEngaged set None",
+    ["/th"] = "/lac fwd mode IdleAndEngaged set TH",
+}
+
+profile.Modes = {
+    IdleAndEngaged = { "TH" },
+};
+
 local sets = {};
 
 sets.LockStyle = {
@@ -13,9 +23,9 @@ sets.LockStyle = {
 
 sets.Engaged_Default_Priority = {
     Main  = {
-        -- { Name = "Sandung", Level = 75 },
-        -- { Name = "Gully", Level = 72 },
-        -- { Name = "Misericorde", Level = 71 },
+        { Name = "Sandung", Level = 75 },
+        { Name = "Gully", Level = 72 },
+        { Name = "Misericorde", Level = 71 },
         { Name = "Thief's Knife", Level = 70 },
         { Name = "Avis", Level = 57 },
             -- Wish: Lv.50 Bushwhacker +1 {Yagudo Incursions}
@@ -82,8 +92,7 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Adhemar Wristbands", Level = 75 },  -- ACC+10 ATK+10 H+3 TH+1
-        -- { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         "Dream Mittens +1",
@@ -130,16 +139,15 @@ sets.Engaged_Default_Priority = {
     },
 };
 
-sets.Weapons = {
-    ["Sandung/Atoyac"] = {
-        Main = "Sandung",
-        Sub = "Atoyac",
+sets.Engaged_TH_Priority = {
+    Main  = {
+        { Name = "Thief's Knife", Level = 70 },
     },
-    ["Sandung/Thief's Knife"] = {
-        Main = "Sandung",
-        Sub  = "Thief's Knife"
-    }
+    Hands = {
+        { Name = "Adhemar Wristbands", Level = 75 },  -- ACC+10 ATK+10 H+3 TH+1
+    },
 };
+sets.Idle_TH_Priority = sets.Engaged_TH_Priority;
 
 sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
 sets.Idle_Default_Priority.Head = {

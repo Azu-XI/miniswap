@@ -32,6 +32,8 @@ local colors = {
 };
 local chars  = {
     implies = string.char(0x81, 0xC3),
+    laquo =       string.char(0x85, 0x6B), -- «
+    raquo =       string.char(0x85, 0x7B), -- »
 };
 
 local state = {
@@ -39,16 +41,17 @@ local state = {
     Debug = false,
     DebugLastActionType = "",
     DebugSkipRepeatedActionMessage = false,
+    Modes = { Idle = {}, Engaged = {}, IdleAndEngaged = {}, Idle_Pet = {}, Engaged_Pet = {}, IdleAndEngaged_Pet = {}, Midcast = {}, },
     LevelSynced = false,
     LockedLevel = nil,
     LockedTP = false,
-    WeaponModeOptions = nil,
 };
 
 local shared = gFunc.LoadFile('shared.lua') or {};
 local profile = {
     Aliases = {},
     Bindings = {},
+    Modes = {},
     MiniSwap = {},
     Packer = {},
     Sets = {},
@@ -64,8 +67,8 @@ do -- COMMANDS REGION
             profile.MiniSwap.HandleCommandLockLV(args[2]);
         elseif (command:any('locktp')) then
             profile.MiniSwap.HandleCommandLockTP(args[2]);
-        elseif (command:any('weapon')) then
-            -- TODO
+        elseif (command:any('mode')) then
+            profile.MiniSwap.HandleCommandMode(table.unpack(args, 2));
         end
     end
     profile.HandleCommand = profile.MiniSwap.HandleCommand;
@@ -125,6 +128,96 @@ do -- COMMANDS REGION
             state.LockedLevel = tonumber(targetValue);
         end
     end
+
+    profile.MiniSwap.HandleCommandMode = function(modeName, subCommand, targetValue)
+        local mode = state.Modes[modeName];
+        if (mode == nil) then
+            local modeValues = ""
+            for key, _ in pairs(state.Modes) do
+                modeValues = modeValues .. ", " .. key
+            end
+            modeValues = modeValues:sub(2)
+            
+            profile.MiniSwap.ShowError(
+                "Unkown mode " .. chars.laquo .. " " .. modeName .. " " .. chars.raquo
+                .. ". Expected: " .. modeValues
+            )
+            return
+
+        elseif (mode.SelectedIdx == nil) then
+            profile.MiniSwap.ShowError(
+                "No values defined for mode " .. chars.laquo .. " " .. modeName .. " " .. chars.raquo .. "."
+            )
+            return
+
+        elseif (subCommand == nil) then
+            profile.MiniSwap.ShowError(
+                "Missing mode subcommand. Expected: choices, next, previous, set"
+            );
+            return
+
+        elseif (subCommand:any("next", "n")) then
+            local newSelectedIdx = mode.SelectedIdx + 1;
+            if (newSelectedIdx > #mode.Choices) then newSelectedIdx = 1 end
+            mode.SelectedIdx = newSelectedIdx;
+
+            profile.MiniSwap.ShowSuccess(
+                "Mode " .. chars.laquo .. " " .. modeName .. " " .. chars.raquo
+                .. " set to " .. chars.laquo .. " " .. mode.Choices[mode.SelectedIdx] .. " " .. chars.raquo
+            )
+        
+        elseif (subCommand:any("previous", "prev", "p")) then
+            local newSelectedIdx = mode.SelectedIdx - 1;
+            if (newSelectedIdx < 1) then newSelectedIdx = #mode.Choices end
+            mode.SelectedIdx = newSelectedIdx;
+
+            profile.MiniSwap.ShowSuccess(
+                "Mode " .. chars.laquo .. " " .. modeName .. " " .. chars.raquo
+                .. " set to " .. chars.laquo .. " " .. mode.Choices[mode.SelectedIdx] .. " " .. chars.raquo
+            )
+        
+        elseif (subCommand:any("set", "s")) then
+            if (targetValue == nil) then
+                profile.MiniSwap.ShowError(
+                    "Missing value for mode " .. chars.laquo .. " " .. modeName .. " " .. chars.raquo
+                    .. ". Expected: " .. table.concat(mode.Choices, ", ")
+                );
+                return
+            end
+
+            local newSelectedIdx = table.find(mode.Choices, targetValue);
+            if (newSelectedIdx == nil) then
+                profile.MiniSwap.ShowError(
+                    "Unknown value for mode " .. chars.laquo .. " " .. modeName .. " " .. chars.raquo
+                    .. ". Expected: " .. table.concat(mode.Choices, ", ")
+                );
+                return
+            end
+
+            mode.SelectedIdx = newSelectedIdx;
+
+            profile.MiniSwap.ShowSuccess(
+                "Mode " .. chars.laquo .. " " .. modeName .. " " .. chars.raquo
+                .. " set to " .. chars.laquo .. " " .. mode.Choices[mode.SelectedIdx] .. " " .. chars.raquo
+            )
+        
+        elseif (subCommand:any("choices", "c")) then
+            profile.MiniSwap.ShowSuccess(
+                "Available values for mode " .. chars.laquo .. " " .. modeName .. " " .. chars.raquo .. ": "
+                .. table.concat(mode.Choices, ", ")
+            )
+        
+        else
+            profile.MiniSwap.ShowError(
+                "Unknown mode subcommand " .. chars.laquo .. " " .. subCommand .. " " .. chars.raquo
+                .. ". Expected: choices, next, previous, set"
+            );
+        end
+
+        -- Reset debug messages to show the new mode being taken into account
+        state.DebugLastActionType = "";
+        state.DebugSkipRepeatedActionMessage = false;
+    end
 end
 
 do -- GEAR LIFECYCLE REGION
@@ -139,6 +232,16 @@ do -- GEAR LIFECYCLE REGION
             profile.MiniSwap.ShowDebugActionType("Engaged");
 
             profile.MiniSwap.TryEquipSet("Engaged_Default");
+
+            local engagedMode = state.Modes.Engaged.Choices[state.Modes.Engaged.SelectedIdx];
+            if (engagedMode ~= nil) then
+                profile.MiniSwap.TryEquipSet("Engaged_" .. engagedMode);
+            end
+
+            local idleAndEngagedMode = state.Modes.IdleAndEngaged.Choices[state.Modes.IdleAndEngaged.SelectedIdx];
+            if (idleAndEngagedMode ~= nil) then
+                profile.MiniSwap.TryEquipSet("Engaged_" .. idleAndEngagedMode);
+            end
 
             local pet = gData.GetPet();
             if (pet ~= nil) then
@@ -159,6 +262,16 @@ do -- GEAR LIFECYCLE REGION
             profile.MiniSwap.ShowDebugActionType("Idle");
 
             profile.MiniSwap.TryEquipSet("Idle_Default");
+
+            local idledMode = state.Modes.Idle.Choices[state.Modes.Idle.SelectedIdx];
+            if (idledMode ~= nil and idledMode ~= "None") then
+                profile.MiniSwap.TryEquipSet("Idle_" .. idledMode);
+            end
+
+            local idleAndEngagedMode = state.Modes.IdleAndEngaged.Choices[state.Modes.IdleAndEngaged.SelectedIdx];
+            if (idleAndEngagedMode ~= nil and idleAndEngagedMode ~= "None") then
+                profile.MiniSwap.TryEquipSet("Idle_" .. idleAndEngagedMode);
+            end
 
             local pet = gData.GetPet();
             if (pet ~= nil) then
@@ -372,7 +485,13 @@ do -- GUI REGION
             imgui.Text(player.MainJob .. "/" .. player.SubJob .. " " .. levelText);
 
             local TPText = state.LockedTP and "On" or "Off"
-            imgui.Text("TP. " .. TPText)
+            imgui.Text("TP: " .. TPText)
+
+            for name, value in pairs(state.Modes) do
+                if (value.SelectedIdx ~= nil) then
+                    imgui.Text(name .. ": " .. value.Choices[value.SelectedIdx])
+                end
+            end
         end
 
         -- imgui.PopStyleVar();
@@ -1099,19 +1218,12 @@ do -- PROFILE LIFECYCLE REGION
 
         profile.Aliases = profile.MiniSwap.MergeTables(shared.Aliases or {}, profile.Aliases);
         profile.Bindings = profile.MiniSwap.MergeTables(shared.Bindings or {}, profile.Bindings);
+        profile.Modes = profile.MiniSwap.MergeTables(shared.Modes or {}, profile.Modes);
         profile.Sets = profile.MiniSwap.MergeTables(shared.Sets or {}, profile.Sets);
 
         gSettings.AllowAddSet = true;
 
         gui.Initialize();
-
-        if (profile.Sets.Weapons) then
-            local weaponModes = {"Auto"};
-            for name, _ in pairs(profile.Sets.Weapons) do
-                table.insert(weaponModes, name);
-            end
-            state.WeaponModeOptions = weaponModes;
-        end
 
         for name, cmd in pairs(profile.Aliases) do
             profile.MiniSwap.ExecuteCommand("/alias " .. name .. " " .. cmd);
@@ -1119,6 +1231,22 @@ do -- PROFILE LIFECYCLE REGION
 
         for keys, cmd in pairs(profile.Bindings) do
             profile.MiniSwap.ExecuteCommand("/bind " .. keys .. " " .. cmd);
+        end
+
+        for name, _ in pairs(state.Modes) do 
+            local choices = profile.Modes[name]
+            if (choices) then
+                state.Modes[name].SelectedIdx = 1;
+                for idx, choice in ipairs(choices) do
+                    if (choice:find("*", 1, true) == 1) then
+                        choices[idx] = choice:sub(2);
+                        state.Modes[name].SelectedIdx = idx + 1;
+                    end
+                end
+                state.Modes[name].Choices = { "None", table.unpack(choices) };
+            else
+                state.Modes[name] = { Choices = {}, SelectedIdx = nil };
+            end
         end
 
         profile.MiniSwap.OnLoad_LockStyle:once(5);
@@ -1207,6 +1335,14 @@ do -- UTILS REGION
         local color = success and colors.SpringGreen or colors.Salmon;
         local word = success and "Applied" or "Missing";
         profile.MiniSwap.ShowDebug("   " .. color .. word .. colors.Reset .. " " .. setName);
+    end
+
+    profile.MiniSwap.ShowError = function(message)
+        gFunc.Message(colors.Tomato .. message .. colors.Reset);
+    end
+
+    profile.MiniSwap.ShowSuccess = function(message)
+        gFunc.Message(colors.SpringGreen .. message .. colors.Reset);
     end
 
     profile.MiniSwap.Slugify = function(rawName)
