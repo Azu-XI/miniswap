@@ -12,7 +12,8 @@ sets.LockStyle = {
 
 sets.Idle_Default_Priority = {
     Main  = {
-        { Name = "Radiance", Level = 20 },
+        { Name = "Radiance +1", Level = 50 },         -- Refresh+2
+        -- { Name = "Radiance", Level = 20 },            -- Refresh+1
         { Name = "Ash Pole +1", Level = 5 },
         "Maple Wand +1",
     },
@@ -109,8 +110,8 @@ sets.Idle_Default_Priority = {
 -- Goal: Perpetuation Cost ; Avatar ATK / ACC / PDT / ...
 local petDefaultPriority = {
     Main  = {
-        { Name = "Chatoyant Staff", Level = 51 },        -- PerpCost-3
-        { Name = "Radiance", Level = 20 },            --                       PetATK+10  Refresh+1
+        { Name = "Radiance +1", Level = 50 },         --                       PetATK+15 PetACC+10 Refresh+2
+        { Name = "Radiance", Level = 20 },            --                       PetATK+10           Refresh+1
     },
     Ammo  = {
         { Name = "Soothing Sachet", Level = 70 },     -- PetACC+5 PetAtk+5 PetDT-3
@@ -281,7 +282,7 @@ sets.Midcast_Default_Priority = {
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
 sets.Midcast_HealingMagic_Priority = {
     Main  = {
-        { Name = "Chatoyant Staff", Level = 51 },        -- CurePot+10
+        { Name = "Radiance +1", Level = 50 },         -- CurePot+10
     },
     Sub   = {
             -- Wish: Lv.74 Verse Strap +0/1 [CurePot+2/3 Enm-2/3 MND+2/3]
