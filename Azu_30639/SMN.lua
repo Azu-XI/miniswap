@@ -118,7 +118,7 @@ local petDefaultPriority = {
     },
     Head  = {
             -- Wish: Lv.74 Smn. Horn +1 [(Aug) PetPDT-4 Refresh+1]
-        { Name = "Smn. Horn +1", Level = 75 },
+        { Name = "Evk. Horn +1", Level = 74 },        -- Refresh+1
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2
     },
@@ -147,7 +147,7 @@ local petDefaultPriority = {
         { Name = "Silver Obi", Level = 20 },          -- PetATK+1
     },
     Legs  = {
-        { Name = "Evk. Spats +1", Level = 52 },       -- PetACC+10 PetDA+3 PetATK+3
+        { Name = "Evk. Spats +1", Level = 74 },       -- PetACC+10 PetDA+3 PetATK+3
             -- TODO: Re-obtain NQ AF for lv sync { Name = "Evoker's Spats", Level = 52 },      -- PetACC+10
             -- Wish: Lv.25 Herder's Subligar [(Aug) PetAtk+3]
     },
@@ -186,7 +186,7 @@ sets.Engaged_Pet_Day_Priority = petMatchesDayPriority;
 
 local petMatchesWeatherPriority = {
     Head  = {
-        { Name = "Smn. Horn +1", Level = 75 },     -- PerpCost-3
+        { Name = "Smn. Horn +1", Level = 75 },        -- PerpCost-3
     },
 };
 sets.Idle_Pet_Weather_Priority = petMatchesWeatherPriority;
