@@ -223,13 +223,19 @@ end
 do -- GEAR LIFECYCLE REGION
     profile.MiniSwap.HandleDefault = function()
         local environment = gData.GetEnvironment()
+        local pet = gData.GetPet();
+        local petAction = gData.GetPetAction();
         local player = gData.GetPlayer();
 
         profile.MiniSwap.EvaluateGear(player);
 
         -- Stance: Engaged
         if (player.Status == 'Engaged') then
-            profile.MiniSwap.ShowDebugActionType("Engaged");
+            profile.MiniSwap.ShowDebugActionType(
+                "Engaged"
+                .. (pet ~= nil and " + Pet" or "")
+                .. (petAction ~= nil and " + PetAction" or "")
+            );
 
             profile.MiniSwap.TryEquipSet("Engaged_Default");
 
@@ -243,23 +249,15 @@ do -- GEAR LIFECYCLE REGION
                 profile.MiniSwap.TryEquipSet("Engaged_" .. idleAndEngagedMode);
             end
 
-            local pet = gData.GetPet();
-            if (pet ~= nil) then
-                profile.MiniSwap.TryEquipSet("Engaged_Pet_Default");
-
-                local pet_name = profile.MiniSwap.Slugify(pet.Name);
-                profile.MiniSwap.TryEquipSet("Engaged_Pet_" .. pet_name);
-            end
-
-        -- Stance: Resting
-        elseif (player.Status == 'Resting') then
-            profile.MiniSwap.ShowDebugActionType("Resting");
-
-            profile.MiniSwap.TryEquipSet("Resting_Default");
+            profile.MiniSwap.HandlePetAction(pet, petAction, "Engaged");
 
         -- Stance: Idle
         elseif (player.Status == 'Idle') then
-            profile.MiniSwap.ShowDebugActionType("Idle");
+            profile.MiniSwap.ShowDebugActionType(
+                "Idle"
+                .. (pet ~= nil and " + Pet" or "")
+                .. (petAction ~= nil and " + PetAction" or "")
+            );
 
             profile.MiniSwap.TryEquipSet("Idle_Default");
 
@@ -273,13 +271,13 @@ do -- GEAR LIFECYCLE REGION
                 profile.MiniSwap.TryEquipSet("Idle_" .. idleAndEngagedMode);
             end
 
-            local pet = gData.GetPet();
-            if (pet ~= nil) then
-                profile.MiniSwap.TryEquipSet("Idle_Pet_Default");
+            profile.MiniSwap.HandlePetAction(pet, petAction, "Idle");
 
-                local pet_name = profile.MiniSwap.Slugify(pet.Name);
-                profile.MiniSwap.TryEquipSet("Idle_Pet_" .. pet_name);
-            end
+        -- Stance: Resting
+        elseif (player.Status == 'Resting') then
+            profile.MiniSwap.ShowDebugActionType("Resting");
+
+            profile.MiniSwap.TryEquipSet("Resting_Default");
         end
 
         -- Town Sets
@@ -295,6 +293,29 @@ do -- GEAR LIFECYCLE REGION
         end
     end
     profile.HandleDefault = profile.MiniSwap.HandleDefault;
+
+    profile.MiniSwap.HandlePetAction = function(pet, petAction, masterStance)
+        if (pet == nil) then return end
+
+        profile.MiniSwap.TryEquipSet(masterStance .. "_Pet_Default");
+
+        -- TODO: Modes
+
+        local petName = profile.MiniSwap.Slugify(pet.Name);
+        profile.MiniSwap.TryEquipSet(masterStance .. "_Pet_" .. petName);
+
+        if (petAction == nil) then return end
+
+        profile.MiniSwap.TryEquipSet("Midcast_Pet_Default");
+            
+        local petActionType = profile.MiniSwap.Slugify(petAction.Type);
+        profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionType);
+
+        -- TODO: Groups
+
+        local petActionName = profile.MiniSwap.Slugify(petAction.Name);
+        profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionName);
+    end
 
     profile.MiniSwap.HandleAbility = function()
         profile.MiniSwap.ShowDebugActionType("Ability");
@@ -1354,8 +1375,10 @@ do -- UTILS REGION
         if (set ~= nil) then
             profile.MiniSwap.ShowDebugEquipSet(setName, true)
             gFunc.EquipSet(setName);
+            return true
         else
             profile.MiniSwap.ShowDebugEquipSet(setName, false)
+            return false
         end
     end
 end
