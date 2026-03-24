@@ -229,49 +229,9 @@ do -- GEAR LIFECYCLE REGION
 
         profile.MiniSwap.EvaluateGear(player);
 
-        -- Stance: Engaged
-        if (player.Status == 'Engaged') then
-            profile.MiniSwap.ShowDebugActionType(
-                "Engaged"
-                .. (pet ~= nil and " + Pet" or "")
-                .. (petAction ~= nil and " + PetAction" or "")
-            );
-
-            profile.MiniSwap.TryEquipSet("Engaged_Default");
-
-            local engagedMode = state.Modes.Engaged.Choices[state.Modes.Engaged.SelectedIdx];
-            if (engagedMode ~= nil) then
-                profile.MiniSwap.TryEquipSet("Engaged_" .. engagedMode);
-            end
-
-            local idleAndEngagedMode = state.Modes.IdleAndEngaged.Choices[state.Modes.IdleAndEngaged.SelectedIdx];
-            if (idleAndEngagedMode ~= nil) then
-                profile.MiniSwap.TryEquipSet("Engaged_" .. idleAndEngagedMode);
-            end
-
-            profile.MiniSwap.HandlePetAction(pet, petAction, "Engaged");
-
-        -- Stance: Idle
-        elseif (player.Status == 'Idle') then
-            profile.MiniSwap.ShowDebugActionType(
-                "Idle"
-                .. (pet ~= nil and " + Pet" or "")
-                .. (petAction ~= nil and " + PetAction" or "")
-            );
-
-            profile.MiniSwap.TryEquipSet("Idle_Default");
-
-            local idledMode = state.Modes.Idle.Choices[state.Modes.Idle.SelectedIdx];
-            if (idledMode ~= nil and idledMode ~= "None") then
-                profile.MiniSwap.TryEquipSet("Idle_" .. idledMode);
-            end
-
-            local idleAndEngagedMode = state.Modes.IdleAndEngaged.Choices[state.Modes.IdleAndEngaged.SelectedIdx];
-            if (idleAndEngagedMode ~= nil and idleAndEngagedMode ~= "None") then
-                profile.MiniSwap.TryEquipSet("Idle_" .. idleAndEngagedMode);
-            end
-
-            profile.MiniSwap.HandlePetAction(pet, petAction, "Idle");
+        -- Stances: Engaged & Idle, including Pet & PetAction
+        if (player.Status:any("Engaged", "Idle")) then
+            profile.MiniSwap.HandleDefault_IdleAndEngagedStances(player.Status, pet, petAction)
 
         -- Stance: Resting
         elseif (player.Status == 'Resting') then
@@ -294,7 +254,30 @@ do -- GEAR LIFECYCLE REGION
     end
     profile.HandleDefault = profile.MiniSwap.HandleDefault;
 
-    profile.MiniSwap.HandlePetAction = function(pet, petAction, masterStance)
+    profile.MiniSwap.HandleDefault_IdleAndEngagedStances = function(stance, pet, petAction)
+        profile.MiniSwap.ShowDebugActionType(
+            stance
+            .. (pet ~= nil and " + Pet" or "")
+            .. (petAction ~= nil and " + PetAction" or "")
+        );
+
+        profile.MiniSwap.TryEquipSet(stance .. "_Default");
+
+        local stanceMode = state.Modes[stance].Choices[state.Modes[stance].SelectedIdx];
+        if (stanceMode ~= nil) then
+            profile.MiniSwap.TryEquipSet(stance .. "_" .. stanceMode);
+        end
+
+        local idleAndEngagedMode = state.Modes.IdleAndEngaged.Choices[state.Modes.IdleAndEngaged.SelectedIdx];
+        if (idleAndEngagedMode ~= nil) then
+            profile.MiniSwap.TryEquipSet(stance .. "_" .. idleAndEngagedMode);
+        end
+
+        profile.MiniSwap.HandleDefault_PetAction(pet, petAction, stance);
+
+    end
+
+    profile.MiniSwap.HandleDefault_PetAction = function(pet, petAction, masterStance)
         if (pet == nil) then return end
 
         profile.MiniSwap.TryEquipSet(masterStance .. "_Pet_Default");
@@ -328,6 +311,8 @@ do -- GEAR LIFECYCLE REGION
         if (actionType ~= "Unknown") then
             profile.MiniSwap.TryEquipSet("JA_" .. actionType);
         end
+
+        -- TODO: Groups
 
         -- NAME
         local actionName = profile.MiniSwap.Slugify(action.Name);
