@@ -2,8 +2,8 @@ local profile = gFunc.LoadFile('common/miniswap.lua');
 local sets = {};
 
 sets.LockStyle = {
-    Head  = "Usukane Somen",
-    Body  = "Kirin's Osode",
+    Head  = "empty",
+    Body  = "Vampire Cloack",
     Hands = "Swift Gages",
     Legs  = "Saotome Haidate",
     Feet  = "Usukane Sune-Ate",

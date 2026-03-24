@@ -154,7 +154,6 @@ sets.JA_Boost_Priority = {
 sets.JA_Chakra_Priority = {
     Head  = {
             -- Wish: Genbu's Kabuto [VIT+15]
-        { Name = "Tiger Mask", Level = 75 },          -- VIT+5
     },
     Body  = {
         { Name = "Temple Cyclas", Level = 58 },       -- VIT+3
