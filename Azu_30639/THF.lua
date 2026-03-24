@@ -6,7 +6,7 @@ profile.Aliases = {
 }
 
 profile.Modes = {
-    IdleAndEngaged = { "TH" },
+    IdleAndEngaged = { "*TH" },
 };
 
 local sets = {};
@@ -45,7 +45,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Kupo Shield", Level = 7 },
     },
     Range = {
-        { Name = "Atetepeyorg", Level = 75 },
+        -- { Name = "Atetepeyorg", Level = 75 }, -- STORED
         { Name = "Rogetsurin", Level = 15 },
     },
     Ammo  = {
@@ -65,7 +65,7 @@ sets.Engaged_Default_Priority = {
         "remove",
     },
     Head  = {
-        -- { Name = "Rog. Bonnet +1", Level = 74 },      -- Haste+5  CritRate+3  EVA+10  -- STORED
+            -- Wish: Skadi's Visor [DEX+4 AGI+4 ATK+6 H+3 (Aug) Acc+4]
             -- Wish: Aug: ATK+5 ACC+5 DA+2
         { Name = "Assailant's Visor", Level = 70 },   -- STR+5 DEX+11
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
@@ -83,9 +83,8 @@ sets.Engaged_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
+            -- Wish: Shadi's Cuirie [DEX+8 AGI+8 ACC+10 ATK+5 EVA-10 (Aug) H+3 STP+4]
         { Name = "Adhemar Jacket", Level = 75 },
-        -- Wish: Lv.70 Bloody Aketon [AGI+6/7 (Aug) AGI+4 ACC+8]
-        -- Wish: Lv.60 Aketon [AGI+5 (Aug) ACC+5 ATK+5 H+2]
         { Name = "Scorpion Harness", Level = 57 },    -- ACC+10 EVA+10
         { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
@@ -285,30 +284,32 @@ sets.WS_Default_Priority = {
         { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3 AGI+3
     },
     Neck  = {
-            -- Wish: Lv.75 Love Torque [DEX+5 Dagger+7]
+        { Name = "Love Torque", Level = 73 },         -- DEX+5 DaggerSkill+7
         { Name = "Spike Necklace", Level = 21 },      -- DEX+3       STR+3
         -- { Name = "Rabbit Charm", Level = 7 },         -- DEX+1 AGI+1  -- STORED
         { Name = "Pile Chain", Level = 3 },           --             ACC+1
     },
     Body = {
+            -- Wish: Lv.75 Skadi's Cuirie [DEX+8 AGI+8 ACC+10 ATK+5]
         { Name = "Adhemar Wristbands", Level = 75 },  --             ACC+10 ATK+10 Enhance Trick Attack
         { Name = "Brigandine +1", Level = 45 },       -- DEX+3 AGI+3 STR+3  ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
     },
     Hands = {
+        { Name = "Swift Gages", Level = 75 },         -- DEX+5 AGI+8         ATK+5
         -- { Name = "Adhemar Wristbands", Level = 75 },  --             ACC+10 ATK+10 Enhance Trick Attack  -- STORED
         { Name = "Raptor Gloves", Level = 48 },       -- DEX+4
         { Name = "Battle Gloves", Level = 48 },       --             ACC+3
     },
     Ring1 = {
-        { Name = "Zilant Ring", Level = 75 },         -- DEX+6           ACC+3
-        { Name = "Toreador's Ring", Level = 57 },     --                 ACC+7
-        { Name = "Ecphoria Ring", Level = 49 },       --                 ACC+4
+        { Name = "Zilant Ring", Level = 75 },         -- DEX+6       ACC+3
+        { Name = "Toreador's Ring", Level = 57 },     --             ACC+7
+        { Name = "Ecphoria Ring", Level = 49 },       --             ACC+4
         { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "San d'Orian Ring",
     },
     Ring2 = {
-        { Name = "Rajas Ring", Level = 30 },          -- DEX+2~5                        STR+2~5
+        { Name = "Rajas Ring", Level = 30 },          -- DEX+2~5                    STR+2~5
         { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "Provenance Ring",
     },
@@ -328,9 +329,8 @@ sets.WS_Default_Priority = {
         { Name = "Acrobat's Breeches", Level = 70 },  -- DEX+2 AGI+9 TA+2
     },
     Feet  = {
-        -- { Name = "Adhemar Gamashes", Level = 75 },    --                   TA+2  -- STORED
-        { Name = "Skadi's Jambeaux", Level = 75 },    --                   TA+2
-        { Name = "Leaping Boots", Level = 7 },        --       AGI+3  ACC+5  STR+3
+        { Name = "Skadi's Jambeaux", Level = 75 },    --       AGI+3                      TA+2
+        { Name = "Leaping Boots", Level = 7 },        --       AGI+3  ACC+5         STR+3
     },
 };
 
@@ -342,7 +342,7 @@ sets.WS_Exenterator = {
         -- Wish: Fotia Gorget [WSAcc+10 WSD+10%]
     Body  = "Adhemar Jacket",                         --             ATK+10 Crit+
         -- Wish: Lv.75 Dragon Harness +1 [DEX+7 AGI+7 ATK+12 (Aug) DEX+3 AGI+3 ATK+12 Skillchain Dmg+4]
-        -- Wish: Lv.70 Bloody Aketon [AGI+6/7 (Aug) AGI+4 ACC+8]
+        -- Wish: Lv.75 Skadi's Cuirie [DEX+8 AGI+8 ACC+10 ATK+5]
     Hands = "Swift Gages",                            -- AGI+8 DA+2 ATK+5
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)

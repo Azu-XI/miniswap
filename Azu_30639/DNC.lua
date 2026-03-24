@@ -339,7 +339,7 @@ sets.WS_Default_Priority = {
         { Name = "Brutal Earring", Level = 75 },      --                                           DA+5
     },
     Neck  = {
-            -- Wish: Lv.75 Love Torque [DEX+5 Dagger+7]
+        { Name = "Love Torque", Level = 73 },         -- DEX+5 DaggerSkill+7
         { Name = "Spike Necklace", Level = 21 },      -- DEX+3                           STR+3
         { Name = "Pile Chain", Level = 3 },           --                 ACC+1
     },
