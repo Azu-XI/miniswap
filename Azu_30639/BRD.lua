@@ -577,7 +577,7 @@ sets.WS_Default_Priority = {
         { Name = "Garrison Tunica +1", Level = 20 },  -- DEX+2
     },
     Hands = {
-        { Name = "Swift Gages", Level = 75 },         -- AGI+8  DEX+5   ATK+5   DA+2
+        { Name = "Swift Gages", Level = 75 },         -- AGI+8  DEX+5             ATK+5   DA+2
         { Name = "Raptor Gloves", Level = 48 },       -- DEX+4
         { Name = "Battle Gloves", Level = 48 },       --                 ACC+3
     },
@@ -646,11 +646,12 @@ sets.WS_MordantRime = {
 
 --> Requiescat: 4 hits, 73% MND, fTP replicating (Soil/Shadow Gorget)
 sets.WS_Requiescat = {
-    Head  = "Brd. Roundlet +1",                       -- MND+6
+    Head  = "Choral Roundlet +1",                     -- MND+6
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
     Ear1  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
     Ring1 = "Tamas Ring",                             -- MND+5
+    Back  = "Dew Silk Cape +1",                       -- MND+6
     Waist = "Salire Belt",                            -- MND+5
     Feet  = "Suzaku's Sune-Ate",                      -- MND+15
 };
