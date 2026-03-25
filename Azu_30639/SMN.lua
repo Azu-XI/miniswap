@@ -13,7 +13,7 @@ sets.LockStyle = {
 sets.Idle_Default_Priority = {
     Main  = {
         { Name = "Radiance +1", Level = 50 },         -- Refresh+2
-        -- { Name = "Radiance", Level = 20 },            -- Refresh+1
+        -- TODO: Redo { Name = "Radiance", Level = 20 },            -- Refresh+1
         { Name = "Ash Pole +1", Level = 5 },
         "Maple Wand +1",
     },
@@ -22,7 +22,7 @@ sets.Idle_Default_Priority = {
         { Name = "remove", Level = 5 },               -- No shield with staff
         "Kupo Shield",
     },
-    Ammo = {
+    Ammo  = {
             -- Wish: [(Aug) Pet: Acc+5 Atk+5 PDT-3]
         { Name = "Soothing Sachet", Level = 70 },     -- MP+40  MND+4  Enm-4  BPII-2
         { Name = "Rimestone", Level = 60 },           -- MP+35  MACC+3  INT+3  MND+1  Emn-5
@@ -37,13 +37,13 @@ sets.Idle_Default_Priority = {
         { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
     },
-    Ear1 = {
+    Ear1  = {
         { Name = "Loquac. Earring", Level = 75 },
         { Name = "Outlaw's Earring", Level = 50 },
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         "remove",
     },
-    Ear2 = {
+    Ear2  = {
         { Name = "Insomnia Earring", Level = 50 },
         { Name = "Tribal Earring", Level = 20 },
         "remove",
@@ -111,7 +111,7 @@ sets.Idle_Default_Priority = {
 local petDefaultPriority = {
     Main  = {
         { Name = "Radiance +1", Level = 50 },         --                       PetATK+15 PetACC+10 Refresh+2
-        { Name = "Radiance", Level = 20 },            --                       PetATK+10           Refresh+1
+        -- TODO: Redo { Name = "Radiance", Level = 20 },            --                       PetATK+10           Refresh+1
     },
     Ammo  = {
         { Name = "Soothing Sachet", Level = 70 },     -- PetACC+5 PetAtk+5 PetDT-3
@@ -122,7 +122,7 @@ local petDefaultPriority = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2
     },
-    Ear1 = {
+    Ear1  = {
         -- { Name = "Wilderness Earring", Level = 45 },  -- PetACC+1  -- STORED
     },
     Body  = {
@@ -192,7 +192,7 @@ local petMatchesWeatherPriority = {
 sets.Idle_Pet_Weather_Priority = petMatchesWeatherPriority;
 sets.Engaged_Pet_Weather_Priority = petMatchesWeatherPriority;
 
--- Goal: Blood Pact Ability Delay (Max 15 per tier) ; Blood Boon
+-- Blood Pact Precast // Goal: Blood Pact Ability Delay (Max 15 per tier) ; Blood Boon
 local bloodPact = {
     Ammo  = {
         { Name = "Soothing Sachet", Level = 70 },     --       BPII-2
@@ -226,7 +226,7 @@ local bloodPact = {
     },
     Legs  = {
             -- Wish: Lv.75 Smn. Spats +1 [BP-2 (Aug) BloodBoon+8]
-        { Name = "Chironic Hose", Level = 75 },       -- BP-2 BloodBoon+3
+        { Name = "Chironic Hose", Level = 75 },       -- BP-2          BloodBoon+3
     },
     Feet  = {
         { Name = "Smn. Pigaches +1", Level = 75 },    -- BP-2
@@ -234,6 +234,205 @@ local bloodPact = {
 };
 sets.JA_BloodPactRage_Priority = bloodPact;
 sets.JA_BloodPactWard_Priority = bloodPact;
+
+--
+-- Blood Pact Midcast
+--
+
+-- DP Default // Goal: Smn Skill
+sets.Midcast_Pet_Default_Priority = {
+    Main  = {
+            -- Wish: Lv.75 Bahamut's Staff [SmnSkill+10]
+    },
+    Sub   = {},
+    Ammo  = {},
+    Head  = {
+            -- Wish: Lv.75 Marduk's Tiara [SmnSkill+7] (for minmaxing, but Evoker's Horn +1 is just fine)
+        { Name = "Evk. Horn +1", Level = 74 },        -- SmnSkill+5
+            -- Wish: Lv.50 Austere/Penance Hat (lv.50) [SmnSkill+2/3]
+    },
+    Ear1  = {
+            -- Wish: Lv.35 Summoning Earring [SmnSkill+3]
+    },
+    Ear2  = {
+            -- Wish: Lv.50 Spire Earring [SmnSkill+3]
+            -- Wish: Lv.35 Anima Earring +1 [SmnSKill+2]
+    },
+    Neck  = {
+            -- Wish: Lv.75 Incanter's Torque [SmnSkill+8]
+            -- Wish: Lv.65 Summoning Torque [SmnSkill+7]
+            -- Wish: Lv.40 Elementium Torque +1 [SmnSkill+4]
+    },
+    Body  = {
+    },
+    Hands = {
+        { Name = "Smn. Bracers +1", Level = 75 },     -- SmnSkill+12
+            -- Wish: Lv. Austere/Penance Cuffs (lv.50) [SmnSkill+2/3]
+    },
+    Ring1 = {
+            -- Wish: Lv. Evoker's Ring [SmnSkill+10]
+    },
+    Ring2 = {
+    },
+    Back  = {
+        { Name = "Astute Cape", Level = 75 },         -- SmnSkill+5
+    },
+    Waist = {
+            -- Wish: Lv.52 Summoning Belt [SmnSkill+2]
+    },
+    Legs  = {
+        { Name = "Smn. Spats +1", Level = 75 },       -- SmnSkill+10
+            -- Wish: Lv. Austere/Penance Slops (lv.50) [SmnSkill+3/4]
+    },
+    Feet  = {
+            -- Wish: Lv. Marduk's Crackows [SmnSkill+5]
+            -- Wish: Lv. Zenith Pumps + 1 [SmnSkill+6]
+            -- Wish: Lv. Austere/Penance Sabots (lv.50) [SmnSkill+3/4]
+    },
+};
+
+-- BP Ward - Enhancing // Goal: Smn Skill
+-- Nothing to do, Smn Skill is already in the Midcast_Pet_Default set
+
+-- BP Ward - Enfeebling // Goal: Smn Skill, PetMACC
+-- Only add PeMACC on top of the Smn Skill in the Midcast_Pet_Default set
+-- TODO: Use action name/groups
+-- TODO: Lookup all fields
+-- main:
+-- Wish: Lv.xx Providence [PetMACC+15] {Incursion T3}
+-- Wish: Lv.xx Conjurer's Crook +1 [PetMACC+10] {Woodworking 110}
+
+-- BP Rage Physical // Goal: BPDmg, Smn Skill, PetACC, PetATK, PetDA
+-- TODO: Use action name/groups
+sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_PHYSICAL_NAME_Priority = {
+    Main  = {
+            -- Wish: Lv.75 Providence [PetACC+20 PetATK+20] {Incursion T3}
+        { Name = "Radiance +1", Level = 50 },         --                       PetATK+15 PetACC+10
+        -- TODO: Redo { Name = "Radiance", Level = 20 },            --                       PetATK+10
+    },
+    Sub   = {
+            -- Wish: Lv.75 Norn's Grip +0/1 [BPDmg+2/4] {Leathercraft 105}
+    },
+    Ammo  = {
+-- Wish: Lv.xx Soothing Sachet [(Aug) PetACC+5 PetATK+5]
+    },
+    Head  = {
+        { Name = "Chironic Hat", Level = 75 },        -- BPDmg+3
+-- Wish: Lv.75 Marduk's Tiara [SmnSkill+7] (for minmaxing, Evoker's Horn +1 is just fine)
+-- Wish: Lv.xx Evoker's Horn +1 [SmnSkill+5]
+-- Wish: Lv.xx Austere/Penance Hat (lv.50) [SmnSkill+2/3]
+    },
+    Ear1  = {
+-- Wish: Lv.xx Wilderness Earring +0/1 (lv.45) [PetACC+0/1]
+-- Wish: Lv.xx Summoning Earring (lv.35) [SmnSkill+3]
+    },
+    Ear2  = {
+-- Wish: Lv.xx Spire Earring (lv.50) [SmnSkill+3]
+-- Wish: Lv.xx Anima Earring +1 (lv.35) [SmnSKill+2]
+    },
+    Neck  = {
+-- Wish: Lv.xx Incanter's Torque [SmnSkill+8]
+-- Wish: Lv.xx Summoning Torque [SmnSkill+7]
+-- Wish: Lv.xx Elementium Torque +1 (lv.40) [SmnSkill+4]
+    },
+    Body  = {
+-- Wish: Summoner Doublet +1 [PetCritRate+4 (Aug) BPDmg+4]
+-- Wish: Lv.xx Evoker's Doublet +1 [(Aug) PetAcc+8]
+    },
+    Hands = {
+            -- Wish: Aug: BPDmg+3
+        { Name = "Smn. Bracers +1", Level = 75 },     --          SmnSkill+12
+-- Wish: Lv.xx Austere/Penance Cuffs (lv.50) [SmnSkill+2/3]
+    },
+    Ring1 = {
+-- Wish: Lv.xx Evoker's Ring [SmnSkill+10]
+    },
+    Ring2 = {},
+    Back  = {
+-- Wish: Lv.xx Aife's Mantle [PetATK+10 (unsure?)]
+-- Wish: Lv.xx Astute Cape [SmnSkill+5]
+    },
+    Waist = {
+-- Wish: Lv.xx Covenant Belt [PetACC+10]
+-- Wish: Lv.xx Bolt Stone [PetDEX+5 (Aug) PetATK+5]
+-- Wish: Lv.xx Beastly Girdle [(Aug) PetACC+5]
+-- Wish: Lv.xx Mujin Obi [PetATK+10]
+-- Wish: Lv.xx Summoning Belt (lv.52) [SmnSkill+2]
+    },
+    Legs  = {
+-- Wish: Lv.xx Summoner Spats +1 [(Aug) SmnSkill+10]
+-- Wish: Lv.xx Marduk's Shalwar [SmnSkill+5]
+-- Wish: Lv.xx Evoker's Spats +1 [PetAcc+10 (Aug) PetAtk+3 PetDA+3]
+-- Wish: Lv.xx Austere/Penance Slops (lv.50) [SmnSkill+3/4]
+    },
+    Feet  = {
+-- Wish: Lv.xx Summoner's Pigaches +1 [PetATK+7 (Aug) PetDA+1 PetCritRate+3]
+-- Wish: Lv.xx Marduk's Crackows [SmnSkill+5]
+-- Wish: Lv.xx Zenith Pumps + 1 [SmnSkill+6]
+-- Wish: Lv.xx Austere/Penance Sabots (lv.50) [SmnSkill+3/4]
+    },
+};
+
+-- BP Rage Magical // Goal: BPDmg, Smn Skill, PetMACC, PetMAB
+-- TODO: Use action name/groups
+sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_MAGICAL_NAME_Priority = {
+    Main  = {
+            -- Wish: Lv.75 Conjurer's Crook +0/1 [PetMAB+15/20 PetMACC+0/10] {Woodworking 110}
+            -- Wish: Lv.75 Providence [PeMAB+15 PetMACC+15] {Incursion T3}
+    },
+    Sub   = {
+            -- Wish: Lv.75 Norn's Grip +0/1 [BPDmg+2/4] {Leathercraft 105}
+    },
+    Ammo  = {
+    },
+    Head  = {
+        { Name = "Chironic Hat", Level = 75 },        -- BPDmg+3
+-- Wish: Lv.xx Austere/Penance Hat (lv.50) [SmnSkill+2/3]
+    },
+    Ear1  = {
+-- Wish: Lv.xx Summoning Earring (lv.35) [SmnSkill+3]
+    },
+    Ear2  = {
+-- Wish: Lv.xx Spire Earring (lv.50) [SmnSkill+3]
+-- Wish: Lv.xx Anima Earring +1 (lv.35) [SmnSKill+2]
+    },
+    Neck  = {
+-- Wish: Lv.xx Incanter's Torque [SmnSkill+8]
+-- Wish: Lv.xx Summoning Torque [SmnSkill+7]
+-- Wish: Lv.xx Elementium Torque +1 (lv.40) [SmnSkill+4]
+    },
+    Body  = {
+        -- Wish: Summoner Doublet +1 [PetCritRate+4 (Aug) BPDmg+4]
+    },
+    Hands = {
+            -- Wish: Aug: BPDmg+3
+        { Name = "Smn. Bracers +1", Level = 75 },     --          SmnSkill+12
+-- Wish: Lv.xx Zenith Mitts + 1 [(Aug) PetMACC+6]
+-- Wish: Lv.xx Austere/Penance Cuffs (lv.50) [SmnSkill+2/3]
+    },
+    Ring1 = {
+-- Wish: Lv.xx Evoker's Ring [SmnSkill+10]
+    },
+    Ring2 = {},
+    Back  = {
+-- Wish: Lv.xx Summoner's Cape [(Aug) PetMACC+5 PetMAB+5]
+-- Wish: Lv.xx Astute Cape [SmnSkill+5]
+    },
+    Waist = {
+-- Wish: Lv.xx Summoning Belt (lv.52) [SmnSkill+2]
+    },
+    Legs  = {
+-- Wish: Lv.xx Summoner Spats +1 [(Aug) SmnSkill+10]
+-- Wish: Lv.xx Marduk's Shalwar [SmnSkill+5]
+-- Wish: Lv.xx Austere/Penance Slops (lv.50) [SmnSkill+3/4]
+    },
+    Feet  = {
+-- Wish: Lv.xx Chironic Slippers [PetMAB+5]
+-- Wish: Lv.xx Marduk's Crackows [SmnSkill+5]
+-- Wish: Lv.xx Zenith Pumps + 1 [SmnSkill+6]
+-- Wish: Lv.xx Austere/Penance Sabots (lv.50) [SmnSkill+3/4]
+    },
+};
 
 sets.JA_ElementalSiphon = {
     Main  = {
@@ -346,12 +545,6 @@ sets.Midcast_Blindna_Priority = midcastFastCast
 sets.Midcast_Silenana_Priority = midcastFastCast
 sets.Midcast_Erase_Priority = midcastFastCast
 sets.Midcast_Raise_Priority = midcastFastCast
-
--- TODO: Midcast Avatar BP, need to update miniswap ; Goal: ATK / ACC / SMNSkill (or is SMNSkill in JA?)
--- Head Lv.75 Chironic Doublet [BPDmg+3]
--- Body Lv.75 Smn. Doublet+1 [(Aug) BPDmg+4]
--- Hands Lv.75 Smn. Bracers+1 [(Aug) BPDmg+3]
--- Grip Lv.75 Norn's Grip +0/1 [BPDmg+2/3]
 
 -- Goal: Max FastCast 80%
 sets.Precast_Default_Priority = {
