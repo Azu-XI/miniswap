@@ -59,7 +59,6 @@ sets.Engaged_Default_Priority = {
     },
     Ear2 = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
-        { Name = "Insomnia Earring", Level = 50 },
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         { Name = "Tribal Earring", Level = 20 },
         "remove"

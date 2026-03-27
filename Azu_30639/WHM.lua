@@ -57,11 +57,10 @@ sets.Idle_Default_Priority = {
     Ear1 = {
         { Name = "Loquac. Earring", Level = 75 },     -- MP+30
         { Name = "Outlaw's Earring", Level = 50 },    -- MP+15
-        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
     },
     Ear2 = {
         { Name = "Roundel Earring", Level = 73 },     -- CurePot+5%
-        { Name = "Insomnia Earring", Level = 50 },    -- MP+15 ResistSleep+2
+        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         { Name = "Tribal Earring", Level = 20 },
         "remove",
     },

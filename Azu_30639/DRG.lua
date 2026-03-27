@@ -122,7 +122,7 @@ sets.Engaged_Default_Priority = {
     },
     Ear2 = {
         { Name = "Assault Earring", Level = 58 },     -- ACC+2 ATK+5 EVA-2 DEF-3
-        { Name = "Insomnia Earring", Level = 50 },
+        { Name = "Wilder. Earring +1", Level = 45 },  -- ACC+2 PetACC+2
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         { Name = "Tribal Earring", Level = 20 },
         "remove",
@@ -219,6 +219,9 @@ local petDefaultPriority = {
     Head  = {
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2 PetRACC+2
     },
+    Ear1 = {
+        { Name = "Wilder. Earring +1", Level = 45 },  -- ACC+2 PetACC+2
+    }
     Body  = {
         -- { Name = "Thrk. Breastplate", Level = 61 },   -- PetRegen+2 (and some DEF for master)  -- IN STORAGE
         { Name = "Aega's Doublet", Level = 32 },       -- PetACC+3 PetATK+3

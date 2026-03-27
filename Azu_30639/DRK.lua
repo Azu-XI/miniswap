@@ -35,7 +35,6 @@ sets.Engaged_Default_Priority = {
     },
     Ear2 = {
         { Name = "Assault Earring", Level = 58 },     -- ACC+2 ATK+5 EVA-2 DEF-3
-        { Name = "Insomnia Earring", Level = 50 },
         { Name = "Tribal Earring", Level = 20 },
         "remove",
     },

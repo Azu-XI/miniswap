@@ -25,7 +25,7 @@ sets.Engaged_Default_Priority = {
     },
     Ear1 = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
-        -- { Name = "Wilderness Earring", Level = 40 },  -- Acc+1 PetRACC+1  -- STORED
+        { Name = "Wilder. Earring +1", Level = 45 },  -- ACC+2 PetACC+2
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         "remove",
     },
@@ -124,6 +124,9 @@ local petDefaultPriority = {
             -- Wish: Khthonios Helm [PetATK+9 PetACC+9] {Beaucedine 2.0}
             -- Wish: Pantin Taj +1 [PetRegen+1 (Aug) PetDA+3]
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2 PetRACC+2
+    },
+    Ear1 = {
+        { Name = "Wilder. Earring +1", Level = 45 },  -- PetACC+2
     },
     Body  = {
             -- Wish: Thurandaut Tabard [PetDT-5 PetHP+50 PetEnm+5]

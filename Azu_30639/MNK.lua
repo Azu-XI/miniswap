@@ -39,7 +39,6 @@ sets.Engaged_Default_Priority = {
     },
     Ear1 = {
         { Name = "Brutal Earring", Level = 75 },      --                   DA+5 STP+1
-        { Name = "Insomnia Earring", Level = 50 },
         { Name = "Cassie Earring", Level = 1 },
     },
     Ear2 = {

@@ -35,12 +35,12 @@ sets.Engaged_Default_Priority = {
     },
     Ear1 = {
         { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
-        { Name = "Insomnia Earring", Level = 50 },
+        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
     },
     Ear2 = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
-        { Name = "Outlaw's Earring", Level = 50 },
-        { Name = "Dodge Earring", Level = 29 },
+        { Name = "Outlaw's Earring", Level = 50 },    -- MP+15 DEX+2 ATK+4 EVA+4
+        { Name = "Tribal Earring", Level = 20 },      -- DEF+1 VIT+1
     },
     Neck  = {
         { Name = "Love Torque", Level = 73 },         -- DaggerSkill+7
@@ -127,19 +127,17 @@ sets.Idle_Default_Priority = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Emperor Hairpin", Level = 24 },     -- EVA+10 -- No Sallet, EVA > Regen for pulls
         { Name = "Garrison Sallet +1", Level = 20 },  -- Regen+1 under lv.50
-            { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
+        { Name = "Cmp. Eye Circlet", Level = 9 },     -- EVA+5
         "Coven Hat",
     },
     Ear1 = {
-        { Name = "Beastly Earring", Level = 72 },     -- EVA+5
-        { Name = "Insomnia Earring", Level = 50 },    -- HP/MP+15  ResistSleep
+        { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
-        "remove",
     },
     Ear2 = {
-        { Name = "Musical Earring", Level = 70 },     -- EVA+5
-        { Name = "Tribal Earring", Level = 20 },
-        "remove",
+        { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
+        { Name = "Outlaw's Earring", Level = 50 },    -- MP+15 DEX+2 ATK+4 EVA+4
+        { Name = "Tribal Earring", Level = 20 },      -- DEF+1 VIT+1
     },
     Neck  = {
         { Name = "Pegasus Collar", Level = 20 },      -- MvtSpeed+12%

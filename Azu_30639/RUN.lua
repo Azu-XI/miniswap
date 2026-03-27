@@ -24,7 +24,6 @@ sets.Engaged_Default_Priority = {
         "Coven Hat",
     },
     Ear1 = {
-        { Name = "Insomnia Earring", Level = 50 },
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         "remove",
     },

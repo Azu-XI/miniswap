@@ -111,8 +111,7 @@ sets.Idle_Default_Priority = {
         { Name = "remove", Level = 1 },
     },
     Ear2 = {
-        { Name = "Insomnia Earring", Level = 50 },
-        { Name = "Dodge Earring", Level = 29 },
+        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15
         { Name = "remove", Level = 1 },
     },
     Neck  = {

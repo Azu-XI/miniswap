@@ -39,12 +39,11 @@ sets.Idle_Default_Priority = {
     },
     Ear1  = {
         { Name = "Loquac. Earring", Level = 75 },
-        { Name = "Outlaw's Earring", Level = 50 },
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         "remove",
     },
     Ear2  = {
-        { Name = "Insomnia Earring", Level = 50 },
+        { Name = "Outlaw's Earring", Level = 50 },
         { Name = "Tribal Earring", Level = 20 },
         "remove",
     },
@@ -122,8 +121,8 @@ local petDefaultPriority = {
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2
     },
-    Ear1  = {
-        -- { Name = "Wilderness Earring", Level = 45 },  -- PetACC+1  -- STORED
+    Ear1 = {
+        { Name = "Wilder. Earring +1", Level = 45 },  -- PetACC+2
     },
     Body  = {
         { Name = "Chironic Doublet", Level = 75 },    -- PetDT-5  Refresh+1  DT-5
@@ -322,7 +321,7 @@ sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_PHYSICAL_NAME_Priority = {
             -- Wish: Lv.50 Austere/Penance Hat [SmnSkill+2/3]
     },
     Ear1  = {
-            -- Wish: Lv.45 Wilderness Earring +0/1 [PetACC+0/1]
+        { Name = "Wilder. Earring +1", Level = 45 },  -- PetACC+2
             -- Wish: Lv.35 Summoning Earring [SmnSkill+3]
     },
     Ear2  = {

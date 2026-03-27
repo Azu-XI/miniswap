@@ -23,12 +23,12 @@ sets.Engaged_Default_Priority = {
         "Coven Hat",
     },
     Ear1 = {
-        { Name = "Insomnia Earring", Level = 50 },
-        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
+        { Name = "Wilder. Earring +1", Level = 45 },  -- ACC+2 PetACC+2
         "remove",
     },
     Ear2 = {
-        { Name = "Outlaw's Earring", Level = 50 },
+        { Name = "Assault Earring", Level = 58 },     -- ACC+2 ATK+5 EVA-2 DEF-3
+        { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
         { Name = "Tribal Earring", Level = 20 },
         "remove",
     },
@@ -121,15 +121,18 @@ local petDefaultPriority = {
     Head  = {
         { Name = "Entrancing Ribbon", Level = 11 },   -- PetACC+2 PetRACC+2
     },
+    Ear1 = {
+        { Name = "Wilder. Earring +1", Level = 45 },  -- PetACC+2
+    },
     Body  = {
-        { Name = "Aega's Doublet", Level = 32 },       -- PetACC+3 PetATK+3
+        { Name = "Aega's Doublet", Level = 32 },      -- PetACC+3 PetATK+3
     },
     Hands = {
         { Name = "Raptor Gloves", Level = 48 },       -- PetATK+5 PetRATK+5
     },
     Back  = {
             -- Wish: Lv.75 Aife's Mantle [PetAtk+10]
-        { Name = "Fidelity Mantle", Level = 30 },    -- PetSTP+3
+        { Name = "Fidelity Mantle", Level = 30 },     -- PetSTP+3
     },
     Waist = {
             -- Wish: Lv.73 Companion Belt +0/1 [PetACC+8/12 PetRACC+8/12 PetDA+0/1%]
