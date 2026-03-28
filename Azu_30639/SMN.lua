@@ -218,7 +218,7 @@ local bloodPact = {
             -- Wish: Lv.75 Eidolon Ring [BPII-5]
     },
     Back  = {
-        { Name = "Summoner's Cape", Level = 75 },     -- BP-2
+        { Name = "Summoner's Cape", Level = 70 },     -- BP-2
     },
     Waist = {
             -- Wish: Lv.70 Covenant Belt [BloodBoon+3 (Aug) BP-2] {DragonSlaying}
@@ -300,6 +300,7 @@ sets.Midcast_Pet_Default_Priority = {
 -- main:
 -- Wish: Lv.xx Providence [PetMACC+15] {Incursion T3}
 -- Wish: Lv.xx Conjurer's Crook +1 [PetMACC+10] {Woodworking 110}
+-- { Name = "Summoner's Cape", Level = 70},     -- PetMACC+5
 
 -- BP Rage Physical // Goal: BPDmg, Smn Skill, PetACC, PetATK, PetDA
 -- TODO: Use action name/groups
@@ -410,8 +411,7 @@ sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_MAGICAL_NAME_Priority = {
     },
     Ring2 = {},
     Back  = {
-        { Name = "Astute Cape", Level = 73 },         -- SmnSkill+5
-            -- Wish: Lv.70 Summoner's Cape [(Aug) PetMACC+5 PetMAB+5]
+        { Name = "Summoner's Cape", Level = 70 },     -- PetMACC+5 PetMAB+5
     },
     Waist = {
             -- Wish: Lv.52 Summoning Belt (lv.52) [SmnSkill+2]
