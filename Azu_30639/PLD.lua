@@ -11,7 +11,7 @@ local sets = {};
 sets.Engaged_Default_Priority = {
     Main  = {
         { Name = "Xiutleato", Level = 75 },
-        { Name = "Verdun", Level = 73 },
+        { Name = "Joyeuse", Level = 70 },
             -- TODO: Some swords from lv.50
         { Name = "Fealty", Level = 20 },
         { Name = "Auriga Xiphos", Level = 19 },
@@ -19,8 +19,10 @@ sets.Engaged_Default_Priority = {
         "Wax Sword +1",
     },
     Sub   = {
-            -- TODO: Some shields..
-        { Name = "Clipeus", Level = 19 },
+            -- TODO: Some real shields....
+        { Name = "Thorins Shield +1", Level = 65 },   -- ATK+18
+        { Name = "Viking Shield", Level = 45 },       -- ATK+12
+        { Name = "Clipeus", Level = 9 },
         "Kupo Shield",
     },
     Ammo = {
@@ -62,7 +64,7 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 H+4 DA+2 ATK+5
         { Name = "Hydra Moufles", Level = 70 },       -- ACC+4 Enm+6
         { Name = "Mythril Gauntlets", Level = 49 },   -- MP+15 STR+4 ACC+9 H+2
         { Name = "Gothic Gauntlets", Level = 43 },    -- STR+3 Enm+2
@@ -101,15 +103,14 @@ sets.Engaged_Default_Priority = {
             -- Wish: Aug: ACC+8 ATK+8 
         { Name = "Ares' Flanchard", Level = 75 },     -- HP+2% STR+6 DEX+6 DA+2
         { Name = "Raptor Trousers", Level = 48 },
-        { Name = "Garrison Hose +1", Level = 20 },        -- STR+2 Haste+2
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
         { Name = "Ares' Sollerets", Level = 75 },     -- HP+2% ACC+7 ATK+7 EVA-7 STR+4 STP+3
-        { Name = "Raptor Ledelsens", Level = 48 },        -- Haste+2
-        { Name = "Eisenschuhs", Level = 29 },
-        { Name = "Greaves", Level = 24 },
+        { Name = "Raptor Ledelsens", Level = 48 },    -- H+2
+        -- { Name = "Eisenschuhs", Level = 29 },      -- VIT+2  -- STORED
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
     },
