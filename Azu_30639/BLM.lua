@@ -164,7 +164,7 @@ sets.Midcast_Default_Priority = {
     Body  = {
             -- Wish: Morrigan's Robe [INT+8 MAB+5 MACC+5]
         { Name = "Vanya Robe", Level = 75 },          -- INT+5  MAB+5  MagicBurst+5
-        { Name = "Seer's Tunic", Level = 29 },        -- INT+1
+        { Name = "Illusionist's Garb", Level = 29 },  -- INT+2  MAB+4
     },
     Hands = {
             -- Wish: Lv.75 Zenith Mitts +1 [MAB+6 (Aug) INT+1~6 MBDmg+1~6 ConserveMP+1~6]
@@ -265,7 +265,7 @@ sets.Midcast_ElementalEnfeeble_Priority = {
             -- Wish: Lv.72 Mahatma Houppelande [INT+11]
             -- Wish: Morrigan's Robe [INT+8 MAB+5 MACC+5]
         { Name = "Vanya Robe", Level = 75 },          -- INT+5  MAB+5  MagicBurst+5
-        { Name = "Seer's Tunic", Level = 29 },        -- INT+1
+        { Name = "Illusionist's Garb", Level = 29 },  -- INT+2  MAB+4
     },
     Hands = {
             -- Wish: Src. Gloves +1 [(Aug) INT+8]

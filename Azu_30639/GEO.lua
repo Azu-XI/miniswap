@@ -145,7 +145,7 @@ sets.Midcast_Default_Priority = {
         { Name = "Justice Badge", Level = 7 },        --                MND+3
     },
     Body  = {
-        { Name = "Seer's Tunic", Level = 29 },        -- INT+1
+        { Name = "Illusionist's Garb", Level = 29 },  -- MP+15 INT+2 MAB+4
     },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2

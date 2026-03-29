@@ -261,6 +261,9 @@ local midcastEnfeeblingINT = {
         { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
             -- Wish: Lv.20 Black Silk Neckerchief [INT+1]
     },
+    Body  = {
+        { Name = "Illusionist's Garb", Level = 29 },  -- INT+2
+    },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2
     },
@@ -309,6 +312,9 @@ sets.Midcast_ElementalMagic_Priority = {
             -- Wish: Lv.60 Radiant Lantern [(Aug) INT+4]
         { Name = "Mohbwa Scarf +1", Level = 40 },     -- INT+2
             -- Wish: Lv.20 Black Silk Neckerchief [INT+1]
+    },
+    Body  = {
+        { Name = "Illusionist's Garb", Level = 29 },  -- INT+2  MAB+4
     },
     Hands = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- INT+2

@@ -83,6 +83,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Mythril Gauntlets", Level = 49 },   -- STR+4 ACC+9 H+2
         { Name = "Gothic Gauntlets", Level = 43 },    -- STR+3
+        { Name = "Axe. Gauntlets", Level = 20 },      -- H+2 AxeSKill+7
         { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2 ATK+1
         "Dream Mittens +1",
     },
