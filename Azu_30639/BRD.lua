@@ -363,8 +363,7 @@ sets.Midcast_Singing_Priority = {
         { Name = "Cornette +1", Level = 4 },
     },
     Head  = {
-            -- Wish: Aug: WindSkill+7
-        { Name = "Brd. Roundlet +1", Level = 72 },    -- CHR+6   SingSkill+5
+        { Name = "Brd. Roundlet +1", Level = 72 },    -- CHR+6   SingSkill+5 WindSkill+7
         { Name = "Garrison Sallet +1", Level = 20 },  -- CHR+2
         { Name = "Entrancing Ribbon", Level = 11 },   -- CHR+2
     },
@@ -506,7 +505,7 @@ sets.Precast_Raise_Priority = {
 -- Goal: Max FastCast 80% ; Song Spellcasting
 sets.Precast_Singing_Priority = {
     Head  = {
-            -- Wish: Brd. Roundlet +1 [(Aug) SongCast-5]
+        { Name = "Brd. Roundlet +1", Level = 72 },    --       SongCast-5
         { Name = "Demon Helm", Level = 72 },          --       SongCast-3
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
