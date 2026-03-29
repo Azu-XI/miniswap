@@ -131,7 +131,7 @@ local petDefaultPriority = {
         { Name = "Raptor Gloves", Level = 48 },       -- PetATK+5 PetRATK+5
     },
     Back  = {
-            -- Wish: Lv.75 Aife's Mantle [PetAtk+10]
+        { Name = "Aife's Mantle", Level = 75 },       -- PetATK+10          ACC+4 STP+2
         { Name = "Fidelity Mantle", Level = 30 },     -- PetSTP+3
     },
     Waist = {

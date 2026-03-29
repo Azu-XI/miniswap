@@ -348,7 +348,7 @@ sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_PHYSICAL_NAME_Priority = {
     },
     Ring2 = {},
     Back  = {
-            -- Wish: Lv.75 Aife's Mantle [PetATK+10] {Dyna Qufim}
+        { Name = "Aife's Mantle", Level = 75 },       -- PetATK+10
         { Name = "Astute Cape", Level = 73 },         -- SmnSkill+5
     },
     Waist = {

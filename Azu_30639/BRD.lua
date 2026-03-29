@@ -236,10 +236,10 @@ sets.Midcast_Default_Priority = {
             -- Wish: Brd. Cuffs +1 [(Aug) FC+3]
     },
     Ring1 = {
-        { Name = "Tamas Ring", Level = 30 },          --                        MP+30 (Balance MPs)
         { Name = "Astral Ring", Level = 10 },         --                        MP+25 (Balance MPs)
     },
     Ring2 = {
+        { Name = "Tamas Ring", Level = 30 },          --                        MP+30 (Balance MPs)
         { Name = "Astral Ring", Level = 10 },         --                        MP+25 (Balance MPs)
     },
     Waist = {
@@ -648,7 +648,8 @@ sets.WS_Requiescat = {
     Neck  = "Soil Gorget",                            -- fTP+0.1
     Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
     Ear1  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
-    Ring1 = "Tamas Ring",                             -- MND+5
+    Ring1 = "Karka Ring",                             -- MND+6
+    Ring2 = "Tamas Ring",                             -- MND+5
     Back  = "Dew Silk Cape +1",                       -- MND+6
     Waist = "Salire Belt",                            -- MND+5
     Feet  = "Suzaku's Sune-Ate",                      -- MND+15
