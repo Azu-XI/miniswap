@@ -45,7 +45,7 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 H+4 DA+2 ATK+5
         { Name = "Axe. Gauntlets", Level = 20 },      -- H+2 AxeSKill+7
         { Name = "Guerilla Gloves", Level = 13 },
         "Dream Mittens +1",
@@ -77,14 +77,13 @@ sets.Engaged_Default_Priority = {
     },
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2
-        -- { Name = "Silver Hose", Level = 36 },        -- In storage
-        { Name = "Garrison Hose +1", Level = 20 },      -- STR+2 Haste+2
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
         { Name = "Skadi's Jambeaux", Level = 75 },    -- ACC+5 H+3
-        { Name = "Raptor Ledelsens", Level = 48 },      -- Haste+2
+        { Name = "Raptor Ledelsens", Level = 48 },    -- H+2
         { Name = "Greaves", Level = 24 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
@@ -212,8 +211,8 @@ sets.WS_Default_Priority = {
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4                 STR+4  DEX+4
         { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15  RATK+15
-        { Name = "Earth Mantle", Level = 40 },        -- STR+2
-        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
+--STORED{ Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
+--STORED{ Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4

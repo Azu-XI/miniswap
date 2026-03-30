@@ -12,7 +12,7 @@ sets.Engaged_Default_Priority = {
     },
     Range = {
         { Name = "Animator +1", Level = 71 },         -- DEX+4 PetHP+45~60 PetMP+0~60
-        -- { Name = "Turbo Animator", Level = 40 },      -- DEX+2  -- STORED
+--STORED{ Name = "Turbo Animator", Level = 40 },      -- DEX+2
         { Name = "Animator", Level = 1 },
     },
     Head  = {
@@ -153,7 +153,7 @@ local petDefaultPriority = {
             -- Wish: Lv.25 Herder's Subligar [PetACC+5 PetRACC+5 (Aug) DEX+3 PetACC+3 PetRACC+3]
     },
     Feet  = {
-        -- { Name = "Aife's Pumps", Level = 75 },        -- PetCurePot+4%  -- STORED
+--STORED{ Name = "Aife's Pumps", Level = 75 },        -- PetCurePot+4%
             -- Wish: Lv.75 Ryuga Sune-Ate [AutomatonSkill+5] {Beaucedine 2.0}
             -- Wish: Lv.75 Thurandaut Boots [PetMAB+5]
             -- Wish: Lv.74 Puppetry Babouches +1 [(Aug) PetRegen+3]

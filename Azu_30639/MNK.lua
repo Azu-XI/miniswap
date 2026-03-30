@@ -245,7 +245,7 @@ sets.WS_Default_Priority = {
     Back  = {
         { Name = "Amemet Mantle +1", Level = 61 },    --        ATK+15 STR+2
         { Name = "Exile's Cloak", Level = 50 },       -- STR+4 ATK+3
-        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
+--STORED{ Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12 ATK+4

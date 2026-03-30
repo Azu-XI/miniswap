@@ -49,7 +49,7 @@ sets.Engaged_Default_Priority = {
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Raptor Gloves", Level = 48 },
-        { Name = "Garrison Gloves +1", Level = 20 },     -- VIT+2
+        { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Guerilla Gloves", Level = 13 },
         "Dream Mittens +1",
     },
@@ -170,8 +170,8 @@ sets.WS_Default_Priority = {
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },  -- STR+4        ACC+4        DEX+4
         { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15  RATK+15
-        { Name = "Earth Mantle", Level = 40 },        -- STR+2
-        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
+--STORED{ Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
+--STORED{ Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       --              ACC+12 ATK+4

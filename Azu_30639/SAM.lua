@@ -11,11 +11,11 @@ sets.LockStyle = {
 
 sets.Engaged_Default_Priority = {
     Main  = {
-        { Name = "Azukinagamitsu", Level = 75 },
-        { Name = "Jindachi +1", Level = 54 },
-        { Name = "Mikazuki", Level = 44 },
-        { Name = "Kanesada", Level = 26 },
-        { Name = "Katayama", Level = 10 },
+--STORED{ Name = "Azukinagamitsu", Level = 75 },
+--STORED{ Name = "Jindachi +1", Level = 54 },
+--STORED{ Name = "Mikazuki", Level = 44 },
+--STORED{ Name = "Kanesada", Level = 26 },
+--STORED{ Name = "Katayama", Level = 10 },
     },
     Sub   = {
             -- Wish: Lv.74 Gatta Strap +0/1 [STR+3/4 DEX+3/4 ATK+3/4] {Leathercraft GuildNM}
@@ -24,7 +24,7 @@ sets.Engaged_Default_Priority = {
             -- Wish: Lv.20 Orcish Axegrip [HP+15 PDT-2 (Aug) DEF+4 ACC+3 Enm+2]
     },
     Range = {
-        { Name = "Ajjub Bow", Level = 75 },
+--STORED{ Name = "Ajjub Bow", Level = 75 },
         { Name = "War Bow +1", Level = 50 },
         { Name = "Battle Bow +1", Level = 40 },
         { Name = "Great Bow +1", Level = 30 },
@@ -158,7 +158,7 @@ sets.JA_Provoke_Priority = {
         { Name = "Sattva Ring", Level = 30 },         -- Enm+3
     },
     Back  = {
-        { Name = "Ram Mantle", Level = 38 },          -- Enm+2
+--STORED{ Name = "Ram Mantle", Level = 38 },          -- Enm+2
     },
     Waist = {
             -- Wish: Lv.71 Warwolf Belt [Enm+3]
@@ -210,8 +210,8 @@ sets.WS_Default_Priority = {
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },  -- STR+4        ACC+4        DEX+4
         { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15  RATK+15
-        { Name = "Earth Mantle", Level = 40 },        -- STR+2
-        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
+--STORED{ Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
+--STORED{ Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       --              ACC+12 ATK+4

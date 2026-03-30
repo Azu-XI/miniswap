@@ -45,7 +45,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Kupo Shield", Level = 7 },
     },
     Range = {
-        -- { Name = "Atetepeyorg", Level = 75 }, -- STORED
+--STORED{ Name = "Atetepeyorg", Level = 75 },
         { Name = "Rogetsurin", Level = 15 },
     },
     Ammo  = {
@@ -79,7 +79,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Love Torque", Level = 73 },         -- DaggerSkill+7
         { Name = "Peacock Charm", Level = 33 },       -- ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
-        -- { Name = "Rabbit Charm", Level = 7 },         -- DEX+2 AGI+2 EVA+1  -- STORED
+        -- { Name = "Rabbit Charm", Level = 7 },         -- DEX+2 AGI+2 EVA+1
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
@@ -151,7 +151,7 @@ sets.Idle_TH_Priority = sets.Engaged_TH_Priority;
 
 sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
 sets.Idle_Default_Priority.Head = {
-    -- { Name = "Rog. Bonnet +1", Level = 74 },          -- EVA+10  -- STORED
+--STORED{ Name = "Rog. Bonnet +1", Level = 74 },          -- EVA+10
     { Name = "Wivre Mask", Level = 65 },              -- EVA+10
     { Name = "Emperor Hairpin", Level = 50 },         -- EVA+10
     { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
@@ -194,7 +194,7 @@ sets.Preshot_Default = {}
 -- Goal: RACC, RATK, STP, Crit, Recycle, Etc
 sets.Midshot_Default = {
     Head  = {
-        -- { Name = "Adhemar Bonnet", Level = 75 },      -- RACC+9 RATK+9  -- STORED
+--STORED{ Name = "Adhemar Bonnet", Level = 75 },      -- RACC+9 RATK+9
     },
     Ring1 = {
             -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
@@ -242,7 +242,7 @@ sets.JA_CuringWaltz_Priority = {
         { Name = "Raptor Trousers", Level = 48 },     -- VIT+4
     },
     Feet  = {
-        -- { Name = "Adhemar Gamashes", Level = 75 },    -- VIT+5  -- STORED
+--STORED{ Name = "Adhemar Gamashes", Level = 75 },    -- VIT+5
         { Name = "Skadi's Jambeaux", Level = 75 },    -- VIT+3
     },
 }
@@ -260,15 +260,15 @@ sets.JA_Steal_Priority = {
         -- { Name = "Rogue's Bonnet", Level = 54 },      -- Turned into +1, worth getting again for Steal+1?
     },
     Neck  = {
-        -- { Name = "Rabbit Charm", Level = 7 },         -- Steal+1  -- STORED
+--STORED{ Name = "Rabbit Charm", Level = 7 },         -- Steal+1
     },
     Hands = {
-        -- { Name = "Thief's Kote", Level = 70 },        -- Steal+3  -- STORED
-        -- { Name = "Rogue's Armlets", Level = 52 },     -- Steal+1  -- STORED
+--STORED{ Name = "Thief's Kote", Level = 70 },        -- Steal+3
+--STORED{ Name = "Rogue's Armlets", Level = 52 },     -- Steal+1
     },
     Legs  = {
-        -- { Name = "Assassin's Culottes", Level = 72 }, -- Steal+5  -- STORED
-        -- { Name = "Rogue's Culottes", Level = 56 },    -- Steal+1  -- STORED
+--STORED{ Name = "Assassin's Culottes", Level = 72 }, -- Steal+5
+--STORED{ Name = "Rogue's Culottes", Level = 56 },    -- Steal+1
     },
     Feet = {
         { Name = "Rogue's Poulaines", Level = 60 },   -- Steal+2
@@ -278,7 +278,7 @@ sets.JA_Steal_Priority = {
 -- Goal: ACC & DEX & AGI
 sets.WS_Default_Priority = {
     Head  = {
-        -- { Name = "Adhemar Bonnet", Level = 75 },      -- DEX+6 AGI+6 Crit+3  -- STORED
+--STORED{ Name = "Adhemar Bonnet", Level = 75 },      -- DEX+6 AGI+6 Crit+3
             -- Wish: Aug: ATK+5 ACC+5 DA+2
         { Name = "Assailant's Visor", Level = 70 },   -- STR+5 DEX+11
         { Name = "Emperor Hairpin", Level = 24 },     -- DEX+3 AGI+3
@@ -286,7 +286,7 @@ sets.WS_Default_Priority = {
     Neck  = {
         { Name = "Love Torque", Level = 73 },         -- DEX+5 DaggerSkill+7
         { Name = "Spike Necklace", Level = 21 },      -- DEX+3       STR+3
-        -- { Name = "Rabbit Charm", Level = 7 },         -- DEX+1 AGI+1  -- STORED
+--STORED{ Name = "Rabbit Charm", Level = 7 },         -- DEX+1 AGI+1
         { Name = "Pile Chain", Level = 3 },           --             ACC+1
     },
     Body = {
@@ -297,7 +297,7 @@ sets.WS_Default_Priority = {
     },
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- DEX+5 AGI+8         ATK+5
-        -- { Name = "Adhemar Wristbands", Level = 75 },  --             ACC+10 ATK+10 Enhance Trick Attack  -- STORED
+--STORED{ Name = "Adhemar Wristbands", Level = 75 },  --             ACC+10 ATK+10 Enhance Trick Attack
         { Name = "Raptor Gloves", Level = 48 },       -- DEX+4
         { Name = "Battle Gloves", Level = 48 },       --             ACC+3
     },
@@ -317,7 +317,7 @@ sets.WS_Default_Priority = {
         {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4       ACC+4
         { Name = "Amemet Mantle +1", Level = 61 },    --        ATK+15 STR+2
         {Name = "Exile's Cloak", Level = 50 },        --                     ATK+3  STR+4
-        {Name = "Lizard Mantle +1", Level = 17 },     -- STR+1
+--STORED{Name = "Lizard Mantle +1", Level = 17 },     -- STR+1
     },
     Waist = {
         {Name = "Fatality Belt", Level = 75 },        -- DEX+4       ACC+4
@@ -325,7 +325,7 @@ sets.WS_Default_Priority = {
         {Name = "Lizard Belt +1", Level = 17 },       -- DEX+2
     },
     Legs  = {
-        -- { Name = "Adhemar Kecks", Level = 75 },       -- DEX+4 AGI+4  -- STORED
+--STORED{ Name = "Adhemar Kecks", Level = 75 },       -- DEX+4 AGI+4
         { Name = "Acrobat's Breeches", Level = 70 },  -- DEX+2 AGI+9 TA+2
     },
     Feet  = {
@@ -336,7 +336,7 @@ sets.WS_Default_Priority = {
 
 -- Goal: fTP & ACC & AGI & DA & TA & CRIT
 sets.WS_Exenterator = {
-    -- Head  = "Adhemar Bonnet",                         -- AGI+6  DEX+6  Crit+3  -- STORED
+    -- Head  = "Adhemar Bonnet",                         -- AGI+6  DEX+6  Crit+3
         -- Wish: Dragon Cap +1 [AGI+5 (Aug) AGI+6 Dagger+8]
     Neck  = "Soil Gorget",                            -- fTP+0.1
         -- Wish: Fotia Gorget [WSAcc+10 WSD+10%]

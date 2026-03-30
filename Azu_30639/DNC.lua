@@ -368,7 +368,7 @@ sets.WS_Default_Priority = {
     Back  = {
         {Name = "Cuchulain's Mantle", Level = 74 },   -- DEX+4           ACC+4
         {Name = "Exile's Cloak", Level = 50 },        --                         ATK+3  STR+4
-        {Name = "Lizard Mantle +1", Level = 17 },     -- STR+1
+--STORED{Name = "Lizard Mantle +1", Level = 17 },     -- STR+1
     },
     Waist = {
         {Name = "Fatality Belt", Level = 75 },        -- DEX+4           ACC+4

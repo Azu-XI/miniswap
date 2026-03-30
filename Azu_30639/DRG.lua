@@ -18,7 +18,7 @@ sets.JA_Jump_Priority = {
         { Name = "Pile Chain", Level = 3 },           --              ACC+1
     },
     Body  = {
-        -- { Name = "Thrk. Breastplate", Level = 61 },   -- STR+3        ACC+7 ATK+7  -- IN STORAGE
+--STORED-- { Name = "Thrk. Breastplate", Level = 61 },   -- STR+3        ACC+7 ATK+7
         { Name = "Brigandine +1", Level = 45 },       --        VIT+3 ATK+4
         { Name = "Custom Tunic", Level = 33 },        --        VIT+3
         { Name = "Leather Vest +1", Level = 7 },      --        VIT+1
@@ -34,11 +34,11 @@ sets.JA_Jump_Priority = {
         { Name = "Rajas Ring", Level = 30 },          -- STR+2~5 DEX+2~5
     },
     Back  = {
-        { Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
-        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
+--STORED{ Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
+--STORED{ Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
-        -- { Name = "Marid Belt", Level = 45 },          -- STR+3 VIT+5                 -- IN STORAGE
+--STORED{ Name = "Marid Belt", Level = 45 },          -- STR+3 VIT+5
         { Name = "Vanguard Belt", Level = 45 },       -- STR+3              ATK+5
     },
     Legs  = {
@@ -61,7 +61,7 @@ sets.JA_HighJump_Priority = {
         { Name = "Pile Chain", Level = 3 },           --              ACC+1
     },
     Body  = {
-        -- { Name = "Thrk. Breastplate", Level = 61 },   -- STR+3        ACC+7 ATK+7  -- IN STORAGE
+--STORED{ Name = "Thrk. Breastplate", Level = 61 },   -- STR+3        ACC+7 ATK+7
         { Name = "Brigandine +1", Level = 45 },       -- STR+3 ATK+4
     },
     Hands = {
@@ -74,8 +74,8 @@ sets.JA_HighJump_Priority = {
         { Name = "Rajas Ring", Level = 30 },          -- STR+2~5 DEX+2~5
     },
     Back  = {
-        { Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
-        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
+--STORED{ Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
+--STORED{ Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
         { Name = "Vanguard Belt", Level = 45 },       -- STR+3              ATK+5
@@ -90,14 +90,14 @@ sets.JA_HighJump_Priority = {
 
 sets.Engaged_Default_Priority = {
     Main  = {
-        -- { Name = "Kuakuakait", Level = 75 },             -- IN STORAGE
-        -- { Name = "Gnd.Kgt. Lance", Level = 60 },         -- IN STORAGE
-        -- { Name = "Mythril Lance +1", Level = 48 },       -- IN STORAGE
-        -- { Name = "Peregrine", Level = 40 },              -- IN STORAGE
-        -- { Name = "Military Spear", Level = 28 },         -- IN STORAGE
-        -- { Name = "Platoon Lance", Level = 20 },          -- IN STORAGE
-        -- { Name = "Pike", Level = 11 },                   -- IN STORAGE
-        -- { Name = "Bronze Spear", Level = 7 },            -- IN STORAGE
+--STORED{ Name = "Kuakuakait", Level = 75 },
+--STORED{ Name = "Gnd.Kgt. Lance", Level = 60 },
+--STORED{ Name = "Mythril Lance +1", Level = 48 },
+--STORED{ Name = "Peregrine", Level = 40 },
+--STORED{ Name = "Military Spear", Level = 28 },
+--STORED{ Name = "Platoon Lance", Level = 20 },
+--STORED{ Name = "Pike", Level = 11 },
+--STORED{ Name = "Bronze Spear", Level = 7 },
     },
     Sub   = {
             -- Wish: Lv.74 Gatta Strap +0/1 [STR+3/4 DEX+3/4 ATK+3/4] {Leathercraft GuildNM}
@@ -134,7 +134,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Pile Chain", Level = 3 },
     },
     Body  = {
-        -- { Name = "Thrk. Breastplate", Level = 61 },   -- STR+3 DEX+3   ACC+7 ATK+7 STP+3  -- IN STORAGE
+--STORED{ Name = "Thrk. Breastplate", Level = 61 },   -- STR+3 DEX+3   ACC+7 ATK+7 STP+3
         { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Scale Mail", Level = 10 },
@@ -223,8 +223,8 @@ local petDefaultPriority = {
         { Name = "Wilder. Earring +1", Level = 45 },  -- ACC+2 PetACC+2
     }
     Body  = {
-        -- { Name = "Thrk. Breastplate", Level = 61 },   -- PetRegen+2 (and some DEF for master)  -- IN STORAGE
-        { Name = "Aega's Doublet", Level = 32 },       -- PetACC+3 PetATK+3
+--STORED{ Name = "Thrk. Breastplate", Level = 61 },   -- PetRegen+2 (and some DEF for master)
+        { Name = "Aega's Doublet", Level = 32 },      -- PetACC+3 PetATK+3
     },
     Hands = {
         { Name = "Raptor Gloves", Level = 48 },       -- PetATK+5 PetRATK+5
@@ -286,8 +286,8 @@ sets.WS_Default_Priority = {
     Back  = {
         { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4                 STR+4  DEX+4
         { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15
-        { Name = "Earth Mantle", Level = 40 },        -- STR+2
-        { Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
+--STORED{ Name = "Earth Mantle", Level = 40 },        -- STR+2 VIT+1
+--STORED{ Name = "Lizard Mantle +1", Level = 17 },    -- STR+1
     },
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4

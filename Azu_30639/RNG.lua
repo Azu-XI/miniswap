@@ -187,8 +187,7 @@ sets.WS_Default_Priority = {
     },
     Back  = {
         { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15 RATK+5
-        { Name = "Earth Mantle", Level = 40 },        --        STR+2
-        { Name = "Lizard Mantle +1", Level = 17 },    --        STR+1
+        { Name = "Hunter's Shawl", Level = 30 },      -- RACC+3 RATK+3 STR+2 AGI+2
     },
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12        ATK+4
