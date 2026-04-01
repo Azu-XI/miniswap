@@ -80,7 +80,7 @@ sets.Engaged_Default_Priority = {
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
             -- Wish: Lv.68 Cobra Mittens [ACC+4 STP+3 (Aug) VIT+5 PDT-2% Haste+2]
-        { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
+        { Name = "Dino Gloves", Level = 48 },         --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         { Name = "Battle Gloves", Level = 14 },
         "Dream Mittens +1",
@@ -113,7 +113,7 @@ sets.Engaged_Default_Priority = {
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2
         { Name = "Acrobat's Breeches", Level = 70 },  --                     H+2 TA+2 EVA+11
-        { Name = "Raptor Trousers", Level = 50 },     -- ACC+5
+        { Name = "Dino Trousers", Level = 50 },       -- ACC+5
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
@@ -121,7 +121,7 @@ sets.Engaged_Default_Priority = {
     Feet  = {
             -- Wish: Lv.68 Cobra Leggings [ACC+4 STP+3 (Aug) STR+4 CHR+4 Haste+2]
         { Name = "Etoile Toe Shoes +1", Level = 75 }, -- STR+7 DEX+4 ATK+12 ACC+5
-        { Name = "Raptor Ledelsens", Level = 48 },
+        { Name = "Dino Ledelsens", Level = 48 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
     },
@@ -232,7 +232,7 @@ local steps = {
     },
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4
-        { Name = "Raptor Trousers", Level = 50 },     -- ACC+5
+        { Name = "Dino Trousers", Level = 50 },       -- ACC+5
     },
     Feet  = {
         { Name = "Rawhide Boots", Level = 75 },       -- MaxFinishingMove+1
@@ -276,7 +276,7 @@ local waltz = {
     },
     Hands = {
             -- Wish: Lv.75 Apex Kote [(Aug) WaltzPot+5%] {Stronghold}
-        { Name = "Raptor Gloves", Level = 48 },       -- CHR+4
+        { Name = "Dino Gloves", Level = 48 },         -- CHR+4
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
     },
     Ring1 = {
@@ -297,7 +297,7 @@ local waltz = {
     },
     Legs  = {
         { Name = "Dancer's Tights", Level = 74 },     -- CHR+5
-        { Name = "Raptor Trousers", Level = 48 },     -- VIT+4
+        { Name = "Dino Trousers", Level = 48 },       -- VIT+4
     },
     Feet  = {
             -- Wish: Lv.68 Cobra Leggings [(Aug) CHR+4 WaltzPot+2%] {Campaign}
@@ -350,7 +350,7 @@ sets.WS_Default_Priority = {
     },
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- DEX+5   AGI+8           ATK+5              DA+2      
-        { Name = "Raptor Gloves", Level = 48 },       -- DEX+4
+        { Name = "Dino Gloves", Level = 48 },         -- DEX+4
         { Name = "Battle Gloves", Level = 48 },       --                 ACC+3
     },
     Ring1 = {

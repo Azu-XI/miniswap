@@ -93,7 +93,7 @@ sets.Engaged_Default_Priority = {
     },
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
-        { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
+        { Name = "Dino Gloves", Level = 48 },       --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         "Dream Mittens +1",
     },
@@ -126,14 +126,14 @@ sets.Engaged_Default_Priority = {
     Legs  = {
         { Name = "Skadi's Chausses", Level = 75 },    -- ACC+4 ATK+5 STP+7+3 H+2
         { Name = "Acrobat's Breeches", Level = 70 },  --                     H+2 TA+2 EVA+11
-        { Name = "Raptor Trousers", Level = 50 },     -- ACC+5
+        { Name = "Dino Trousers", Level = 50 },       -- ACC+5
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
         { Name = "Skadi's Jambeaux", Level = 75 },    -- ACC+5 H+3
-        { Name = "Raptor Ledelsens", Level = 48 },
+        { Name = "Dino Ledelsens", Level = 48 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
     },
@@ -227,7 +227,7 @@ sets.JA_CuringWaltz_Priority = {
         { Name = "Garrison Tunica +1", Level = 20 },  -- CHR+2
     },
     Hands = {
-        { Name = "Raptor Gloves", Level = 48 },       -- CHR+4
+        { Name = "Dino Gloves", Level = 48 },         -- CHR+4
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
     },
     Back  = {
@@ -239,7 +239,7 @@ sets.JA_CuringWaltz_Priority = {
     },
     Legs  = {
             -- Wish: Lv.75 Dragon Subligar +1 [Waltz+5]
-        { Name = "Raptor Trousers", Level = 48 },     -- VIT+4
+        { Name = "Dino Trousers", Level = 48 },       -- VIT+4
     },
     Feet  = {
 --STORED{ Name = "Adhemar Gamashes", Level = 75 },    -- VIT+5
@@ -298,7 +298,7 @@ sets.WS_Default_Priority = {
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- DEX+5 AGI+8         ATK+5
 --STORED{ Name = "Adhemar Wristbands", Level = 75 },  --             ACC+10 ATK+10 Enhance Trick Attack
-        { Name = "Raptor Gloves", Level = 48 },       -- DEX+4
+        { Name = "Dino Gloves", Level = 48 },         -- DEX+4
         { Name = "Battle Gloves", Level = 48 },       --             ACC+3
     },
     Ring1 = {

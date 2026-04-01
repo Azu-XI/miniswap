@@ -52,9 +52,9 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 H+4 DA+2 ATK+5
         { Name = "Mythril Gauntlets", Level = 49 },   -- MP+15 STR+4 ACC+9 H+2
-        { Name = "Raptor Gloves", Level = 48 },
+        { Name = "Dino Gloves", Level = 48 },
         { Name = "Axe. Gauntlets", Level = 20 },      -- H+2
         { Name = "Guerilla Gloves", Level = 13 },
         "Dream Mittens +1",
@@ -86,13 +86,13 @@ sets.Engaged_Default_Priority = {
         { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
-        { Name = "Raptor Trousers", Level = 48 },
-        { Name = "Garrison Hose +1", Level = 20 },        -- STR+2 Haste+2
+        { Name = "Dino Trousers", Level = 48 },
+        { Name = "Garrison Hose +1", Level = 20 },        -- STR+2 H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Raptor Ledelsens", Level = 48 },        -- Haste+2
+        { Name = "Dino Ledelsens", Level = 48 },          -- H+2
         { Name = "Greaves", Level = 24 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",

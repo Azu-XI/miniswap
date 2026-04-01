@@ -142,8 +142,8 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
-        { Name = "Raptor Gloves", Level = 48 },
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 H+4 DA+2 ATK+5
+        { Name = "Dino Gloves", Level = 48 },
         { Name = "Guerilla Gloves", Level = 13 },
         "Dream Mittens +1",
     },
@@ -174,13 +174,13 @@ sets.Engaged_Default_Priority = {
         { Name = "Leather Belt +1", Level = 7 },      -- HP+10 AGI+1
     },
     Legs  = {
-        { Name = "Raptor Trousers", Level = 48 },
-        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
+        { Name = "Dino Trousers", Level = 48 },
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Raptor Ledelsens", Level = 48 },    -- Haste+2
+        { Name = "Dino Ledelsens", Level = 48 },      -- H+2
         { Name = "Greaves", Level = 24 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
@@ -227,7 +227,7 @@ local petDefaultPriority = {
         { Name = "Aega's Doublet", Level = 32 },      -- PetACC+3 PetATK+3
     },
     Hands = {
-        { Name = "Raptor Gloves", Level = 48 },       -- PetATK+5 PetRATK+5
+        { Name = "Dino Gloves", Level = 48 },         -- PetATK+5 PetRATK+5
     },
     Back  = {
         { Name = "Aife's Mantle", Level = 75 },       -- PetATK+10          ACC+4 STP+2

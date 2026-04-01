@@ -83,7 +83,7 @@ sets.Engaged_Default_Priority = {
     },
     Feet  = {
         { Name = "Skadi's Jambeaux", Level = 75 },    -- ACC+5 H+3
-        { Name = "Raptor Ledelsens", Level = 48 },    -- H+2
+        { Name = "Dino Ledelsens", Level = 48 },      -- H+2
         { Name = "Greaves", Level = 24 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
@@ -127,7 +127,7 @@ local petDefaultPriority = {
         { Name = "Aega's Doublet", Level = 32 },      -- PetACC+3 PetATK+3
     },
     Hands = {
-        { Name = "Raptor Gloves", Level = 48 },       -- PetATK+5 PetRATK+5
+        { Name = "Dino Gloves", Level = 48 },         -- PetATK+5 PetRATK+5
     },
     Back  = {
         { Name = "Aife's Mantle", Level = 75 },       -- PetATK+10          ACC+4 STP+2
@@ -150,19 +150,19 @@ sets.Engaged_Pet_Default_Priority = petDefaultPriority;
 sets.JA_Charm_Priority = {
     Head  = {
         { Name = "Garrison Sallet +1", Level = 20 },  -- CHR+2
-        { Name = "Entrancing Ribbon", Level = 11 },     -- CHR+2
+        { Name = "Entrancing Ribbon", Level = 11 },   -- CHR+2
     },
     Neck  = {
-        { Name = "Bird Whistle", Level = 15 },          -- CHR+3
+        { Name = "Bird Whistle", Level = 15 },        -- CHR+3
     },
     Body  = {
         { Name = "Garrison Tunica +1", Level = 20 },  -- CHR+2
     },
     Hands = {
-        { Name = "Raptor Gloves", Level = 48 },         -- CHR+4
+        { Name = "Dino Gloves", Level = 48 },         -- CHR+4
     },
     Feet  = {
-        { Name = "Raptor Ledelsens", Level = 48 },      -- CHR+4
+        { Name = "Dino Ledelsens", Level = 48 },      -- CHR+4
     },
 };
 

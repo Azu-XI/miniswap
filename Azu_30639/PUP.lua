@@ -48,7 +48,7 @@ sets.Engaged_Default_Priority = {
     },
     Hands = {
             -- Wish: Thurandaut Gloves [ACC+6 ATK+6 H+3 Pet:H+5]
-        { Name = "Raptor Gloves", Level = 48 },       -- DEX+4 CHR+4 PetAtk+5 PetRAtk+5
+        { Name = "Dino Gloves", Level = 48 },         -- DEX+4 CHR+4 PetAtk+5 PetRAtk+5
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
@@ -85,7 +85,7 @@ sets.Engaged_Default_Priority = {
     },
     Feet  = {
         { Name = "Usukane Sune-Ate", Level = 75 },    -- ACC+7 ATK+7 STP+7 H+2
-        { Name = "Raptor Ledelsens", Level = 48 },    -- H+2
+        { Name = "Dino Ledelsens", Level = 48 },      -- H+2
         { Name = "Power Sandals", Level = 18},        -- VIT+3
         { Name = "Solea +1", Level = 8},
         "Dream Boots +1",
@@ -135,7 +135,7 @@ local petDefaultPriority = {
     Hands = {
             -- Wish: Avesta Bangles [AutomatonMagicSkill+9] {Beaucedine 2.0}
             -- Wish: Thurandaut Gloves [PetH+5]
-        { Name = "Raptor Gloves", Level = 48 },       -- PetATK+5 PetRATK+5
+        { Name = "Dino Gloves", Level = 48 },         -- PetATK+5 PetRATK+5
     },
     Back  = {
             -- Wish: Pantin Cape [PetAtk+15 (Aug) PetDA+5 PetCritRate+5]

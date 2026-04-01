@@ -70,7 +70,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
         { Name = "Shinobi Tekko", Level = 49 },       -- ACC+8 ATK+8 STP+2
         { Name = "Gothic Gauntlets", Level = 43 },    -- STR+3
-        { Name = "Raptor Gloves", Level = 48 },
+        { Name = "Dino Gloves", Level = 48 },
         { Name = "Guerilla Gloves", Level = 13 },     -- ACC+2 ATK+1
         "Dream Mittens +1",
     },
@@ -103,7 +103,7 @@ sets.Engaged_Default_Priority = {
     Legs  = {
         { Name = "Byakko's Haidate", Level = 75 },    -- STP+3 H+5  -- Wish: HQ Augments
         { Name = "Shinobi Hakama", Level = 49 },      -- ATK+8 H+2
-        { Name = "Raptor Trousers", Level = 48 },
+        { Name = "Dino Trousers", Level = 48 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
@@ -111,7 +111,7 @@ sets.Engaged_Default_Priority = {
     Feet  = {
         { Name = "Usukane Sune-Ate", Level = 75 },    -- ACC+7 ATK+7 STP+7 H+2
         { Name = "Shinobi Kyahan", Level = 49 },      -- ACC+8 H+2 MDT-3
-        { Name = "Raptor Ledelsens", Level = 48 },    -- H+2
+        { Name = "Dino Ledelsens", Level = 48 },      -- H+2
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
     },

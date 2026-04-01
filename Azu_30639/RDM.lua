@@ -40,8 +40,8 @@ sets.Engaged_Default_Priority = {
         "Kingdom Aketon",
     },
     Hands = {
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
-        { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 H+4 DA+2 ATK+5
+        { Name = "Dino Gloves", Level = 48 },         --                        DEX+4
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
         { Name = "Mitts +1", Level = 8 },
         "Dream Mittens +1",
@@ -71,13 +71,13 @@ sets.Engaged_Default_Priority = {
         { Name = "Heko Obi", Level = 8 },             -- AGI+3 ACC+3
     },
     Legs  = {
-        { Name = "Raptor Trousers", Level = 50 },
-        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 Haste+2
+        { Name = "Dino Trousers", Level = 50 },
+        { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Raptor Ledelsens", Level = 48 },
+        { Name = "Dino Ledelsens", Level = 48 },
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
     },
@@ -127,8 +127,8 @@ sets.Idle_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
-        { Name = "Raptor Gloves", Level = 48 },       --                        DEX+4
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 H+4 DA+2 ATK+5
+        { Name = "Dino Gloves", Level = 48 },         --                        DEX+4
         -- { Name = "Garrison Gloves +1", Level = 20 },-- MP+5 INT+2
         { Name = "Zealot's Mitts", Level = 11 },       -- MP+5 MND+3
         { Name = "Mitts +1", Level = 8 },
@@ -160,13 +160,13 @@ sets.Idle_Default_Priority = {
     Legs  = {
         { Name = "Morrigan's Slops", Level = 75 },    -- INT+10  Enmity-2
         { Name = "Zenith Slacks +1", Level = 73 },
-        { Name = "White Slacks", Level = 50 },        -- Haste+3 Regen +1
-        { Name = "Garrison Hose +1", Level = 20 },    -- Haste+2
+        { Name = "White Slacks", Level = 50 },        -- H+3 Regen +1
+        { Name = "Garrison Hose +1", Level = 20 },    -- H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
-        { Name = "Raptor Ledelsens", Level = 48 },
+        { Name = "Dino Ledelsens", Level = 48 },
         { Name = "Garrison Boots +1", Level = 20 },   -- INT+2 MND+2
         { Name = "Power Sandals", Level = 18 },       -- VIT+3
         { Name = "Leaping Boots", Level = 7 },
@@ -400,7 +400,7 @@ local midcastFastCast = {
         { Name = "Entrancing Ribbon", Level = 11 },   --         FC+1
     },
     Body  = {
-        { Name = "Minstrel's Coat", Level = 63 },     --               Haste+2
+        { Name = "Minstrel's Coat", Level = 63 },     --               H+2
     },
     Ear1  = {
         { Name = "Loquac. Earring", Level = 75 },     --         FC+2          MP+30 (Balance MPs)
@@ -412,15 +412,15 @@ local midcastFastCast = {
         { Name = "Astral Ring", Level = 10 },         --                        MP+25 (Balance MPs)
     },
     Waist = {
-        { Name = "Griot Belt", Level = 28 },          --               Haste+2
+        { Name = "Griot Belt", Level = 28 },          --               H+2
         { Name = "Silver Obi", Level = 20 },          -- SIRD-8
     },
     Legs  = {
-        { Name = "White Slacks", Level = 50 },        --               Haste+3
-        { Name = "Garrison Hose +1", Level = 20 },    --               Haste+2
+        { Name = "White Slacks", Level = 50 },        --               H+3
+        { Name = "Garrison Hose +1", Level = 20 },    --               H+2
     },
     Feet  = {
-        { Name = "Raptor Ledelsens", Level = 48 },    --               Haste+2
+        { Name = "Dino Ledelsens", Level = 48 },      --               H+2
     },
 };
 sets.Midcast_Poisona_Priority = midcastFastCast;
@@ -442,21 +442,21 @@ local midcastFastCast = {
     Neck  = {
     },
     Body  = {
-        { Name = "Minstrel's Coat", Level = 63 },     --               Haste+2
+        { Name = "Minstrel's Coat", Level = 63 },     --               H+2
     },
     Ring1 = {
         { Name = "Hibernal Ring", Level = 75 },       --          FC+2
     },
     Waist = {
-        { Name = "Griot Belt", Level = 28 },          --               Haste+2
+        { Name = "Griot Belt", Level = 28 },          --               H+2
         { Name = "Silver Obi", Level = 20 },          -- SIRD-8
     },
     Legs  = {
-        { Name = "White Slacks", Level = 50 },        --               Haste+3
-        { Name = "Garrison Hose +1", Level = 20 },    --               Haste+2
+        { Name = "White Slacks", Level = 50 },        --               H+3
+        { Name = "Garrison Hose +1", Level = 20 },    --               H+2
     },
     Feet  = {
-        { Name = "Raptor Ledelsens", Level = 48 },    --               Haste+2
+        { Name = "Dino Ledelsens", Level = 48 },      --               H+2
     },
 };
 sets.Midcast_Poisona_Priority = midcastFastCast

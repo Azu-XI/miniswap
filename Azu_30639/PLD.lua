@@ -102,14 +102,14 @@ sets.Engaged_Default_Priority = {
     Legs  = {
             -- Wish: Aug: ACC+8 ATK+8 
         { Name = "Ares' Flanchard", Level = 75 },     -- HP+2% STR+6 DEX+6 DA+2
-        { Name = "Raptor Trousers", Level = 48 },
+        { Name = "Dino Trousers", Level = 48 },
         { Name = "Garrison Hose +1", Level = 20 },    -- STR+2 H+2
         { Name = "Lth. Trousers +1", Level = 7 },
         "Dream Trousers +1",
     },
     Feet  = {
         { Name = "Ares' Sollerets", Level = 75 },     -- HP+2% ACC+7 ATK+7 EVA-7 STR+4 STP+3
-        { Name = "Raptor Ledelsens", Level = 48 },    -- H+2
+        { Name = "Dino Ledelsens", Level = 48 },      -- H+2
         -- { Name = "Eisenschuhs", Level = 29 },      -- VIT+2  -- STORED
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",

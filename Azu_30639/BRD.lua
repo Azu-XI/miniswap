@@ -57,8 +57,8 @@ sets.Engaged_Default_Priority = {
         "Tidal Talisman",
     },
     Hands = {
-        { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5
-        { Name = "Raptor Gloves", Level = 48 },
+        { Name = "Swift Gages", Level = 75 },         -- STP+2 H+4 DA+2 ATK+5
+        { Name = "Dino Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Battle Gloves", Level = 14 },
         "Dream Mittens +1",
@@ -98,7 +98,7 @@ sets.Engaged_Default_Priority = {
     },
     Feet  = {
         { Name = "Pursuer's Gaiters", Level = 75 },   -- H+3
-        { Name = "Raptor Ledelsens", Level = 48 },    -- H+2
+        { Name = "Dino Ledelsens", Level = 48 },      -- H+2
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
     },
@@ -154,7 +154,7 @@ sets.Idle_Default_Priority = {
     },
     Hands = {
         { Name = "Pursuer's Cuffs", Level = 75 },     -- Regen+1
-        { Name = "Raptor Gloves", Level = 48 },
+        { Name = "Dino Gloves", Level = 48 },
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
         { Name = "Battle Gloves", Level = 14 },
         "Dream Mittens +1",
@@ -183,7 +183,7 @@ sets.Idle_Default_Priority = {
         { Name = "Rabbit Mantle", Level = 4 },
     },
     Waist = {
-        { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3  Haste+3
+        { Name = "Oneiros Cest", Level = 75 },        -- ACC+9  STP+3  H+3
         { Name = "Gleeman's Belt", Level = 60 },      -- CHR+6
         { Name = "Corsette +1", Level = 40 },         -- CHR+6
         { Name = "Friar's Rope", Level = 14 },        --       MND+1
@@ -200,7 +200,7 @@ sets.Idle_Default_Priority = {
     },
     Feet  = {
         { Name = "Suzaku's Sune-Ate", Level = 75 },   -- MND+15 Fire+50
-        { Name = "Raptor Ledelsens", Level = 48 },    -- Haste+2
+        { Name = "Dino Ledelsens", Level = 48 },      -- H+2
         { Name = "Leaping Boots", Level = 7 },
         "Dream Boots +1",
     },
@@ -220,7 +220,7 @@ sets.Midcast_Default_Priority = {
     },
     Head  = {
             -- Wish: Genbu's Kabuto [(Aug) SIRD-5]
-        { Name = "Pursuer's Beret", Level = 75 },     --               Haste+5
+        { Name = "Pursuer's Beret", Level = 75 },     --               H+5
         { Name = "Entrancing Ribbon", Level = 11 },   --         FC+1
     },
     Ear1  = {
@@ -230,7 +230,7 @@ sets.Midcast_Default_Priority = {
         { Name = "Justice Badge", Level = 7 },
     },
     Body  = {
-        { Name = "Minstrel's Coat", Level = 63 },     --               Haste+2
+        { Name = "Minstrel's Coat", Level = 63 },     --               H+2
     },
     Hands = {
             -- Wish: Brd. Cuffs +1 [(Aug) FC+3]
@@ -246,14 +246,14 @@ sets.Midcast_Default_Priority = {
         { Name = "Silver Obi", Level = 20 },          -- SIRD-8
     },
     Legs  = {
-        { Name = "Pursuer's Pants", Level = 75 },     --               Haste+5
-        { Name = "White Slacks", Level = 50 },        --               Haste+3
-        { Name = "Garrison Hose +1", Level = 20 },    --               Haste+2
+        { Name = "Pursuer's Pants", Level = 75 },     --               H+5
+        { Name = "White Slacks", Level = 50 },        --               H+3
+        { Name = "Garrison Hose +1", Level = 20 },    --               H+2
     },
     Feet  = {
             -- Wish: Sheikh Crackows [(Aug) SIRD-10]
-        { Name = "Pursuer's Gaiters", Level = 75 },   --               Haste+3
-        { Name = "Raptor Ledelsens", Level = 48 },    --               Haste+2
+        { Name = "Pursuer's Gaiters", Level = 75 },   --               H+3
+        { Name = "Dino Ledelsens", Level = 48 },      --               H+2
     },
 };
 
@@ -300,7 +300,7 @@ sets.Midcast_HealingMagic_Priority = {
 -- Erase & -na spells don't care about skill, so prioritize recast (and SIRD)
 local midcastFastCast = {
     Head  = {
-        { Name = "Pursuer's Beret", Level = 75 },     --               Haste+5
+        { Name = "Pursuer's Beret", Level = 75 },     --               H+5
         { Name = "Entrancing Ribbon", Level = 11 },   --         FC+1
     },
     Ear1  = {
@@ -309,7 +309,7 @@ local midcastFastCast = {
     Neck  = {
     },
     Body  = {
-        { Name = "Minstrel's Coat", Level = 63 },     --               Haste+2
+        { Name = "Minstrel's Coat", Level = 63 },     --               H+2
     },
     Hands = {
             -- Wish: Brd. Cuffs +1 [(Aug) FC+3]
@@ -323,17 +323,17 @@ local midcastFastCast = {
     Back  = {
     },
     Waist = {
-        { Name = "Griot Belt", Level = 28 },          --               Haste+2
+        { Name = "Griot Belt", Level = 28 },          --               H+2
         { Name = "Silver Obi", Level = 20 },          -- SIRD-8
     },
     Legs  = {
-        { Name = "Pursuer's Pants", Level = 75 },     --               Haste+5
-        { Name = "White Slacks", Level = 50 },        --               Haste+3
-        { Name = "Garrison Hose +1", Level = 20 },    --               Haste+2
+        { Name = "Pursuer's Pants", Level = 75 },     --               H+5
+        { Name = "White Slacks", Level = 50 },        --               H+3
+        { Name = "Garrison Hose +1", Level = 20 },    --               H+2
     },
     Feet  = {
-        { Name = "Pursuer's Gaiters", Level = 75 },   --               Haste+3
-        { Name = "Raptor Ledelsens", Level = 48 },    --               Haste+2
+        { Name = "Pursuer's Gaiters", Level = 75 },   --               H+3
+        { Name = "Dino Ledelsens", Level = 48 },      --               H+2
     },
 };
 sets.Midcast_Poisona_Priority = midcastFastCast;
@@ -386,7 +386,7 @@ sets.Midcast_Singing_Priority = {
     },
     Hands = {
         { Name = "Chl. Cuffs +1", Level = 74 },       -- CHR+10  SingSkill+5  MACC+3
-        { Name = "Raptor Gloves", Level = 48 },       -- CHR+4
+        { Name = "Dino Gloves", Level = 48 },         -- CHR+4
     },
     Ring1 = {
             -- Wish: Lv.51 Nereid Ring [WindSkill+3]
@@ -417,7 +417,7 @@ sets.Midcast_Singing_Priority = {
             -- Wish: Valkyrie's Clogs [(Aug) SingingSkill+6]
             -- Wish: Oracle's Pigache [WindSkill+5]
         { Name = "Brd. Slippers +1", Level = 75 },    -- CHR+8  StringSkill+8+3 SongRecast-3
-        { Name = "Raptor Ledelsens", Level = 48 },    -- CHR+4
+        { Name = "Dino Ledelsens", Level = 48 },      -- CHR+4
     },
 };
 
@@ -575,7 +575,7 @@ sets.WS_Default_Priority = {
     },
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- AGI+8  DEX+5             ATK+5   DA+2
-        { Name = "Raptor Gloves", Level = 48 },       -- DEX+4
+        { Name = "Dino Gloves", Level = 48 },         -- DEX+4
         { Name = "Battle Gloves", Level = 48 },       --                 ACC+3
     },
     Ring1 = {
@@ -620,8 +620,8 @@ sets.WS_Exenterator = {
     Ring2 = "Lava's Ring",                            --        ACC+6   ATK+3 (set with Kusha's Ring)
     Back  = "Bard's Cape",                            --        ACC+7
     Waist = "Virtuoso Belt",                          --        ACC+12  ATK+4
-    Legs  = "Raptor Trousers",                        -- AGI+4  ACC+5
-    Feet  = "Raptor Ledelsens",                       -- AGI+4
+    Legs  = "Dino Trousers",                          -- AGI+4  ACC+5
+    Feet  = "Dino Ledelsens",                         -- AGI+4
 };
 
 -- Mordant Rime: CHR & ACC & DA & TA & CRIT
