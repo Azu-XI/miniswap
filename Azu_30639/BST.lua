@@ -46,7 +46,7 @@ sets.Engaged_Default_Priority = {
     },
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 H+4 DA+2 ATK+5
-        { Name = "Axe. Gauntlets", Level = 20 },      -- H+2 AxeSKill+7
+        { Name = "Axe. Gauntlets", Level = 30 },      -- H+2 AxeSKill+7
         { Name = "Guerilla Gloves", Level = 13 },
         "Dream Mittens +1",
     },
