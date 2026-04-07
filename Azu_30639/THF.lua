@@ -230,6 +230,14 @@ sets.JA_CuringWaltz_Priority = {
         { Name = "Dino Gloves", Level = 48 },         -- CHR+4
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
     },
+    Ring1 = {
+            -- Wish: Lv.75 Carbuncle Ring +1 [CHR+6/8] {Goldsmithing Guild NM}
+        { Name = "Veela Ring", Level = 75 },          -- CHR+6
+    },
+    Ring2 = {
+            -- Wish: Lv.75 Veela Ring [CHR+6 Enm-2] {Cirrate Christelle@Dynamis Valkurm}
+        { Name = "Light Ring", Level = 74 },          -- CHR+5
+    },
     Back  = {
         { Name = "Traveler's Mantle", Level = 28 },   -- Make sure Exile's Cloack with CHR-3 isn't equiped
     },

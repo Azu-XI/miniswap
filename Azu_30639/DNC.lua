@@ -280,8 +280,8 @@ local waltz = {
         { Name = "Garrison Gloves +1", Level = 20 },  -- VIT+2
     },
     Ring1 = {
-            -- Wish: Lv.75 Carbuncle Ring +0/1 [CHR+6/8] {Goldsmithing Guild NM}
-        { Name = "Light Ring", Level = 74 },          -- CHR+5
+            -- Wish: Lv.75 Carbuncle Ring +1 [CHR+6/8] {Goldsmithing Guild NM}
+        { Name = "Veela Ring", Level = 75 },          -- CHR+6
     },
     Ring2 = {
             -- Wish: Lv.75 Veela Ring [CHR+6 Enm-2] {Cirrate Christelle@Dynamis Valkurm}

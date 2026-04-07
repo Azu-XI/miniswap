@@ -435,8 +435,8 @@ sets.Midcast_Lullaby_Priority = {
         -- { Name = "Mary's Horn", Level = 14 },
     },
     Ring1 = {
-            -- Wish: Lv.75 Carbuncle Ring +0/1 [CHR+6/8] {Goldsmithing Guild NM}
-        { Name = "Light Ring", Level = 74 },          -- CHR+5
+            -- Wish: Lv.75 Carbuncle Ring +1 [CHR+8] {Goldsmithing Guild NM}
+        { Name = "Veela Ring", Level = 75 },          -- CHR+6
     },
     Ring2 = {
             -- Wish: Lv.75 Veela Ring [CHR+6 Enm-2] {Cirrate Christelle@Dynamis Valkurm}
@@ -633,7 +633,7 @@ sets.WS_MordantRime = {
     Neck  = "Timeless Ocarina",                       -- CHR+5               ATK+10  STR+5
     Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
     Hands = "Chl. Cuffs +1",                          -- CHR+10
-    Ring1 = "Light Ring",                             -- CHR+5
+    Ring1 = "Veela Ring",                             -- CHR+6
     Ring2 = "Light Ring",                             -- CHR+5
     Back  = "Bard's Cape",                            -- CHR+7       ACC+7
     Waist = "Gleeman's Belt",                         -- CHR+6       ACC+8
