@@ -265,7 +265,7 @@ sets.Resting_Default_Priority = {
 
 -- Goal:
 --> Black Halo: 2 hits, 70% MND / 30% STR
---> Realmrazer: 7 hits, 73% MND, fTP replicating (Flame/Thunder/Light Gorget)
+--> Realmrazer: 7 hits, 73% MND (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 --> Mystic Boon: 1 hit, 70% MND / 30% STR
 sets.WS_Default = {
     Ammo  = "Talon Tathlum",                          --         STR+2

@@ -608,12 +608,12 @@ sets.WS_Default_Priority = {
     },
 };
 
--- Exenterator: fTP & ACC & AGI & DA & TA & CRIT
+-- Goal: ACC & AGI & DA & TA & CRIT (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 sets.WS_Exenterator = {
     -- Head  = "Maat's Cap",
     Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
-    Neck  = "Soil Gorget",                            -- fTP+0.1
+    Neck  = "Love Torque",                            -- DEX+5 DaggerSkill+7
     Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
     Hands = "Swift Gages",                            -- AGI+8          ATK+5   DA+2
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
@@ -641,10 +641,10 @@ sets.WS_MordantRime = {
     Feet  = "Brd. Slippers +1",                       -- CHR+8
 };
 
---> Requiescat: 4 hits, 73% MND, fTP replicating (Soil/Shadow Gorget)
+--> Requiescat: 4 hits, 73% MND (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 sets.WS_Requiescat = {
     Head  = "Choral Roundlet +1",                     -- MND+6
-    Neck  = "Soil Gorget",                            -- fTP+0.1
+    Neck  = "Faith Torque",                           -- MND+5
     Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
     Ear1  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
     Ring1 = "Karka Ring",                             -- MND+6

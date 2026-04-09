@@ -252,7 +252,7 @@ sets.WS_Default_Priority = {
     },
 };
 
--- Goal: ACC (Multi-hits WS) & DEX (Mod 73%)
+-- Goal: ACC (Multi-hits WS) & DEX (Mod 73%),  (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 sets.WS_ShijinSpiral = {
     -- Ammo  = "",
     Head  = "Assailant's Visor",                      --              DEX+11 STR+5
@@ -261,7 +261,6 @@ sets.WS_ShijinSpiral = {
         -- Wish: Hollow Earring [DEX+2 ACC+3]
     Ear2  = "Outlaw's Earring",                       --        ATK+4 DEX+2
     Neck  = "Peacock Charm",                          -- ACC+10
-        -- Wish: Flame/Light/Fotia Gorget [WSAcc+10 WSD+10%]
     Body  = "Thurandaut Tabard",                      -- DEX+10 DA+3 STR+10
         -- Wish: High: Usukane Haramaki [DEX+8 ACC+12 (Aug) DA+3]
     Hands = "Thurandaut Gloves",                      -- ACC+6  ATK+6

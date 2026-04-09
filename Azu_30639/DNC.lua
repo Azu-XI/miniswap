@@ -384,12 +384,12 @@ sets.WS_Default_Priority = {
     },
 };
 
--- Goal: fTP & ACC & AGI & DA & TA & CRIT
+-- Goal: ACC & AGI & DA & TA & CRIT (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 sets.WS_Exenterator = {
     -- Head  = "Maat's Cap",
     Ear1  = "Luminous Earring",                       --        ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                        DA+1
-    Neck  = "Soil Gorget",                            -- fTP+0.1
+    Neck  = "Love Torque",                            -- DEX+5 DaggerSkill+7
     Body  = "Rawhide Vest",                           -- AGI+10         ATK+10        Dagger+10 Sword+30
     Hands = "Swift Gages",                            -- AGI+8          ATK+5   DA+2
     Ring1 = "Kusha's Ring",                           --        ACC+6   ATK+3 (set with Lava's Ring)
@@ -400,13 +400,13 @@ sets.WS_Exenterator = {
     Feet  = "Etoile Toe Shoes +1",                    --        ACC+5   ATK+12                    ConserveTP+10
 };
 
--- Goal: fTP & ACC & DEX & STR & DA & TA & CRIT
+-- Goal: ACC & DEX & STR & DA & TA & CRIT (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 sets.WS_PyrrhicKleos = {
     Head  = "Assailant's Visor",                      -- DEX+11  STR+5
         -- Wish: Aug: ATK+5 ACC+5 DA+2
     Ear1  = "Luminous Earring",                       --                ACC+3   ATK+4
     Ear2  = "Brutal Earring",                         --                                DA+1
-    Neck  = "Soil Gorget",                            -- fTP+0.1
+    Neck  = "Love Torque",                            -- DEX+5 DaggerSkill+7
     Body  = "Rawhide Vest",                           -- DEX+10                 ATK+10         Dagger+10
     Hands = "Swift Gages",                            -- DEX+5                  ATK+5   DA+2
     Ring1 = "Zilant Ring",                            -- DEX+6          ACC+3

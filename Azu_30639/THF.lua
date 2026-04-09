@@ -342,12 +342,11 @@ sets.WS_Default_Priority = {
     },
 };
 
--- Goal: fTP & ACC & AGI & DA & TA & CRIT
+-- Goal: ACC & AGI & DA & TA & CRIT (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 sets.WS_Exenterator = {
     -- Head  = "Adhemar Bonnet",                         -- AGI+6  DEX+6  Crit+3
         -- Wish: Dragon Cap +1 [AGI+5 (Aug) AGI+6 Dagger+8]
-    Neck  = "Soil Gorget",                            -- fTP+0.1
-        -- Wish: Fotia Gorget [WSAcc+10 WSD+10%]
+    Neck  = "Love Torque",                            -- DEX+5 DaggerSkill+7
     Body  = "Adhemar Jacket",                         --             ATK+10 Crit+
         -- Wish: Lv.75 Dragon Harness +1 [DEX+7 AGI+7 ATK+12 (Aug) DEX+3 AGI+3 ATK+12 Skillchain Dmg+4]
         -- Wish: Lv.75 Skadi's Cuirie [DEX+8 AGI+8 ACC+10 ATK+5]

@@ -266,26 +266,26 @@ sets.WS_Default_Priority = {
     },
 };
 
---> Decimation: 3 hits, 50% STR, fTP replicating (Flame/Aqua/Light Gorget)
---> Ruinator: 4 hits, 73% STR, 1.1 ATK, fTP replicating (Aqua/Breeze/Snow Gorget)
+--> Decimation: 3 hits, 50% STR (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
+--> Ruinator: 4 hits, 73% STR, 1.1 ATK (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 --> Upheaval: 4 hits, 75% STR / 75% VIT
 --> Savage Blade: 2 hits, 50% STR / 50% MND
 
---> Requiescat: 4 hits, 73% MND, fTP replicating (Soil/Shadow Gorget)
+--> Requiescat: 4 hits, 73% MND (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 sets.WS_Requiescat = {
     Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
-    Neck  = "Soil Gorget",                            -- fTP+0.1
+    Neck  = "Faith Torque",                           -- MND+5
     Ear2  = "Emberpearl Earring",                     -- MND+2   STR+2         WSACC+2       ATK+3
     Ring1 = "Tamas Ring",                             -- MND+5
     Waist = "Salire Belt",                            -- MND+5
     Feet  = "Suzaku's Sune-Ate",                      -- MND+15
 };
 
---> Resolution: 5 his, 73% STR, 0.85 ATK, fTP replicating (Soil/Breeze/Thunder Gorget)
---> Entropy: 4 hits, 73% INT, fTP replicating (Soil/Aqua/Shadow Gorget)
+--> Resolution: 5 his, 73% STR, 0.85 ATK (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
+--> Entropy: 4 hits, 73% INT (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 --> Stardiver: 4 hits, 75% STR, fTP replicating (Soil/Light/Shadow Gorget)
 --> Black Halo: 2 hits, 70% MND / 30% STR
---> Realmrazer: 7 hits, 73% MND, fTP replicating (Flame/Thunder/Light Gorget)
+--> Realmrazer: 7 hits, 73% MND (no fTP, CEXI doesn't have `USE_ADOULIN_WEAPON_SKILL_CHANGES`)
 
 profile.Sets = sets;
 return profile;

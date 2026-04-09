@@ -302,5 +302,7 @@ sets.WS_Default_Priority = {
     },
 };
 
+--> Stardiver: 4 hits, 75% STR, fTP replicating (Soil/Light/Shadow Gorget)
+
 profile.Sets = sets;
 return profile;
