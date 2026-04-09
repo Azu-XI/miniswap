@@ -48,6 +48,7 @@ sets.Engaged_Default_Priority = {
         "remove",
     },
     Neck  = {
+        { Name = "Faith Torque", Level = 73 },        -- H2HSkill+7
         { Name = "Peacock Charm", Level = 33 },       --             ACC+10
         { Name = "Spike Necklace", Level = 21 },      -- STR+3 DEX+3
         { Name = "Pile Chain", Level = 3 },
