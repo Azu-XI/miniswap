@@ -5,7 +5,7 @@ sets.LockStyle = {
     Main  = "Kaladanda",
     Head  = "Demon Helm",
     Body  = "Vanya Robe",
-    Hands = "Sorcerer's Gloves",
+    Hands = "Swift Gages",
     Legs  = "Sorcerer's Tonban",
     Feet  = "Sorcerer's Sabots",
 };
@@ -218,7 +218,7 @@ sets.Midcast_Default_Priority = {
 
 sets.Midcast_ElementalMagic_Day_Priority = {
     Waist = { { Name = "Hachirin-no-Obi", Level = 71 } },
-    Legs  = { { Name = "Sorcerer's Tonban", Level = 73 } },
+--STORED Legs  = { { Name = "Sorcerer's Tonban", Level = 73 } },
 };
 sets.Midcast_ElementalMagic_Weather_Priority = {
     Waist = { { Name = "Hachirin-no-Obi", Level = 71 } },
@@ -314,7 +314,7 @@ sets.Midcast_Drain_Priority = {
     },
     Hands = {
             -- Wish: Lv.75 Src. Gloves +1 [DarkSkill+12 (Aug) DrainAspirPot+6]
-        { Name = "Sorcerer's Gloves", Level = 72 },   -- DarkSkill+10
+--STORED{ Name = "Sorcerer's Gloves", Level = 72 },   -- DarkSkill+10
     },
     Legs  = {
             -- Wish: Lv.74 Wizard's Tonban +1 [DarkSkill+15 (Aug) DrainAspirPot+5]
