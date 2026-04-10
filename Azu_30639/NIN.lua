@@ -52,7 +52,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Kenpogi +1", Level = 8 },           -- HP+5 DEX+1 AGI+1
         { Name = "Leather Vest +1", Level = 7 },
-        "Tidal Talisman",
+        "Carpenter's Apron",
     },
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 Haste+4 DA+2 ATK+5

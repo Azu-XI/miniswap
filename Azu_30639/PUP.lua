@@ -44,7 +44,7 @@ sets.Engaged_Default_Priority = {
     Body  = {
             -- Wish: Usukane Haramaki [STR+8 DEX+8 ACC+12 EVA+12 STP+6 (Aug) DA+3]
         { Name = "Garrison Tunica +1", Level = 20 },
-        "Tidal Talisman",
+        "Carpenter's Apron",
     },
     Hands = {
             -- Wish: Thurandaut Gloves [ACC+6 ATK+6 H+3 Pet:H+5]

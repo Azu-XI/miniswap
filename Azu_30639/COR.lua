@@ -55,7 +55,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Scale Mail", Level = 10 },
         { Name = "Leather Vest +1", Level = 7 },
-        "Tidal Talisman",
+        "Carpenter's Apron",
     },
     Hands = {
         { Name = "Dino Gloves", Level = 48 },

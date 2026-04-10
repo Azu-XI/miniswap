@@ -3,11 +3,11 @@ local sets = {};
 
 sets.LockStyle = {
     Main  = "Maochinoli",
-    Head  = "Naga Somen",
-    Body  = "Naga Samue",
+    Head  = "Usukane Somen",
+    Body  = "Kirin's Osode",
     Hands = "Melee Gloves",
-    Legs  = "Naga Hakama",
-    Feet  = "Naga Kyahan",
+    Legs  = "Byakko's Haidate",
+    Feet  = "Usukane Sune-Ate",
 };
 
 sets.Engaged_Default_Priority = {
@@ -60,7 +60,7 @@ sets.Engaged_Default_Priority = {
             -- Wish: Lv.40 Jujitsu Gi [ACC+4 (Aug) STR+2 AGI+2 STP+1]
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Kenpogi +1", Level = 8 },           -- HP+5 DEX+1 AGI+1
-        "Tidal Talisman",
+        "Carpenter's Apron",
     },
     Hands = {
             -- Wish: Lv.75 Melee Gloves +1 [Atk+18 SB+5 (Aug) STR+6 VIT+6 ACC+6 ATK+6 CTP+6]

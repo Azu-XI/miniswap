@@ -54,7 +54,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Leather Vest +1", Level = 7 },
-        "Tidal Talisman",
+        "Carpenter's Apron",
     },
     Hands = {
         { Name = "Swift Gages", Level = 75 },         -- STP+2 H+4 DA+2 ATK+5
@@ -150,7 +150,7 @@ sets.Idle_Default_Priority = {
         { Name = "Brigandine +1", Level = 45 },       -- STR+3 DEX+3 AGI+3 VIT+3 HP+10 MP+10 ATK+4
         { Name = "Garrison Tunica +1", Level = 20 },  -- Refresh+1 while below lv.50
         { Name = "Leather Vest +1", Level = 7 },
-        "Tidal Talisman",
+        "Carpenter's Apron",
     },
     Hands = {
         { Name = "Pursuer's Cuffs", Level = 75 },     -- Regen+1

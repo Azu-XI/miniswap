@@ -47,7 +47,7 @@ sets.Engaged_Default_Priority = {
         { Name = "Garrison Tunica +1", Level = 20 },
         { Name = "Scale Mail", Level = 10 },
         { Name = "Leather Vest +1", Level = 7 },
-        "Tidal Talisman",
+        "Carpenter's Apron",
     },
     Hands = {
             -- Wish: Lv.75 Seiryu's Kote [AGI+15 RACC+10 (Aug) STP+5]
