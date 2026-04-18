@@ -132,6 +132,7 @@ local petDefaultPriority = {
     },
     Hands = {
             -- Wish: Evoker's Bracers+1 [(Aug) PetHaste+5 PetDT-5]
+        { Name = "Nashira Gages", Level = 75 },       -- PerpCost-1
         { Name = "Black Mitts", Level = 50 },         -- PetAtk+6
         { Name = "Carbuncle Mitts", Level = 20 },     -- CarbyPerpCost-50% PetDEF+10
     },
@@ -209,8 +210,8 @@ local bloodPact = {
             -- Wish: Lv.50 Austere Robe [BP-3]
     },
     Hands = {
-            -- Wish: Nashira Gages [(Aug) BPII-3 BloodBoon+5]
-        { Name = "Smn. Bracers +1", Level = 75 },     -- BP-2
+            -- Wish: (Aug) BPII-3 BloodBoon+5
+        { Name = "Nashira Gages", Level = 75 },       --       BPII-1  BloodBoon+3
             -- Wish: Lv.50 Penance Cuffs [BP-2]
             -- Wish: Lv.50 Austere Cuffs [BP-1]
     },
@@ -284,8 +285,7 @@ sets.Midcast_Pet_Default_Priority = {
             -- Wish: Lv. Austere/Penance Slops (lv.50) [SmnSkill+3/4]
     },
     Feet  = {
-            -- Wish: Lv. Marduk's Crackows [SmnSkill+5]
-            -- Wish: Lv. Zenith Pumps +1 [SmnSkill+6]
+        { Name = "Nashira Crackows", Level = 75 },    -- SmnSkill+5
             -- Wish: Lv. Austere/Penance Sabots (lv.50) [SmnSkill+3/4]
     },
 };

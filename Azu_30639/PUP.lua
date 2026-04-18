@@ -1,6 +1,10 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 local sets = {};
 
+sets.LockStyle = {
+    Main  = "Custode",
+};
+
 sets.Engaged_Default_Priority = {
     Main  = {
             -- Wish: Ohtas [RepairPot+10% PetACC+8 PetRACC+8 PetDA+3] {Oboro}
@@ -14,6 +18,11 @@ sets.Engaged_Default_Priority = {
         { Name = "Animator +1", Level = 71 },         -- DEX+4 PetHP+45~60 PetMP+0~60
 --STORED{ Name = "Turbo Animator", Level = 40 },      -- DEX+2
         { Name = "Animator", Level = 1 },
+    },
+    Ammo  = {
+        { Name = "Automat. Oil +2", Level = 50 },
+        { Name = "Automat. Oil +1", Level = 30 },
+        { Name = "Automaton Oil", Level = 15 },
     },
     Head  = {
         { Name = "Usukane Somen", Level = 75 },       -- STR+3 AGI+3 ACC+7 EVA+7 H+3 Counter+4 DT-4
