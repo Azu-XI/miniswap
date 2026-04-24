@@ -258,7 +258,7 @@ do -- GEAR LIFECYCLE REGION
         profile.MiniSwap.ShowDebugActionType(
             stance
             .. (pet ~= nil and " + Pet" or "")
-            .. (petAction ~= nil and " + PetAction" or "")
+            .. ((petAction ~= nil and petAction.Type ~= "Unknown") and " + PetAction" or "")
         );
 
         profile.MiniSwap.TryEquipSet(stance .. "_Default");
@@ -288,16 +288,23 @@ do -- GEAR LIFECYCLE REGION
         profile.MiniSwap.TryEquipSet(masterStance .. "_Pet_" .. petName);
 
         if (petAction == nil) then return end
+        if (petAction.Type == "Unknown") then
+            return
+        end
 
         profile.MiniSwap.TryEquipSet("Midcast_Pet_Default");
             
         local petActionType = profile.MiniSwap.Slugify(petAction.Type);
-        profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionType);
+        if (petActionType ~= nil) then
+            profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionType);
+        end
 
         -- TODO: Groups
 
         local petActionName = profile.MiniSwap.Slugify(petAction.Name);
-        profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionName);
+        if (petActionName ~= nil) then
+            profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionName);
+        end
     end
 
     profile.MiniSwap.HandleAbility = function()
@@ -1352,6 +1359,7 @@ do -- UTILS REGION
     end
 
     profile.MiniSwap.Slugify = function(rawName)
+        if (rawName == nil) then return nil end
         return string.gsub(rawName, "[^%w]+", "")
     end
 
