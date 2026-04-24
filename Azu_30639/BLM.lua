@@ -224,8 +224,9 @@ sets.Midcast_ElementalMagic_Weather_Priority = {
     Waist = { { Name = "Hachirin-no-Obi", Level = 71 } },
 };
 
-sets.Midcast_Stone_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
 sets.Midcast_Aero_Priority = { Sub = {{ Name = "Wind Grip", Level = 75 }} };
+sets.Midcast_Fire_Priority = { Sub = {{ Name = "Fire Grip", Level = 75 }} };
+sets.Midcast_Stone_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
 
 -- Goal: Total INT > 150 for 13 INT down (23 if `Elemental Magic Debuff` Effect merited)
 sets.Midcast_ElementalEnfeeble_Priority = {

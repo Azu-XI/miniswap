@@ -172,6 +172,10 @@ sets.Midcast_Default_Priority = {
     },
 };
 
+sets.Midcast_Aero_Priority = { Sub = {{ Name = "Wind Grip", Level = 75 }} };
+sets.Midcast_Fire_Priority = { Sub = {{ Name = "Fire Grip", Level = 75 }} };
+sets.Midcast_Stone_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
+
 -- Goal: CurePotency Cap30% ; SIRD Cap102%; FastCast Cap80% ; Haste Cap25% ; Enmity-
 sets.Midcast_HealingMagic_Priority = {
     Main  = {

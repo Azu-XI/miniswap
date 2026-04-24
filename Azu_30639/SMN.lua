@@ -369,6 +369,9 @@ sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_PHYSICAL_NAME_Priority = {
     },
 };
 
+-- TEMP until BP Physical/Magical split
+sets.Midcast_Pet_BloodPactRage_Priority = sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_PHYSICAL_NAME_Priority;
+
 -- BP Rage Magical // Goal: BPDmg, Smn Skill, PetMACC, PetMAB
 -- TODO: Use action name/groups
 sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_MAGICAL_NAME_Priority = {
@@ -426,9 +429,17 @@ sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_MAGICAL_NAME_Priority = {
     },
 };
 
+--> Flaming Crush: Hybrid (2 physcal hits + 1 magical hits)
+--  Just a little Magic boost on top of the physical set.
+sets.Midcast_Pet_FlamingCrush_Priority = {
+    Back  = {
+        { Name = "Summoner's Cape", Level = 70 },     -- PetMACC+5 PetMAB+5
+    },
+};
+
 sets.JA_ElementalSiphon = {
     Main  = {
-        { Name = "Chatoyant Staff", Level = 51 },        -- EleSiphon+10
+        { Name = "Chatoyant Staff", Level = 51 },     -- EleSiphon+10
     },
     Neck  = {
         { Name = "Radiant Lantern", Level = 60 },     -- EleSiphon+3
@@ -661,11 +672,11 @@ profile.HandleDefault = function()
 
     local environment = gData.GetEnvironment();
 
-    if (environment.DayElement == petElement) then
+    if (environment.DayElement == petElement) then  -- TODO: Ignore when pet actions
         profile.MiniSwap.TryEquipSet(player.Status .. "_Pet_Day");
     end
 
-    if (environment.WeatherElement == petElement) then
+    if (environment.WeatherElement == petElement) then  -- TODO: Ignore when pet actions
         profile.MiniSwap.TryEquipSet(player.Status .. "_Pet_Weather");
     end
 end

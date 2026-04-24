@@ -196,7 +196,8 @@ sets.Midcast_EnfeeblingMagic_Priority = {
 -- Goal: Max FastCast 80%
 sets.Precast_Default_Priority = {
     Head  = {
-        { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
+        { Name = "Bunzi's Hat", Level = 75 },
+        -- { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
     Ear1  = {
@@ -204,7 +205,7 @@ sets.Precast_Default_Priority = {
     },
     Body  = {
             -- Wish: Dalmatica +0/1 [(Aug) FC+4]
-        { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
+        -- { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
     },
     Feet  = {
         { Name = "Bunzi's Sabots", Level = 75 },      -- FC+2

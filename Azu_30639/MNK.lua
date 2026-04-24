@@ -64,7 +64,7 @@ sets.Engaged_Default_Priority = {
     },
     Hands = {
             -- Wish: Lv.75 Melee Gloves +1 [Atk+18 SB+5 (Aug) STR+6 VIT+6 ACC+6 ATK+6 CTP+6]
-        { Name = "Melee Gloves", Level = 73 },        -- ATK+16 SB+4 
+        { Name = "Hachiryu Kote", Level = 73 },       -- ACC+5
         { Name = "Shinobi Tekko", Level = 49 },       -- ACC+8 ATK+8 STP+2
             -- Wish: Lv.34 Ochimusha Kote [ATK+20 EVA-5]
         { Name = "Battle Gloves", Level = 14 },       -- ACC+3 EVA+3 STP+1
@@ -269,7 +269,7 @@ sets.WS_ShijinSpiral = {
         -- Wish: Ancient Torque [DEX+4 ACC+9]
     Body  = "Kirin's Osode",                          -- AllStats+10    ATK+3   DA+3  CritDmg+3
         -- Wish: High: Usukane Haramaki [DEX+8 ACC+12 (Aug) DA+3]
-    Hands = "Shinobi Tekko",                          -- ACC+8  ATK+8
+    Hands = "Hachiryu Kote",                          -- ACC+5 DEX+10
         -- Wish: Hachiryu Kote
     Ring1 = "Kusha's Ring",                           -- ACC+12 ATK+6        (Set w/ Lava's Ring)
     Ring2 = "Lava's Ring",                            -- ACC+12 ATK+6        (Set w/ Kusha's Ring)

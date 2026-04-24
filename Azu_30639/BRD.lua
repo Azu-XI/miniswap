@@ -449,8 +449,9 @@ sets.Midcast_Lullaby_Priority = {
 
 
 sets.Midcast_Elegy_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
-sets.Midcast_LightningThrenody_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
 sets.Midcast_EarthThrenody_Priority = { Sub = {{ Name = "Wind Grip", Level = 75 }} };
+sets.Midcast_IceThrenody_Priority = { Sub = {{ Name = "Fire Grip", Level = 75 }} };
+sets.Midcast_LightningThrenody_Priority = { Sub = {{ Name = "Earth Grip", Level = 75 }} };
 
 -- Goal: Max FastCast 80%
 sets.Precast_Default_Priority = {

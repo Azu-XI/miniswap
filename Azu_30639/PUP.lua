@@ -1,10 +1,6 @@
 local profile = gFunc.LoadFile('common/miniswap.lua');
 local sets = {};
 
-sets.LockStyle = {
-    Main  = "Custode",
-};
-
 sets.Engaged_Default_Priority = {
     Main  = {
             -- Wish: Ohtas [RepairPot+10% PetACC+8 PetRACC+8 PetDA+3] {Oboro}
@@ -74,11 +70,10 @@ sets.Engaged_Default_Priority = {
         "Provenance Ring",
     },
     Back  = {
+        { Name = "Aife's Mantle", Level = 75 },       -- ACC+4 STP+2
         { Name = "Cuchulain's Mantle", Level = 74 },  -- ACC+4  STR+4  DEX+4
         { Name = "Exile's Cloak", Level = 50 },       --        STR+4  ATK+3
-        { Name = "Nomad's Mantle", Level = 24 },      -- EVA+3  AGI+1  DW+1
-        { Name = "Traveler's Mantle", Level = 12 },   -- EVA+3
-        { Name = "Rabbit Mantle", Level = 4 },
+        { Name = "Mist Silk Cape", Level = 10 },
     },
     Waist = {
         { Name = "Virtuoso Belt", Level = 54 },       -- ACC+12                 ATK+4
