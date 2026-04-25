@@ -258,7 +258,7 @@ do -- GEAR LIFECYCLE REGION
         profile.MiniSwap.ShowDebugActionType(
             stance
             .. (pet ~= nil and " + Pet" or "")
-            .. ((petAction ~= nil and petAction.Type ~= "Unknown") and " + PetAction" or "")
+            .. ((petAction ~= nil and petAction.Type ~= nil and petAction.Type ~= "Unknown") and " + PetAction" or "")
         );
 
         profile.MiniSwap.TryEquipSet(stance .. "_Default");
@@ -287,24 +287,24 @@ do -- GEAR LIFECYCLE REGION
         local petName = profile.MiniSwap.Slugify(pet.Name);
         profile.MiniSwap.TryEquipSet(masterStance .. "_Pet_" .. petName);
 
-        if (petAction == nil) then return end
-        if (petAction.Type == "Unknown") then
-            return
-        end
+        if (petAction == nil or petAction.Type == nil or petAction.Type == "Unknown") then return end
 
         profile.MiniSwap.TryEquipSet("Midcast_Pet_Default");
             
         local petActionType = profile.MiniSwap.Slugify(petAction.Type);
-        if (petActionType ~= nil) then
-            profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionType);
-        end
-
-        -- TODO: Groups
+        profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionType);
 
         local petActionName = profile.MiniSwap.Slugify(petAction.Name);
-        if (petActionName ~= nil) then
-            profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionName);
+        if (petActionName == nil) then return end
+        
+        local groups = profile.MiniSwap.PetGroupsMapping[petActionName];
+        if (groups ~= nil) then
+            for _idx, groupName in pairs(groups) do
+                profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. groupName);
+            end
         end
+
+        profile.MiniSwap.TryEquipSet("Midcast_Pet_" .. petActionName);
     end
 
     profile.MiniSwap.HandleAbility = function()
@@ -351,7 +351,7 @@ do -- GEAR LIFECYCLE REGION
         profile.MiniSwap.TryEquipSet("Precast_" .. actionSkill);
 
         -- GROUPS
-        local groups = profile.MiniSwap.ActionGroupsMapping[actionName];
+        local groups = profile.MiniSwap.MagicGroupsMapping[actionName];
         if (groups ~= nil) then
             for _idx, groupName in pairs(groups) do
                 profile.MiniSwap.TryEquipSet("Precast_" .. groupName);
@@ -379,7 +379,7 @@ do -- GEAR LIFECYCLE REGION
         profile.MiniSwap.TryEquipSet("Midcast_" .. actionSkill);
 
         -- GROUPS
-        local groups = profile.MiniSwap.ActionGroupsMapping[actionName];
+        local groups = profile.MiniSwap.MagicGroupsMapping[actionName];
         if (groups ~= nil) then
             for _idx, groupName in pairs(groups) do
                 profile.MiniSwap.TryEquipSet("Midcast_" .. groupName);
@@ -513,7 +513,7 @@ do -- GUI REGION
 end
 
 do -- MAPPINGS REGION
-    profile.MiniSwap.ActionGroupsMapping = {
+    profile.MiniSwap.MagicGroupsMapping = {
         ["1000 Needles"] = {"BluMagicalAcc", "BluMagical"},
         ["Absolute Terror"] = {"BluMagicalAcc", "BluMagical"},
         ["Absorb-Acc"] = {"Absorb"},
@@ -1165,13 +1165,225 @@ do -- MAPPINGS REGION
         -- Waterga II
         -- Waterga III
         -- Waterja
-    }
+    };
+    profile.MiniSwap.PetGroupsMapping = {
+        ["Acid Mist"] = {"BstMagicAccuracy"},
+        ["Acid Spray"] = {"BstMagicAttack", "BstMagicAccuracy"},
+        ["Aerial Armor"] = {"SmnSkill"},
+        ["Aerial Blast"] = {"SmnMagical"},
+        ["Aero II"] = {"SmnMagical"},
+        ["Aero IV"] = {"SmnMagical"},
+        ["Altana's Favor"] = {"SmnSkill"},
+        ["Axe Kick"] = {"SmnPhysical"},
+        ["Back Heel"] = {"BstPhysical"},
+        ["Barracuda Dive"] = {"SmnPhysical"},
+        ["Beak Lunge"] = {"BstPhysical"},
+        ["Big Scissors"] = {"BstPhysical"},
+        ["Blaster"] = {"BstMagicAccuracy"},
+        ["Blindside"] = {"SmnPhysical"},
+        ["Blizzard II"] = {"SmnMagical"},
+        ["Blizzard IV"] = {"SmnMagical"},
+        ["Blockhead"] = {"BstPhysical"},
+        ["Brain Crush"] = {"BstMagicAccuracy"},
+        ["Bubble Shower"] = {"BstMagicAccuracy"},
+        ["Burning Strike"] = {"SmnHybrid"},
+        ["Camisado"] = {"SmnPhysical"},
+        ["Chaotic Eye"] = {"BstMagicAccuracy"},
+        ["Chaotic Strike"] = {"SmnSkill"},
+        ["Charged Whisker"] = {"BstMagicAttack"},
+        ["Choke Breath"] = {"BstMagicAccuracy"},
+        ["Chomp Rush"] = {"BstPhysical"},
+        ["Claw Cyclone"] = {"BstPhysical"},
+        ["Claw"] = {"SmnPhysical", "SmnCrit"},
+        ["Conflag Strike"] = {"SmnMagical"},
+        ["Corrosive Ooze"] = {"BstMagicAccuracy"},
+        ["Crag Throw"] = {"SmnPhysical"},
+        ["Crescent Fang"] = {"SmnPhysical"},
+        ["Crimson Howl"] = {"SmnSkill"},
+        ["Crossthrash"] = {"BstPhysical"},
+        ["Crystal Blessing"] = {"SmnSkill"},
+        ["Cursed Sphere"] = {"BstMagicAttack"},
+        ["Cyclotail"] = {"BstPhysical"},
+        ["Dark Spore"] = {"BstMagicAccuracy"},
+        ["Diamond Dust"] = {"SmnMagical"},
+        ["Diamond Storm"] = {"SmnEnfeebling"},
+        ["Disembowel"] = {"BstPhysical"},
+        ["Double Claw"] = {"BstPhysical"},
+        ["Double Punch"] = {"SmnPhysical"},
+        ["Double Slap"] = {"SmnPhysical"},
+        ["Dream Shroud"] = {"SmnSkill"},
+        ["Dust Cloud"] = {"BstMagicAccuracy"},
+        ["Earthen Armor"] = {"SmnSkill"},
+        ["Earthen Fury"] = {"SmnMagical"},
+        ["Earthen Ward"] = {"SmnSkill"},
+        ["Eclipse Bite"] = {"SmnPhysical"},
+        ["Ecliptic Growl"] = {"SmnSkill"},
+        ["Ecliptic Howl"] = {"SmnSkill"},
+        ["Eerie Eye"] = {"SmnEnfeebling"},
+        ["Extirpating Salvo"] = {"BstPhysical"},
+        ["Filamented Hold"] = {"BstMagicAccuracy"},
+        ["Fire II"] = {"SmnMagical"},
+        ["Fire IV"] = {"SmnMagical"},
+        ["Fireball"] = {"BstMagicAttack"},
+        ["Flaming Crush"] = {"SmnHybrid"},
+        ["Fleet Wind"] = {"SmnSkill"},
+        ["Fluid Spread"] = {"BstPhysical"},
+        ["Fluid Toss"] = {"BstPhysical"},
+        ["Foot Kick"] = {"BstPhysical"},
+        ["Foul Waters"] = {"BstMagicAccuracy"},
+        ["Frogkick"] = {"BstPhysical"},
+        ["Frost Armor"] = {"SmnSkill"},
+        ["Geocrush"] = {"SmnMagical"},
+        ["Glittering Ruby"] = {"SmnSkill"},
+        ["Gloeosuccus"] = {"BstMagicAccuracy"},
+        ["Gloom Spray"] = {"BstMagicAttack"},
+        ["Grand Fall"] = {"SmnMagical"},
+        ["Grapple"] = {"BstPhysical"},
+        ["Hastega II"] = {"SmnSkill"},
+        ["Hastega"] = {"SmnSkill"},
+        ["Head Butt"] = {"BstPhysical"},
+        ["Healing Ruby II"] = {"SmnHealing"},
+        ["Healing Ruby"] = {"SmnHealing"},
+        ["Heavenly Strike"] = {"SmnMagical"},
+        ["Heavenward Howl"] = {"SmnSkill"},
+        ["Hi-Freq Field"] = {"BstMagicAccuracy"},
+        ["Holy Mist"] = {"SmnMagical"},
+        ["Hoof Volley"] = {"BstPhysical"},
+        ["Howling Moon"] = {"SmnMagical"},
+        ["Hysteric Assault"] = {"SmnPhysical"},
+        ["Infected Leech"] = {"BstMagicAccuracy"},
+        ["Inferno Howl"] = {"SmnSkill"},
+        ["Inferno"] = {"SmnMagical"},
+        ["Infrasonics"] = {"BstMagicAccuracy"},
+        ["Intimidate"] = {"BstMagicAccuracy"},
+        ["Jettatura"] = {"BstMagicAccuracy"},
+        ["Judgement Bolt"] = {"SmnMagical"},
+        ["Lamb Chop"] = {"BstPhysical"},
+        ["Leaf Dagger"] = {"BstMagicAccuracy"},
+        ["Level ? Holy"] = {"SmnMagical"},
+        ["Lightning Armor"] = {"SmnSkill"},
+        ["Lunar Bay"] = {"SmnMagical"},
+        ["Mandibular Bite"] = {"BstPhysical"},
+        ["Mega Scissors"] = {"BstPhysical"},
+        ["Megalith Throw"] = {"SmnPhysical"},
+        ["Meteor Strike"] = {"SmnMagical"},
+        ["Meteorite"] = {"SmnMagical"},
+        ["Mewing Lullaby"] = {"SmnEnfeebling"},
+        ["Molting Plumage"] = {"BstMagicAttack"},
+        ["Moonlit Charge"] = {"SmnPhysical"},
+        ["Mountain Buster"] = {"SmnPhysical"},
+        ["Nectarous Deluge"] = {"BstMagicAttack"},
+        ["Needle Shot"] = {"BstPhysical"},
+        ["Nepenthic Plunge"] = {"BstMagicAttack"},
+        ["Nether Blast"] = {"SmnMagical"},
+        ["Night Terror"] = {"SmnMagical"},
+        ["Nightmare"] = {"SmnEnfeebling"},
+        ["Nimble Snap"] = {"BstPhysical"},
+        ["Noctoshield"] = {"SmnSkill"},
+        ["Noisome Powder"] = {"BstMagicAccuracy"},
+        ["Numbing Noise"] = {"BstMagicAccuracy"},
+        ["Numbshroom"] = {"BstPhysical"},
+        ["Palsy Pollen"] = {"BstMagicAccuracy"},
+        ["Pavor Nocturnus"] = {"SmnEnfeebling"},
+        ["Pecking Flurry"] = {"BstPhysical"},
+        ["Pentapeck"] = {"BstPhysical"},
+        ["Pestilent Plume"] = {"BstMagicAccuracy"},
+        ["Poison Nails"] = {"SmnPhysical"},
+        ["Power Attack"] = {"BstPhysical"},
+        ["Predator Claws"] = { "SmnCrit"},
+        ["Predatory Glare"] = {"BstMagicAccuracy"},
+        ["Punch"] = {"SmnPhysical"},
+        ["Purulent Ooze"] = {"BstMagicAccuracy"},
+        ["Queasyshroom"] = {"BstPhysical"},
+        ["Raise II"] = {"SmnSkill"},
+        ["Raise III"] = {"SmnSkill"},
+        ["Raise"] = {"SmnSkill"},
+        ["Razor Fang"] = {"BstPhysical"},
+        ["Recoil Dive"] = {"BstPhysical"},
+        ["Regal Gash"] = {"SmnPhysical"},
+        ["Regal Scratch"] = {"SmnPhysical"},
+        ["Reraise II"] = {"SmnSkill"},
+        ["Reraise III"] = {"SmnSkill"},
+        ["Reraise"] = {"SmnSkill"},
+        ["Rhino Attack"] = {"BstPhysical"},
+        ["Rhinowrecker"] = {"BstMagicAccuracy"},
+        ["Ripper Fang"] = {"BstPhysical"},
+        ["Roar"] = {"BstMagicAccuracy"},
+        ["Rock Buster"] = {"SmnPhysical"},
+        ["Rock Throw"] = {"SmnPhysical"},
+        ["Rolling Thunder"] = {"SmnSkill"},
+        ["Roundhouse"] = {"SmnPhysical"},
+        ["Ruinous Omen"] = {"SmnMagical"},
+        ["Rush"] = {"SmnPhysical"},
+        ["Sandblast"] = {"BstMagicAccuracy"},
+        ["Sandpit"] = {"BstMagicAccuracy"},
+        ["Scream"] = {"BstMagicAccuracy"},
+        ["Scythe Tail"] = {"BstPhysical"},
+        ["Searing Light"] = {"SmnMagical"},
+        ["Sensilla Blades"] = {"BstPhysical"},
+        ["Shakeshroom"] = {"BstPhysical"},
+        ["Sheep Charge"] = {"BstPhysical"},
+        ["Sheep Song"] = {"BstMagicAccuracy"},
+        ["Shining Ruby"] = {"SmnSkill"},
+        ["Shock Squall"] = {"SmnEnfeebling"},
+        ["Shock Strike"] = {"SmnSkill"},
+        ["Sickle Slash"] = {"BstPhysical"},
+        ["Silence Gas"] = {"BstMagicAccuracy"},
+        ["Sleepga"] = {"SmnEnfeebling"},
+        ["Slowga"] = {"SmnEnfeebling"},
+        ["Slug Family"] = {"BstMagicAccuracy"},
+        ["Snow Cloud"] = {"BstMagicAccuracy"},
+        ["Somersault"] = {"BstPhysical"},
+        ["Somnolence"] = {"SmnMagical"},
+        ["Soothing Current"] = {"SmnSkill"},
+        ["Soporific"] = {"BstMagicAccuracy"},
+        ["Spider Web"] = {"BstMagicAccuracy"},
+        ["Spinning Dive"] = {"SmnPhysical"},
+        ["Spinning Top"] = {"BstPhysical"},
+        ["Spiral Spin"] = {"BstMagicAccuracy"},
+        ["Spoil"] = {"BstMagicAccuracy"},
+        ["Spore"] = {"BstMagicAccuracy"},
+        ["Spring Water"] = {"SmnSkill"},
+        ["Stink Bomb"] = {"BstMagicAccuracy"},
+        ["Stone II"] = {"SmnMagical"},
+        ["Stone IV"] = {"SmnMagical"},
+        ["Suction"] = {"BstPhysical"},
+        ["Sudden Lunge"] = {"BstMagicAccuracy"},
+        ["Sweeping Gouge"] = {"BstPhysical"},
+        ["Swooping Frenzy"] = {"BstMagicAccuracy"},
+        ["Tail Blow"] = {"BstPhysical"},
+        ["Tail Whip"] = {"SmnPhysical"},
+        ["Tegmina Buffet"] = {"BstPhysical"},
+        ["Thunder II"] = {"SmnMagical"},
+        ["Thunder IV"] = {"SmnMagical"},
+        ["Thunderspark"] = {"SmnMagical"},
+        ["Thunderstorm"] = {"SmnMagical"},
+        ["Tickling Tendrils"] = {"BstPhysical"},
+        ["Tidal Roar"] = {"SmnEnfeebling"},
+        ["Tidal Wave"] = {"SmnMagical"},
+        ["Tortoise Stomp"] = {"BstPhysical"},
+        ["Toxic Spit"] = {"BstMagicAccuracy"},
+        ["Ultimate Terror"] = {"SmnEnfeebling"},
+        ["Venom Shower"] = {"BstMagicAccuracy"},
+        ["Venom Spray"] = {"BstMagicAccuracy"},
+        ["Venom"] = {"BstMagicAccuracy"},
+        ["Volt Strike"] = {"SmnPhysical"},
+        ["Water II"] = {"SmnMagical"},
+        ["Water IV"] = {"SmnMagical"},
+        ["Welt"] = {"SmnPhysical"},
+        ["Whirl Claws"] = {"BstPhysical"},
+        ["Whispering Wind"] = {"SmnHealing"},
+        ["Wild Oats"] = {"BstPhysical"},
+        ["Wind Blade"] = {"SmnMagical"},
+        ["Wind's Blessing"] = {"SmnSkill"},
+        ["Wing Slap"] = {"BstPhysical"},
+    };
 
     -- Normalized action name to the mapping
-    profile.MiniSwap.ProcessActionGroupsMapping = function()
-        for actionName, groupNames in pairs(profile.MiniSwap.ActionGroupsMapping) do
+    profile.MiniSwap.ProcessGroupsMapping = function(mapping)
+        for actionName, groupNames in pairs(mapping) do
             actionName = profile.MiniSwap.Slugify(actionName);
-            profile.MiniSwap.ActionGroupsMapping[actionName] = groupNames;
+            mapping[actionName] = groupNames;
         end
     end
 
@@ -1227,7 +1439,8 @@ end
 
 do -- PROFILE LIFECYCLE REGION
     profile.MiniSwap.OnLoad = function()
-        profile.MiniSwap.ProcessActionGroupsMapping();
+        profile.MiniSwap.ProcessGroupsMapping(profile.MiniSwap.MagicGroupsMapping);
+        profile.MiniSwap.ProcessGroupsMapping(profile.MiniSwap.PetGroupsMapping);
 
         profile.Aliases = profile.MiniSwap.MergeTables(shared.Aliases or {}, profile.Aliases);
         profile.Bindings = profile.MiniSwap.MergeTables(shared.Bindings or {}, profile.Bindings);
