@@ -239,7 +239,7 @@ sets.JA_BloodPactWard_Priority = bloodPact;
 -- Blood Pact Midcast
 --
 
--- DP Default // Goal: Smn Skill
+-- BP Default // Goal: Smn Skill
 sets.Midcast_Pet_Default_Priority = {
     Main  = {
             -- Wish: Lv.75 Bahamut's Staff [SmnSkill+10]
@@ -291,20 +291,26 @@ sets.Midcast_Pet_Default_Priority = {
 };
 
 -- BP Ward - Enhancing // Goal: Smn Skill
--- Nothing to do, Smn Skill is already in the Midcast_Pet_Default set
+-- Nothing to do, same as Midcast_Pet_Default_Priority.
+
+-- BP Ward - Healing // Goal: Smn Skill
+-- Nothing to do, same as Midcast_Pet_Default_Priority.
 
 -- BP Ward - Enfeebling // Goal: Smn Skill, PetMACC
--- Only add PeMACC on top of the Smn Skill in the Midcast_Pet_Default set
--- TODO: Use action name/groups
--- TODO: Lookup all fields, check what is used in BP Rage Magical
--- main:
--- Wish: Lv.xx Providence [PetMACC+15] {Incursion T3}
--- Wish: Lv.xx Conjurer's Crook +1 [PetMACC+10] {Woodworking 110}
--- { Name = "Summoner's Cape", Level = 70},     -- PetMACC+5
+-- Smn Skill in Midcast_Pet_Default_Priority. Only overwrite for PetMACC.
+sets.Midcast_Pet_SmnEnfeebling_Priority = {
+    -- TODO: Lookup all fields, check what is used in BP Rage Magical
+    Main  = {
+            -- Wish: Lv.75 Providence [PetMACC+15] {Incursion T3}
+            -- Wish: Lv.75 Conjurer's Crook +1 [PetMACC+10] {Woodworking 110}
+    },
+    Back  = {
+        { Name = "Summoner's Cape", Level = 70 },     -- PetMACC+5 PetMAB+5
+    },
+};
 
--- BP Rage Physical // Goal: BPDmg, Smn Skill, PetACC, PetATK, PetDA
--- TODO: Use action name/groups
-sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_PHYSICAL_NAME_Priority = {
+-- BP Rage - Physical // Goal: BPDmg, Smn Skill, PetACC, PetATK, PetDA
+sets.Midcast_Pet_SmnPhysical_Priority = {
     Main  = {
             -- Wish: Lv.75 Providence [PetACC+20 PetATK+20] {Incursion T3}
         { Name = "Radiance +1", Level = 50 },         --                       PetATK+15 PetACC+10
@@ -369,12 +375,8 @@ sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_PHYSICAL_NAME_Priority = {
     },
 };
 
--- TEMP until BP Physical/Magical split
-sets.Midcast_Pet_BloodPactRage_Priority = sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_PHYSICAL_NAME_Priority;
-
--- BP Rage Magical // Goal: BPDmg, Smn Skill, PetMACC, PetMAB
--- TODO: Use action name/groups
-sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_MAGICAL_NAME_Priority = {
+-- BP Rage - Magical // Goal: BPDmg, Smn Skill, PetMACC, PetMAB
+sets.Midcast_Pet_SmnMagical_Priority = {
     Main  = {
             -- Wish: Lv.75 Conjurer's Crook +0/1 [PetMAB+15/20 PetMACC+0/10] {Woodworking 110}
             -- Wish: Lv.75 Providence [PeMAB+15 PetMACC+15] {Incursion T3}
@@ -429,12 +431,10 @@ sets.Midcast_Pet_UPDATE_WITH_BP_RAGE_MAGICAL_NAME_Priority = {
     },
 };
 
---> Flaming Crush: Hybrid (2 physcal hits + 1 magical hits)
---  Just a little Magic boost on top of the physical set.
-sets.Midcast_Pet_FlamingCrush_Priority = {
-    Back  = {
-        { Name = "Summoner's Cape", Level = 70 },     -- PetMACC+5 PetMAB+5
-    },
+-- BP Rage - Hybrid
+sets.Midcast_Pet_SmnHybrid_Priority = profile.MiniSwap.DeepCopy(sets.Midcast_Pet_SmnPhysical_Priority);
+sets.Midcast_Pet_SmnHybrid_Priority.Back = {
+    { Name = "Summoner's Cape", Level = 70 },     -- PetMACC+5 PetMAB+5
 };
 
 sets.JA_ElementalSiphon = {
@@ -670,13 +670,16 @@ profile.HandleDefault = function()
     local petElement = petToElement[petName];
     if (petElement == nil) then return end
 
+    local petAction = gData.GetPetAction();
+    if (petAction ~= nil) then return end
+
     local environment = gData.GetEnvironment();
 
-    if (environment.DayElement == petElement) then  -- TODO: Ignore when pet actions
+    if (environment.DayElement == petElement) then
         profile.MiniSwap.TryEquipSet(player.Status .. "_Pet_Day");
     end
 
-    if (environment.WeatherElement == petElement) then  -- TODO: Ignore when pet actions
+    if (environment.WeatherElement == petElement) then
         profile.MiniSwap.TryEquipSet(player.Status .. "_Pet_Weather");
     end
 end

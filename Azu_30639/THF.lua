@@ -149,7 +149,7 @@ sets.Engaged_TH_Priority = {
 };
 sets.Idle_TH_Priority = sets.Engaged_TH_Priority;
 
-sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority)
+sets.Idle_Default_Priority = profile.MiniSwap.DeepCopy(sets.Engaged_Default_Priority);
 sets.Idle_Default_Priority.Head = {
 --STORED{ Name = "Rog. Bonnet +1", Level = 74 },          -- EVA+10
     { Name = "Wivre Mask", Level = 65 },              -- EVA+10

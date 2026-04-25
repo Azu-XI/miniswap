@@ -56,11 +56,12 @@ sets.Engaged_Default_Priority = {
         { Name = "Brutal Earring", Level = 75 },      -- DA+5 STP+1
         { Name = "Outlaw's Earring", Level = 50 },    -- DEX+2 ATK+4 EVA+4
         { Name = "Pigeon Earring", Level = 33 },      -- HP+20 MP+15 STR+1 ATK+2
+        { Name = "Cassie Earring", Level = 1 },
     },
     Ear2 = {
         { Name = "Suppanomimi", Level = 72 },         -- DW+5 Sword+5
         { Name = "Assault Earring", Level = 58 },     -- ACC+2 ATK+5 EVA-2 DEF-3
-        { Name = "Tribal Earring", Level = 20 },
+        { Name = "Tribal Earring", Level = 20 },      -- VIT+1 AxeSkill+2
         "remove",
     },
     Neck  = {
