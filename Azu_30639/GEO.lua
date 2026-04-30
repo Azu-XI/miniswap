@@ -276,6 +276,9 @@ sets.Precast_Default_Priority = {
     Back  = {
             -- Wish: Hierarch's Mantle [(Aug) FC+2]
     },
+    Waist = {
+            -- Wish: Manaflow Sash [FC+4] {Brew+3 Yasuo Hasaki}
+    },
     Feet  = {
             -- Wish: Suzaku's Sune-Ate [(Aug) FC+4]
     };
@@ -292,7 +295,7 @@ sets.Precast_HealingMagic_Priority = {
     },
     Feet  = {
             -- Wish: Zenith Pumps+0/1 [(Aug) CureCast-5/6]
-    };
+    },
 };
 
 -- Goal: QuickSpell /!\ Only for spells where midcast doesn't matter /!\

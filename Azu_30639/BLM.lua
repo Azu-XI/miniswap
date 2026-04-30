@@ -424,6 +424,9 @@ sets.Precast_Default_Priority = {
     Back  = {
             -- Wish: Hierarch's Mantle [(Aug) FC+2]
     },
+    Waist = {
+            -- Wish: Manaflow Sash [FC+4] {Brew+3 Yasuo Hasaki}
+    },
     Feet  = {
             -- Wish: Suzaku's Sune-Ate [(Aug) FC+4]
     };

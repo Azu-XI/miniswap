@@ -240,6 +240,8 @@ sets.Midcast_Raise_Priority = midcastFastCast;
 sets.Precast_Default_Priority = {
         -- Wish: Lv.75 Reflexive Grip +0/1 [FC+1/3]
     Head  = {
+            -- Wish: Argute M.board +0/1 [FC+5 under light/dark art]
+            -- Wish: Marduk's Tiara [Set: FC+0/1/2/3/5%]
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
@@ -247,11 +249,13 @@ sets.Precast_Default_Priority = {
         { Name = "Loquac. Earring", Level = 75 },     -- FC+2
     },
     Body  = {
+            -- Wish: Marduk's Jubbah [Set: FC+0/1/2/3/5%]
             -- Wish: Dalmatica +0/1 [(Aug) FC+4] // Carreful with Occ. Quickens Spellcasting!!
         { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
     },
     Hands = {
-            -- Wish: Brd. Cuffs +1 [(Aug) FC+3]
+            -- Wish: Marduk's Dastanas [Set: FC+0/1/2/3/5%]
+            -- Wish: Argute Bracers +1 [(Aug) FC+3]
     },
     Ring1 = {
         { Name = "Hibernal Ring", Level = 75 },       -- FC+2
@@ -259,8 +263,16 @@ sets.Precast_Default_Priority = {
     Back  = {
             -- Wish: Hierarch's Mantle [(Aug) FC+2]
     },
+    Waist = {
+            -- Wish: Manaflow Sash [FC+4] {Brew+3 Yasuo Hasaki}
+    },
+    Legs  = {
+        { Name = "Marduk's Shalwar", Level = 75 },    -- Set: FC+0/1/2/3/5%
+    },
     Feet  = {
-            -- Wish: Suzaku's Sune-Ate [(Aug) FC+4]
+            -- Wish: Argute Loafers +1 [(Aug) FC+4]
+            -- Wish: Sch. Loafers +0/1 [FC+5 under light/dark art]
+        { Name = "Marduk's Crackows", Level = 75 },   -- Set: FC+0/1/2/3/5%
     };
 };
 

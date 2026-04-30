@@ -17,7 +17,8 @@ sets.Engaged_Default = {
     -- Head  = "",
     Ear1  = "Emberpearl Earring",                     -- STR+2 MND+2
     Ear2  = "Brutal Earring",                         -- DA+1
-    -- Body  = "",
+        -- Wish: Ayg: H+3 STP+3
+    Body  = "Reverend Mail",                          -- ACC+10 EVA+10
     Neck  = "Peacock Charm",                          -- ACC+10
     -- Hands = "",
     Ring1 = "Toreador's Ring",                        -- ACC+7
@@ -195,8 +196,9 @@ sets.Midcast_EnfeeblingMagic_Priority = {
 
 -- Goal: Max FastCast 80%
 sets.Precast_Default_Priority = {
+        -- Wish: Lv.75 Reflexive Grip +0/1 [FC+1/3]
     Head  = {
-        { Name = "Bunzi's Hat", Level = 75 },
+            -- Wish: Marduk's Tiara [Set: FC+0/1/2/3/5%]
         -- { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
@@ -204,8 +206,21 @@ sets.Precast_Default_Priority = {
         { Name = "Loquac. Earring", Level = 75 },     -- FC+2
     },
     Body  = {
+            -- Wish: Marduk's Jubbah [Set: FC+0/1/2/3/5%]
             -- Wish: Dalmatica +0/1 [(Aug) FC+4]
         -- { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
+    },
+    Hands = {
+        -- Wish: Marduk's Dastanas [Set: FC+0/1/2/3/5%]
+    },
+    Back  = {
+            -- Wish: Hierarch's Mantle [(Aug) FC+2]
+    },
+    Waist = {
+            -- Wish: Manaflow Sash [FC+4] {Brew+3 Yasuo Hasaki}
+    },
+    Legs  = {
+        { Name = "Marduk's Shalwar", Level = 75 },    -- Set: FC+0/1/2/3/5%
     },
     Feet  = {
         { Name = "Bunzi's Sabots", Level = 75 },      -- FC+2

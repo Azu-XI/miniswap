@@ -457,6 +457,7 @@ sets.Midcast_LightningThrenody_Priority = { Sub = {{ Name = "Earth Grip", Level 
 sets.Precast_Default_Priority = {
         -- Wish: Lv.75 Reflexive Grip +0/1 [FC+1/3]
     Head  = {
+            -- Wish: Marduk's Tiara [Set: FC+0/1/2/3/5%]
         { Name = "remove", Level = 59 },              -- No head because of Vermillion Cloak
         { Name = "Entrancing Ribbon", Level = 11 },   -- FC+1
     },
@@ -464,10 +465,12 @@ sets.Precast_Default_Priority = {
         { Name = "Loquac. Earring", Level = 75 },     -- FC+2
     },
     Body  = {
+            -- Wish: Marduk's Jubbah [Set: FC+0/1/2/3/5%]
             -- Wish: Dalmatica +0/1 [(Aug) FC+4] // Carreful with Occ. Quickens Spellcasting!!
         { Name = "Vermillion Cloak", Level = 59 },    -- FC+3
     },
     Hands = {
+            -- Wish: Marduk's Dastanas [Set: FC+0/1/2/3/5%]
             -- Wish: Brd. Cuffs +1 [(Aug) FC+3]
     },
     Ring1 = {
@@ -476,8 +479,12 @@ sets.Precast_Default_Priority = {
     Back  = {
             -- Wish: Hierarch's Mantle [(Aug) FC+2]
     },
+    Legs  = {
+        { Name = "Marduk's Shalwar", Level = 75 },    -- Set: FC+0/1/2/3/5%
+    },
     Feet  = {
             -- Wish: Suzaku's Sune-Ate [(Aug) FC+4]
+        { Name = "Marduk's Crackows", Level = 75 },   -- Set: FC+0/1/2/3/5%
     };
 };
 
