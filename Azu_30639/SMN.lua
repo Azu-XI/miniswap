@@ -59,8 +59,7 @@ sets.Idle_Default_Priority = {
         "Carpenter's Apron",
     },
     Hands = {
-            -- Wish: Aug: DT-3 EleResists+8
-        { Name = "Smn. Bracers +1", Level = 75 },
+        { Name = "Smn. Bracers +1", Level = 75 },      -- DT-3 EleResists+8
         { Name = "Carbuncle Mitts", Level = 20 },      -- MP+19 Enm-1
         { Name = "Zealot's Mitts", Level = 11 },       -- MP+5 MND+3
         { Name = "Mitts +1", Level = 8 },
@@ -203,8 +202,7 @@ local bloodPact = {
             -- Wish: Lv.50 Austere Hat [BP-2]
     },
     Body  = {
-            -- Wish: Lv.75 Smn. Doublet +1 [BP-4]
-        { Name = "Summoner's Dblt.", Level = 74 },    -- BP-3
+        { Name = "Evk. Doublet +1", Level = 74 },     -- BP-4
             -- Wish: Lv.71 YinYang Robe [BP-5]
             -- Wish: Lv.50 Penance Robe [BP-4]
             -- Wish: Lv.50 Austere Robe [BP-3]
@@ -329,8 +327,7 @@ sets.Midcast_Pet_SmnPhysical_Priority = {
         -- Wish: Lv.74 Evoker's Doublet +1 [(Aug) PetAcc+8]
     },
     Hands = {
-            -- Wish: Aug: BPDmg+3
-        { Name = "Smn. Bracers +1", Level = 75 },     --          SmnSkill+12
+        { Name = "Smn. Bracers +1", Level = 75 },     -- BPDmg+3 SmnSkill+12
             -- Wish: Lv.50 Austere/Penance Cuffs [SmnSkill+2/3]
     },
     Back  = {
@@ -379,8 +376,7 @@ sets.Midcast_Pet_SmnMagical_Priority = {
         -- Wish: :v.75 Summoner Doublet +1 [PetCritRate+4 (Aug) BPDmg+4]
     },
     Hands = {
-            -- Wish: Aug: BPDmg+3
-        { Name = "Smn. Bracers +1", Level = 75 },     --          SmnSkill+12
+        { Name = "Smn. Bracers +1", Level = 75 },     -- BPDmg+3 SmnSkill+12
             -- Wish: Lv.73 Zenith Mitts +1 [(Aug) PetMACC+6]
             -- Wish: Lv.50 Austere/Penance Cuffs [SmnSkill+2/3]
     },
