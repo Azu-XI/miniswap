@@ -15,9 +15,8 @@ sets.Engaged_Default_Priority = {
     },
     Range = {
         { Name = "Military Gun", Level = 30 },
-        { Name = "Platoon Gun", Level = 20 },
-        { Name = "Bandit's Gun", Level = 15 },
-        { Name = "Musketoon", Level = 6 },
+        { Name = "Bandit's Gun +1", Level = 15 },
+        { Name = "Musketoon +1", Level = 6 },
         -- { Name = "Firefly", Level = 5 },
     },
     Ammo = {
@@ -32,6 +31,7 @@ sets.Engaged_Default_Priority = {
     Head  = {
         { Name = "Wivre Mask", Level = 65 },          -- EVA+10 ACC+5 DEX+3 STR+2
         { Name = "Heroic Hairpin", Level = 30 },      -- PDT-2 H+2 DW+3
+        { Name = "Garrison Sallet +1", Level = 20 },      -- Regen+1 under lv.50
         { Name = "Brass Cap +1", Level = 11 },
         "Coven Hat",
     },
@@ -117,8 +117,7 @@ sets.Idle_Default_Priority.Ring1 = {
     table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
-        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+    { Name = "Succor Ring", Level = 75 },             -- DT-3
     table.unpack(sets.Idle_Default_Priority.Ring2),
 };
 sets.Idle_Default_Priority.Feet = {
@@ -139,11 +138,11 @@ sets.Preshot_Default = {}
 sets.Midshot_Default = {
     Ring1 = {
             -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
-        { Name = "Coral Ring", Level = 70 },          -- RACC+9
+--STORED{ Name = "Coral Ring", Level = 70 },          -- RACC+9
     },
     Ring2 = {
             -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
-        { Name = "Coral Ring", Level = 70 },          -- RACC+9
+--STORED{ Name = "Coral Ring", Level = 70 },          -- RACC+9
     },
     Back  = {
         { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15  RATK+15

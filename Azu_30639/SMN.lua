@@ -71,8 +71,7 @@ sets.Idle_Default_Priority = {
         "Windurstian Ring",
     },
     Ring2 = {
-            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-        { Name = "Coral Ring", Level = 70 },          -- MDT-3
+        { Name = "Succor Ring", Level = 75 },         -- DT-3
         { Name = "Astral Ring", Level = 10 },
         "Provenance Ring",
     },
@@ -603,6 +602,7 @@ sets.Resting_Default_Priority = {
         -- Legs: Wish: Lv.72 Oracle's Braconi [HMP+2]
     Feet  = {
             -- Wish: Lv.70 Numerist Pumps [HMP+3]
+        { Name = "Oracle's Pigache", Level = 72 },    -- HMP+2
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };

@@ -140,8 +140,7 @@ sets.Idle_Default_Priority = {
         "Windurstian Ring",
     },
     Ring2 = {
-            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-        { Name = "Coral Ring", Level = 70 },          -- MDT-3
+        { Name = "Succor Ring", Level = 75 },         -- DT-3
         { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
         "Provenance Ring",

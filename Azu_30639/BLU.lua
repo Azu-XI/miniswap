@@ -107,8 +107,7 @@ sets.Idle_Default_Priority.Ring1 = {
     table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
-        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+    { Name = "Succor Ring", Level = 75 },             -- DT-3   
     table.unpack(sets.Idle_Default_Priority.Ring2),
 };
 sets.Idle_Default_Priority.Back = {

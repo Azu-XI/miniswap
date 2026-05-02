@@ -72,8 +72,7 @@ sets.Idle_Default_Priority = {
         "Windurstian Ring",
     },
     Ring2 = {
-            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-        { Name = "Coral Ring", Level = 70 },          -- MDT-3
+        { Name = "Succor Ring", Level = 75 },         -- DT-3
         { Name = "Tamas Ring", Level = 30 },          -- INT+2~5
         { Name = "Eremite's Ring", Level = 10 },      -- INT+2
         "Provenance Ring",
@@ -331,6 +330,7 @@ sets.Resting_Default_Priority = {
     Feet  = {
             -- Wish: Geomancy Sandals [(Aug) HMP+5]
             -- Wish: Lv.70 Numerist Pumps [HMP+3]
+        { Name = "Oracle's Pigache", Level = 72 },    -- HMP+2
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };

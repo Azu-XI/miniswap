@@ -108,8 +108,7 @@ sets.Idle_Default_Priority.Ring1 = {
     table.unpack(sets.Idle_Default_Priority.Ring1),
 };
 sets.Idle_Default_Priority.Ring2 = {
-        -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-    { Name = "Coral Ring", Level = 70 },              -- MDT-3
+    { Name = "Succor Ring", Level = 75 },             -- DT-3
     table.unpack(sets.Idle_Default_Priority.Ring2),
 };
 sets.Idle_Default_Priority.Feet = {
@@ -132,11 +131,11 @@ sets.Preshot_Default = {}
 sets.Midshot_Default = {
     Ring1 = {
             -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
-        { Name = "Coral Ring", Level = 70 },          -- RACC+9
+--STORED{ Name = "Coral Ring", Level = 70 },          -- RACC+9
     },
     Ring2 = {
             -- Wish: Merman's Ring (Coral Ring +1) [RACC+10]
-        { Name = "Coral Ring", Level = 70 },          -- RACC+9
+--STORED{ Name = "Coral Ring", Level = 70 },          -- RACC+9
     },
     Back  = {
         { Name = "Amemet Mantle +1", Level = 61 },    --        STR+2  ATK+15  RATK+15

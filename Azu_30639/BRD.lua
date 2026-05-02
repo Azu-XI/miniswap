@@ -167,8 +167,7 @@ sets.Idle_Default_Priority = {
         "San d'Orian Ring",
     },
     Ring2 = {
-            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-        { Name = "Coral Ring", Level = 70 },          -- MDT-3
+        { Name = "Succor Ring", Level = 75 },         -- DT-3
         { Name = "Rajas Ring", Level = 30 },
         { Name = "Balance Ring", Level = 14 },        -- DEX+2
         "Provenance Ring",
@@ -415,8 +414,7 @@ sets.Midcast_Singing_Priority = {
     },
     Feet  = {
             -- Wish: Valkyrie's Clogs [(Aug) SingingSkill+6]
-            -- Wish: Oracle's Pigache [WindSkill+5]
-        { Name = "Brd. Slippers +1", Level = 75 },    -- CHR+8  StringSkill+8+3 SongRecast-3
+        { Name = "Oracle's Pigache", Level = 72 },    --        WindSkill+5
         { Name = "Dino Ledelsens", Level = 48 },      -- CHR+4
     },
 };
@@ -430,6 +428,7 @@ sets.Midcast_Ballad_Priority = midcastSingingBuffDuration;
 sets.Midcast_Paeon_Priority = midcastSingingBuffDuration;
 
 sets.Midcast_Lullaby_Priority = {
+    Ammo  = { { Name = "Light Grip", Level = 75 }, },
     Range = {
         { Name = "Terpander", Level = 75 },           -- Lullaby+3
         -- { Name = "Mary's Horn", Level = 14 },
@@ -554,6 +553,7 @@ sets.Resting_Default_Priority = {
     Feet  = {
             -- Wish: Lv.74 Choral Slippers +1 [HMP+2 (Aug) HMP+5]
             -- Wish: Lv.70 Numerist Pumps [HMP+3]
+        { Name = "Oracle's Pigache", Level = 72 },    -- HMP+2
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };

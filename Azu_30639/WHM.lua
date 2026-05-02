@@ -89,8 +89,7 @@ sets.Idle_Default_Priority = {
         { Name = "Astral Ring", Level = 10 },         -- 25HP>MP
     },
     Ring2 = {
-            -- Wish: Merman's Ring (Coral Ring +1) [MDT-4]
-        { Name = "Coral Ring", Level = 70 },              -- MDT-3
+        { Name = "Succor Ring", Level = 75 },         -- DT-3
         { Name = "Tamas Ring", Level = 30 },          -- MP+30 MND+2~5
         { Name = "Astral Ring", Level = 10 },         -- 25HP>MP
         "Windurstian Ring",
@@ -275,6 +274,7 @@ sets.Resting_Default_Priority = {
     Feet  = {
             -- Wish: Lv.74 Healer's Duckbills +1 [HMP+1 (Aug) HMP+3]
             -- Wish: Lv.70 Numerist Pumps [HMP+3]
+        { Name = "Oracle's Pigache", Level = 72 },    -- HMP+2
         { Name = "Garrison Boots +1", Level = 20 },   -- HMP+2
     }
 };
