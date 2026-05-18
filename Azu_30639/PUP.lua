@@ -157,6 +157,7 @@ local petDefaultPriority = {
     },
     Feet  = {
 --STORED{ Name = "Aife's Pumps", Level = 75 },        -- PetCurePot+4%
+            -- Wish: Lv.75 Apex Sune-Ate [(Aug) AutomatonTP+500] {Stronghold}
             -- Wish: Lv.75 Ryuga Sune-Ate [AutomatonSkill+5] {Beaucedine 2.0}
             -- Wish: Lv.75 Thurandaut Boots [PetMAB+5]
             -- Wish: Lv.74 Puppetry Babouches +1 [(Aug) PetRegen+3]
@@ -199,6 +200,7 @@ sets.JA_WaterManeuver_Priority = maneuvers;
 sets.JA_WindManeuver_Priority = maneuvers;
 
 sets.JA_Repair_Priority = {
+        -- Wish: Hands: Lv.75 Apex Kote [(Aug) RepairDebuffRemoval+1] {Stronghold}
     Ear1  = {
         { Name = "Guignol Earring", Level = 69 },     -- RepairRegenPot+20%
     },
