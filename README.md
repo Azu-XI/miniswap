@@ -35,12 +35,17 @@ local bindings = {
   -- Add your job specific bindings
 };
 
+local modes = {
+  -- Add your job specific modes
+};
+
 local sets = {
   -- Add your job specific gear sets
 };
 
 profile.Aliases = aliases;
 profile.Bindings = bindings;
+profile.Modes = modes;
 profile.Sets = sets;
 return profile;
 ```
@@ -114,11 +119,14 @@ local sets = {
 - **Stances**
 
   - `Engaged_Default`
+  - `Engaged_MODE`, where `MODE` is the selected mode (see [Modes](#modes)).
   - `Engaged_Pet_Default`, only when a pet is charmed/summoned.
   - `Engaged_Pet_NAME`, only when a pet is charmed/summoned, where `NAME` is the name of the Pet without spaces or any special characters, for example `Cait Sith` is `CaitSith`.
   - `Idle_Default`
+  - `Idle_MODE`, where `MODE` is the selected mode (see [Modes](#modes)).
   - `Idle_Pet_Default`, only when a pet is charmed/summoned.
   - `Idle_Pet_NAME`, only when a pet is charmed/summoned, where `NAME` is the name of the Pet without spaces or any special characters, for example `Cait Sith` is `CaitSith`.
+  - `IdleAndEngaged` shares a mode between both stances, using `Idle_MODE` when idle and `Engaged_MODE` when engaged (see [Modes](#modes)).
   - `Resting_Default`
 
 - **Job Abilities**
@@ -135,7 +143,7 @@ local sets = {
     <details>
     <summary>see group names</summary>
 
-    https://github.com/Azu-XI/miniswap/blob/b324d12dcb476e3c5e8ebcbee708fd51d400208b/common/miniswap.lua#L330-L881
+    https://github.com/Azu-XI/miniswap/blob/f1298cebc06e535a745d0651882163e0047298a1/common/miniswap.lua#L516-L1168
 
     </details>
 
@@ -144,6 +152,33 @@ local sets = {
 - **Midcast**
 
   - Same as precast, but replace the `Precast_` prefix by `Midcast_`.
+
+- **Pet Actions**
+
+  - `Midcast_Pet_Default`
+  - `Midcast_Pet_TYPE`, where `TYPE` is the pet action type reported by LuAshitacast, without spaces or any special characters.
+  - `Midcast_Pet_GROUP`, where `GROUP` is one of:
+
+    <details>
+    <summary>see group names</summary>
+
+    https://github.com/Azu-XI/miniswap/blob/f1298cebc06e535a745d0651882163e0047298a1/common/miniswap.lua#L1169-L1380
+
+    </details>
+
+  - `Midcast_Pet_NAME`, where `NAME` is the name of the pet action without spaces or any special characters, for example `Predator Claws` is `PredatorClaws`.
+
+  > [!NOTE]
+  >
+  > These sets are equipped while your pet is performing an action and you are idle or engaged.
+  > They are applied after your stance and pet sets, in the order listed above.
+  > For example, `Predator Claws` will use `Midcast_Pet_Default`, its action type set,
+  > `Midcast_Pet_SmnCrit`, and finally `Midcast_Pet_PredatorClaws`.
+
+  > [!IMPORTANT]
+  >
+  > `JA_BloodPactRage`, `JA_BloodPactWard`, and `JA_Ready` still apply when you use the job ability.
+  > Use `Midcast_Pet_` sets for the pet's action itself.
 
 - **Preshot**
 
@@ -224,9 +259,55 @@ Define a set called `LockStyle` for automatic lock styling when switching jobs.
 
 ## Modes
 
-There isn't any modes just yet, I'm not too sure how I want it to fit with the rest.
+Modes let you switch between sets without editing your profile each time.
 
-For weapons though, you can `/lac fwd locktp on` to disable `main/sub/range/ammo` slots (minus `range` for BRD) so you can manually equip something. Use `/lac fwd locktp off` to enable those slots again.
+In your job profile, declare the available choices like so:
+
+```lua
+local modes = {
+  Idle = { "Refresh" },
+  Engaged = { "Accuracy" },
+  IdleAndEngaged = { "*TH" },
+};
+
+profile.Modes = modes;
+```
+
+- `Idle` applies only when idle, using `Idle_MODE` sets.
+- `Engaged` applies only when engaged, using `Engaged_MODE` sets.
+- `IdleAndEngaged` applies in both stances, using `Idle_MODE` or `Engaged_MODE` sets depending on your current stance.
+
+For example, the `TH` choice above uses `Idle_TH` when idle and `Engaged_TH` when engaged.
+Declare those sets in your `sets` table as usual, including the `_Priority` suffix if you need level appropriate gear.
+
+> [!NOTE]
+>
+> - Each configured mode automatically includes a `None` choice, selected by default.
+> - Prefix one choice with `*` to select it when loading the profile. The `*` isn't part of the choice or set name.
+> - Choice names are used as written, so use names without spaces or special characters and match their capitalization in sets and commands.
+> - `Idle_Pet`, `Engaged_Pet`, `IdleAndEngaged_Pet`, and `Midcast` modes are still a work in progress. They can be configured, but do not affect gear yet.
+
+Use these commands to change modes:
+
+- `/lac fwd mode STANCE choices` lists the available choices.
+- `/lac fwd mode STANCE next` selects the next choice, wrapping back to the first choice at the end.
+- `/lac fwd mode STANCE previous` selects the previous choice, wrapping back to the last choice at the beginning.
+- `/lac fwd mode STANCE set MODE` selects `MODE` directly.
+
+The subcommands also accept `c` for `choices`, `n` for `next`, `prev` or `p` for `previous`, and `s` for `set`.
+Configured modes and their current choices are displayed in the GUI.
+
+> [!IMPORTANT]
+>
+> Mode sets are cumulative too. When engaged, _MiniSwap_ tries `Engaged_Default`, the selected `Engaged` mode set,
+> then the selected `IdleAndEngaged` mode set. Pet stance sets and pet action sets follow, and town sets are applied last.
+> The same order applies when idle, using the `Idle_` prefix.
+
+> [!TIP]
+>
+> Mode commands can be used in aliases and bindings too. For example, `["/th"] = "/lac fwd mode IdleAndEngaged set TH"`.
+
+For weapons, you can `/lac fwd locktp on` to disable `main/sub/range/ammo` slots (minus `range` for BRD) so you can manually equip something. Use `/lac fwd locktp off` to enable those slots again.
 
 ## Shared Configuration Between Jobs
 
@@ -242,13 +323,19 @@ local bindings = {
   -- Add your shared bindings
 };
 
+local modes = {
+  -- Add your shared modes
+};
+
 local sets = {
   -- Add your shared gear sets
 };
 
-local profile = { Aliases = aliases, Bindings = bindings, Sets = sets };
+local profile = { Aliases = aliases, Bindings = bindings, Modes = modes, Sets = sets };
 return profile;
 ```
+
+Modes from `shared.lua` are merged with your job's modes. If both define the same mode, the job's choices replace the shared choices.
 
 ## Further Customization
 
