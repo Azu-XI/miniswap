@@ -264,12 +264,12 @@ do -- GEAR LIFECYCLE REGION
         profile.MiniSwap.TryEquipSet(stance .. "_Default");
 
         local stanceMode = state.Modes[stance].Choices[state.Modes[stance].SelectedIdx];
-        if (stanceMode ~= nil) then
+        if (stanceMode ~= nil and stanceMode ~= "None") then
             profile.MiniSwap.TryEquipSet(stance .. "_" .. stanceMode);
         end
 
         local idleAndEngagedMode = state.Modes.IdleAndEngaged.Choices[state.Modes.IdleAndEngaged.SelectedIdx];
-        if (idleAndEngagedMode ~= nil) then
+        if (idleAndEngagedMode ~= nil and idleAndEngagedMode ~= "None") then
             profile.MiniSwap.TryEquipSet(stance .. "_" .. idleAndEngagedMode);
         end
 
