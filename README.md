@@ -195,11 +195,11 @@ local sets = {
 
 - **Items**
 
-  - `ITEM_NAME`, where `NAME` is the name of the Item without spaces or any special characters, for example `B.E.W. Pitaru` is `BEWPitaru`.
+  - `Item_NAME`, where `NAME` is the name of the Item without spaces or any special characters, for example `B.E.W. Pitaru` is `BEWPitaru`.
 
 - **Special**
 
-  - `Town` equipped when in town.
+  - `Town_Default` equipped when in town.
   - `Town_NAME`, where `NAME` is one of `Adoulin`, `Bastok`, `Jeuno`, `SandOria`, `Windurst`.
 
 > [!IMPORTANT]
@@ -217,6 +217,101 @@ local sets = {
 > If you're ever unsure about which sets will be equipped for a given action,
 > run the command `/lac fwd debug` and execute any action to see a list of sets being attempted to equip.  
 > Use the same command to disable the debug output.
+
+### Equipment decision tree
+
+Start at the entry for your current stance or action. Sets are attempted in the order shown;
+missing sets are skipped, and later sets overwrite only the slots they define.
+`MODE` is the selected choice for the indicated mode. If both a stance mode and an `IdleAndEngaged` mode
+are selected, their mode sets are applied in that order.
+Special town sets are checked after stance and pet sets, including when resting.
+
+```mermaid
+flowchart TD
+    subgraph idlePath[" "]
+        direction TB
+        idleEntry(["Idle"]) --> idle["Idle_Default"]
+        idle --> idleMode["Idle_MODE<br/>if an Idle mode or an IdleAndEngaged mode is selected"]
+        idleMode --> idlePetCheck{"Pet present?"}
+        idlePetCheck -->|Yes| idlePetDefault["Idle_Pet_Default"]
+        idlePetDefault --> idlePetName["Idle_Pet_NAME"]
+    end
+
+    subgraph engagedPath[" "]
+        direction TB
+        engagedEntry(["Engaged"]) --> engaged["Engaged_Default"]
+        engaged --> engagedMode["Engaged_MODE<br/>if an Engaged mode or an IdleAndEngaged mode is selected"]
+        engagedMode --> engagedPetCheck{"Pet present?"}
+        engagedPetCheck -->|Yes| engagedPetDefault["Engaged_Pet_Default"]
+        engagedPetDefault --> engagedPetName["Engaged_Pet_NAME"]
+    end
+
+    subgraph restingPath[" "]
+        direction TB
+        restingEntry(["Resting"]) --> resting["Resting_Default"]
+    end
+
+    subgraph jaPath[" "]
+        direction TB
+        jaEntry(["Job Ability"]) --> jaTypeSet["JA_TYPE"]
+        jaTypeSet --> jaName["JA_NAME"]
+    end
+
+    subgraph castPath[" "]
+        direction TB
+        castEntry(["Cast"]) --> precast["Precast_Default"]
+        precast --> precastType["Precast_TYPE"]
+        precastType --> precastGroup["Precast_GROUP<br/>for each matching group"]
+        precastGroup --> precastName["Precast_NAME"]
+        precastName -->|Midcast| midcast["Midcast_Default"]
+        midcast --> midcastType["Midcast_TYPE"]
+        midcastType --> midcastGroup["Midcast_GROUP<br/>for each matching group"]
+        midcastGroup --> midcastName["Midcast_NAME"]
+    end
+
+    subgraph rangePath[" "]
+        direction TB
+        rangeEntry(["Range"]) --> preshot["Preshot_Default"]
+        preshot -->|Midshot| midshot["Midshot_Default"]
+    end
+
+    subgraph wsPath[" "]
+        direction TB
+        wsEntry(["Weapon Skill"]) --> ws["WS_Default"]
+        ws --> wsName["WS_NAME"]
+    end
+
+    subgraph itemPath[" "]
+        direction TB
+        itemEntry(["Item"]) --> item["Item_NAME"]
+    end
+
+    subgraph petActionPath["Pet Actions"]
+        direction TB
+        petActionCheck{"Pet performing a known action?"}
+        petActionCheck -->|Yes| petActionDefault["Midcast_Pet_Default"]
+        petActionDefault --> petActionType["Midcast_Pet_TYPE"]
+        petActionType --> petActionGroup["Midcast_Pet_GROUP<br/>for each matching group"]
+        petActionGroup --> petActionName["Midcast_Pet_NAME"]
+    end
+
+    idlePetName --> petActionCheck
+    engagedPetName --> petActionCheck
+
+    subgraph townPath["Town"]
+        direction TB
+        townCheck{"In town?"}
+        townCheck -->|Yes| townDefault["Town_Default"]
+        townDefault --> townName["Town_NAME<br/>for each matching town group"]
+        townCheck -->|No| done["No additional sets"]
+    end
+
+    idlePetCheck -->|No| townCheck
+    engagedPetCheck -->|No| townCheck
+    resting --> townCheck
+    petActionCheck -->|No| townCheck
+    petActionName --> townCheck
+```
 
 ## Level Sync
 
